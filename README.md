@@ -8,7 +8,7 @@ This repository contains the missing stubs for `gi.repository.Gimp` and `gi.repo
 
 ## Installation
 
-Download the repository and copy the `cairo` and `Gimp` directories to a PyCharm directory containing other generated stubs for GIMP 2.99.
+Download the repository and copy the `cairo` and `Gimp` directories to a PyCharm directory containing other generated stubs for GIMP 2.99 under the `gi/repository` directory.
 
 Assuming you added GIMP Python modules to your Python interpreter in PyCharm, you can find the path as follows:
 
