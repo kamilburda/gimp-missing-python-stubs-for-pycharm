@@ -115,6 +115,10 @@ class ParamInt32Array(ParamArray):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -218,9 +222,9 @@ class ParamInt32Array(ParamArray):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamInt32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamInt32Array (770753648)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamInt32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamInt32Array (814606992)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamInt32Array (770753648)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamInt32Array (814606992)>'
     __info__ = ObjectInfo(ParamInt32Array)
 
 

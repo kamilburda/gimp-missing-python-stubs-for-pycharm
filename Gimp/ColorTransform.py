@@ -203,7 +203,7 @@ class ColorTransform(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def new(self, src_profile, src_format, dest_profile, dest_format, rendering_intent, flags): # real signature unknown; restored from __doc__
@@ -349,6 +349,10 @@ class ColorTransform(__gi_overrides_GObject.Object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -440,12 +444,12 @@ class ColorTransform(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e2348b0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e770>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorTransform), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorTransform (769169728)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_proofing': gi.FunctionInfo(new_proofing, bound=None), 'can_gegl_copy': gi.FunctionInfo(can_gegl_copy, bound=None), 'process_buffer': gi.FunctionInfo(process_buffer, bound=None), 'process_pixels': gi.FunctionInfo(process_pixels, bound=None), 'do_progress': gi.VFuncInfo(progress, bound=None), 'parent_instance': <property object at 0x000001e82e2d67f0>, 'priv': <property object at 0x000001e82e2d68e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorTransform), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorTransform (815050384)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_proofing': gi.FunctionInfo(new_proofing, bound=None), 'can_gegl_copy': gi.FunctionInfo(can_gegl_copy, bound=None), 'process_buffer': gi.FunctionInfo(process_buffer, bound=None), 'process_pixels': gi.FunctionInfo(process_pixels, bound=None), 'do_progress': gi.VFuncInfo(progress, bound=None), 'parent_instance': <property object at 0x000002073160b3d0>, 'priv': <property object at 0x000002073160b4c0>})"
     __gdoc__ = 'Object GimpColorTransform\n\nSignals from GimpColorTransform:\n  progress (gdouble)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpColorTransform (769169728)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorTransform (815050384)>'
     __info__ = ObjectInfo(ColorTransform)
 
 

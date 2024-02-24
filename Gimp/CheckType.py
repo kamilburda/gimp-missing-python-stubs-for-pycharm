@@ -81,7 +81,7 @@ class CheckType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class CheckType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class CheckType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -385,7 +390,7 @@ class CheckType(__gobject.GEnum):
     LIGHT_CHECKS = 0
     WHITE_ONLY = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CheckType' objects>, '__doc__': None, '__gtype__': <GType GimpCheckType (769164240)>, '__enum_values__': {0: <enum GIMP_CHECK_TYPE_LIGHT_CHECKS of type Gimp.CheckType>, 1: <enum GIMP_CHECK_TYPE_GRAY_CHECKS of type Gimp.CheckType>, 2: <enum GIMP_CHECK_TYPE_DARK_CHECKS of type Gimp.CheckType>, 3: <enum GIMP_CHECK_TYPE_WHITE_ONLY of type Gimp.CheckType>, 4: <enum GIMP_CHECK_TYPE_GRAY_ONLY of type Gimp.CheckType>, 5: <enum GIMP_CHECK_TYPE_BLACK_ONLY of type Gimp.CheckType>, 6: <enum GIMP_CHECK_TYPE_CUSTOM_CHECKS of type Gimp.CheckType>}, '__info__': gi.EnumInfo(CheckType), 'LIGHT_CHECKS': <enum GIMP_CHECK_TYPE_LIGHT_CHECKS of type Gimp.CheckType>, 'GRAY_CHECKS': <enum GIMP_CHECK_TYPE_GRAY_CHECKS of type Gimp.CheckType>, 'DARK_CHECKS': <enum GIMP_CHECK_TYPE_DARK_CHECKS of type Gimp.CheckType>, 'WHITE_ONLY': <enum GIMP_CHECK_TYPE_WHITE_ONLY of type Gimp.CheckType>, 'GRAY_ONLY': <enum GIMP_CHECK_TYPE_GRAY_ONLY of type Gimp.CheckType>, 'BLACK_ONLY': <enum GIMP_CHECK_TYPE_BLACK_ONLY of type Gimp.CheckType>, 'CUSTOM_CHECKS': <enum GIMP_CHECK_TYPE_CUSTOM_CHECKS of type Gimp.CheckType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CheckType' objects>, '__doc__': None, '__gtype__': <GType GimpCheckType (815049712)>, '__enum_values__': {0: <enum GIMP_CHECK_TYPE_LIGHT_CHECKS of type Gimp.CheckType>, 1: <enum GIMP_CHECK_TYPE_GRAY_CHECKS of type Gimp.CheckType>, 2: <enum GIMP_CHECK_TYPE_DARK_CHECKS of type Gimp.CheckType>, 3: <enum GIMP_CHECK_TYPE_WHITE_ONLY of type Gimp.CheckType>, 4: <enum GIMP_CHECK_TYPE_GRAY_ONLY of type Gimp.CheckType>, 5: <enum GIMP_CHECK_TYPE_BLACK_ONLY of type Gimp.CheckType>, 6: <enum GIMP_CHECK_TYPE_CUSTOM_CHECKS of type Gimp.CheckType>}, '__info__': gi.EnumInfo(CheckType), 'LIGHT_CHECKS': <enum GIMP_CHECK_TYPE_LIGHT_CHECKS of type Gimp.CheckType>, 'GRAY_CHECKS': <enum GIMP_CHECK_TYPE_GRAY_CHECKS of type Gimp.CheckType>, 'DARK_CHECKS': <enum GIMP_CHECK_TYPE_DARK_CHECKS of type Gimp.CheckType>, 'WHITE_ONLY': <enum GIMP_CHECK_TYPE_WHITE_ONLY of type Gimp.CheckType>, 'GRAY_ONLY': <enum GIMP_CHECK_TYPE_GRAY_ONLY of type Gimp.CheckType>, 'BLACK_ONLY': <enum GIMP_CHECK_TYPE_BLACK_ONLY of type Gimp.CheckType>, 'CUSTOM_CHECKS': <enum GIMP_CHECK_TYPE_CUSTOM_CHECKS of type Gimp.CheckType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -395,7 +400,7 @@ class CheckType(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType GimpCheckType (769164240)>'
+    __gtype__ = None # (!) real value is '<GType GimpCheckType (815049712)>'
     __info__ = gi.EnumInfo(CheckType)
 
 

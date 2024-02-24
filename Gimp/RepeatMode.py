@@ -81,7 +81,7 @@ class RepeatMode(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class RepeatMode(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class RepeatMode(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -382,14 +387,14 @@ class RepeatMode(__gobject.GEnum):
     TRIANGULAR = 2
     TRUNCATE = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RepeatMode' objects>, '__doc__': None, '__gtype__': <GType GimpRepeatMode (771021744)>, '__enum_values__': {0: <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 1: <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 2: <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 3: <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>}, '__info__': gi.EnumInfo(RepeatMode), 'NONE': <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 'SAWTOOTH': <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 'TRIANGULAR': <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 'TRUNCATE': <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RepeatMode' objects>, '__doc__': None, '__gtype__': <GType GimpRepeatMode (814716816)>, '__enum_values__': {0: <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 1: <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 2: <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 3: <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>}, '__info__': gi.EnumInfo(RepeatMode), 'NONE': <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 'SAWTOOTH': <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 'TRIANGULAR': <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 'TRUNCATE': <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpRepeatMode (771021744)>'
+    __gtype__ = None # (!) real value is '<GType GimpRepeatMode (814716816)>'
     __info__ = gi.EnumInfo(RepeatMode)
 
 

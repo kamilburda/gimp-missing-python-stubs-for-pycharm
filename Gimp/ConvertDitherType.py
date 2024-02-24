@@ -81,7 +81,7 @@ class ConvertDitherType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class ConvertDitherType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class ConvertDitherType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -382,14 +387,14 @@ class ConvertDitherType(__gobject.GEnum):
     FS_LOWBLEED = 2
     NONE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertDitherType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertDitherType (769165024)>, '__enum_values__': {0: <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 1: <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 2: <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 3: <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>}, '__info__': gi.EnumInfo(ConvertDitherType), 'NONE': <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 'FS': <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 'FS_LOWBLEED': <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 'FIXED': <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertDitherType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertDitherType (815046912)>, '__enum_values__': {0: <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 1: <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 2: <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 3: <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>}, '__info__': gi.EnumInfo(ConvertDitherType), 'NONE': <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 'FS': <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 'FS_LOWBLEED': <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 'FIXED': <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpConvertDitherType (769165024)>'
+    __gtype__ = None # (!) real value is '<GType GimpConvertDitherType (815046912)>'
     __info__ = gi.EnumInfo(ConvertDitherType)
 
 

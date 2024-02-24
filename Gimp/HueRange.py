@@ -81,7 +81,7 @@ class HueRange(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class HueRange(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class HueRange(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -385,7 +390,7 @@ class HueRange(__gobject.GEnum):
     RED = 1
     YELLOW = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'HueRange' objects>, '__doc__': None, '__gtype__': <GType GimpHueRange (770679536)>, '__enum_values__': {0: <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 1: <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 2: <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 3: <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 4: <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 5: <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 6: <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>}, '__info__': gi.EnumInfo(HueRange), 'ALL': <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 'RED': <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 'YELLOW': <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 'GREEN': <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 'CYAN': <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 'BLUE': <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 'MAGENTA': <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'HueRange' objects>, '__doc__': None, '__gtype__': <GType GimpHueRange (815054416)>, '__enum_values__': {0: <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 1: <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 2: <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 3: <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 4: <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 5: <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 6: <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>}, '__info__': gi.EnumInfo(HueRange), 'ALL': <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 'RED': <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 'YELLOW': <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 'GREEN': <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 'CYAN': <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 'BLUE': <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 'MAGENTA': <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -395,7 +400,7 @@ class HueRange(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType GimpHueRange (770679536)>'
+    __gtype__ = None # (!) real value is '<GType GimpHueRange (815054416)>'
     __info__ = gi.EnumInfo(HueRange)
 
 

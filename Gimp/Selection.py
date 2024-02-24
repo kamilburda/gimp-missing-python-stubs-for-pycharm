@@ -243,8 +243,8 @@ class Selection(Channel):
         pass
 
     def get_color(self): # real signature unknown; restored from __doc__
-        """ get_color(self) -> bool, color:Gimp.RGB """
-        return False
+        """ get_color(self) -> Gegl.Color """
+        pass
 
     def get_color_tag(self): # real signature unknown; restored from __doc__
         """ get_color_tag(self) -> Gimp.ColorTag """
@@ -308,6 +308,10 @@ class Selection(Channel):
 
     def get_parent(self): # real signature unknown; restored from __doc__
         """ get_parent(self) -> Gimp.Item """
+        pass
+
+    def get_pixel(self, x_coord, y_coord): # real signature unknown; restored from __doc__
+        """ get_pixel(self, x_coord:int, y_coord:int) -> Gegl.Color """
         pass
 
     def get_properties(self, *args, **kwargs): # real signature unknown
@@ -539,7 +543,7 @@ class Selection(Channel):
         return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def mask_bounds(self): # real signature unknown; restored from __doc__
@@ -550,12 +554,16 @@ class Selection(Channel):
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
         return False
 
+    def merge_filters(self): # real signature unknown; restored from __doc__
+        """ merge_filters(self) -> bool """
+        return False
+
     def merge_shadow(self, undo): # real signature unknown; restored from __doc__
         """ merge_shadow(self, undo:bool) -> bool """
         return False
 
     def new(self, image, name, width, height, opacity, color): # real signature unknown; restored from __doc__
-        """ new(image:Gimp.Image, name:str, width:int, height:int, opacity:float, color:Gimp.RGB) -> Gimp.Channel """
+        """ new(image:Gimp.Image, name:str, width:int, height:int, opacity:float, color:Gegl.Color) -> Gimp.Channel """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -615,7 +623,7 @@ class Selection(Channel):
         pass
 
     def set_color(self, color): # real signature unknown; restored from __doc__
-        """ set_color(self, color:Gimp.RGB) -> bool """
+        """ set_color(self, color:Gegl.Color) -> bool """
         return False
 
     def set_color_tag(self, color_tag): # real signature unknown; restored from __doc__
@@ -648,6 +656,10 @@ class Selection(Channel):
 
     def set_opacity(self, opacity): # real signature unknown; restored from __doc__
         """ set_opacity(self, opacity:float) -> bool """
+        return False
+
+    def set_pixel(self, x_coord, y_coord, color): # real signature unknown; restored from __doc__
+        """ set_pixel(self, x_coord:int, y_coord:int, color:Gegl.Color) -> bool """
         return False
 
     def set_properties(self, *args, **kwargs): # real signature unknown
@@ -825,6 +837,10 @@ class Selection(Channel):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -914,12 +930,12 @@ class Selection(Channel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82ef2c430>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df0310>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (770750320)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (814609680)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
     __gdoc__ = 'Object GimpSelection\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpSelection (770750320)>'
+    __gtype__ = None # (!) real value is '<GType GimpSelection (814609680)>'
     __info__ = ObjectInfo(Selection)
 
 

@@ -81,7 +81,7 @@ class MetadataLoadFlags(__gobject.GFlags):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class MetadataLoadFlags(__gobject.GFlags):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class MetadataLoadFlags(__gobject.GFlags):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -385,18 +390,20 @@ class MetadataLoadFlags(__gobject.GFlags):
     ALL = 4294967295
     COLORSPACE = 8
     COMMENT = 1
+    NONE = 0
     ORIENTATION = 4
     RESOLUTION = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataLoadFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataLoadFlags (770682336)>, '__flags_values__': {1: <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 2: <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 4: <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 8: <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 4294967295: <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>}, '__info__': gi.EnumInfo(MetadataLoadFlags), 'COMMENT': <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 'RESOLUTION': <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 'ORIENTATION': <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 'COLORSPACE': <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 'ALL': <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataLoadFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataLoadFlags (815080752)>, '__flags_values__': {0: <flags 0 of type Gimp.MetadataLoadFlags>, 1: <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 2: <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 4: <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 8: <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 4294967295: <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>}, '__info__': gi.EnumInfo(MetadataLoadFlags), 'NONE': <flags 0 of type Gimp.MetadataLoadFlags>, 'COMMENT': <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 'RESOLUTION': <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 'ORIENTATION': <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 'COLORSPACE': <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 'ALL': <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>})"
     __flags_values__ = {
+        0: 0,
         1: 1,
         2: 2,
         4: 4,
         8: 8,
         4294967295: 4294967295,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpMetadataLoadFlags (770682336)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpMetadataLoadFlags (815080752)>'
     __info__ = gi.EnumInfo(MetadataLoadFlags)
 
 

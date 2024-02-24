@@ -49,6 +49,10 @@ class FileProcedureClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -130,9 +134,27 @@ class FileProcedureClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved3 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved4 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved5 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved6 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved7 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved9 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FileProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FileProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'FileProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2df380>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FileProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FileProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'FileProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731613dd0>, '_gimp_reserved1': <property object at 0x0000020731613ec0>, '_gimp_reserved2': <property object at 0x0000020731613fb0>, '_gimp_reserved3': <property object at 0x00000207316180e0>, '_gimp_reserved4': <property object at 0x00000207316181d0>, '_gimp_reserved5': <property object at 0x00000207316182c0>, '_gimp_reserved6': <property object at 0x00000207316183b0>, '_gimp_reserved7': <property object at 0x00000207316184a0>, '_gimp_reserved8': <property object at 0x0000020731618590>, '_gimp_reserved9': <property object at 0x0000020731618680>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(FileProcedureClass)
 

@@ -113,6 +113,10 @@ class ParamRGB(__gi_repository_GObject.ParamSpecBoxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -216,9 +220,9 @@ class ParamRGB(__gi_repository_GObject.ParamSpecBoxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamRGB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamRGB (770688160)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamRGB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamRGB (814717488)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamRGB (770688160)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamRGB (814717488)>'
     __info__ = ObjectInfo(ParamRGB)
 
 

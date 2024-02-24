@@ -112,6 +112,10 @@ class Unit(object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -192,9 +196,9 @@ class Unit(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Unit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpUnit (771022416)>, '__dict__': <attribute '__dict__' of 'Unit' objects>, '__weakref__': <attribute '__weakref__' of 'Unit' objects>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'format_string': gi.FunctionInfo(format_string, bound=None), 'get_number_of_built_in_units': gi.FunctionInfo(get_number_of_built_in_units, bound=None), 'get_number_of_units': gi.FunctionInfo(get_number_of_units, bound=None), 'get_abbreviation': gi.FunctionInfo(get_abbreviation, bound=None), 'get_deletion_flag': gi.FunctionInfo(get_deletion_flag, bound=None), 'get_digits': gi.FunctionInfo(get_digits, bound=None), 'get_factor': gi.FunctionInfo(get_factor, bound=None), 'get_identifier': gi.FunctionInfo(get_identifier, bound=None), 'get_plural': gi.FunctionInfo(get_plural, bound=None), 'get_scaled_digits': gi.FunctionInfo(get_scaled_digits, bound=None), 'get_singular': gi.FunctionInfo(get_singular, bound=None), 'get_symbol': gi.FunctionInfo(get_symbol, bound=None), 'is_metric': gi.FunctionInfo(is_metric, bound=None), 'set_deletion_flag': gi.FunctionInfo(set_deletion_flag, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Unit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpUnit (814717376)>, '__dict__': <attribute '__dict__' of 'Unit' objects>, '__weakref__': <attribute '__weakref__' of 'Unit' objects>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'format_string': gi.FunctionInfo(format_string, bound=None), 'get_number_of_built_in_units': gi.FunctionInfo(get_number_of_built_in_units, bound=None), 'get_number_of_units': gi.FunctionInfo(get_number_of_units, bound=None), 'get_abbreviation': gi.FunctionInfo(get_abbreviation, bound=None), 'get_deletion_flag': gi.FunctionInfo(get_deletion_flag, bound=None), 'get_digits': gi.FunctionInfo(get_digits, bound=None), 'get_factor': gi.FunctionInfo(get_factor, bound=None), 'get_identifier': gi.FunctionInfo(get_identifier, bound=None), 'get_plural': gi.FunctionInfo(get_plural, bound=None), 'get_scaled_digits': gi.FunctionInfo(get_scaled_digits, bound=None), 'get_singular': gi.FunctionInfo(get_singular, bound=None), 'get_symbol': gi.FunctionInfo(get_symbol, bound=None), 'is_metric': gi.FunctionInfo(is_metric, bound=None), 'set_deletion_flag': gi.FunctionInfo(set_deletion_flag, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpUnit (771022416)>'
+    __gtype__ = None # (!) real value is '<GType GimpUnit (814717376)>'
     __info__ = ObjectInfo(Unit)
 
 

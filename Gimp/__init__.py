@@ -49,7 +49,7 @@ MAX_IMAGE_SIZE = 524288
 MAX_MEMSIZE = 0
 MAX_RESOLUTION = 1048576.0
 
-MICRO_VERSION = 16
+MICRO_VERSION = 18
 
 MINOR_VERSION = 99
 
@@ -86,7 +86,7 @@ RGB_LUMINANCE_BLUE = 0.060608
 RGB_LUMINANCE_GREEN = 0.716904
 RGB_LUMINANCE_RED = 0.222488
 
-VERSION = '2.99.16'
+VERSION = '2.99.18'
 
 _namespace = 'Gimp'
 
@@ -148,16 +148,16 @@ def brushes_get_list(filter): # real signature unknown; restored from __doc__
     """ brushes_get_list(filter:str) -> list """
     return []
 
-def brushes_popup(brush_callback, popup_title, initial_brush_name): # real signature unknown; restored from __doc__
-    """ brushes_popup(brush_callback:str, popup_title:str, initial_brush_name:str) -> bool """
+def brushes_popup(brush_callback, popup_title, initial_brush, parent_window): # real signature unknown; restored from __doc__
+    """ brushes_popup(brush_callback:str, popup_title:str, initial_brush:Gimp.Brush, parent_window:GLib.Bytes) -> bool """
     return False
 
 def brushes_refresh(): # real signature unknown; restored from __doc__
     """ brushes_refresh() -> bool """
     return False
 
-def brushes_set_popup(brush_callback, brush_name): # real signature unknown; restored from __doc__
-    """ brushes_set_popup(brush_callback:str, brush_name:str) -> bool """
+def brushes_set_popup(brush_callback, brush): # real signature unknown; restored from __doc__
+    """ brushes_set_popup(brush_callback:str, brush:Gimp.Brush) -> bool """
     return False
 
 def buffers_get_list(filter): # real signature unknown; restored from __doc__
@@ -204,8 +204,8 @@ def cairo_set_source_rgba(cr, color): # real signature unknown; restored from __
     """ cairo_set_source_rgba(cr:cairo.Context, color:Gimp.RGB) """
     pass
 
-def cairo_surface_create_buffer(surface): # real signature unknown; restored from __doc__
-    """ cairo_surface_create_buffer(surface:cairo.Surface) -> Gegl.Buffer """
+def cairo_surface_create_buffer(surface, format): # real signature unknown; restored from __doc__
+    """ cairo_surface_create_buffer(surface:cairo.Surface, format:Babl.Object) -> Gegl.Buffer """
     pass
 
 def cairo_surface_get_format(surface): # real signature unknown; restored from __doc__
@@ -217,15 +217,15 @@ def canonicalize_identifier(identifier): # real signature unknown; restored from
     return ""
 
 def checks_get_colors(type, color1, color2): # real signature unknown; restored from __doc__
-    """ checks_get_colors(type:Gimp.CheckType, color1:Gimp.RGB, color2:Gimp.RGB) -> color1:Gimp.RGB, color2:Gimp.RGB """
+    """ checks_get_colors(type:Gimp.CheckType, color1:Gegl.Color, color2:Gegl.Color) -> color1:Gegl.Color, color2:Gegl.Color """
     pass
 
 def check_custom_color1(): # real signature unknown; restored from __doc__
-    """ check_custom_color1() -> Gimp.RGB """
+    """ check_custom_color1() -> Gegl.Color """
     pass
 
 def check_custom_color2(): # real signature unknown; restored from __doc__
-    """ check_custom_color2() -> Gimp.RGB """
+    """ check_custom_color2() -> Gegl.Color """
     pass
 
 def check_size(): # real signature unknown; restored from __doc__
@@ -254,6 +254,50 @@ def cmyka_set(cmyka, cyan, magenta, yellow, black, alpha): # real signature unkn
 
 def cmyka_set_uchar(cmyka, cyan, magenta, yellow, black, alpha): # real signature unknown; restored from __doc__
     """ cmyka_set_uchar(cmyka:Gimp.CMYK, cyan:int, magenta:int, yellow:int, black:int, alpha:int) """
+    pass
+
+def color_array_copy(array): # real signature unknown; restored from __doc__
+    """ color_array_copy(array:Gegl.Color) -> Gegl.Color """
+    pass
+
+def color_array_free(array): # real signature unknown; restored from __doc__
+    """ color_array_free(array:Gegl.Color) """
+    pass
+
+def color_array_get_length(array): # real signature unknown; restored from __doc__
+    """ color_array_get_length(array:Gegl.Color) -> int """
+    return 0
+
+def color_array_get_type(): # real signature unknown; restored from __doc__
+    """ color_array_get_type() -> GType """
+    pass
+
+def color_is_out_of_gamut(color, space): # real signature unknown; restored from __doc__
+    """ color_is_out_of_gamut(color:Gegl.Color, space:Babl.Object) -> bool """
+    return False
+
+def color_is_out_of_self_gamut(color): # real signature unknown; restored from __doc__
+    """ color_is_out_of_self_gamut(color:Gegl.Color) -> bool """
+    return False
+
+def color_is_perceptually_identical(color1, color2): # real signature unknown; restored from __doc__
+    """ color_is_perceptually_identical(color1:Gegl.Color, color2:Gegl.Color) -> bool """
+    return False
+
+def color_parse_css(css): # real signature unknown; restored from __doc__
+    """ color_parse_css(css:list) -> Gegl.Color """
+    pass
+
+def color_parse_hex(hex): # real signature unknown; restored from __doc__
+    """ color_parse_hex(hex:list) -> Gegl.Color """
+    pass
+
+def color_parse_name(name): # real signature unknown; restored from __doc__
+    """ color_parse_name(name:list) -> Gegl.Color """
+    pass
+
+def color_set_alpha(color, alpha): # real signature unknown; restored from __doc__
+    """ color_set_alpha(color:Gegl.Color, alpha:float) """
     pass
 
 def config_build_data_path(name): # real signature unknown; restored from __doc__
@@ -333,8 +377,8 @@ def context_get_antialias(): # real signature unknown; restored from __doc__
     return False
 
 def context_get_background(): # real signature unknown; restored from __doc__
-    """ context_get_background() -> bool, background:Gimp.RGB """
-    return False
+    """ context_get_background() -> Gegl.Color """
+    pass
 
 def context_get_brush(): # real signature unknown; restored from __doc__
     """ context_get_brush() -> Gimp.Brush """
@@ -389,8 +433,8 @@ def context_get_font(): # real signature unknown; restored from __doc__
     pass
 
 def context_get_foreground(): # real signature unknown; restored from __doc__
-    """ context_get_foreground() -> bool, foreground:Gimp.RGB """
-    return False
+    """ context_get_foreground() -> Gegl.Color """
+    pass
 
 def context_get_gradient(): # real signature unknown; restored from __doc__
     """ context_get_gradient() -> Gimp.Gradient """
@@ -545,7 +589,7 @@ def context_set_antialias(antialias): # real signature unknown; restored from __
     return False
 
 def context_set_background(background): # real signature unknown; restored from __doc__
-    """ context_set_background(background:Gimp.RGB) -> bool """
+    """ context_set_background(background:Gegl.Color) -> bool """
     return False
 
 def context_set_brush(brush): # real signature unknown; restored from __doc__
@@ -621,7 +665,7 @@ def context_set_font(font): # real signature unknown; restored from __doc__
     return False
 
 def context_set_foreground(foreground): # real signature unknown; restored from __doc__
-    """ context_set_foreground(foreground:Gimp.RGB) -> bool """
+    """ context_set_foreground(foreground:Gegl.Color) -> bool """
     return False
 
 def context_set_gradient(gradient): # real signature unknown; restored from __doc__
@@ -836,6 +880,18 @@ def dodgeburn_default(drawable, strokes): # real signature unknown; restored fro
     """ dodgeburn_default(drawable:Gimp.Drawable, strokes:list) -> bool """
     return False
 
+def drawables_close_popup(callback): # real signature unknown; restored from __doc__
+    """ drawables_close_popup(callback:str) -> bool """
+    return False
+
+def drawables_popup(callback, popup_title, drawable_type, initial_drawable, parent_window): # real signature unknown; restored from __doc__
+    """ drawables_popup(callback:str, popup_title:str, drawable_type:str, initial_drawable:Gimp.Drawable, parent_window:GLib.Bytes) -> bool """
+    return False
+
+def drawables_set_popup(callback, drawable): # real signature unknown; restored from __doc__
+    """ drawables_set_popup(callback:str, drawable:Gimp.Drawable) -> bool """
+    return False
+
 def dynamics_get_list(filter): # real signature unknown; restored from __doc__
     """ dynamics_get_list(filter:str) -> list """
     return []
@@ -877,7 +933,7 @@ def edit_named_paste_as_new_image(buffer_name): # real signature unknown; restor
     pass
 
 def edit_paste(drawable, paste_into): # real signature unknown; restored from __doc__
-    """ edit_paste(drawable:Gimp.Drawable, paste_into:bool) -> list, num_layers:int """
+    """ edit_paste(drawable:Gimp.Drawable, paste_into:bool) -> list """
     return []
 
 def edit_paste_as_new_image(): # real signature unknown; restored from __doc__
@@ -885,7 +941,7 @@ def edit_paste_as_new_image(): # real signature unknown; restored from __doc__
     pass
 
 def enums_get_type_names(): # real signature unknown; restored from __doc__
-    """ enums_get_type_names() -> list, n_type_names:int """
+    """ enums_get_type_names() -> list """
     return []
 
 def enums_init(): # real signature unknown; restored from __doc__
@@ -985,7 +1041,7 @@ def file_load_layer(run_mode, image, file): # real signature unknown; restored f
     pass
 
 def file_load_layers(run_mode, image, file): # real signature unknown; restored from __doc__
-    """ file_load_layers(run_mode:Gimp.RunMode, image:Gimp.Image, file:Gio.File) -> list, num_layers:int """
+    """ file_load_layers(run_mode:Gimp.RunMode, image:Gimp.Image, file:Gio.File) -> list """
     return []
 
 def file_new_for_config_path(path): # real signature unknown; restored from __doc__
@@ -1052,20 +1108,24 @@ def fonts_close_popup(font_callback): # real signature unknown; restored from __
     """ fonts_close_popup(font_callback:str) -> bool """
     return False
 
+def fonts_get_by_name(name): # real signature unknown; restored from __doc__
+    """ fonts_get_by_name(name:str) -> list """
+    return []
+
 def fonts_get_list(filter): # real signature unknown; restored from __doc__
     """ fonts_get_list(filter:str) -> list """
     return []
 
-def fonts_popup(font_callback, popup_title, initial_font_name): # real signature unknown; restored from __doc__
-    """ fonts_popup(font_callback:str, popup_title:str, initial_font_name:str) -> bool """
+def fonts_popup(font_callback, popup_title, initial_font, parent_window): # real signature unknown; restored from __doc__
+    """ fonts_popup(font_callback:str, popup_title:str, initial_font:Gimp.Font, parent_window:GLib.Bytes) -> bool """
     return False
 
 def fonts_refresh(): # real signature unknown; restored from __doc__
     """ fonts_refresh() -> bool """
     return False
 
-def fonts_set_popup(font_callback, font_name): # real signature unknown; restored from __doc__
-    """ fonts_set_popup(font_callback:str, font_name:str) -> bool """
+def fonts_set_popup(font_callback, font): # real signature unknown; restored from __doc__
+    """ fonts_set_popup(font_callback:str, font:Gimp.Font) -> bool """
     return False
 
 def getpid(): # real signature unknown; restored from __doc__
@@ -1132,16 +1192,16 @@ def gradients_get_list(filter): # real signature unknown; restored from __doc__
     """ gradients_get_list(filter:str) -> list """
     return []
 
-def gradients_popup(gradient_callback, popup_title, initial_gradient_name): # real signature unknown; restored from __doc__
-    """ gradients_popup(gradient_callback:str, popup_title:str, initial_gradient_name:str) -> bool """
+def gradients_popup(gradient_callback, popup_title, initial_gradient, parent_window): # real signature unknown; restored from __doc__
+    """ gradients_popup(gradient_callback:str, popup_title:str, initial_gradient:Gimp.Gradient, parent_window:GLib.Bytes) -> bool """
     return False
 
 def gradients_refresh(): # real signature unknown; restored from __doc__
     """ gradients_refresh() -> bool """
     return False
 
-def gradients_set_popup(gradient_callback, gradient_name): # real signature unknown; restored from __doc__
-    """ gradients_set_popup(gradient_callback:str, gradient_name:str) -> bool """
+def gradients_set_popup(gradient_callback, gradient): # real signature unknown; restored from __doc__
+    """ gradients_set_popup(gradient_callback:str, gradient:Gimp.Gradient) -> bool """
     return False
 
 def heal(drawable, src_drawable, src_x, src_y, strokes): # real signature unknown; restored from __doc__
@@ -1216,16 +1276,16 @@ def palettes_get_list(filter): # real signature unknown; restored from __doc__
     """ palettes_get_list(filter:str) -> list """
     return []
 
-def palettes_popup(palette_callback, popup_title, initial_palette_name): # real signature unknown; restored from __doc__
-    """ palettes_popup(palette_callback:str, popup_title:str, initial_palette_name:str) -> bool """
+def palettes_popup(palette_callback, popup_title, initial_palette, parent_window): # real signature unknown; restored from __doc__
+    """ palettes_popup(palette_callback:str, popup_title:str, initial_palette:Gimp.Palette, parent_window:GLib.Bytes) -> bool """
     return False
 
 def palettes_refresh(): # real signature unknown; restored from __doc__
     """ palettes_refresh() -> bool """
     return False
 
-def palettes_set_popup(palette_callback, palette_name): # real signature unknown; restored from __doc__
-    """ palettes_set_popup(palette_callback:str, palette_name:str) -> bool """
+def palettes_set_popup(palette_callback, palette): # real signature unknown; restored from __doc__
+    """ palettes_set_popup(palette_callback:str, palette:Gimp.Palette) -> bool """
     return False
 
 def param_spec_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -1238,6 +1298,10 @@ def param_spec_brush(name, nick, blurb, none_ok, flags): # real signature unknow
 
 def param_spec_channel(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_channel(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_choice(name, nick, blurb, choice, default_value, flags): # real signature unknown; restored from __doc__
+    """ param_spec_choice(name:str, nick:str, blurb:str, choice:Gimp.Choice, default_value:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_config_path(name, nick, blurb, type, default_value, flags): # real signature unknown; restored from __doc__
@@ -1380,16 +1444,16 @@ def patterns_get_list(filter): # real signature unknown; restored from __doc__
     """ patterns_get_list(filter:str) -> list """
     return []
 
-def patterns_popup(pattern_callback, popup_title, initial_pattern_name): # real signature unknown; restored from __doc__
-    """ patterns_popup(pattern_callback:str, popup_title:str, initial_pattern_name:str) -> bool """
+def patterns_popup(pattern_callback, popup_title, initial_pattern, parent_window): # real signature unknown; restored from __doc__
+    """ patterns_popup(pattern_callback:str, popup_title:str, initial_pattern:Gimp.Pattern, parent_window:GLib.Bytes) -> bool """
     return False
 
 def patterns_refresh(): # real signature unknown; restored from __doc__
     """ patterns_refresh() -> bool """
     return False
 
-def patterns_set_popup(pattern_callback, pattern_name): # real signature unknown; restored from __doc__
-    """ patterns_set_popup(pattern_callback:str, pattern_name:str) -> bool """
+def patterns_set_popup(pattern_callback, pattern): # real signature unknown; restored from __doc__
+    """ patterns_set_popup(pattern_callback:str, pattern:Gimp.Pattern) -> bool """
     return False
 
 def pencil(drawable, strokes): # real signature unknown; restored from __doc__
@@ -1405,7 +1469,7 @@ def pixbuf_get_format(pixbuf): # real signature unknown; restored from __doc__
     pass
 
 def pixbuf_get_icc_profile(pixbuf): # real signature unknown; restored from __doc__
-    """ pixbuf_get_icc_profile(pixbuf:GdkPixbuf.Pixbuf) -> list or None, length:int """
+    """ pixbuf_get_icc_profile(pixbuf:GdkPixbuf.Pixbuf) -> list or None """
     return []
 
 def pixels_to_units(pixels, unit, resolution): # real signature unknown; restored from __doc__
@@ -1437,8 +1501,8 @@ def progress_end(): # real signature unknown; restored from __doc__
     return False
 
 def progress_get_window_handle(): # real signature unknown; restored from __doc__
-    """ progress_get_window_handle() -> int """
-    return 0
+    """ progress_get_window_handle() -> GLib.Bytes """
+    pass
 
 def progress_init(message): # real signature unknown; restored from __doc__
     """ progress_init(message:str) -> bool """
@@ -1564,12 +1628,12 @@ def temp_file(extension): # real signature unknown; restored from __doc__
     """ temp_file(extension:str) -> Gio.File """
     pass
 
-def text_fontname(image, drawable=None, x, y, text, border, antialias, size, size_type, fontname): # real signature unknown; restored from __doc__
-    """ text_fontname(image:Gimp.Image, drawable:Gimp.Drawable=None, x:float, y:float, text:str, border:int, antialias:bool, size:float, size_type:Gimp.SizeType, fontname:str) -> Gimp.Layer or None """
+def text_font(image, drawable=None, x, y, text, border, antialias, size, font): # real signature unknown; restored from __doc__
+    """ text_font(image:Gimp.Image, drawable:Gimp.Drawable=None, x:float, y:float, text:str, border:int, antialias:bool, size:float, font:Gimp.Font) -> Gimp.Layer or None """
     pass
 
-def text_get_extents_fontname(text, size, size_type, fontname): # real signature unknown; restored from __doc__
-    """ text_get_extents_fontname(text:str, size:float, size_type:Gimp.SizeType, fontname:str) -> bool, width:int, height:int, ascent:int, descent:int """
+def text_get_extents_font(text, size, font): # real signature unknown; restored from __doc__
+    """ text_get_extents_font(text:str, size:float, font:Gimp.Font) -> bool, width:int, height:int, ascent:int, descent:int """
     return False
 
 def tile_height(): # real signature unknown; restored from __doc__
@@ -1758,6 +1822,10 @@ def __getattribute__(*args, **kwargs): # real signature unknown
 def __getattr__(*args, **kwargs): # real signature unknown
     pass
 
+def __getstate__(*args, **kwargs): # real signature unknown
+    """ Helper for pickle. """
+    pass
+
 def __ge__(*args, **kwargs): # real signature unknown
     """ Return self>=value. """
     pass
@@ -1843,6 +1911,7 @@ from .Procedure import Procedure
 from .BatchProcedure import BatchProcedure
 from .BatchProcedureClass import BatchProcedureClass
 from .BatchProcedurePrivate import BatchProcedurePrivate
+from .ConfigInterface import ConfigInterface
 from .Resource import Resource
 from .Brush import Brush
 from .BrushApplicationMode import BrushApplicationMode
@@ -1857,9 +1926,9 @@ from .ChannelOps import ChannelOps
 from .ChannelType import ChannelType
 from .CheckSize import CheckSize
 from .CheckType import CheckType
+from .Choice import Choice
 from .CloneType import CloneType
 from .CMYK import CMYK
-from .ConfigInterface import ConfigInterface
 from .ColorConfig import ColorConfig
 from .ColorConfigClass import ColorConfigClass
 from .ColorConfigPrivate import ColorConfigPrivate
@@ -1893,7 +1962,6 @@ from .DrawableClass import DrawableClass
 from .EnumDesc import EnumDesc
 from .FileProcedure import FileProcedure
 from .FileProcedureClass import FileProcedureClass
-from .FileProcedurePrivate import FileProcedurePrivate
 from .FillType import FillType
 from .FlagsDesc import FlagsDesc
 from .FloatArray import FloatArray
@@ -1965,6 +2033,7 @@ from .ParamBrush import ParamBrush
 from .ParamItem import ParamItem
 from .ParamDrawable import ParamDrawable
 from .ParamChannel import ParamChannel
+from .ParamChoice import ParamChoice
 from .ParamConfigPath import ParamConfigPath
 from .ParamDisplay import ParamDisplay
 from .ParamFloatArray import ParamFloatArray
@@ -1987,6 +2056,7 @@ from .ParamSelection import ParamSelection
 from .ParamSpecArray import ParamSpecArray
 from .ParamSpecBrush import ParamSpecBrush
 from .ParamSpecChannel import ParamSpecChannel
+from .ParamSpecChoice import ParamSpecChoice
 from .ParamSpecDisplay import ParamSpecDisplay
 from .ParamSpecDrawable import ParamSpecDrawable
 from .ParamSpecFloatArray import ParamSpecFloatArray
@@ -2075,11 +2145,11 @@ from .VectorsStrokeType import VectorsStrokeType
 from .__class__ import __class__
 # variables with complex values
 
-__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001e82c399cc0>'
+__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000020730ae7750>'
 
 __path__ = [
     'C:\\Program Files\\GIMP 2.99\\lib\\girepository-1.0\\Gimp-3.0.typelib',
 ]
 
-__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x000001e82c399cc0>)"
+__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x0000020730ae7750>)"
 

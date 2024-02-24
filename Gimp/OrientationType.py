@@ -81,7 +81,7 @@ class OrientationType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class OrientationType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class OrientationType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -381,13 +386,13 @@ class OrientationType(__gobject.GEnum):
     UNKNOWN = 2
     VERTICAL = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OrientationType' objects>, '__doc__': None, '__gtype__': <GType GimpOrientationType (770685584)>, '__enum_values__': {0: <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 1: <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 2: <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>}, '__info__': gi.EnumInfo(OrientationType), 'HORIZONTAL': <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 'VERTICAL': <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 'UNKNOWN': <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OrientationType' objects>, '__doc__': None, '__gtype__': <GType GimpOrientationType (815084112)>, '__enum_values__': {0: <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 1: <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 2: <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>}, '__info__': gi.EnumInfo(OrientationType), 'HORIZONTAL': <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 'VERTICAL': <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 'UNKNOWN': <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpOrientationType (770685584)>'
+    __gtype__ = None # (!) real value is '<GType GimpOrientationType (815084112)>'
     __info__ = gi.EnumInfo(OrientationType)
 
 

@@ -49,6 +49,10 @@ class EnumDesc(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -136,7 +140,7 @@ class EnumDesc(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(EnumDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'EnumDesc' objects>, '__weakref__': <attribute '__weakref__' of 'EnumDesc' objects>, '__doc__': None, 'value': <property object at 0x000001e82e2deca0>, 'value_desc': <property object at 0x000001e82e2ded90>, 'value_help': <property object at 0x000001e82e2dee80>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(EnumDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'EnumDesc' objects>, '__weakref__': <attribute '__weakref__' of 'EnumDesc' objects>, '__doc__': None, 'value': <property object at 0x00000207316137e0>, 'value_desc': <property object at 0x00000207316138d0>, 'value_help': <property object at 0x00000207316139c0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(EnumDesc)
 

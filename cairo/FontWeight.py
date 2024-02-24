@@ -78,7 +78,7 @@ class FontWeight(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -90,13 +90,14 @@ class FontWeight(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -160,6 +161,10 @@ class FontWeight(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -377,12 +382,12 @@ class FontWeight(__gobject.GEnum):
     BOLD = 1
     NORMAL = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontWeight' objects>, '__doc__': None, '__gtype__': <GType cairo_font_weight_t (3474350048)>, '__enum_values__': {0: <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 1: <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>}, '__info__': gi.EnumInfo(FontWeight), 'NORMAL': <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 'BOLD': <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontWeight' objects>, '__doc__': None, '__gtype__': <GType cairo_font_weight_t (804302448)>, '__enum_values__': {0: <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 1: <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>}, '__info__': gi.EnumInfo(FontWeight), 'NORMAL': <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 'BOLD': <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_font_weight_t (3474350048)>'
+    __gtype__ = None # (!) real value is '<GType cairo_font_weight_t (804302448)>'
     __info__ = gi.EnumInfo(FontWeight)
 
 

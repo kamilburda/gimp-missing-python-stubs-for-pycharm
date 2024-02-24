@@ -21,7 +21,7 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class FileProcedurePrivate(__gi.Struct):
+class Choice(__gi.Struct):
     # no doc
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
@@ -41,6 +41,10 @@ class FileProcedurePrivate(__gi.Struct):
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
         """ Return getattr(self, name). """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -123,8 +127,8 @@ class FileProcedurePrivate(__gi.Struct):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FileProcedurePrivate), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FileProcedurePrivate' objects>, '__weakref__': <attribute '__weakref__' of 'FileProcedurePrivate' objects>, '__doc__': None})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Choice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Choice' objects>, '__weakref__': <attribute '__weakref__' of 'Choice' objects>, '__doc__': None})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(FileProcedurePrivate)
+    __info__ = StructInfo(Choice)
 
 

@@ -49,6 +49,10 @@ class ParamSpecDisplay(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -134,7 +138,7 @@ class ParamSpecDisplay(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecDisplay), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecDisplay' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecDisplay' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001e82e312700>, 'none_ok': <property object at 0x000001e82e3127f0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecDisplay), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecDisplay' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecDisplay' objects>, '__doc__': None, 'parent_instance': <property object at 0x000002073164c040>, 'none_ok': <property object at 0x000002073164c130>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecDisplay)
 

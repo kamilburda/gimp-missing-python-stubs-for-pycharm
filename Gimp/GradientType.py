@@ -81,7 +81,7 @@ class GradientType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class GradientType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class GradientType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -389,7 +394,7 @@ class GradientType(__gobject.GEnum):
     SPIRAL_CLOCKWISE = 9
     SQUARE = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientType (770681776)>, '__enum_values__': {0: <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 1: <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 2: <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 3: <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 4: <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 5: <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 6: <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 7: <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 8: <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 9: <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 10: <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>}, '__info__': gi.EnumInfo(GradientType), 'LINEAR': <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 'BILINEAR': <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 'RADIAL': <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 'SQUARE': <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 'CONICAL_SYMMETRIC': <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 'CONICAL_ASYMMETRIC': <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 'SHAPEBURST_ANGULAR': <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 'SHAPEBURST_SPHERICAL': <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 'SHAPEBURST_DIMPLED': <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 'SPIRAL_CLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 'SPIRAL_ANTICLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientType (815048256)>, '__enum_values__': {0: <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 1: <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 2: <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 3: <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 4: <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 5: <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 6: <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 7: <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 8: <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 9: <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 10: <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>}, '__info__': gi.EnumInfo(GradientType), 'LINEAR': <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 'BILINEAR': <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 'RADIAL': <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 'SQUARE': <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 'CONICAL_SYMMETRIC': <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 'CONICAL_ASYMMETRIC': <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 'SHAPEBURST_ANGULAR': <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 'SHAPEBURST_SPHERICAL': <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 'SHAPEBURST_DIMPLED': <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 'SPIRAL_CLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 'SPIRAL_ANTICLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -403,7 +408,7 @@ class GradientType(__gobject.GEnum):
         9: 9,
         10: 10,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientType (770681776)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientType (815048256)>'
     __info__ = gi.EnumInfo(GradientType)
 
 

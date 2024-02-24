@@ -30,7 +30,7 @@ class TextLayer(Layer):
     ::
     
         TextLayer(**properties)
-        new(image:Gimp.Image, text:str, fontname:str, size:float, unit:Gimp.Unit) -> Gimp.TextLayer
+        new(image:Gimp.Image, text:str, font:Gimp.Font, size:float, unit:Gimp.Unit) -> Gimp.TextLayer
     """
     def add_alpha(self): # real signature unknown; restored from __doc__
         """ add_alpha(self) -> bool """
@@ -256,8 +256,8 @@ class TextLayer(Layer):
         pass
 
     def get_color(self): # real signature unknown; restored from __doc__
-        """ get_color(self) -> bool, color:Gimp.RGB """
-        return False
+        """ get_color(self) -> Gegl.Color """
+        pass
 
     def get_color_tag(self): # real signature unknown; restored from __doc__
         """ get_color_tag(self) -> Gimp.ColorTag """
@@ -284,8 +284,8 @@ class TextLayer(Layer):
         return False
 
     def get_font(self): # real signature unknown; restored from __doc__
-        """ get_font(self) -> str """
-        return ""
+        """ get_font(self) -> Gimp.Font """
+        pass
 
     def get_font_size(self): # real signature unknown; restored from __doc__
         """ get_font_size(self) -> float, unit:Gimp.Unit """
@@ -385,6 +385,10 @@ class TextLayer(Layer):
 
     def get_parent(self): # real signature unknown; restored from __doc__
         """ get_parent(self) -> Gimp.Item """
+        pass
+
+    def get_pixel(self, x_coord, y_coord): # real signature unknown; restored from __doc__
+        """ get_pixel(self, x_coord:int, y_coord:int) -> Gegl.Color """
         pass
 
     def get_properties(self, *args, **kwargs): # real signature unknown
@@ -620,7 +624,7 @@ class TextLayer(Layer):
         return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def mask_bounds(self): # real signature unknown; restored from __doc__
@@ -631,12 +635,16 @@ class TextLayer(Layer):
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
         return False
 
+    def merge_filters(self): # real signature unknown; restored from __doc__
+        """ merge_filters(self) -> bool """
+        return False
+
     def merge_shadow(self, undo): # real signature unknown; restored from __doc__
         """ merge_shadow(self, undo:bool) -> bool """
         return False
 
-    def new(self, image, text, fontname, size, unit): # real signature unknown; restored from __doc__
-        """ new(image:Gimp.Image, text:str, fontname:str, size:float, unit:Gimp.Unit) -> Gimp.TextLayer """
+    def new(self, image, text, font, size, unit): # real signature unknown; restored from __doc__
+        """ new(image:Gimp.Image, text:str, font:Gimp.Font, size:float, unit:Gimp.Unit) -> Gimp.TextLayer """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -760,7 +768,7 @@ class TextLayer(Layer):
         return False
 
     def set_font(self, font): # real signature unknown; restored from __doc__
-        """ set_font(self, font:str) -> bool """
+        """ set_font(self, font:Gimp.Font) -> bool """
         return False
 
     def set_font_size(self, font_size, unit): # real signature unknown; restored from __doc__
@@ -829,6 +837,10 @@ class TextLayer(Layer):
 
     def set_opacity(self, opacity): # real signature unknown; restored from __doc__
         """ set_opacity(self, opacity:float) -> bool """
+        return False
+
+    def set_pixel(self, x_coord, y_coord, color): # real signature unknown; restored from __doc__
+        """ set_pixel(self, x_coord:int, y_coord:int, color:Gegl.Color) -> bool """
         return False
 
     def set_properties(self, *args, **kwargs): # real signature unknown
@@ -994,6 +1006,10 @@ class TextLayer(Layer):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -1083,12 +1099,12 @@ class TextLayer(Layer):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82ef2e4d0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df06a0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(TextLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpTextLayer (770746352)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_antialias': gi.FunctionInfo(get_antialias, bound=None), 'get_base_direction': gi.FunctionInfo(get_base_direction, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_font': gi.FunctionInfo(get_font, bound=None), 'get_font_size': gi.FunctionInfo(get_font_size, bound=None), 'get_hint_style': gi.FunctionInfo(get_hint_style, bound=None), 'get_indent': gi.FunctionInfo(get_indent, bound=None), 'get_justification': gi.FunctionInfo(get_justification, bound=None), 'get_kerning': gi.FunctionInfo(get_kerning, bound=None), 'get_language': gi.FunctionInfo(get_language, bound=None), 'get_letter_spacing': gi.FunctionInfo(get_letter_spacing, bound=None), 'get_line_spacing': gi.FunctionInfo(get_line_spacing, bound=None), 'get_markup': gi.FunctionInfo(get_markup, bound=None), 'get_text': gi.FunctionInfo(get_text, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'set_antialias': gi.FunctionInfo(set_antialias, bound=None), 'set_base_direction': gi.FunctionInfo(set_base_direction, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_font': gi.FunctionInfo(set_font, bound=None), 'set_font_size': gi.FunctionInfo(set_font_size, bound=None), 'set_hint_style': gi.FunctionInfo(set_hint_style, bound=None), 'set_indent': gi.FunctionInfo(set_indent, bound=None), 'set_justification': gi.FunctionInfo(set_justification, bound=None), 'set_kerning': gi.FunctionInfo(set_kerning, bound=None), 'set_language': gi.FunctionInfo(set_language, bound=None), 'set_letter_spacing': gi.FunctionInfo(set_letter_spacing, bound=None), 'set_line_spacing': gi.FunctionInfo(set_line_spacing, bound=None), 'set_markup': gi.FunctionInfo(set_markup, bound=None), 'set_text': gi.FunctionInfo(set_text, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(TextLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpTextLayer (814611984)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_antialias': gi.FunctionInfo(get_antialias, bound=None), 'get_base_direction': gi.FunctionInfo(get_base_direction, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_font': gi.FunctionInfo(get_font, bound=None), 'get_font_size': gi.FunctionInfo(get_font_size, bound=None), 'get_hint_style': gi.FunctionInfo(get_hint_style, bound=None), 'get_indent': gi.FunctionInfo(get_indent, bound=None), 'get_justification': gi.FunctionInfo(get_justification, bound=None), 'get_kerning': gi.FunctionInfo(get_kerning, bound=None), 'get_language': gi.FunctionInfo(get_language, bound=None), 'get_letter_spacing': gi.FunctionInfo(get_letter_spacing, bound=None), 'get_line_spacing': gi.FunctionInfo(get_line_spacing, bound=None), 'get_markup': gi.FunctionInfo(get_markup, bound=None), 'get_text': gi.FunctionInfo(get_text, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'set_antialias': gi.FunctionInfo(set_antialias, bound=None), 'set_base_direction': gi.FunctionInfo(set_base_direction, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_font': gi.FunctionInfo(set_font, bound=None), 'set_font_size': gi.FunctionInfo(set_font_size, bound=None), 'set_hint_style': gi.FunctionInfo(set_hint_style, bound=None), 'set_indent': gi.FunctionInfo(set_indent, bound=None), 'set_justification': gi.FunctionInfo(set_justification, bound=None), 'set_kerning': gi.FunctionInfo(set_kerning, bound=None), 'set_language': gi.FunctionInfo(set_language, bound=None), 'set_letter_spacing': gi.FunctionInfo(set_letter_spacing, bound=None), 'set_line_spacing': gi.FunctionInfo(set_line_spacing, bound=None), 'set_markup': gi.FunctionInfo(set_markup, bound=None), 'set_text': gi.FunctionInfo(set_text, bound=None)})"
     __gdoc__ = 'Object GimpTextLayer\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpTextLayer (770746352)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextLayer (814611984)>'
     __info__ = ObjectInfo(TextLayer)
 
 

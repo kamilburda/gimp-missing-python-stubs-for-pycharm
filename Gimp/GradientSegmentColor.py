@@ -81,7 +81,7 @@ class GradientSegmentColor(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class GradientSegmentColor(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class GradientSegmentColor(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -381,13 +386,13 @@ class GradientSegmentColor(__gobject.GEnum):
     HSV_CW = 2
     RGB = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentColor' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentColor (770677408)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 1: <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 2: <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>}, '__info__': gi.EnumInfo(GradientSegmentColor), 'RGB': <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 'HSV_CCW': <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 'HSV_CW': <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentColor' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentColor (815049152)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 1: <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 2: <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>}, '__info__': gi.EnumInfo(GradientSegmentColor), 'RGB': <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 'HSV_CCW': <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 'HSV_CW': <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentColor (770677408)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentColor (815049152)>'
     __info__ = gi.EnumInfo(GradientSegmentColor)
 
 

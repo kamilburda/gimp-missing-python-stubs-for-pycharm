@@ -30,7 +30,7 @@ class SaveProcedure(FileProcedure):
     ::
     
         SaveProcedure(**properties)
-        new(plug_in:Gimp.PlugIn, name:str, proc_type:Gimp.PDBProcType, run_func:Gimp.RunSaveFunc, run_data=None) -> Gimp.Procedure
+        new(plug_in:Gimp.PlugIn, name:str, proc_type:Gimp.PDBProcType, export_metadata:bool, run_func:Gimp.RunSaveFunc, run_data=None) -> Gimp.Procedure
     """
     def add_argument(self, pspec): # real signature unknown; restored from __doc__
         """ add_argument(self, pspec:GObject.ParamSpec) -> GObject.ParamSpec """
@@ -184,7 +184,7 @@ class SaveProcedure(FileProcedure):
         pass
 
     def get_arguments(self): # real signature unknown; restored from __doc__
-        """ get_arguments(self) -> list, n_arguments:int """
+        """ get_arguments(self) -> list """
         return []
 
     def get_argument_sync(self, arg_name): # real signature unknown; restored from __doc__
@@ -196,7 +196,7 @@ class SaveProcedure(FileProcedure):
         return ""
 
     def get_aux_arguments(self): # real signature unknown; restored from __doc__
-        """ get_aux_arguments(self) -> list, n_arguments:int """
+        """ get_aux_arguments(self) -> list """
         return []
 
     def get_blurb(self): # real signature unknown; restored from __doc__
@@ -302,7 +302,7 @@ class SaveProcedure(FileProcedure):
         pass
 
     def get_return_values(self): # real signature unknown; restored from __doc__
-        """ get_return_values(self) -> list, n_return_values:int """
+        """ get_return_values(self) -> list """
         return []
 
     def get_sensitivity_mask(self): # real signature unknown; restored from __doc__
@@ -396,19 +396,15 @@ class SaveProcedure(FileProcedure):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
-    def new(self, plug_in, name, proc_type, run_func, run_data=None): # real signature unknown; restored from __doc__
-        """ new(plug_in:Gimp.PlugIn, name:str, proc_type:Gimp.PDBProcType, run_func:Gimp.RunSaveFunc, run_data=None) -> Gimp.Procedure """
+    def new(self, plug_in, name, proc_type, export_metadata, run_func, run_data=None): # real signature unknown; restored from __doc__
+        """ new(plug_in:Gimp.PlugIn, name:str, proc_type:Gimp.PDBProcType, export_metadata:bool, run_func:Gimp.RunSaveFunc, run_data=None) -> Gimp.Procedure """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
         """ newv(object_type:GType, parameters:list) -> GObject.Object """
-        pass
-
-    def new_arguments(self): # real signature unknown; restored from __doc__
-        """ new_arguments(self) -> Gimp.ValueArray """
         pass
 
     def new_return_values(self, status, error=None): # real signature unknown; restored from __doc__
@@ -443,8 +439,8 @@ class SaveProcedure(FileProcedure):
         # no doc
         pass
 
-    def run(self, args): # real signature unknown; restored from __doc__
-        """ run(self, args:Gimp.ValueArray) -> Gimp.ValueArray """
+    def run(self, config): # real signature unknown; restored from __doc__
+        """ run(self, config:Gimp.ProcedureConfig) -> Gimp.ValueArray """
         pass
 
     def run_dispose(self): # real signature unknown; restored from __doc__
@@ -463,8 +459,8 @@ class SaveProcedure(FileProcedure):
         # no doc
         pass
 
-    def set_documentation(self, blurb, help, help_id): # real signature unknown; restored from __doc__
-        """ set_documentation(self, blurb:str, help:str, help_id:str) """
+    def set_documentation(self, blurb, help=None, help_id=None): # real signature unknown; restored from __doc__
+        """ set_documentation(self, blurb:str, help:str=None, help_id:str=None) """
         pass
 
     def set_extensions(self, extensions): # real signature unknown; restored from __doc__
@@ -630,6 +626,10 @@ class SaveProcedure(FileProcedure):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -721,12 +721,12 @@ class SaveProcedure(FileProcedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82ef2ceb0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df1300>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(SaveProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSaveProcedure (770753392)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_support_comment': gi.FunctionInfo(get_support_comment, bound=None), 'get_support_exif': gi.FunctionInfo(get_support_exif, bound=None), 'get_support_iptc': gi.FunctionInfo(get_support_iptc, bound=None), 'get_support_profile': gi.FunctionInfo(get_support_profile, bound=None), 'get_support_thumbnail': gi.FunctionInfo(get_support_thumbnail, bound=None), 'get_support_xmp': gi.FunctionInfo(get_support_xmp, bound=None), 'set_support_comment': gi.FunctionInfo(set_support_comment, bound=None), 'set_support_exif': gi.FunctionInfo(set_support_exif, bound=None), 'set_support_iptc': gi.FunctionInfo(set_support_iptc, bound=None), 'set_support_profile': gi.FunctionInfo(set_support_profile, bound=None), 'set_support_thumbnail': gi.FunctionInfo(set_support_thumbnail, bound=None), 'set_support_xmp': gi.FunctionInfo(set_support_xmp, bound=None), 'parent_instance': <property object at 0x000001e82e329d00>, 'priv': <property object at 0x000001e82e329df0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(SaveProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSaveProcedure (814607120)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_support_comment': gi.FunctionInfo(get_support_comment, bound=None), 'get_support_exif': gi.FunctionInfo(get_support_exif, bound=None), 'get_support_iptc': gi.FunctionInfo(get_support_iptc, bound=None), 'get_support_profile': gi.FunctionInfo(get_support_profile, bound=None), 'get_support_thumbnail': gi.FunctionInfo(get_support_thumbnail, bound=None), 'get_support_xmp': gi.FunctionInfo(get_support_xmp, bound=None), 'set_support_comment': gi.FunctionInfo(set_support_comment, bound=None), 'set_support_exif': gi.FunctionInfo(set_support_exif, bound=None), 'set_support_iptc': gi.FunctionInfo(set_support_iptc, bound=None), 'set_support_profile': gi.FunctionInfo(set_support_profile, bound=None), 'set_support_thumbnail': gi.FunctionInfo(set_support_thumbnail, bound=None), 'set_support_xmp': gi.FunctionInfo(set_support_xmp, bound=None), 'parent_instance': <property object at 0x0000020731663510>, 'priv': <property object at 0x0000020731663600>})"
     __gdoc__ = "Object GimpSaveProcedure\n\nProperties from GimpSaveProcedure:\n  supports-exif -> gboolean: Supports EXIF metadata storage\n  supports-iptc -> gboolean: Supports IPTC metadata storage\n  supports-xmp -> gboolean: Supports XMP metadata storage\n  supports-profile -> gboolean: Supports color profile storage\n  supports-thumbnail -> gboolean: Supports thumbnail storage\n  supports-comment -> gboolean: Supports comment storage\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpSaveProcedure (770753392)>'
+    __gtype__ = None # (!) real value is '<GType GimpSaveProcedure (814607120)>'
     __info__ = ObjectInfo(SaveProcedure)
 
 

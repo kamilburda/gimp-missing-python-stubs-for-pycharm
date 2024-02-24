@@ -184,7 +184,7 @@ class LoadProcedure(FileProcedure):
         pass
 
     def get_arguments(self): # real signature unknown; restored from __doc__
-        """ get_arguments(self) -> list, n_arguments:int """
+        """ get_arguments(self) -> list """
         return []
 
     def get_argument_sync(self, arg_name): # real signature unknown; restored from __doc__
@@ -196,7 +196,7 @@ class LoadProcedure(FileProcedure):
         return ""
 
     def get_aux_arguments(self): # real signature unknown; restored from __doc__
-        """ get_aux_arguments(self) -> list, n_arguments:int """
+        """ get_aux_arguments(self) -> list """
         return []
 
     def get_blurb(self): # real signature unknown; restored from __doc__
@@ -306,7 +306,7 @@ class LoadProcedure(FileProcedure):
         pass
 
     def get_return_values(self): # real signature unknown; restored from __doc__
-        """ get_return_values(self) -> list, n_return_values:int """
+        """ get_return_values(self) -> list """
         return []
 
     def get_sensitivity_mask(self): # real signature unknown; restored from __doc__
@@ -380,7 +380,7 @@ class LoadProcedure(FileProcedure):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def new(self, plug_in, name, proc_type, run_func, run_data=None): # real signature unknown; restored from __doc__
@@ -389,10 +389,6 @@ class LoadProcedure(FileProcedure):
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
         """ newv(object_type:GType, parameters:list) -> GObject.Object """
-        pass
-
-    def new_arguments(self): # real signature unknown; restored from __doc__
-        """ new_arguments(self) -> Gimp.ValueArray """
         pass
 
     def new_return_values(self, status, error=None): # real signature unknown; restored from __doc__
@@ -427,8 +423,8 @@ class LoadProcedure(FileProcedure):
         # no doc
         pass
 
-    def run(self, args): # real signature unknown; restored from __doc__
-        """ run(self, args:Gimp.ValueArray) -> Gimp.ValueArray """
+    def run(self, config): # real signature unknown; restored from __doc__
+        """ run(self, config:Gimp.ProcedureConfig) -> Gimp.ValueArray """
         pass
 
     def run_dispose(self): # real signature unknown; restored from __doc__
@@ -447,8 +443,8 @@ class LoadProcedure(FileProcedure):
         # no doc
         pass
 
-    def set_documentation(self, blurb, help, help_id): # real signature unknown; restored from __doc__
-        """ set_documentation(self, blurb:str, help:str, help_id:str) """
+    def set_documentation(self, blurb, help=None, help_id=None): # real signature unknown; restored from __doc__
+        """ set_documentation(self, blurb:str, help:str=None, help_id:str=None) """
         pass
 
     def set_extensions(self, extensions): # real signature unknown; restored from __doc__
@@ -598,6 +594,10 @@ class LoadProcedure(FileProcedure):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -689,12 +689,12 @@ class LoadProcedure(FileProcedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c40a0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165f5b0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLoadProcedure (770752496)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_handles_raw': gi.FunctionInfo(get_handles_raw, bound=None), 'get_thumbnail_loader': gi.FunctionInfo(get_thumbnail_loader, bound=None), 'set_handles_raw': gi.FunctionInfo(set_handles_raw, bound=None), 'set_thumbnail_loader': gi.FunctionInfo(set_thumbnail_loader, bound=None), 'parent_instance': <property object at 0x000001e82e2fd030>, 'priv': <property object at 0x000001e82e2fd120>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLoadProcedure (814613264)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_handles_raw': gi.FunctionInfo(get_handles_raw, bound=None), 'get_thumbnail_loader': gi.FunctionInfo(get_thumbnail_loader, bound=None), 'set_handles_raw': gi.FunctionInfo(set_handles_raw, bound=None), 'set_thumbnail_loader': gi.FunctionInfo(set_thumbnail_loader, bound=None), 'parent_instance': <property object at 0x0000020731632390>, 'priv': <property object at 0x0000020731632480>})"
     __gdoc__ = "Object GimpLoadProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpLoadProcedure (770752496)>'
+    __gtype__ = None # (!) real value is '<GType GimpLoadProcedure (814613264)>'
     __info__ = ObjectInfo(LoadProcedure)
 
 

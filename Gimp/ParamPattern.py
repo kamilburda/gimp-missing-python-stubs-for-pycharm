@@ -115,6 +115,10 @@ class ParamPattern(ParamResource):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -218,9 +222,9 @@ class ParamPattern(ParamResource):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamPattern), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamPattern (770752624)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamPattern), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamPattern (814610320)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamPattern (770752624)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamPattern (814610320)>'
     __info__ = ObjectInfo(ParamPattern)
 
 

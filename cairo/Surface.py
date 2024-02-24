@@ -46,6 +46,10 @@ class Surface(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class Surface(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Surface), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoSurface (3504661280)>, '__dict__': <attribute '__dict__' of 'Surface' objects>, '__weakref__': <attribute '__weakref__' of 'Surface' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoSurface (3504661280)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Surface), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoSurface (802315840)>, '__dict__': <attribute '__dict__' of 'Surface' objects>, '__weakref__': <attribute '__weakref__' of 'Surface' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoSurface (802315840)>'
     __info__ = StructInfo(Surface)
 
 

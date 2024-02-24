@@ -81,7 +81,7 @@ class ColorRenderingIntent(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class ColorRenderingIntent(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class ColorRenderingIntent(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -382,14 +387,14 @@ class ColorRenderingIntent(__gobject.GEnum):
     RELATIVE_COLORIMETRIC = 1
     SATURATION = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorRenderingIntent' objects>, '__doc__': None, '__gtype__': <GType GimpColorRenderingIntent (769169392)>, '__enum_values__': {0: <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 1: <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 2: <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 3: <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>}, '__info__': gi.EnumInfo(ColorRenderingIntent), 'PERCEPTUAL': <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 'RELATIVE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 'SATURATION': <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 'ABSOLUTE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorRenderingIntent' objects>, '__doc__': None, '__gtype__': <GType GimpColorRenderingIntent (815053072)>, '__enum_values__': {0: <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 1: <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 2: <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 3: <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>}, '__info__': gi.EnumInfo(ColorRenderingIntent), 'PERCEPTUAL': <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 'RELATIVE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 'SATURATION': <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 'ABSOLUTE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpColorRenderingIntent (769169392)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorRenderingIntent (815053072)>'
     __info__ = gi.EnumInfo(ColorRenderingIntent)
 
 

@@ -67,6 +67,10 @@ class HSL(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -156,8 +160,8 @@ class HSL(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(HSL), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpHSL (770677072)>, '__dict__': <attribute '__dict__' of 'HSL' objects>, '__weakref__': <attribute '__weakref__' of 'HSL' objects>, '__doc__': None, 'h': <property object at 0x000001e82e2e9d00>, 's': <property object at 0x000001e82e2e9df0>, 'l': <property object at 0x000001e82e2e9ee0>, 'a': <property object at 0x000001e82e2e9fd0>, 'set': gi.FunctionInfo(set, bound=None), 'set_alpha': gi.FunctionInfo(set_alpha, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpHSL (770677072)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(HSL), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpHSL (815054192)>, '__dict__': <attribute '__dict__' of 'HSL' objects>, '__weakref__': <attribute '__weakref__' of 'HSL' objects>, '__doc__': None, 'h': <property object at 0x000002073161af70>, 's': <property object at 0x000002073161b060>, 'l': <property object at 0x000002073161b150>, 'a': <property object at 0x000002073161b240>, 'set': gi.FunctionInfo(set, bound=None), 'set_alpha': gi.FunctionInfo(set_alpha, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpHSL (815054192)>'
     __info__ = StructInfo(HSL)
 
 

@@ -49,6 +49,10 @@ class PDBClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -148,7 +152,7 @@ class PDBClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PDBClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PDBClass' objects>, '__weakref__': <attribute '__weakref__' of 'PDBClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e305cb0>, '_gimp_reserved1': <property object at 0x000001e82e305da0>, '_gimp_reserved2': <property object at 0x000001e82e305e90>, '_gimp_reserved3': <property object at 0x000001e82e305f80>, '_gimp_reserved4': <property object at 0x000001e82e306070>, '_gimp_reserved5': <property object at 0x000001e82e306160>, '_gimp_reserved6': <property object at 0x000001e82e306250>, '_gimp_reserved7': <property object at 0x000001e82e306340>, '_gimp_reserved8': <property object at 0x000001e82e306430>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PDBClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PDBClass' objects>, '__weakref__': <attribute '__weakref__' of 'PDBClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073163f100>, '_gimp_reserved1': <property object at 0x000002073163f1f0>, '_gimp_reserved2': <property object at 0x000002073163f2e0>, '_gimp_reserved3': <property object at 0x000002073163f3d0>, '_gimp_reserved4': <property object at 0x000002073163f4c0>, '_gimp_reserved5': <property object at 0x000002073163f5b0>, '_gimp_reserved6': <property object at 0x000002073163f6a0>, '_gimp_reserved7': <property object at 0x000002073163f790>, '_gimp_reserved8': <property object at 0x000002073163f880>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PDBClass)
 

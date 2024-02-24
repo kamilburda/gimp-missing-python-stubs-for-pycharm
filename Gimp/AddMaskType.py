@@ -81,7 +81,7 @@ class AddMaskType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class AddMaskType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class AddMaskType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -385,7 +390,7 @@ class AddMaskType(__gobject.GEnum):
     SELECTION = 4
     WHITE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'AddMaskType' objects>, '__doc__': None, '__gtype__': <GType GimpAddMaskType (769166256)>, '__enum_values__': {0: <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 1: <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 2: <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 3: <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 4: <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 5: <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 6: <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>}, '__info__': gi.EnumInfo(AddMaskType), 'WHITE': <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 'BLACK': <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 'ALPHA': <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 'ALPHA_TRANSFER': <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 'SELECTION': <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 'COPY': <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 'CHANNEL': <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'AddMaskType' objects>, '__doc__': None, '__gtype__': <GType GimpAddMaskType (814332272)>, '__enum_values__': {0: <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 1: <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 2: <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 3: <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 4: <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 5: <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 6: <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>}, '__info__': gi.EnumInfo(AddMaskType), 'WHITE': <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 'BLACK': <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 'ALPHA': <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 'ALPHA_TRANSFER': <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 'SELECTION': <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 'COPY': <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 'CHANNEL': <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -395,7 +400,7 @@ class AddMaskType(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType GimpAddMaskType (769166256)>'
+    __gtype__ = None # (!) real value is '<GType GimpAddMaskType (814332272)>'
     __info__ = gi.EnumInfo(AddMaskType)
 
 

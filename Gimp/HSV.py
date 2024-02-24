@@ -71,6 +71,10 @@ class HSV(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -160,8 +164,8 @@ class HSV(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(HSV), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpHSV (770680432)>, '__dict__': <attribute '__dict__' of 'HSV' objects>, '__weakref__': <attribute '__weakref__' of 'HSV' objects>, '__doc__': None, 'h': <property object at 0x000001e82e2ea1b0>, 's': <property object at 0x000001e82e2ea2a0>, 'v': <property object at 0x000001e82e2ea390>, 'a': <property object at 0x000001e82e2ea480>, '_set': gi.FunctionInfo(_set, bound=None), 'clamp': gi.FunctionInfo(clamp, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpHSV (770680432)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(HSV), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpHSV (815053856)>, '__dict__': <attribute '__dict__' of 'HSV' objects>, '__weakref__': <attribute '__weakref__' of 'HSV' objects>, '__doc__': None, 'h': <property object at 0x000002073161b420>, 's': <property object at 0x000002073161b510>, 'v': <property object at 0x000002073161b600>, 'a': <property object at 0x000002073161b6f0>, '_set': gi.FunctionInfo(_set, bound=None), 'clamp': gi.FunctionInfo(clamp, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpHSV (815053856)>'
     __info__ = StructInfo(HSV)
 
 

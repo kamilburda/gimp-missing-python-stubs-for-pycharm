@@ -78,7 +78,7 @@ class Content(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -90,13 +90,14 @@ class Content(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -160,6 +161,10 @@ class Content(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -378,13 +383,13 @@ class Content(__gobject.GEnum):
     COLOR = 4096
     COLOR_ALPHA = 12288
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Content' objects>, '__doc__': None, '__gtype__': <GType cairo_content_t (3474344000)>, '__enum_values__': {4096: <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 8192: <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 12288: <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>}, '__info__': gi.EnumInfo(Content), 'COLOR': <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 'ALPHA': <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 'COLOR_ALPHA': <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Content' objects>, '__doc__': None, '__gtype__': <GType cairo_content_t (804301664)>, '__enum_values__': {4096: <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 8192: <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 12288: <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>}, '__info__': gi.EnumInfo(Content), 'COLOR': <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 'ALPHA': <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 'COLOR_ALPHA': <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>})"
     __enum_values__ = {
         4096: 4096,
         8192: 8192,
         12288: 12288,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_content_t (3474344000)>'
+    __gtype__ = None # (!) real value is '<GType cairo_content_t (804301664)>'
     __info__ = gi.EnumInfo(Content)
 
 

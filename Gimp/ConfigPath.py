@@ -63,6 +63,10 @@ class ConfigPath(object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -143,9 +147,9 @@ class ConfigPath(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (769170624)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (815050496)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpConfigPath (769170624)>'
+    __gtype__ = None # (!) real value is '<GType GimpConfigPath (815050496)>'
     __info__ = ObjectInfo(ConfigPath)
 
 

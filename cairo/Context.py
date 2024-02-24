@@ -46,6 +46,10 @@ class Context(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class Context(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Context), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoContext (3504662848)>, '__dict__': <attribute '__dict__' of 'Context' objects>, '__weakref__': <attribute '__weakref__' of 'Context' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoContext (3504662848)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Context), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoContext (802315616)>, '__dict__': <attribute '__dict__' of 'Context' objects>, '__weakref__': <attribute '__weakref__' of 'Context' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoContext (802315616)>'
     __info__ = StructInfo(Context)
 
 

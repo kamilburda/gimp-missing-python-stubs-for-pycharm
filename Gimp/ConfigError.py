@@ -81,7 +81,7 @@ class ConfigError(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class ConfigError(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class ConfigError(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -383,7 +388,7 @@ class ConfigError(__gobject.GEnum):
     VERSION = 4
     WRITE = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigError' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigError (769170288)>, '__enum_values__': {0: <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 1: <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 2: <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 3: <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 4: <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>}, '__info__': gi.EnumInfo(ConfigError), 'OPEN': <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 'OPEN_ENOENT': <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 'WRITE': <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 'PARSE': <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 'VERSION': <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigError' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigError (815048368)>, '__enum_values__': {0: <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 1: <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 2: <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 3: <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 4: <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>}, '__info__': gi.EnumInfo(ConfigError), 'OPEN': <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 'OPEN_ENOENT': <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 'WRITE': <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 'PARSE': <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 'VERSION': <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -391,7 +396,7 @@ class ConfigError(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpConfigError (769170288)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpConfigError (815048368)>'
     __info__ = gi.EnumInfo(ConfigError)
 
 

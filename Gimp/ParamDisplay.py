@@ -113,6 +113,10 @@ class ParamDisplay(__gi_repository_GObject.ParamSpecObject):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -216,9 +220,9 @@ class ParamDisplay(__gi_repository_GObject.ParamSpecObject):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamDisplay), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamDisplay (770683456)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamDisplay), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamDisplay (815086800)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamDisplay (770683456)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamDisplay (815086800)>'
     __info__ = ObjectInfo(ParamDisplay)
 
 

@@ -78,7 +78,7 @@ class Operator(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -90,13 +90,14 @@ class Operator(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -160,6 +161,10 @@ class Operator(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -404,7 +409,7 @@ class Operator(__gobject.GEnum):
     SOURCE = 1
     XOR = 11
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Operator' objects>, '__doc__': None, '__gtype__': <GType cairo_operator_t (3504589520)>, '__enum_values__': {0: <enum CAIRO_OPERATOR_CLEAR of type cairo.Operator>, 1: <enum CAIRO_OPERATOR_SOURCE of type cairo.Operator>, 2: <enum CAIRO_OPERATOR_OVER of type cairo.Operator>, 3: <enum CAIRO_OPERATOR_IN of type cairo.Operator>, 4: <enum CAIRO_OPERATOR_OUT of type cairo.Operator>, 5: <enum CAIRO_OPERATOR_ATOP of type cairo.Operator>, 6: <enum CAIRO_OPERATOR_DEST of type cairo.Operator>, 7: <enum CAIRO_OPERATOR_DEST_OVER of type cairo.Operator>, 8: <enum CAIRO_OPERATOR_DEST_IN of type cairo.Operator>, 9: <enum CAIRO_OPERATOR_DEST_OUT of type cairo.Operator>, 10: <enum CAIRO_OPERATOR_DEST_ATOP of type cairo.Operator>, 11: <enum CAIRO_OPERATOR_XOR of type cairo.Operator>, 12: <enum CAIRO_OPERATOR_ADD of type cairo.Operator>, 13: <enum CAIRO_OPERATOR_SATURATE of type cairo.Operator>, 14: <enum CAIRO_OPERATOR_MULTIPLY of type cairo.Operator>, 15: <enum CAIRO_OPERATOR_SCREEN of type cairo.Operator>, 16: <enum CAIRO_OPERATOR_OVERLAY of type cairo.Operator>, 17: <enum CAIRO_OPERATOR_DARKEN of type cairo.Operator>, 18: <enum CAIRO_OPERATOR_LIGHTEN of type cairo.Operator>, 19: <enum CAIRO_OPERATOR_COLOR_DODGE of type cairo.Operator>, 20: <enum CAIRO_OPERATOR_COLOR_BURN of type cairo.Operator>, 21: <enum CAIRO_OPERATOR_HARD_LIGHT of type cairo.Operator>, 22: <enum CAIRO_OPERATOR_SOFT_LIGHT of type cairo.Operator>, 23: <enum CAIRO_OPERATOR_DIFFERENCE of type cairo.Operator>, 24: <enum CAIRO_OPERATOR_EXCLUSION of type cairo.Operator>, 25: <enum CAIRO_OPERATOR_HSL_HUE of type cairo.Operator>, 26: <enum CAIRO_OPERATOR_HSL_SATURATION of type cairo.Operator>, 27: <enum CAIRO_OPERATOR_HSL_COLOR of type cairo.Operator>, 28: <enum CAIRO_OPERATOR_HSL_LUMINOSITY of type cairo.Operator>}, '__info__': gi.EnumInfo(Operator), 'CLEAR': <enum CAIRO_OPERATOR_CLEAR of type cairo.Operator>, 'SOURCE': <enum CAIRO_OPERATOR_SOURCE of type cairo.Operator>, 'OVER': <enum CAIRO_OPERATOR_OVER of type cairo.Operator>, 'IN': <enum CAIRO_OPERATOR_IN of type cairo.Operator>, 'OUT': <enum CAIRO_OPERATOR_OUT of type cairo.Operator>, 'ATOP': <enum CAIRO_OPERATOR_ATOP of type cairo.Operator>, 'DEST': <enum CAIRO_OPERATOR_DEST of type cairo.Operator>, 'DEST_OVER': <enum CAIRO_OPERATOR_DEST_OVER of type cairo.Operator>, 'DEST_IN': <enum CAIRO_OPERATOR_DEST_IN of type cairo.Operator>, 'DEST_OUT': <enum CAIRO_OPERATOR_DEST_OUT of type cairo.Operator>, 'DEST_ATOP': <enum CAIRO_OPERATOR_DEST_ATOP of type cairo.Operator>, 'XOR': <enum CAIRO_OPERATOR_XOR of type cairo.Operator>, 'ADD': <enum CAIRO_OPERATOR_ADD of type cairo.Operator>, 'SATURATE': <enum CAIRO_OPERATOR_SATURATE of type cairo.Operator>, 'MULTIPLY': <enum CAIRO_OPERATOR_MULTIPLY of type cairo.Operator>, 'SCREEN': <enum CAIRO_OPERATOR_SCREEN of type cairo.Operator>, 'OVERLAY': <enum CAIRO_OPERATOR_OVERLAY of type cairo.Operator>, 'DARKEN': <enum CAIRO_OPERATOR_DARKEN of type cairo.Operator>, 'LIGHTEN': <enum CAIRO_OPERATOR_LIGHTEN of type cairo.Operator>, 'COLOR_DODGE': <enum CAIRO_OPERATOR_COLOR_DODGE of type cairo.Operator>, 'COLOR_BURN': <enum CAIRO_OPERATOR_COLOR_BURN of type cairo.Operator>, 'HARD_LIGHT': <enum CAIRO_OPERATOR_HARD_LIGHT of type cairo.Operator>, 'SOFT_LIGHT': <enum CAIRO_OPERATOR_SOFT_LIGHT of type cairo.Operator>, 'DIFFERENCE': <enum CAIRO_OPERATOR_DIFFERENCE of type cairo.Operator>, 'EXCLUSION': <enum CAIRO_OPERATOR_EXCLUSION of type cairo.Operator>, 'HSL_HUE': <enum CAIRO_OPERATOR_HSL_HUE of type cairo.Operator>, 'HSL_SATURATION': <enum CAIRO_OPERATOR_HSL_SATURATION of type cairo.Operator>, 'HSL_COLOR': <enum CAIRO_OPERATOR_HSL_COLOR of type cairo.Operator>, 'HSL_LUMINOSITY': <enum CAIRO_OPERATOR_HSL_LUMINOSITY of type cairo.Operator>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Operator' objects>, '__doc__': None, '__gtype__': <GType cairo_operator_t (804005664)>, '__enum_values__': {0: <enum CAIRO_OPERATOR_CLEAR of type cairo.Operator>, 1: <enum CAIRO_OPERATOR_SOURCE of type cairo.Operator>, 2: <enum CAIRO_OPERATOR_OVER of type cairo.Operator>, 3: <enum CAIRO_OPERATOR_IN of type cairo.Operator>, 4: <enum CAIRO_OPERATOR_OUT of type cairo.Operator>, 5: <enum CAIRO_OPERATOR_ATOP of type cairo.Operator>, 6: <enum CAIRO_OPERATOR_DEST of type cairo.Operator>, 7: <enum CAIRO_OPERATOR_DEST_OVER of type cairo.Operator>, 8: <enum CAIRO_OPERATOR_DEST_IN of type cairo.Operator>, 9: <enum CAIRO_OPERATOR_DEST_OUT of type cairo.Operator>, 10: <enum CAIRO_OPERATOR_DEST_ATOP of type cairo.Operator>, 11: <enum CAIRO_OPERATOR_XOR of type cairo.Operator>, 12: <enum CAIRO_OPERATOR_ADD of type cairo.Operator>, 13: <enum CAIRO_OPERATOR_SATURATE of type cairo.Operator>, 14: <enum CAIRO_OPERATOR_MULTIPLY of type cairo.Operator>, 15: <enum CAIRO_OPERATOR_SCREEN of type cairo.Operator>, 16: <enum CAIRO_OPERATOR_OVERLAY of type cairo.Operator>, 17: <enum CAIRO_OPERATOR_DARKEN of type cairo.Operator>, 18: <enum CAIRO_OPERATOR_LIGHTEN of type cairo.Operator>, 19: <enum CAIRO_OPERATOR_COLOR_DODGE of type cairo.Operator>, 20: <enum CAIRO_OPERATOR_COLOR_BURN of type cairo.Operator>, 21: <enum CAIRO_OPERATOR_HARD_LIGHT of type cairo.Operator>, 22: <enum CAIRO_OPERATOR_SOFT_LIGHT of type cairo.Operator>, 23: <enum CAIRO_OPERATOR_DIFFERENCE of type cairo.Operator>, 24: <enum CAIRO_OPERATOR_EXCLUSION of type cairo.Operator>, 25: <enum CAIRO_OPERATOR_HSL_HUE of type cairo.Operator>, 26: <enum CAIRO_OPERATOR_HSL_SATURATION of type cairo.Operator>, 27: <enum CAIRO_OPERATOR_HSL_COLOR of type cairo.Operator>, 28: <enum CAIRO_OPERATOR_HSL_LUMINOSITY of type cairo.Operator>}, '__info__': gi.EnumInfo(Operator), 'CLEAR': <enum CAIRO_OPERATOR_CLEAR of type cairo.Operator>, 'SOURCE': <enum CAIRO_OPERATOR_SOURCE of type cairo.Operator>, 'OVER': <enum CAIRO_OPERATOR_OVER of type cairo.Operator>, 'IN': <enum CAIRO_OPERATOR_IN of type cairo.Operator>, 'OUT': <enum CAIRO_OPERATOR_OUT of type cairo.Operator>, 'ATOP': <enum CAIRO_OPERATOR_ATOP of type cairo.Operator>, 'DEST': <enum CAIRO_OPERATOR_DEST of type cairo.Operator>, 'DEST_OVER': <enum CAIRO_OPERATOR_DEST_OVER of type cairo.Operator>, 'DEST_IN': <enum CAIRO_OPERATOR_DEST_IN of type cairo.Operator>, 'DEST_OUT': <enum CAIRO_OPERATOR_DEST_OUT of type cairo.Operator>, 'DEST_ATOP': <enum CAIRO_OPERATOR_DEST_ATOP of type cairo.Operator>, 'XOR': <enum CAIRO_OPERATOR_XOR of type cairo.Operator>, 'ADD': <enum CAIRO_OPERATOR_ADD of type cairo.Operator>, 'SATURATE': <enum CAIRO_OPERATOR_SATURATE of type cairo.Operator>, 'MULTIPLY': <enum CAIRO_OPERATOR_MULTIPLY of type cairo.Operator>, 'SCREEN': <enum CAIRO_OPERATOR_SCREEN of type cairo.Operator>, 'OVERLAY': <enum CAIRO_OPERATOR_OVERLAY of type cairo.Operator>, 'DARKEN': <enum CAIRO_OPERATOR_DARKEN of type cairo.Operator>, 'LIGHTEN': <enum CAIRO_OPERATOR_LIGHTEN of type cairo.Operator>, 'COLOR_DODGE': <enum CAIRO_OPERATOR_COLOR_DODGE of type cairo.Operator>, 'COLOR_BURN': <enum CAIRO_OPERATOR_COLOR_BURN of type cairo.Operator>, 'HARD_LIGHT': <enum CAIRO_OPERATOR_HARD_LIGHT of type cairo.Operator>, 'SOFT_LIGHT': <enum CAIRO_OPERATOR_SOFT_LIGHT of type cairo.Operator>, 'DIFFERENCE': <enum CAIRO_OPERATOR_DIFFERENCE of type cairo.Operator>, 'EXCLUSION': <enum CAIRO_OPERATOR_EXCLUSION of type cairo.Operator>, 'HSL_HUE': <enum CAIRO_OPERATOR_HSL_HUE of type cairo.Operator>, 'HSL_SATURATION': <enum CAIRO_OPERATOR_HSL_SATURATION of type cairo.Operator>, 'HSL_COLOR': <enum CAIRO_OPERATOR_HSL_COLOR of type cairo.Operator>, 'HSL_LUMINOSITY': <enum CAIRO_OPERATOR_HSL_LUMINOSITY of type cairo.Operator>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -436,7 +441,7 @@ class Operator(__gobject.GEnum):
         27: 27,
         28: 28,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_operator_t (3504589520)>'
+    __gtype__ = None # (!) real value is '<GType cairo_operator_t (804005664)>'
     __info__ = gi.EnumInfo(Operator)
 
 

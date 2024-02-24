@@ -39,6 +39,22 @@ class Gradient(Resource):
         # no doc
         pass
 
+    def build_data_path(self, name): # real signature unknown; restored from __doc__
+        """ build_data_path(name:str) -> str """
+        return ""
+
+    def build_plug_in_path(self, name): # real signature unknown; restored from __doc__
+        """ build_plug_in_path(name:str) -> str """
+        return ""
+
+    def build_system_path(self, name): # real signature unknown; restored from __doc__
+        """ build_system_path(name:str) -> str """
+        return ""
+
+    def build_writable_path(self, name): # real signature unknown; restored from __doc__
+        """ build_writable_path(name:str) -> str """
+        return ""
+
     def chain(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -79,6 +95,18 @@ class Gradient(Resource):
         """ delete(self) -> bool """
         return False
 
+    def deserialize_return(self, scanner, expected_token, nest_level): # real signature unknown; restored from __doc__
+        """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
+        return False
+
+    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
+        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
+        pass
+
+    def diff(self, a, b, flags): # real signature unknown; restored from __doc__
+        """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
+        return []
+
     def disconnect(*args, **kwargs): # reliably restored by inspect
         """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
         pass
@@ -96,6 +124,10 @@ class Gradient(Resource):
     def emit_stop_by_name(self, detailed_signal): # reliably restored by inspect
         """ Deprecated, please use stop_emission_by_name. """
         pass
+
+    def error_quark(self): # real signature unknown; restored from __doc__
+        """ error_quark() -> int """
+        return 0
 
     def find_property(self, property_name): # real signature unknown; restored from __doc__
         """ find_property(self, property_name:str) -> GObject.ParamSpec """
@@ -284,7 +316,7 @@ class Gradient(Resource):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def new(self, name): # real signature unknown; restored from __doc__
@@ -307,6 +339,10 @@ class Gradient(Resource):
         """ override_property(self, property_id:int, name:str) """
         pass
 
+    def param_spec_duplicate(self, pspec): # real signature unknown; restored from __doc__
+        """ param_spec_duplicate(pspec:GObject.ParamSpec) -> GObject.ParamSpec """
+        pass
+
     def ref(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
@@ -327,6 +363,14 @@ class Gradient(Resource):
         # no doc
         pass
 
+    def reset_properties(self, p_object): # real signature unknown; restored from __doc__
+        """ reset_properties(object:GObject.Object) """
+        pass
+
+    def reset_property(self, p_object, property_name): # real signature unknown; restored from __doc__
+        """ reset_property(object:GObject.Object, property_name:str) """
+        pass
+
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
@@ -340,8 +384,8 @@ class Gradient(Resource):
         return False
 
     def segment_get_left_color(self, segment): # real signature unknown; restored from __doc__
-        """ segment_get_left_color(self, segment:int) -> bool, color:Gimp.RGB, opacity:float """
-        return False
+        """ segment_get_left_color(self, segment:int) -> Gegl.Color """
+        pass
 
     def segment_get_left_pos(self, segment): # real signature unknown; restored from __doc__
         """ segment_get_left_pos(self, segment:int) -> bool, pos:float """
@@ -352,8 +396,8 @@ class Gradient(Resource):
         return False
 
     def segment_get_right_color(self, segment): # real signature unknown; restored from __doc__
-        """ segment_get_right_color(self, segment:int) -> bool, color:Gimp.RGB, opacity:float """
-        return False
+        """ segment_get_right_color(self, segment:int) -> Gegl.Color """
+        pass
 
     def segment_get_right_pos(self, segment): # real signature unknown; restored from __doc__
         """ segment_get_right_pos(self, segment:int) -> bool, pos:float """
@@ -403,8 +447,8 @@ class Gradient(Resource):
         """ segment_range_split_uniform(self, start_segment:int, end_segment:int, split_parts:int) -> bool """
         return False
 
-    def segment_set_left_color(self, segment, color, opacity): # real signature unknown; restored from __doc__
-        """ segment_set_left_color(self, segment:int, color:Gimp.RGB, opacity:float) -> bool """
+    def segment_set_left_color(self, segment, color): # real signature unknown; restored from __doc__
+        """ segment_set_left_color(self, segment:int, color:Gegl.Color) -> bool """
         return False
 
     def segment_set_left_pos(self, segment, pos): # real signature unknown; restored from __doc__
@@ -415,25 +459,29 @@ class Gradient(Resource):
         """ segment_set_middle_pos(self, segment:int, pos:float) -> bool, final_pos:float """
         return False
 
-    def segment_set_right_color(self, segment, color, opacity): # real signature unknown; restored from __doc__
-        """ segment_set_right_color(self, segment:int, color:Gimp.RGB, opacity:float) -> bool """
+    def segment_set_right_color(self, segment, color): # real signature unknown; restored from __doc__
+        """ segment_set_right_color(self, segment:int, color:Gegl.Color) -> bool """
         return False
 
     def segment_set_right_pos(self, segment, pos): # real signature unknown; restored from __doc__
         """ segment_set_right_pos(self, segment:int, pos:float) -> bool, final_pos:float """
         return False
 
-    def select_destroy(self, temp_pdb_callback): # real signature unknown; restored from __doc__
-        """ select_destroy(temp_pdb_callback:str) """
-        pass
-
-    def select_new(self, title, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
+    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
+        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
         return ""
 
-    def select_set(self, temp_pdb_callback, resource, resource_type): # real signature unknown; restored from __doc__
-        """ select_set(temp_pdb_callback:str, resource:Gimp.Resource, resource_type:GType) """
+    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
+        """ select_set(callback_name:str, resource:Gimp.Resource) """
         pass
+
+    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
+        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
+        return False
+
+    def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
+        """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
+        return False
 
     def set_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
@@ -461,8 +509,20 @@ class Gradient(Resource):
         """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
         pass
 
+    def string_append_escaped(self, string, val): # real signature unknown; restored from __doc__
+        """ string_append_escaped(string:GLib.String, val:str) """
+        pass
+
+    def sync(self, src, dest, flags): # real signature unknown; restored from __doc__
+        """ sync(src:GObject.Object, dest:GObject.Object, flags:GObject.ParamFlags) -> bool """
+        return False
+
     def thaw_notify(self): # real signature unknown; restored from __doc__
         """ thaw_notify(self) """
+        pass
+
+    def type_register(self, parent_type, type_name, pspecs): # real signature unknown; restored from __doc__
+        """ type_register(parent_type:GType, type_name:str, pspecs:list) -> GType """
         pass
 
     def unref(self, *args, **kargs): # reliably restored by inspect
@@ -524,6 +584,10 @@ class Gradient(Resource):
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
         """ Return getattr(self, name). """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -602,6 +666,9 @@ class Gradient(Resource):
         """
         pass
 
+    def __weakref__(self, *args, **kwargs): # real signature unknown
+        pass
+
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -615,12 +682,12 @@ class Gradient(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c5b70>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165efb0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Gradient), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpGradient (770680656)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_custom_samples': gi.FunctionInfo(get_custom_samples, bound=None), 'get_number_of_segments': gi.FunctionInfo(get_number_of_segments, bound=None), 'get_uniform_samples': gi.FunctionInfo(get_uniform_samples, bound=None), 'segment_get_blending_function': gi.FunctionInfo(segment_get_blending_function, bound=None), 'segment_get_coloring_type': gi.FunctionInfo(segment_get_coloring_type, bound=None), 'segment_get_left_color': gi.FunctionInfo(segment_get_left_color, bound=None), 'segment_get_left_pos': gi.FunctionInfo(segment_get_left_pos, bound=None), 'segment_get_middle_pos': gi.FunctionInfo(segment_get_middle_pos, bound=None), 'segment_get_right_color': gi.FunctionInfo(segment_get_right_color, bound=None), 'segment_get_right_pos': gi.FunctionInfo(segment_get_right_pos, bound=None), 'segment_range_blend_colors': gi.FunctionInfo(segment_range_blend_colors, bound=None), 'segment_range_blend_opacity': gi.FunctionInfo(segment_range_blend_opacity, bound=None), 'segment_range_delete': gi.FunctionInfo(segment_range_delete, bound=None), 'segment_range_flip': gi.FunctionInfo(segment_range_flip, bound=None), 'segment_range_move': gi.FunctionInfo(segment_range_move, bound=None), 'segment_range_redistribute_handles': gi.FunctionInfo(segment_range_redistribute_handles, bound=None), 'segment_range_replicate': gi.FunctionInfo(segment_range_replicate, bound=None), 'segment_range_set_blending_function': gi.FunctionInfo(segment_range_set_blending_function, bound=None), 'segment_range_set_coloring_type': gi.FunctionInfo(segment_range_set_coloring_type, bound=None), 'segment_range_split_midpoint': gi.FunctionInfo(segment_range_split_midpoint, bound=None), 'segment_range_split_uniform': gi.FunctionInfo(segment_range_split_uniform, bound=None), 'segment_set_left_color': gi.FunctionInfo(segment_set_left_color, bound=None), 'segment_set_left_pos': gi.FunctionInfo(segment_set_left_pos, bound=None), 'segment_set_middle_pos': gi.FunctionInfo(segment_set_middle_pos, bound=None), 'segment_set_right_color': gi.FunctionInfo(segment_set_right_color, bound=None), 'segment_set_right_pos': gi.FunctionInfo(segment_set_right_pos, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Gradient), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpGradient (815049040)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_custom_samples': gi.FunctionInfo(get_custom_samples, bound=None), 'get_number_of_segments': gi.FunctionInfo(get_number_of_segments, bound=None), 'get_uniform_samples': gi.FunctionInfo(get_uniform_samples, bound=None), 'segment_get_blending_function': gi.FunctionInfo(segment_get_blending_function, bound=None), 'segment_get_coloring_type': gi.FunctionInfo(segment_get_coloring_type, bound=None), 'segment_get_left_color': gi.FunctionInfo(segment_get_left_color, bound=None), 'segment_get_left_pos': gi.FunctionInfo(segment_get_left_pos, bound=None), 'segment_get_middle_pos': gi.FunctionInfo(segment_get_middle_pos, bound=None), 'segment_get_right_color': gi.FunctionInfo(segment_get_right_color, bound=None), 'segment_get_right_pos': gi.FunctionInfo(segment_get_right_pos, bound=None), 'segment_range_blend_colors': gi.FunctionInfo(segment_range_blend_colors, bound=None), 'segment_range_blend_opacity': gi.FunctionInfo(segment_range_blend_opacity, bound=None), 'segment_range_delete': gi.FunctionInfo(segment_range_delete, bound=None), 'segment_range_flip': gi.FunctionInfo(segment_range_flip, bound=None), 'segment_range_move': gi.FunctionInfo(segment_range_move, bound=None), 'segment_range_redistribute_handles': gi.FunctionInfo(segment_range_redistribute_handles, bound=None), 'segment_range_replicate': gi.FunctionInfo(segment_range_replicate, bound=None), 'segment_range_set_blending_function': gi.FunctionInfo(segment_range_set_blending_function, bound=None), 'segment_range_set_coloring_type': gi.FunctionInfo(segment_range_set_coloring_type, bound=None), 'segment_range_split_midpoint': gi.FunctionInfo(segment_range_split_midpoint, bound=None), 'segment_range_split_uniform': gi.FunctionInfo(segment_range_split_uniform, bound=None), 'segment_set_left_color': gi.FunctionInfo(segment_set_left_color, bound=None), 'segment_set_left_pos': gi.FunctionInfo(segment_set_left_pos, bound=None), 'segment_set_middle_pos': gi.FunctionInfo(segment_set_middle_pos, bound=None), 'segment_set_right_color': gi.FunctionInfo(segment_set_right_color, bound=None), 'segment_set_right_pos': gi.FunctionInfo(segment_set_right_pos, bound=None)})"
     __gdoc__ = 'Object GimpGradient\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpGradient (770680656)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradient (815049040)>'
     __info__ = ObjectInfo(Gradient)
 
 

@@ -340,6 +340,10 @@ class Layer(Drawable):
         """ get_parent(self) -> Gimp.Item """
         pass
 
+    def get_pixel(self, x_coord, y_coord): # real signature unknown; restored from __doc__
+        """ get_pixel(self, x_coord:int, y_coord:int) -> Gegl.Color """
+        pass
+
     def get_properties(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -569,7 +573,7 @@ class Layer(Drawable):
         return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def mask_bounds(self): # real signature unknown; restored from __doc__
@@ -578,6 +582,10 @@ class Layer(Drawable):
 
     def mask_intersect(self): # real signature unknown; restored from __doc__
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
+        return False
+
+    def merge_filters(self): # real signature unknown; restored from __doc__
+        """ merge_filters(self) -> bool """
         return False
 
     def merge_shadow(self, undo): # real signature unknown; restored from __doc__
@@ -726,6 +734,10 @@ class Layer(Drawable):
 
     def set_opacity(self, opacity): # real signature unknown; restored from __doc__
         """ set_opacity(self, opacity:float) -> bool """
+        return False
+
+    def set_pixel(self, x_coord, y_coord, color): # real signature unknown; restored from __doc__
+        """ set_pixel(self, x_coord:int, y_coord:int, color:Gegl.Color) -> bool """
         return False
 
     def set_properties(self, *args, **kwargs): # real signature unknown
@@ -887,6 +899,10 @@ class Layer(Drawable):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -976,12 +992,12 @@ class Layer(Drawable):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c4670>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e8f0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Layer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLayer (770746992)>, '__doc__': None, '__gsignals__': {}, 'group_new': gi.FunctionInfo(group_new, bound=None), 'new': gi.FunctionInfo(new, bound=None), 'new_from_drawable': gi.FunctionInfo(new_from_drawable, bound=None), 'new_from_pixbuf': gi.FunctionInfo(new_from_pixbuf, bound=None), 'new_from_surface': gi.FunctionInfo(new_from_surface, bound=None), 'new_from_visible': gi.FunctionInfo(new_from_visible, bound=None), 'from_mask': gi.FunctionInfo(from_mask, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'add_alpha': gi.FunctionInfo(add_alpha, bound=None), 'add_mask': gi.FunctionInfo(add_mask, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'create_mask': gi.FunctionInfo(create_mask, bound=None), 'flatten': gi.FunctionInfo(flatten, bound=None), 'get_apply_mask': gi.FunctionInfo(get_apply_mask, bound=None), 'get_blend_space': gi.FunctionInfo(get_blend_space, bound=None), 'get_composite_mode': gi.FunctionInfo(get_composite_mode, bound=None), 'get_composite_space': gi.FunctionInfo(get_composite_space, bound=None), 'get_edit_mask': gi.FunctionInfo(get_edit_mask, bound=None), 'get_lock_alpha': gi.FunctionInfo(get_lock_alpha, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_mode': gi.FunctionInfo(get_mode, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_mask': gi.FunctionInfo(get_show_mask, bound=None), 'is_floating_sel': gi.FunctionInfo(is_floating_sel, bound=None), 'remove_mask': gi.FunctionInfo(remove_mask, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'resize_to_image_size': gi.FunctionInfo(resize_to_image_size, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'set_apply_mask': gi.FunctionInfo(set_apply_mask, bound=None), 'set_blend_space': gi.FunctionInfo(set_blend_space, bound=None), 'set_composite_mode': gi.FunctionInfo(set_composite_mode, bound=None), 'set_composite_space': gi.FunctionInfo(set_composite_space, bound=None), 'set_edit_mask': gi.FunctionInfo(set_edit_mask, bound=None), 'set_lock_alpha': gi.FunctionInfo(set_lock_alpha, bound=None), 'set_mode': gi.FunctionInfo(set_mode, bound=None), 'set_offsets': gi.FunctionInfo(set_offsets, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_mask': gi.FunctionInfo(set_show_mask, bound=None), 'do_copy': gi.VFuncInfo(copy, bound=None), 'parent_instance': <property object at 0x000001e82e2f6390>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Layer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLayer (814608272)>, '__doc__': None, '__gsignals__': {}, 'group_new': gi.FunctionInfo(group_new, bound=None), 'new': gi.FunctionInfo(new, bound=None), 'new_from_drawable': gi.FunctionInfo(new_from_drawable, bound=None), 'new_from_pixbuf': gi.FunctionInfo(new_from_pixbuf, bound=None), 'new_from_surface': gi.FunctionInfo(new_from_surface, bound=None), 'new_from_visible': gi.FunctionInfo(new_from_visible, bound=None), 'from_mask': gi.FunctionInfo(from_mask, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'add_alpha': gi.FunctionInfo(add_alpha, bound=None), 'add_mask': gi.FunctionInfo(add_mask, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'create_mask': gi.FunctionInfo(create_mask, bound=None), 'flatten': gi.FunctionInfo(flatten, bound=None), 'get_apply_mask': gi.FunctionInfo(get_apply_mask, bound=None), 'get_blend_space': gi.FunctionInfo(get_blend_space, bound=None), 'get_composite_mode': gi.FunctionInfo(get_composite_mode, bound=None), 'get_composite_space': gi.FunctionInfo(get_composite_space, bound=None), 'get_edit_mask': gi.FunctionInfo(get_edit_mask, bound=None), 'get_lock_alpha': gi.FunctionInfo(get_lock_alpha, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_mode': gi.FunctionInfo(get_mode, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_mask': gi.FunctionInfo(get_show_mask, bound=None), 'is_floating_sel': gi.FunctionInfo(is_floating_sel, bound=None), 'remove_mask': gi.FunctionInfo(remove_mask, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'resize_to_image_size': gi.FunctionInfo(resize_to_image_size, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'set_apply_mask': gi.FunctionInfo(set_apply_mask, bound=None), 'set_blend_space': gi.FunctionInfo(set_blend_space, bound=None), 'set_composite_mode': gi.FunctionInfo(set_composite_mode, bound=None), 'set_composite_space': gi.FunctionInfo(set_composite_space, bound=None), 'set_edit_mask': gi.FunctionInfo(set_edit_mask, bound=None), 'set_lock_alpha': gi.FunctionInfo(set_lock_alpha, bound=None), 'set_mode': gi.FunctionInfo(set_mode, bound=None), 'set_offsets': gi.FunctionInfo(set_offsets, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_mask': gi.FunctionInfo(set_show_mask, bound=None), 'do_copy': gi.VFuncInfo(copy, bound=None), 'parent_instance': <property object at 0x0000020731627650>})"
     __gdoc__ = 'Object GimpLayer\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpLayer (770746992)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayer (814608272)>'
     __info__ = ObjectInfo(Layer)
 
 

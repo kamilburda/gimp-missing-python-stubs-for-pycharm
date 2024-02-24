@@ -46,6 +46,10 @@ class Pattern(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class Pattern(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Pattern), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoPattern (3504662624)>, '__dict__': <attribute '__dict__' of 'Pattern' objects>, '__weakref__': <attribute '__weakref__' of 'Pattern' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoPattern (3504662624)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Pattern), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoPattern (802854272)>, '__dict__': <attribute '__dict__' of 'Pattern' objects>, '__weakref__': <attribute '__weakref__' of 'Pattern' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoPattern (802854272)>'
     __info__ = StructInfo(Pattern)
 
 

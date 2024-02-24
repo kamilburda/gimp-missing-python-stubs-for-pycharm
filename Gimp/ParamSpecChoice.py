@@ -21,13 +21,13 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class Vector4(__gi.Struct):
+class ParamSpecChoice(__gi.Struct):
     """
     :Constructors:
     
     ::
     
-        Vector4()
+        ParamSpecChoice()
     """
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
@@ -132,18 +132,16 @@ class Vector4(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    w = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    choice = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    x = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    default_value = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    y = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    z = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector4), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Vector4' objects>, '__weakref__': <attribute '__weakref__' of 'Vector4' objects>, '__doc__': None, 'x': <property object at 0x000002073166aa70>, 'y': <property object at 0x000002073166ab60>, 'z': <property object at 0x000002073166ac50>, 'w': <property object at 0x000002073166ad40>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecChoice' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecChoice' objects>, '__doc__': None, 'parent_instance': <property object at 0x0000020731647c40>, 'default_value': <property object at 0x0000020731647d30>, 'choice': <property object at 0x0000020731647e20>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(Vector4)
+    __info__ = StructInfo(ParamSpecChoice)
 
 

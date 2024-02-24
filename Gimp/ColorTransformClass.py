@@ -49,6 +49,10 @@ class ColorTransformClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -150,7 +154,7 @@ class ColorTransformClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorTransformClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorTransformClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorTransformClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2d6a70>, 'progress': <property object at 0x000001e82e2d6b60>, '_gimp_reserved1': <property object at 0x000001e82e2d6c50>, '_gimp_reserved2': <property object at 0x000001e82e2d6d40>, '_gimp_reserved3': <property object at 0x000001e82e2d6e30>, '_gimp_reserved4': <property object at 0x000001e82e2d6f20>, '_gimp_reserved5': <property object at 0x000001e82e2d7010>, '_gimp_reserved6': <property object at 0x000001e82e2d7100>, '_gimp_reserved7': <property object at 0x000001e82e2d71f0>, '_gimp_reserved8': <property object at 0x000001e82e2d72e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorTransformClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorTransformClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorTransformClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073160b650>, 'progress': <property object at 0x000002073160b740>, '_gimp_reserved1': <property object at 0x000002073160b830>, '_gimp_reserved2': <property object at 0x000002073160b920>, '_gimp_reserved3': <property object at 0x000002073160ba10>, '_gimp_reserved4': <property object at 0x000002073160bb00>, '_gimp_reserved5': <property object at 0x000002073160bbf0>, '_gimp_reserved6': <property object at 0x000002073160bce0>, '_gimp_reserved7': <property object at 0x000002073160bdd0>, '_gimp_reserved8': <property object at 0x000002073160bec0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorTransformClass)
 

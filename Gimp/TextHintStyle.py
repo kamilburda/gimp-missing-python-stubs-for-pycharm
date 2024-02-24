@@ -81,7 +81,7 @@ class TextHintStyle(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class TextHintStyle(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class TextHintStyle(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -382,14 +387,14 @@ class TextHintStyle(__gobject.GEnum):
     NONE = 0
     SLIGHT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextHintStyle' objects>, '__doc__': None, '__gtype__': <GType GimpTextHintStyle (771024208)>, '__enum_values__': {0: <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 1: <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 2: <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 3: <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>}, '__info__': gi.EnumInfo(TextHintStyle), 'NONE': <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 'SLIGHT': <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 'MEDIUM': <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 'FULL': <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextHintStyle' objects>, '__doc__': None, '__gtype__': <GType GimpTextHintStyle (814711328)>, '__enum_values__': {0: <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 1: <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 2: <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 3: <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>}, '__info__': gi.EnumInfo(TextHintStyle), 'NONE': <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 'SLIGHT': <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 'MEDIUM': <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 'FULL': <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextHintStyle (771024208)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextHintStyle (814711328)>'
     __info__ = gi.EnumInfo(TextHintStyle)
 
 

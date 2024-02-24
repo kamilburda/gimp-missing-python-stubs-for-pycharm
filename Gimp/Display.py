@@ -144,8 +144,8 @@ class Display(__gi_overrides_GObject.Object):
         pass
 
     def get_window_handle(self): # real signature unknown; restored from __doc__
-        """ get_window_handle(self) -> int """
-        return 0
+        """ get_window_handle(self) -> GLib.Bytes """
+        pass
 
     def handler_block(obj, handler_id): # reliably restored by inspect
         """
@@ -218,7 +218,7 @@ class Display(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def name(self): # real signature unknown; restored from __doc__
@@ -360,6 +360,10 @@ class Display(__gi_overrides_GObject.Object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -451,12 +455,12 @@ class Display(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c53f0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165dc90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (769171968)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None), 'parent_instance': <property object at 0x000001e82e2dd3f0>, 'priv': <property object at 0x000001e82e2dd4e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (815046576)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None), 'parent_instance': <property object at 0x0000020731611f80>, 'priv': <property object at 0x0000020731612070>})"
     __gdoc__ = 'Object GimpDisplay\n\nProperties from GimpDisplay:\n  id -> gint: The display id\n    The display id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpDisplay (769171968)>'
+    __gtype__ = None # (!) real value is '<GType GimpDisplay (815046576)>'
     __info__ = ObjectInfo(Display)
 
 

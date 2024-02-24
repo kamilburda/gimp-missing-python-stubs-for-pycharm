@@ -49,6 +49,10 @@ class ProcedureClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -158,7 +162,7 @@ class ProcedureClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'ProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e325170>, 'install': <property object at 0x000001e82e325260>, 'uninstall': <property object at 0x000001e82e325350>, 'run': <property object at 0x000001e82e325440>, 'create_config': <property object at 0x000001e82e325530>, 'set_sensitivity': <property object at 0x000001e82e325620>, '_gimp_reserved1': <property object at 0x000001e82e325710>, '_gimp_reserved2': <property object at 0x000001e82e325800>, '_gimp_reserved3': <property object at 0x000001e82e3258f0>, '_gimp_reserved4': <property object at 0x000001e82e3259e0>, '_gimp_reserved5': <property object at 0x000001e82e325ad0>, '_gimp_reserved6': <property object at 0x000001e82e325bc0>, '_gimp_reserved7': <property object at 0x000001e82e325cb0>, '_gimp_reserved8': <property object at 0x000001e82e325da0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'ProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073165aa70>, 'install': <property object at 0x000002073165ab60>, 'uninstall': <property object at 0x000002073165ac50>, 'run': <property object at 0x000002073165ad40>, 'create_config': <property object at 0x000002073165ae30>, 'set_sensitivity': <property object at 0x000002073165af20>, '_gimp_reserved1': <property object at 0x000002073165b010>, '_gimp_reserved2': <property object at 0x000002073165b100>, '_gimp_reserved3': <property object at 0x000002073165b1f0>, '_gimp_reserved4': <property object at 0x000002073165b2e0>, '_gimp_reserved5': <property object at 0x000002073165b3d0>, '_gimp_reserved6': <property object at 0x000002073165b4c0>, '_gimp_reserved7': <property object at 0x000002073165b5b0>, '_gimp_reserved8': <property object at 0x000002073165b6a0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ProcedureClass)
 

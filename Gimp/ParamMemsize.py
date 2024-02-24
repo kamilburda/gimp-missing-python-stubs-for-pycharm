@@ -113,6 +113,10 @@ class ParamMemsize(__gi_repository_GObject.ParamSpecUInt64):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -222,9 +226,9 @@ class ParamMemsize(__gi_repository_GObject.ParamSpecUInt64):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamMemsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamMemsize (770683792)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamMemsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamMemsize (815087136)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamMemsize (770683792)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamMemsize (815087136)>'
     __info__ = ObjectInfo(ParamMemsize)
 
 

@@ -120,13 +120,9 @@ class PDB(__gi_overrides_GObject.Object):
         """ getv(self, names:list, values:list) """
         pass
 
-    def get_data(self, identifier, data=None): # real signature unknown; restored from __doc__
-        """ get_data(identifier:str, data=None) -> bool """
-        return False
-
-    def get_data_size(self, identifier): # real signature unknown; restored from __doc__
-        """ get_data_size(identifier:str) -> int """
-        return 0
+    def get_data(self, *args, **kargs): # reliably restored by inspect
+        # no doc
+        pass
 
     def get_last_error(self): # real signature unknown; restored from __doc__
         """ get_last_error(self) -> str """
@@ -209,7 +205,7 @@ class PDB(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def lookup_procedure(self, procedure_name): # real signature unknown; restored from __doc__
@@ -258,18 +254,6 @@ class PDB(__gi_overrides_GObject.Object):
 
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
-        pass
-
-    def run_procedure(self, procedure_name, arguments=None): # real signature unknown; restored from __doc__
-        """ run_procedure(self, procedure_name:str, arguments:list=None) -> Gimp.ValueArray """
-        pass
-
-    def run_procedure_array(self, procedure_name, arguments): # real signature unknown; restored from __doc__
-        """ run_procedure_array(self, procedure_name:str, arguments:Gimp.ValueArray) -> Gimp.ValueArray """
-        pass
-
-    def run_procedure_config(self, procedure_name, config): # real signature unknown; restored from __doc__
-        """ run_procedure_config(self, procedure_name:str, config:Gimp.ProcedureConfig) -> Gimp.ValueArray """
         pass
 
     def set_data(self, *args, **kargs): # reliably restored by inspect
@@ -367,6 +351,10 @@ class PDB(__gi_overrides_GObject.Object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -458,12 +446,12 @@ class PDB(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e18f5b0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df0280>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (770688720)>, '__doc__': None, '__gsignals__': {}, 'get_data': gi.FunctionInfo(get_data, bound=None), 'get_data_size': gi.FunctionInfo(get_data_size, bound=None), 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'run_procedure': gi.FunctionInfo(run_procedure, bound=None), 'run_procedure_array': gi.FunctionInfo(run_procedure_array, bound=None), 'run_procedure_config': gi.FunctionInfo(run_procedure_config, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None), 'parent_instance': <property object at 0x000001e82e305a30>, 'priv': <property object at 0x000001e82e305b20>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (815084336)>, '__doc__': None, '__gsignals__': {}, 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None), 'parent_instance': <property object at 0x000002073163ee80>, 'priv': <property object at 0x000002073163ef70>})"
     __gdoc__ = 'Object GimpPDB\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPDB (770688720)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDB (815084336)>'
     __info__ = ObjectInfo(PDB)
 
 

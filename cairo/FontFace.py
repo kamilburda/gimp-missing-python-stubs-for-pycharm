@@ -46,6 +46,10 @@ class FontFace(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class FontFace(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FontFace), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoFontFace (3504662064)>, '__dict__': <attribute '__dict__' of 'FontFace' objects>, '__weakref__': <attribute '__weakref__' of 'FontFace' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoFontFace (3504662064)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FontFace), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoFontFace (802854720)>, '__dict__': <attribute '__dict__' of 'FontFace' objects>, '__weakref__': <attribute '__weakref__' of 'FontFace' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoFontFace (802854720)>'
     __info__ = StructInfo(FontFace)
 
 

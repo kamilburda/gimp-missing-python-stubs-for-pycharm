@@ -46,6 +46,10 @@ class ScaledFont(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class ScaledFont(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ScaledFont), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoScaledFont (3504663856)>, '__dict__': <attribute '__dict__' of 'ScaledFont' objects>, '__weakref__': <attribute '__weakref__' of 'ScaledFont' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoScaledFont (3504663856)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ScaledFont), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoScaledFont (802852928)>, '__dict__': <attribute '__dict__' of 'ScaledFont' objects>, '__weakref__': <attribute '__weakref__' of 'ScaledFont' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoScaledFont (802852928)>'
     __info__ = StructInfo(ScaledFont)
 
 

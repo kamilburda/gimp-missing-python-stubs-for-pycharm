@@ -81,7 +81,7 @@ class TextDirection(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class TextDirection(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class TextDirection(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -384,7 +389,7 @@ class TextDirection(__gobject.GEnum):
     TTB_RTL = 2
     TTB_RTL_UPRIGHT = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (771019504)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (814714912)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -393,7 +398,7 @@ class TextDirection(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextDirection (771019504)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextDirection (814714912)>'
     __info__ = gi.EnumInfo(TextDirection)
 
 

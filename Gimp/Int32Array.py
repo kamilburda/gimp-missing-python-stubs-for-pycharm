@@ -49,6 +49,10 @@ class Int32Array(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -129,8 +133,8 @@ class Int32Array(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (770678864)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType GimpInt32Array (770678864)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (815083776)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType GimpInt32Array (815083776)>'
     __info__ = StructInfo(Int32Array)
 
 

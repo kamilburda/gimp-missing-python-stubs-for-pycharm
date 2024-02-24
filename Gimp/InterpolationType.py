@@ -81,7 +81,7 @@ class InterpolationType(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class InterpolationType(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class InterpolationType(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -383,7 +388,7 @@ class InterpolationType(__gobject.GEnum):
     NOHALO = 3
     NONE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (770677968)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (815080416)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -391,7 +396,7 @@ class InterpolationType(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (770677968)>'
+    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (815080416)>'
     __info__ = gi.EnumInfo(InterpolationType)
 
 

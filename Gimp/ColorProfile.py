@@ -142,7 +142,7 @@ class ColorProfile(__gi_overrides_GObject.Object):
         pass
 
     def get_icc_profile(self): # real signature unknown; restored from __doc__
-        """ get_icc_profile(self) -> list, length:int """
+        """ get_icc_profile(self) -> list """
         return []
 
     def get_label(self): # real signature unknown; restored from __doc__
@@ -266,7 +266,7 @@ class ColorProfile(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -444,6 +444,10 @@ class ColorProfile(__gi_overrides_GObject.Object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -535,12 +539,12 @@ class ColorProfile(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e23f760>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165eb60>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorProfile), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorProfile (769165808)>, '__doc__': None, '__gsignals__': {}, 'new_d50_gray_lab_trc': gi.FunctionInfo(new_d50_gray_lab_trc, bound=None), 'new_d65_gray_linear': gi.FunctionInfo(new_d65_gray_linear, bound=None), 'new_d65_gray_srgb_trc': gi.FunctionInfo(new_d65_gray_srgb_trc, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_icc_profile': gi.FunctionInfo(new_from_icc_profile, bound=None), 'new_from_lcms_profile': gi.FunctionInfo(new_from_lcms_profile, bound=None), 'new_rgb_adobe': gi.FunctionInfo(new_rgb_adobe, bound=None), 'new_rgb_srgb': gi.FunctionInfo(new_rgb_srgb, bound=None), 'new_rgb_srgb_linear': gi.FunctionInfo(new_rgb_srgb_linear, bound=None), 'get_lcms_format': gi.FunctionInfo(get_lcms_format, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_description': gi.FunctionInfo(get_description, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_icc_profile': gi.FunctionInfo(get_icc_profile, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'get_lcms_profile': gi.FunctionInfo(get_lcms_profile, bound=None), 'get_manufacturer': gi.FunctionInfo(get_manufacturer, bound=None), 'get_model': gi.FunctionInfo(get_model, bound=None), 'get_space': gi.FunctionInfo(get_space, bound=None), 'get_summary': gi.FunctionInfo(get_summary, bound=None), 'is_cmyk': gi.FunctionInfo(is_cmyk, bound=None), 'is_equal': gi.FunctionInfo(is_equal, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_linear': gi.FunctionInfo(is_linear, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'new_linear_from_color_profile': gi.FunctionInfo(new_linear_from_color_profile, bound=None), 'new_srgb_trc_from_color_profile': gi.FunctionInfo(new_srgb_trc_from_color_profile, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None), 'parent_instance': <property object at 0x000001e82e2d5490>, 'priv': <property object at 0x000001e82e2d5580>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorProfile), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorProfile (815049264)>, '__doc__': None, '__gsignals__': {}, 'new_d50_gray_lab_trc': gi.FunctionInfo(new_d50_gray_lab_trc, bound=None), 'new_d65_gray_linear': gi.FunctionInfo(new_d65_gray_linear, bound=None), 'new_d65_gray_srgb_trc': gi.FunctionInfo(new_d65_gray_srgb_trc, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_icc_profile': gi.FunctionInfo(new_from_icc_profile, bound=None), 'new_from_lcms_profile': gi.FunctionInfo(new_from_lcms_profile, bound=None), 'new_rgb_adobe': gi.FunctionInfo(new_rgb_adobe, bound=None), 'new_rgb_srgb': gi.FunctionInfo(new_rgb_srgb, bound=None), 'new_rgb_srgb_linear': gi.FunctionInfo(new_rgb_srgb_linear, bound=None), 'get_lcms_format': gi.FunctionInfo(get_lcms_format, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_description': gi.FunctionInfo(get_description, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_icc_profile': gi.FunctionInfo(get_icc_profile, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'get_lcms_profile': gi.FunctionInfo(get_lcms_profile, bound=None), 'get_manufacturer': gi.FunctionInfo(get_manufacturer, bound=None), 'get_model': gi.FunctionInfo(get_model, bound=None), 'get_space': gi.FunctionInfo(get_space, bound=None), 'get_summary': gi.FunctionInfo(get_summary, bound=None), 'is_cmyk': gi.FunctionInfo(is_cmyk, bound=None), 'is_equal': gi.FunctionInfo(is_equal, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_linear': gi.FunctionInfo(is_linear, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'new_linear_from_color_profile': gi.FunctionInfo(new_linear_from_color_profile, bound=None), 'new_srgb_trc_from_color_profile': gi.FunctionInfo(new_srgb_trc_from_color_profile, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None), 'parent_instance': <property object at 0x000002073160a0c0>, 'priv': <property object at 0x000002073160a1b0>})"
     __gdoc__ = 'Object GimpColorProfile\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpColorProfile (769165808)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorProfile (815049264)>'
     __info__ = ObjectInfo(ColorProfile)
 
 

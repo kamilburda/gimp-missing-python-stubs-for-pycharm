@@ -65,6 +65,10 @@ class ObjectArray(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -154,8 +158,8 @@ class ObjectArray(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ObjectArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpObjectArray (770688944)>, '__dict__': <attribute '__dict__' of 'ObjectArray' objects>, '__weakref__': <attribute '__weakref__' of 'ObjectArray' objects>, '__doc__': None, 'object_type': <property object at 0x000001e82e305170>, 'data': <property object at 0x000001e82e305260>, 'length': <property object at 0x000001e82e305350>, 'static_data': <property object at 0x000001e82e305440>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpObjectArray (770688944)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ObjectArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpObjectArray (815079520)>, '__dict__': <attribute '__dict__' of 'ObjectArray' objects>, '__weakref__': <attribute '__weakref__' of 'ObjectArray' objects>, '__doc__': None, 'object_type': <property object at 0x000002073163e520>, 'data': <property object at 0x000002073163e610>, 'length': <property object at 0x000002073163e700>, 'static_data': <property object at 0x000002073163e7f0>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpObjectArray (815079520)>'
     __info__ = StructInfo(ObjectArray)
 
 

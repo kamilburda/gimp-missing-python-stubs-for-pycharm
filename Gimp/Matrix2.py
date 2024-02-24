@@ -75,6 +75,10 @@ class Matrix2(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -158,8 +162,8 @@ class Matrix2(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix2 (770676400)>, '__dict__': <attribute '__dict__' of 'Matrix2' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix2' objects>, '__doc__': None, 'coeff': <property object at 0x000001e82e2fd710>, 'determinant': gi.FunctionInfo(determinant, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpMatrix2 (770676400)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix2 (815086128)>, '__dict__': <attribute '__dict__' of 'Matrix2' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix2' objects>, '__doc__': None, 'coeff': <property object at 0x0000020731632a70>, 'determinant': gi.FunctionInfo(determinant, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpMatrix2 (815086128)>'
     __info__ = StructInfo(Matrix2)
 
 

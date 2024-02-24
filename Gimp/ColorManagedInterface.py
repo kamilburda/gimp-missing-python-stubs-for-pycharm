@@ -49,6 +49,10 @@ class ColorManagedInterface(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -150,7 +154,7 @@ class ColorManagedInterface(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorManagedInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorManagedInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ColorManagedInterface' objects>, '__doc__': None, 'base_iface': <property object at 0x000001e82e2d45e0>, 'get_icc_profile': <property object at 0x000001e82e2d46d0>, 'profile_changed': <property object at 0x000001e82e2d47c0>, 'simulation_profile_changed': <property object at 0x000001e82e2d4900>, 'simulation_intent_changed': <property object at 0x000001e82e2d49f0>, 'simulation_bpc_changed': <property object at 0x000001e82e2d4ae0>, 'get_color_profile': <property object at 0x000001e82e2d4bd0>, 'get_simulation_profile': <property object at 0x000001e82e2d4cc0>, 'get_simulation_intent': <property object at 0x000001e82e2d4db0>, 'get_simulation_bpc': <property object at 0x000001e82e2d4ea0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorManagedInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorManagedInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ColorManagedInterface' objects>, '__doc__': None, 'base_iface': <property object at 0x0000020731609210>, 'get_icc_profile': <property object at 0x0000020731609300>, 'profile_changed': <property object at 0x00000207316093f0>, 'simulation_profile_changed': <property object at 0x0000020731609530>, 'simulation_intent_changed': <property object at 0x0000020731609620>, 'simulation_bpc_changed': <property object at 0x0000020731609710>, 'get_color_profile': <property object at 0x0000020731609800>, 'get_simulation_profile': <property object at 0x00000207316098f0>, 'get_simulation_intent': <property object at 0x00000207316099e0>, 'get_simulation_bpc': <property object at 0x0000020731609ad0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorManagedInterface)
 

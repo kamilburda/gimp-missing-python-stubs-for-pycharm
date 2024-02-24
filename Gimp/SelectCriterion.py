@@ -81,7 +81,7 @@ class SelectCriterion(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class SelectCriterion(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class SelectCriterion(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -389,7 +394,7 @@ class SelectCriterion(__gobject.GEnum):
     RGB_GREEN = 2
     RGB_RED = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'SelectCriterion' objects>, '__doc__': None, '__gtype__': <GType GimpSelectCriterion (771017488)>, '__enum_values__': {0: <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 1: <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 2: <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 3: <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 4: <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 5: <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 6: <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 7: <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 8: <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 9: <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 10: <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>}, '__info__': gi.EnumInfo(SelectCriterion), 'COMPOSITE': <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 'RGB_RED': <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 'RGB_GREEN': <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 'RGB_BLUE': <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 'HSV_HUE': <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 'HSV_SATURATION': <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 'HSV_VALUE': <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 'LCH_LIGHTNESS': <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 'LCH_CHROMA': <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 'LCH_HUE': <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 'ALPHA': <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'SelectCriterion' objects>, '__doc__': None, '__gtype__': <GType GimpSelectCriterion (814717040)>, '__enum_values__': {0: <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 1: <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 2: <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 3: <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 4: <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 5: <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 6: <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 7: <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 8: <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 9: <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 10: <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>}, '__info__': gi.EnumInfo(SelectCriterion), 'COMPOSITE': <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 'RGB_RED': <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 'RGB_GREEN': <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 'RGB_BLUE': <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 'HSV_HUE': <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 'HSV_SATURATION': <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 'HSV_VALUE': <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 'LCH_LIGHTNESS': <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 'LCH_CHROMA': <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 'LCH_HUE': <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 'ALPHA': <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -403,7 +408,7 @@ class SelectCriterion(__gobject.GEnum):
         9: 9,
         10: 10,
     }
-    __gtype__ = None # (!) real value is '<GType GimpSelectCriterion (771017488)>'
+    __gtype__ = None # (!) real value is '<GType GimpSelectCriterion (814717040)>'
     __info__ = gi.EnumInfo(SelectCriterion)
 
 

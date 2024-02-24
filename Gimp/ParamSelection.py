@@ -115,6 +115,10 @@ class ParamSelection(ParamChannel):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -218,9 +222,9 @@ class ParamSelection(ParamChannel):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamSelection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamSelection (770721584)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamSelection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamSelection (814598432)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamSelection (770721584)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamSelection (814598432)>'
     __info__ = ObjectInfo(ParamSelection)
 
 

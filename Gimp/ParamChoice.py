@@ -21,14 +21,78 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class ParamSpecItem(__gi.Struct):
+class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
     """
     :Constructors:
     
     ::
     
-        ParamSpecItem()
+        ParamChoice(**properties)
     """
+    def do_finalize(self, *args, **kwargs): # real signature unknown
+        """ finalize(self) """
+        pass
+
+    def do_values_cmp(self, *args, **kwargs): # real signature unknown
+        """ values_cmp(self, value1:GObject.Value, value2:GObject.Value) -> int """
+        pass
+
+    def do_value_is_valid(self, *args, **kwargs): # real signature unknown
+        """ value_is_valid(self, value:GObject.Value) -> bool """
+        pass
+
+    def do_value_set_default(self, *args, **kwargs): # real signature unknown
+        """ value_set_default(self, value:GObject.Value) """
+        pass
+
+    def do_value_validate(self, *args, **kwargs): # real signature unknown
+        """ value_validate(self, value:GObject.Value) -> bool """
+        pass
+
+    def get_blurb(self): # real signature unknown; restored from __doc__
+        """ get_blurb(self) -> str or None """
+        return ""
+
+    def get_default_value(self): # real signature unknown; restored from __doc__
+        """ get_default_value(self) -> GObject.Value """
+        pass
+
+    def get_name(self): # real signature unknown; restored from __doc__
+        """ get_name(self) -> str """
+        return ""
+
+    def get_name_quark(self): # real signature unknown; restored from __doc__
+        """ get_name_quark(self) -> int """
+        return 0
+
+    def get_nick(self): # real signature unknown; restored from __doc__
+        """ get_nick(self) -> str """
+        return ""
+
+    def get_qdata(self, quark): # real signature unknown; restored from __doc__
+        """ get_qdata(self, quark:int) """
+        pass
+
+    def get_redirect_target(self): # real signature unknown; restored from __doc__
+        """ get_redirect_target(self) -> GObject.ParamSpec or None """
+        pass
+
+    def is_valid_name(self, name): # real signature unknown; restored from __doc__
+        """ is_valid_name(name:str) -> bool """
+        return False
+
+    def set_qdata(self, quark, data=None): # real signature unknown; restored from __doc__
+        """ set_qdata(self, quark:int, data=None) """
+        pass
+
+    def sink(self): # real signature unknown; restored from __doc__
+        """ sink(self) """
+        pass
+
+    def steal_qdata(self, quark): # real signature unknown; restored from __doc__
+        """ steal_qdata(self, quark:int) """
+        pass
+
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
         pass
@@ -74,7 +138,7 @@ class ParamSpecItem(__gi.Struct):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self, **properties): # real signature unknown; restored from __doc__
         pass
 
     def __le__(self, *args, **kwargs): # real signature unknown
@@ -132,14 +196,33 @@ class ParamSpecItem(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    none_ok = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    flags = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    owner_type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    param_id = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecItem), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecItem' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecItem' objects>, '__doc__': None, 'parent_instance': <property object at 0x000002073164cf40>, 'none_ok': <property object at 0x000002073164d030>})"
-    __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(ParamSpecItem)
+    ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    value_type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _blurb = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _nick = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+
+    __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamChoice (815086688)>, '__doc__': None, '__gsignals__': {}})"
+    __gsignals__ = {}
+    __gtype__ = None # (!) real value is '<GType GimpParamChoice (815086688)>'
+    __info__ = ObjectInfo(ParamChoice)
 
 

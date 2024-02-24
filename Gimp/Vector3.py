@@ -136,6 +136,10 @@ class Vector3(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -223,8 +227,8 @@ class Vector3(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVector3 (771018384)>, '__dict__': <attribute '__dict__' of 'Vector3' objects>, '__weakref__': <attribute '__weakref__' of 'Vector3' objects>, '__doc__': None, 'x': <property object at 0x000001e82e338e00>, 'y': <property object at 0x000001e82e338ef0>, 'z': <property object at 0x000001e82e338fe0>, 'new': gi.FunctionInfo(new, bound=None), 'add_val': gi.FunctionInfo(add_val, bound=None), 'cross_product': gi.FunctionInfo(cross_product, bound=None), 'cross_product_val': gi.FunctionInfo(cross_product_val, bound=None), 'inner_product': gi.FunctionInfo(inner_product, bound=None), 'inner_product_val': gi.FunctionInfo(inner_product_val, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'length_val': gi.FunctionInfo(length_val, bound=None), 'mul': gi.FunctionInfo(mul, bound=None), 'mul_val': gi.FunctionInfo(mul_val, bound=None), 'neg': gi.FunctionInfo(neg, bound=None), 'neg_val': gi.FunctionInfo(neg_val, bound=None), 'normalize': gi.FunctionInfo(normalize, bound=None), 'normalize_val': gi.FunctionInfo(normalize_val, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'rotate_val': gi.FunctionInfo(rotate_val, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'sub_val': gi.FunctionInfo(sub_val, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'sub': gi.FunctionInfo(sub, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpVector3 (771018384)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVector3 (814712000)>, '__dict__': <attribute '__dict__' of 'Vector3' objects>, '__weakref__': <attribute '__weakref__' of 'Vector3' objects>, '__doc__': None, 'x': <property object at 0x000002073166a660>, 'y': <property object at 0x000002073166a750>, 'z': <property object at 0x000002073166a840>, 'new': gi.FunctionInfo(new, bound=None), 'add_val': gi.FunctionInfo(add_val, bound=None), 'cross_product': gi.FunctionInfo(cross_product, bound=None), 'cross_product_val': gi.FunctionInfo(cross_product_val, bound=None), 'inner_product': gi.FunctionInfo(inner_product, bound=None), 'inner_product_val': gi.FunctionInfo(inner_product_val, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'length_val': gi.FunctionInfo(length_val, bound=None), 'mul': gi.FunctionInfo(mul, bound=None), 'mul_val': gi.FunctionInfo(mul_val, bound=None), 'neg': gi.FunctionInfo(neg, bound=None), 'neg_val': gi.FunctionInfo(neg_val, bound=None), 'normalize': gi.FunctionInfo(normalize, bound=None), 'normalize_val': gi.FunctionInfo(normalize_val, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'rotate_val': gi.FunctionInfo(rotate_val, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'sub_val': gi.FunctionInfo(sub_val, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'sub': gi.FunctionInfo(sub, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpVector3 (814712000)>'
     __info__ = StructInfo(Vector3)
 
 

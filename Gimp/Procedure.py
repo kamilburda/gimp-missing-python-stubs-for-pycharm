@@ -182,7 +182,7 @@ class Procedure(__gi_overrides_GObject.Object):
         pass
 
     def get_arguments(self): # real signature unknown; restored from __doc__
-        """ get_arguments(self) -> list, n_arguments:int """
+        """ get_arguments(self) -> list """
         return []
 
     def get_argument_sync(self, arg_name): # real signature unknown; restored from __doc__
@@ -194,7 +194,7 @@ class Procedure(__gi_overrides_GObject.Object):
         return ""
 
     def get_aux_arguments(self): # real signature unknown; restored from __doc__
-        """ get_aux_arguments(self) -> list, n_arguments:int """
+        """ get_aux_arguments(self) -> list """
         return []
 
     def get_blurb(self): # real signature unknown; restored from __doc__
@@ -272,7 +272,7 @@ class Procedure(__gi_overrides_GObject.Object):
         pass
 
     def get_return_values(self): # real signature unknown; restored from __doc__
-        """ get_return_values(self) -> list, n_return_values:int """
+        """ get_return_values(self) -> list """
         return []
 
     def get_sensitivity_mask(self): # real signature unknown; restored from __doc__
@@ -342,7 +342,7 @@ class Procedure(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def new(self, plug_in, name, proc_type, run_func, run_data=None): # real signature unknown; restored from __doc__
@@ -351,10 +351,6 @@ class Procedure(__gi_overrides_GObject.Object):
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
         """ newv(object_type:GType, parameters:list) -> GObject.Object """
-        pass
-
-    def new_arguments(self): # real signature unknown; restored from __doc__
-        """ new_arguments(self) -> Gimp.ValueArray """
         pass
 
     def new_return_values(self, status, error=None): # real signature unknown; restored from __doc__
@@ -389,8 +385,8 @@ class Procedure(__gi_overrides_GObject.Object):
         # no doc
         pass
 
-    def run(self, args): # real signature unknown; restored from __doc__
-        """ run(self, args:Gimp.ValueArray) -> Gimp.ValueArray """
+    def run(self, config): # real signature unknown; restored from __doc__
+        """ run(self, config:Gimp.ProcedureConfig) -> Gimp.ValueArray """
         pass
 
     def run_dispose(self): # real signature unknown; restored from __doc__
@@ -409,8 +405,8 @@ class Procedure(__gi_overrides_GObject.Object):
         # no doc
         pass
 
-    def set_documentation(self, blurb, help, help_id): # real signature unknown; restored from __doc__
-        """ set_documentation(self, blurb:str, help:str, help_id:str) """
+    def set_documentation(self, blurb, help=None, help_id=None): # real signature unknown; restored from __doc__
+        """ set_documentation(self, blurb:str, help:str=None, help_id:str=None) """
         pass
 
     def set_icon_file(self, file=None): # real signature unknown; restored from __doc__
@@ -524,6 +520,10 @@ class Procedure(__gi_overrides_GObject.Object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -615,12 +615,12 @@ class Procedure(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c6050>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165eb90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Procedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedure (769169280)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'add_argument': gi.FunctionInfo(add_argument, bound=None), 'add_argument_from_property': gi.FunctionInfo(add_argument_from_property, bound=None), 'add_aux_argument': gi.FunctionInfo(add_aux_argument, bound=None), 'add_aux_argument_from_property': gi.FunctionInfo(add_aux_argument_from_property, bound=None), 'add_menu_path': gi.FunctionInfo(add_menu_path, bound=None), 'add_return_value': gi.FunctionInfo(add_return_value, bound=None), 'add_return_value_from_property': gi.FunctionInfo(add_return_value_from_property, bound=None), 'create_config': gi.FunctionInfo(create_config, bound=None), 'extension_ready': gi.FunctionInfo(extension_ready, bound=None), 'find_argument': gi.FunctionInfo(find_argument, bound=None), 'find_aux_argument': gi.FunctionInfo(find_aux_argument, bound=None), 'find_return_value': gi.FunctionInfo(find_return_value, bound=None), 'get_argument_sync': gi.FunctionInfo(get_argument_sync, bound=None), 'get_arguments': gi.FunctionInfo(get_arguments, bound=None), 'get_authors': gi.FunctionInfo(get_authors, bound=None), 'get_aux_arguments': gi.FunctionInfo(get_aux_arguments, bound=None), 'get_blurb': gi.FunctionInfo(get_blurb, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_date': gi.FunctionInfo(get_date, bound=None), 'get_help': gi.FunctionInfo(get_help, bound=None), 'get_help_id': gi.FunctionInfo(get_help_id, bound=None), 'get_icon_file': gi.FunctionInfo(get_icon_file, bound=None), 'get_icon_name': gi.FunctionInfo(get_icon_name, bound=None), 'get_icon_pixbuf': gi.FunctionInfo(get_icon_pixbuf, bound=None), 'get_icon_type': gi.FunctionInfo(get_icon_type, bound=None), 'get_image_types': gi.FunctionInfo(get_image_types, bound=None), 'get_menu_label': gi.FunctionInfo(get_menu_label, bound=None), 'get_menu_paths': gi.FunctionInfo(get_menu_paths, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_plug_in': gi.FunctionInfo(get_plug_in, bound=None), 'get_proc_type': gi.FunctionInfo(get_proc_type, bound=None), 'get_return_values': gi.FunctionInfo(get_return_values, bound=None), 'get_sensitivity_mask': gi.FunctionInfo(get_sensitivity_mask, bound=None), 'new_arguments': gi.FunctionInfo(new_arguments, bound=None), 'new_return_values': gi.FunctionInfo(new_return_values, bound=None), 'run': gi.FunctionInfo(run, bound=None), 'set_argument_sync': gi.FunctionInfo(set_argument_sync, bound=None), 'set_attribution': gi.FunctionInfo(set_attribution, bound=None), 'set_documentation': gi.FunctionInfo(set_documentation, bound=None), 'set_icon_file': gi.FunctionInfo(set_icon_file, bound=None), 'set_icon_name': gi.FunctionInfo(set_icon_name, bound=None), 'set_icon_pixbuf': gi.FunctionInfo(set_icon_pixbuf, bound=None), 'set_image_types': gi.FunctionInfo(set_image_types, bound=None), 'set_menu_label': gi.FunctionInfo(set_menu_label, bound=None), 'set_sensitivity_mask': gi.FunctionInfo(set_sensitivity_mask, bound=None), 'do_install': gi.VFuncInfo(install, bound=None), 'do_run': gi.VFuncInfo(run, bound=None), 'do_set_sensitivity': gi.VFuncInfo(set_sensitivity, bound=None), 'do_uninstall': gi.VFuncInfo(uninstall, bound=None), 'parent_instance': <property object at 0x000001e82e2cb8d0>, 'priv': <property object at 0x000001e82e2cb9c0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Procedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedure (814332496)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'add_argument': gi.FunctionInfo(add_argument, bound=None), 'add_argument_from_property': gi.FunctionInfo(add_argument_from_property, bound=None), 'add_aux_argument': gi.FunctionInfo(add_aux_argument, bound=None), 'add_aux_argument_from_property': gi.FunctionInfo(add_aux_argument_from_property, bound=None), 'add_menu_path': gi.FunctionInfo(add_menu_path, bound=None), 'add_return_value': gi.FunctionInfo(add_return_value, bound=None), 'add_return_value_from_property': gi.FunctionInfo(add_return_value_from_property, bound=None), 'create_config': gi.FunctionInfo(create_config, bound=None), 'extension_ready': gi.FunctionInfo(extension_ready, bound=None), 'find_argument': gi.FunctionInfo(find_argument, bound=None), 'find_aux_argument': gi.FunctionInfo(find_aux_argument, bound=None), 'find_return_value': gi.FunctionInfo(find_return_value, bound=None), 'get_argument_sync': gi.FunctionInfo(get_argument_sync, bound=None), 'get_arguments': gi.FunctionInfo(get_arguments, bound=None), 'get_authors': gi.FunctionInfo(get_authors, bound=None), 'get_aux_arguments': gi.FunctionInfo(get_aux_arguments, bound=None), 'get_blurb': gi.FunctionInfo(get_blurb, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_date': gi.FunctionInfo(get_date, bound=None), 'get_help': gi.FunctionInfo(get_help, bound=None), 'get_help_id': gi.FunctionInfo(get_help_id, bound=None), 'get_icon_file': gi.FunctionInfo(get_icon_file, bound=None), 'get_icon_name': gi.FunctionInfo(get_icon_name, bound=None), 'get_icon_pixbuf': gi.FunctionInfo(get_icon_pixbuf, bound=None), 'get_icon_type': gi.FunctionInfo(get_icon_type, bound=None), 'get_image_types': gi.FunctionInfo(get_image_types, bound=None), 'get_menu_label': gi.FunctionInfo(get_menu_label, bound=None), 'get_menu_paths': gi.FunctionInfo(get_menu_paths, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_plug_in': gi.FunctionInfo(get_plug_in, bound=None), 'get_proc_type': gi.FunctionInfo(get_proc_type, bound=None), 'get_return_values': gi.FunctionInfo(get_return_values, bound=None), 'get_sensitivity_mask': gi.FunctionInfo(get_sensitivity_mask, bound=None), 'new_return_values': gi.FunctionInfo(new_return_values, bound=None), 'run': gi.FunctionInfo(run, bound=None), 'set_argument_sync': gi.FunctionInfo(set_argument_sync, bound=None), 'set_attribution': gi.FunctionInfo(set_attribution, bound=None), 'set_documentation': gi.FunctionInfo(set_documentation, bound=None), 'set_icon_file': gi.FunctionInfo(set_icon_file, bound=None), 'set_icon_name': gi.FunctionInfo(set_icon_name, bound=None), 'set_icon_pixbuf': gi.FunctionInfo(set_icon_pixbuf, bound=None), 'set_image_types': gi.FunctionInfo(set_image_types, bound=None), 'set_menu_label': gi.FunctionInfo(set_menu_label, bound=None), 'set_sensitivity_mask': gi.FunctionInfo(set_sensitivity_mask, bound=None), 'do_install': gi.VFuncInfo(install, bound=None), 'do_run': gi.VFuncInfo(run, bound=None), 'do_set_sensitivity': gi.VFuncInfo(set_sensitivity, bound=None), 'do_uninstall': gi.VFuncInfo(uninstall, bound=None), 'parent_instance': <property object at 0x00000207315f84f0>, 'priv': <property object at 0x00000207315f85e0>})"
     __gdoc__ = "Object GimpProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpProcedure (769169280)>'
+    __gtype__ = None # (!) real value is '<GType GimpProcedure (814332496)>'
     __info__ = ObjectInfo(Procedure)
 
 

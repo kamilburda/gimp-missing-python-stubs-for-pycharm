@@ -65,6 +65,10 @@ class Array(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -152,8 +156,8 @@ class Array(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (769169168)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x000001e82e2cb150>, 'length': <property object at 0x000001e82e2cb240>, 'static_data': <property object at 0x000001e82e2cb330>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpArray (769169168)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (814334288)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x00000207315f7c40>, 'length': <property object at 0x00000207315f7d30>, 'static_data': <property object at 0x00000207315f7e20>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpArray (814334288)>'
     __info__ = StructInfo(Array)
 
 

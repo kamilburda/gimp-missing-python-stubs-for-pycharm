@@ -49,6 +49,10 @@ class ModuleInfo(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -142,7 +146,7 @@ class ModuleInfo(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleInfo), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleInfo' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleInfo' objects>, '__doc__': None, 'abi_version': <property object at 0x000001e82e304770>, 'purpose': <property object at 0x000001e82e304860>, 'author': <property object at 0x000001e82e304950>, 'version': <property object at 0x000001e82e304a40>, 'copyright': <property object at 0x000001e82e304b30>, 'date': <property object at 0x000001e82e304c20>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleInfo), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleInfo' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleInfo' objects>, '__doc__': None, 'abi_version': <property object at 0x000002073163db20>, 'purpose': <property object at 0x000002073163dc10>, 'author': <property object at 0x000002073163dd00>, 'version': <property object at 0x000002073163ddf0>, 'copyright': <property object at 0x000002073163dee0>, 'date': <property object at 0x000002073163dfd0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ModuleInfo)
 

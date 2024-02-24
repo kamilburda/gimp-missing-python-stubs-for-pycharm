@@ -52,6 +52,10 @@ class Rectangle(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -141,8 +145,8 @@ class Rectangle(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Rectangle), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRectangle (3504592656)>, '__dict__': <attribute '__dict__' of 'Rectangle' objects>, '__weakref__': <attribute '__weakref__' of 'Rectangle' objects>, '__doc__': None, 'x': <property object at 0x000001a3d12be480>, 'y': <property object at 0x000001a3d12be570>, 'width': <property object at 0x000001a3d12be660>, 'height': <property object at 0x000001a3d12be750>})"
-    __gtype__ = None # (!) real value is '<GType CairoRectangle (3504592656)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Rectangle), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRectangle (804006112)>, '__dict__': <attribute '__dict__' of 'Rectangle' objects>, '__weakref__': <attribute '__weakref__' of 'Rectangle' objects>, '__doc__': None, 'x': <property object at 0x000001af302dee30>, 'y': <property object at 0x000001af302def20>, 'width': <property object at 0x000001af302df010>, 'height': <property object at 0x000001af302df100>})"
+    __gtype__ = None # (!) real value is '<GType CairoRectangle (804006112)>'
     __info__ = StructInfo(Rectangle)
 
 

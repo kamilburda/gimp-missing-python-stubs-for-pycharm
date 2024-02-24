@@ -115,6 +115,10 @@ class ParamLayer(ParamDrawable):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -218,9 +222,9 @@ class ParamLayer(ParamDrawable):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamLayer (770752752)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamLayer (814607888)>, '__doc__': None, '__gsignals__': {}})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamLayer (770752752)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamLayer (814607888)>'
     __info__ = ObjectInfo(ParamLayer)
 
 

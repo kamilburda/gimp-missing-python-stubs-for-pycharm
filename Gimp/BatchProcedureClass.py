@@ -49,6 +49,10 @@ class BatchProcedureClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -132,7 +136,7 @@ class BatchProcedureClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(BatchProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'BatchProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'BatchProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2cbe70>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(BatchProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'BatchProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'BatchProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x00000207315f8a90>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(BatchProcedureClass)
 

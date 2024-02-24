@@ -29,14 +29,6 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
     
         ProcedureConfig(**properties)
     """
-    def begin_export(self, original_image, run_mode, args, mime_type=None): # real signature unknown; restored from __doc__
-        """ begin_export(self, original_image:Gimp.Image, run_mode:Gimp.RunMode, args:Gimp.ValueArray, mime_type:str=None) -> Gimp.Metadata or None """
-        pass
-
-    def begin_run(self, image=None, run_mode, args): # real signature unknown; restored from __doc__
-        """ begin_run(self, image:Gimp.Image=None, run_mode:Gimp.RunMode, args:Gimp.ValueArray) """
-        pass
-
     def bind_property(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -94,14 +86,6 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
         """ Deprecated, please use stop_emission_by_name. """
         pass
 
-    def end_export(self, exported_image, file, status): # real signature unknown; restored from __doc__
-        """ end_export(self, exported_image:Gimp.Image, file:Gio.File, status:Gimp.PDBStatusType) """
-        pass
-
-    def end_run(self, status): # real signature unknown; restored from __doc__
-        """ end_run(self, status:Gimp.PDBStatusType) """
-        pass
-
     def find_property(self, property_name): # real signature unknown; restored from __doc__
         """ find_property(self, property_name:str) -> GObject.ParamSpec """
         pass
@@ -132,6 +116,10 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
         """ getv(self, names:list, values:list) """
         pass
 
+    def get_choice_id(self, property_name): # real signature unknown; restored from __doc__
+        """ get_choice_id(self, property_name:str) -> int """
+        return 0
+
     def get_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
@@ -148,10 +136,6 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
 
     def get_qdata(self, *args, **kargs): # reliably restored by inspect
         # no doc
-        pass
-
-    def get_values(self, values): # real signature unknown; restored from __doc__
-        """ get_values(self, values:Gimp.ValueArray) """
         pass
 
     def handler_block(obj, handler_id): # reliably restored by inspect
@@ -217,7 +201,7 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -268,10 +252,6 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
         pass
 
     def set_property(self, *args, **kwargs): # real signature unknown
-        pass
-
-    def set_values(self, values): # real signature unknown; restored from __doc__
-        """ set_values(self, values:Gimp.ValueArray) """
         pass
 
     def steal_data(self, *args, **kargs): # reliably restored by inspect
@@ -353,6 +333,10 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
         """ Return getattr(self, name). """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -446,12 +430,12 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82ef2c1f0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df07c0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ProcedureConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedureConfig (770690288)>, '__doc__': None, '__gsignals__': {}, 'begin_export': gi.FunctionInfo(begin_export, bound=None), 'begin_run': gi.FunctionInfo(begin_run, bound=None), 'end_export': gi.FunctionInfo(end_export, bound=None), 'end_run': gi.FunctionInfo(end_run, bound=None), 'get_procedure': gi.FunctionInfo(get_procedure, bound=None), 'get_values': gi.FunctionInfo(get_values, bound=None), 'save_metadata': gi.FunctionInfo(save_metadata, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None), 'parent_instance': <property object at 0x000001e82e325f80>, 'priv': <property object at 0x000001e82e326070>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ProcedureConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedureConfig (814716704)>, '__doc__': None, '__gsignals__': {}, 'get_choice_id': gi.FunctionInfo(get_choice_id, bound=None), 'get_procedure': gi.FunctionInfo(get_procedure, bound=None), 'save_metadata': gi.FunctionInfo(save_metadata, bound=None), 'parent_instance': <property object at 0x000002073165b880>, 'priv': <property object at 0x000002073165b970>})"
     __gdoc__ = 'Object GimpProcedureConfig\n\nProperties from GimpProcedureConfig:\n  procedure -> GimpProcedure: Procedure\n    The procedure this config object is used for\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpProcedureConfig (770690288)>'
+    __gtype__ = None # (!) real value is '<GType GimpProcedureConfig (814716704)>'
     __info__ = ObjectInfo(ProcedureConfig)
 
 

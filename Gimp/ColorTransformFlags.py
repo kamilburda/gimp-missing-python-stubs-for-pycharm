@@ -81,7 +81,7 @@ class ColorTransformFlags(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class ColorTransformFlags(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class ColorTransformFlags(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -381,13 +386,13 @@ class ColorTransformFlags(__gobject.GEnum):
     GAMUT_CHECK = 4096
     NOOPTIMIZE = 256
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (769165920)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (815047808)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
     __enum_values__ = {
         256: 256,
         4096: 4096,
         8192: 8192,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (769165920)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (815047808)>'
     __info__ = gi.EnumInfo(ColorTransformFlags)
 
 

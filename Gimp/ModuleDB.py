@@ -218,7 +218,7 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
         pass
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def load(self, module_path): # real signature unknown; restored from __doc__
@@ -376,6 +376,10 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
         # no doc
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -474,12 +478,12 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1f9d20>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165d960>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (770684464)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (815085568)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
     __gdoc__ = 'Object GimpModuleDB\n\nSignals from GListModel:\n  items-changed (guint, guint, guint)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpModuleDB (770684464)>'
+    __gtype__ = None # (!) real value is '<GType GimpModuleDB (815085568)>'
     __info__ = ObjectInfo(ModuleDB)
 
 

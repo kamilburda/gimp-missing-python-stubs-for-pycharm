@@ -126,12 +126,12 @@ class Vectors(Item):
         """ Deprecated, please use stop_emission_by_name. """
         pass
 
-    def export_to_file(self, image, file, vectors): # real signature unknown; restored from __doc__
-        """ export_to_file(image:Gimp.Image, file:Gio.File, vectors:Gimp.Vectors) -> bool """
+    def export_to_file(self, image, file, vectors=None): # real signature unknown; restored from __doc__
+        """ export_to_file(image:Gimp.Image, file:Gio.File, vectors:Gimp.Vectors=None) -> bool """
         return False
 
-    def export_to_string(self, image, vectors): # real signature unknown; restored from __doc__
-        """ export_to_string(image:Gimp.Image, vectors:Gimp.Vectors) -> str """
+    def export_to_string(self, image, vectors=None): # real signature unknown; restored from __doc__
+        """ export_to_string(image:Gimp.Image, vectors:Gimp.Vectors=None) -> str """
         return ""
 
     def find_property(self, property_name): # real signature unknown; restored from __doc__
@@ -227,7 +227,7 @@ class Vectors(Item):
         pass
 
     def get_strokes(self): # real signature unknown; restored from __doc__
-        """ get_strokes(self) -> list, num_strokes:int """
+        """ get_strokes(self) -> list """
         return []
 
     def get_tattoo(self): # real signature unknown; restored from __doc__
@@ -381,7 +381,7 @@ class Vectors(Item):
         return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def new(self, image, name): # real signature unknown; restored from __doc__
@@ -515,7 +515,7 @@ class Vectors(Item):
         return False
 
     def stroke_interpolate(self, stroke_id, precision): # real signature unknown; restored from __doc__
-        """ stroke_interpolate(self, stroke_id:int, precision:float) -> list, num_coords:int, closed:bool """
+        """ stroke_interpolate(self, stroke_id:int, precision:float) -> list, closed:bool """
         return []
 
     def stroke_new_from_points(self, type, controlpoints, closed): # real signature unknown; restored from __doc__
@@ -643,6 +643,10 @@ class Vectors(Item):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -732,12 +736,12 @@ class Vectors(Item):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82ef2c940>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df1a50>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Vectors), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVectors (771017712)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_text_layer': gi.FunctionInfo(new_from_text_layer, bound=None), 'export_to_file': gi.FunctionInfo(export_to_file, bound=None), 'export_to_string': gi.FunctionInfo(export_to_string, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'import_from_file': gi.FunctionInfo(import_from_file, bound=None), 'import_from_string': gi.FunctionInfo(import_from_string, bound=None), 'bezier_stroke_conicto': gi.FunctionInfo(bezier_stroke_conicto, bound=None), 'bezier_stroke_cubicto': gi.FunctionInfo(bezier_stroke_cubicto, bound=None), 'bezier_stroke_lineto': gi.FunctionInfo(bezier_stroke_lineto, bound=None), 'bezier_stroke_new_ellipse': gi.FunctionInfo(bezier_stroke_new_ellipse, bound=None), 'bezier_stroke_new_moveto': gi.FunctionInfo(bezier_stroke_new_moveto, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_strokes': gi.FunctionInfo(get_strokes, bound=None), 'remove_stroke': gi.FunctionInfo(remove_stroke, bound=None), 'stroke_close': gi.FunctionInfo(stroke_close, bound=None), 'stroke_flip': gi.FunctionInfo(stroke_flip, bound=None), 'stroke_flip_free': gi.FunctionInfo(stroke_flip_free, bound=None), 'stroke_get_length': gi.FunctionInfo(stroke_get_length, bound=None), 'stroke_get_point_at_dist': gi.FunctionInfo(stroke_get_point_at_dist, bound=None), 'stroke_get_points': gi.FunctionInfo(stroke_get_points, bound=None), 'stroke_interpolate': gi.FunctionInfo(stroke_interpolate, bound=None), 'stroke_new_from_points': gi.FunctionInfo(stroke_new_from_points, bound=None), 'stroke_reverse': gi.FunctionInfo(stroke_reverse, bound=None), 'stroke_rotate': gi.FunctionInfo(stroke_rotate, bound=None), 'stroke_scale': gi.FunctionInfo(stroke_scale, bound=None), 'stroke_translate': gi.FunctionInfo(stroke_translate, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Vectors), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVectors (814717936)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_text_layer': gi.FunctionInfo(new_from_text_layer, bound=None), 'export_to_file': gi.FunctionInfo(export_to_file, bound=None), 'export_to_string': gi.FunctionInfo(export_to_string, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'import_from_file': gi.FunctionInfo(import_from_file, bound=None), 'import_from_string': gi.FunctionInfo(import_from_string, bound=None), 'bezier_stroke_conicto': gi.FunctionInfo(bezier_stroke_conicto, bound=None), 'bezier_stroke_cubicto': gi.FunctionInfo(bezier_stroke_cubicto, bound=None), 'bezier_stroke_lineto': gi.FunctionInfo(bezier_stroke_lineto, bound=None), 'bezier_stroke_new_ellipse': gi.FunctionInfo(bezier_stroke_new_ellipse, bound=None), 'bezier_stroke_new_moveto': gi.FunctionInfo(bezier_stroke_new_moveto, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_strokes': gi.FunctionInfo(get_strokes, bound=None), 'remove_stroke': gi.FunctionInfo(remove_stroke, bound=None), 'stroke_close': gi.FunctionInfo(stroke_close, bound=None), 'stroke_flip': gi.FunctionInfo(stroke_flip, bound=None), 'stroke_flip_free': gi.FunctionInfo(stroke_flip_free, bound=None), 'stroke_get_length': gi.FunctionInfo(stroke_get_length, bound=None), 'stroke_get_point_at_dist': gi.FunctionInfo(stroke_get_point_at_dist, bound=None), 'stroke_get_points': gi.FunctionInfo(stroke_get_points, bound=None), 'stroke_interpolate': gi.FunctionInfo(stroke_interpolate, bound=None), 'stroke_new_from_points': gi.FunctionInfo(stroke_new_from_points, bound=None), 'stroke_reverse': gi.FunctionInfo(stroke_reverse, bound=None), 'stroke_rotate': gi.FunctionInfo(stroke_rotate, bound=None), 'stroke_scale': gi.FunctionInfo(stroke_scale, bound=None), 'stroke_translate': gi.FunctionInfo(stroke_translate, bound=None)})"
     __gdoc__ = 'Object GimpVectors\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpVectors (771017712)>'
+    __gtype__ = None # (!) real value is '<GType GimpVectors (814717936)>'
     __info__ = ObjectInfo(Vectors)
 
 

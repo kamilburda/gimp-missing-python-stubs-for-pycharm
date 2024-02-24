@@ -43,7 +43,7 @@ class Parasite(__gi.Boxed):
         pass
 
     def get_data(self): # real signature unknown; restored from __doc__
-        """ get_data(self) -> list, num_bytes:int """
+        """ get_data(self) -> list """
         return []
 
     def get_flags(self): # real signature unknown; restored from __doc__
@@ -95,6 +95,10 @@ class Parasite(__gi.Boxed):
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
         """ Return getattr(self, name). """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -186,8 +190,8 @@ class Parasite(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Parasite), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParasite (770686144)>, '__dict__': <attribute '__dict__' of 'Parasite' objects>, '__weakref__': <attribute '__weakref__' of 'Parasite' objects>, '__doc__': None, 'name': <property object at 0x000001e82e319e90>, 'flags': <property object at 0x000001e82e319f80>, 'size': <property object at 0x000001e82e31a070>, 'data': <property object at 0x000001e82e31a160>, 'new': gi.FunctionInfo(new, bound=None), 'compare': gi.FunctionInfo(compare, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_data': gi.FunctionInfo(get_data, bound=None), 'get_flags': gi.FunctionInfo(get_flags, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'has_flag': gi.FunctionInfo(has_flag, bound=None), 'is_persistent': gi.FunctionInfo(is_persistent, bound=None), 'is_type': gi.FunctionInfo(is_type, bound=None), 'is_undoable': gi.FunctionInfo(is_undoable, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpParasite (770686144)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Parasite), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParasite (814714688)>, '__dict__': <attribute '__dict__' of 'Parasite' objects>, '__weakref__': <attribute '__weakref__' of 'Parasite' objects>, '__doc__': None, 'name': <property object at 0x000002073164f790>, 'flags': <property object at 0x000002073164f880>, 'size': <property object at 0x000002073164f970>, 'data': <property object at 0x000002073164fa60>, 'new': gi.FunctionInfo(new, bound=None), 'compare': gi.FunctionInfo(compare, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_data': gi.FunctionInfo(get_data, bound=None), 'get_flags': gi.FunctionInfo(get_flags, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'has_flag': gi.FunctionInfo(has_flag, bound=None), 'is_persistent': gi.FunctionInfo(is_persistent, bound=None), 'is_type': gi.FunctionInfo(is_type, bound=None), 'is_undoable': gi.FunctionInfo(is_undoable, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpParasite (814714688)>'
     __info__ = StructInfo(Parasite)
 
 

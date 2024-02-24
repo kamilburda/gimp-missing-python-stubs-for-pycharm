@@ -49,6 +49,10 @@ class PixPipeParams(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -150,7 +154,7 @@ class PixPipeParams(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000001e82e31a520>, 'ncells': <property object at 0x000001e82e31a610>, 'dim': <property object at 0x000001e82e31a700>, 'cols': <property object at 0x000001e82e31a7f0>, 'rows': <property object at 0x000001e82e31a8e0>, 'cellwidth': <property object at 0x000001e82e31a9d0>, 'cellheight': <property object at 0x000001e82e31aac0>, 'placement': <property object at 0x000001e82e31abb0>, 'rank': <property object at 0x000001e82e31aca0>, 'selection': <property object at 0x000001e82e31ad90>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000002073164fe70>, 'ncells': <property object at 0x000002073164ff60>, 'dim': <property object at 0x0000020731658090>, 'cols': <property object at 0x0000020731658180>, 'rows': <property object at 0x0000020731658270>, 'cellwidth': <property object at 0x0000020731658360>, 'cellheight': <property object at 0x0000020731658450>, 'placement': <property object at 0x0000020731658540>, 'rank': <property object at 0x0000020731658630>, 'selection': <property object at 0x0000020731658720>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PixPipeParams)
 

@@ -49,6 +49,10 @@ class SaveProcedureClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -132,7 +136,7 @@ class SaveProcedureClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(SaveProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'SaveProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'SaveProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e329f80>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(SaveProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'SaveProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'SaveProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731663790>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(SaveProcedureClass)
 

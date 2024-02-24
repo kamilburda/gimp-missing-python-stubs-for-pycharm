@@ -78,7 +78,7 @@ class Antialias(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -90,13 +90,14 @@ class Antialias(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -160,6 +161,10 @@ class Antialias(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -382,7 +387,7 @@ class Antialias(__gobject.GEnum):
     NONE = 1
     SUBPIXEL = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Antialias' objects>, '__doc__': None, '__gtype__': <GType cairo_antialias_t (3474342544)>, '__enum_values__': {0: <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 1: <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 2: <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 3: <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 4: <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 5: <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 6: <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>}, '__info__': gi.EnumInfo(Antialias), 'DEFAULT': <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 'NONE': <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 'GRAY': <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 'SUBPIXEL': <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 'FAST': <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 'GOOD': <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 'BEST': <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Antialias' objects>, '__doc__': None, '__gtype__': <GType cairo_antialias_t (804301552)>, '__enum_values__': {0: <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 1: <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 2: <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 3: <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 4: <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 5: <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 6: <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>}, '__info__': gi.EnumInfo(Antialias), 'DEFAULT': <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 'NONE': <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 'GRAY': <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 'SUBPIXEL': <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 'FAST': <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 'GOOD': <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 'BEST': <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -392,7 +397,7 @@ class Antialias(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_antialias_t (3474342544)>'
+    __gtype__ = None # (!) real value is '<GType cairo_antialias_t (804301552)>'
     __info__ = gi.EnumInfo(Antialias)
 
 

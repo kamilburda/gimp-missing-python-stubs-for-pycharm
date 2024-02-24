@@ -83,6 +83,10 @@ class CMYK(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -174,8 +178,8 @@ class CMYK(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(CMYK), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpCMYK (769166592)>, '__dict__': <attribute '__dict__' of 'CMYK' objects>, '__weakref__': <attribute '__weakref__' of 'CMYK' objects>, '__doc__': None, 'c': <property object at 0x000001e82e2bc8b0>, 'm': <property object at 0x000001e82e2bc9a0>, 'y': <property object at 0x000001e82e2bca90>, 'k': <property object at 0x000001e82e2bcb80>, 'a': <property object at 0x000001e82e2bcc70>, '_get_uchar': gi.FunctionInfo(_get_uchar, bound=None), '_set': gi.FunctionInfo(_set, bound=None), '_set_uchar': gi.FunctionInfo(_set_uchar, bound=None), 'get_uchar': gi.FunctionInfo(get_uchar, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'set_uchar': gi.FunctionInfo(set_uchar, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpCMYK (769166592)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(CMYK), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpCMYK (815047472)>, '__dict__': <attribute '__dict__' of 'CMYK' objects>, '__weakref__': <attribute '__weakref__' of 'CMYK' objects>, '__doc__': None, 'c': <property object at 0x00000207315f97b0>, 'm': <property object at 0x00000207315f98a0>, 'y': <property object at 0x00000207315f9990>, 'k': <property object at 0x00000207315f9a80>, 'a': <property object at 0x00000207315f9b70>, '_get_uchar': gi.FunctionInfo(_get_uchar, bound=None), '_set': gi.FunctionInfo(_set, bound=None), '_set_uchar': gi.FunctionInfo(_set_uchar, bound=None), 'get_uchar': gi.FunctionInfo(get_uchar, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'set_uchar': gi.FunctionInfo(set_uchar, bound=None), 'to_rgb': gi.FunctionInfo(to_rgb, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpCMYK (815047472)>'
     __info__ = StructInfo(CMYK)
 
 

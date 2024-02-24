@@ -101,6 +101,10 @@ class ValueArray(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -182,8 +186,8 @@ class ValueArray(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ValueArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpValueArray (771022080)>, '__dict__': <attribute '__dict__' of 'ValueArray' objects>, '__weakref__': <attribute '__weakref__' of 'ValueArray' objects>, '__doc__': None, 'new': gi.FunctionInfo(new, bound=None), 'new_from_values': gi.FunctionInfo(new_from_values, bound=None), 'append': gi.FunctionInfo(append, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'index': gi.FunctionInfo(index, bound=None), 'insert': gi.FunctionInfo(insert, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'prepend': gi.FunctionInfo(prepend, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'remove': gi.FunctionInfo(remove, bound=None), 'truncate': gi.FunctionInfo(truncate, bound=None), 'unref': gi.FunctionInfo(unref, bound=None), '__new__': <staticmethod(gi.FunctionInfo(new, bound=None))>, '__init__': <function nothing at 0x000001e82dbc08b0>})"
-    __gtype__ = None # (!) real value is '<GType GimpValueArray (771022080)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ValueArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpValueArray (814711440)>, '__dict__': <attribute '__dict__' of 'ValueArray' objects>, '__weakref__': <attribute '__weakref__' of 'ValueArray' objects>, '__doc__': None, 'new': gi.FunctionInfo(new, bound=None), 'new_from_values': gi.FunctionInfo(new_from_values, bound=None), 'append': gi.FunctionInfo(append, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'index': gi.FunctionInfo(index, bound=None), 'insert': gi.FunctionInfo(insert, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'prepend': gi.FunctionInfo(prepend, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'remove': gi.FunctionInfo(remove, bound=None), 'truncate': gi.FunctionInfo(truncate, bound=None), 'unref': gi.FunctionInfo(unref, bound=None), '__new__': <staticmethod(gi.FunctionInfo(new, bound=None))>, '__init__': <function nothing at 0x0000020730b447c0>})"
+    __gtype__ = None # (!) real value is '<GType GimpValueArray (814711440)>'
     __info__ = StructInfo(ValueArray)
 
 

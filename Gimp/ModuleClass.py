@@ -49,6 +49,10 @@ class ModuleClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -150,7 +154,7 @@ class ModuleClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleClass' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2ff880>, 'modified': <property object at 0x000001e82e2ff970>, '_gimp_reserved1': <property object at 0x000001e82e2ffa60>, '_gimp_reserved2': <property object at 0x000001e82e2ffb50>, '_gimp_reserved3': <property object at 0x000001e82e2ffc40>, '_gimp_reserved4': <property object at 0x000001e82e2ffd30>, '_gimp_reserved5': <property object at 0x000001e82e2ffe20>, '_gimp_reserved6': <property object at 0x000001e82e2fff10>, '_gimp_reserved7': <property object at 0x000001e82e304040>, '_gimp_reserved8': <property object at 0x000001e82e304130>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleClass' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073163cc70>, 'modified': <property object at 0x000002073163cd60>, '_gimp_reserved1': <property object at 0x000002073163ce50>, '_gimp_reserved2': <property object at 0x000002073163cf40>, '_gimp_reserved3': <property object at 0x000002073163d030>, '_gimp_reserved4': <property object at 0x000002073163d120>, '_gimp_reserved5': <property object at 0x000002073163d210>, '_gimp_reserved6': <property object at 0x000002073163d300>, '_gimp_reserved7': <property object at 0x000002073163d3f0>, '_gimp_reserved8': <property object at 0x000002073163d4e0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ModuleClass)
 

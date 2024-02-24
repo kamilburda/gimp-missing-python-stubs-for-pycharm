@@ -49,6 +49,10 @@ class LayerClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -152,7 +156,7 @@ class LayerClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LayerClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LayerClass' objects>, '__weakref__': <attribute '__weakref__' of 'LayerClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2f6520>, 'copy': <property object at 0x000001e82e2f6610>, '_gimp_reserved1': <property object at 0x000001e82e2f6700>, '_gimp_reserved2': <property object at 0x000001e82e2f67f0>, '_gimp_reserved3': <property object at 0x000001e82e2f68e0>, '_gimp_reserved4': <property object at 0x000001e82e2f69d0>, '_gimp_reserved5': <property object at 0x000001e82e2f6ac0>, '_gimp_reserved6': <property object at 0x000001e82e2f6bb0>, '_gimp_reserved7': <property object at 0x000001e82e2f6ca0>, '_gimp_reserved8': <property object at 0x000001e82e2f6d90>, '_gimp_reserved9': <property object at 0x000001e82e2f6e80>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LayerClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LayerClass' objects>, '__weakref__': <attribute '__weakref__' of 'LayerClass' objects>, '__doc__': None, 'parent_class': <property object at 0x00000207316277e0>, 'copy': <property object at 0x00000207316278d0>, '_gimp_reserved1': <property object at 0x00000207316279c0>, '_gimp_reserved2': <property object at 0x0000020731627ab0>, '_gimp_reserved3': <property object at 0x0000020731627ba0>, '_gimp_reserved4': <property object at 0x0000020731627c90>, '_gimp_reserved5': <property object at 0x0000020731627d80>, '_gimp_reserved6': <property object at 0x0000020731627e70>, '_gimp_reserved7': <property object at 0x0000020731627f60>, '_gimp_reserved8': <property object at 0x0000020731630090>, '_gimp_reserved9': <property object at 0x0000020731630180>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(LayerClass)
 

@@ -46,6 +46,10 @@ class Region(__gi.Boxed):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -126,8 +130,8 @@ class Region(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Region), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRegion (3504593328)>, '__dict__': <attribute '__dict__' of 'Region' objects>, '__weakref__': <attribute '__weakref__' of 'Region' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoRegion (3504593328)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Region), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRegion (804006000)>, '__dict__': <attribute '__dict__' of 'Region' objects>, '__weakref__': <attribute '__weakref__' of 'Region' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoRegion (804006000)>'
     __info__ = StructInfo(Region)
 
 

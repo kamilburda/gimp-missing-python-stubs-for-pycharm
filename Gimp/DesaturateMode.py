@@ -81,7 +81,7 @@ class DesaturateMode(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class DesaturateMode(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class DesaturateMode(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -383,7 +388,7 @@ class DesaturateMode(__gobject.GEnum):
     LUMINANCE = 3
     VALUE = 4
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DesaturateMode' objects>, '__doc__': None, '__gtype__': <GType GimpDesaturateMode (769171856)>, '__enum_values__': {0: <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 1: <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 2: <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 3: <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 4: <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>}, '__info__': gi.EnumInfo(DesaturateMode), 'LIGHTNESS': <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 'LUMA': <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 'AVERAGE': <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 'LUMINANCE': <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 'VALUE': <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DesaturateMode' objects>, '__doc__': None, '__gtype__': <GType GimpDesaturateMode (815052960)>, '__enum_values__': {0: <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 1: <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 2: <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 3: <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 4: <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>}, '__info__': gi.EnumInfo(DesaturateMode), 'LIGHTNESS': <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 'LUMA': <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 'AVERAGE': <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 'LUMINANCE': <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 'VALUE': <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -391,7 +396,7 @@ class DesaturateMode(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpDesaturateMode (769171856)>'
+    __gtype__ = None # (!) real value is '<GType GimpDesaturateMode (815052960)>'
     __info__ = gi.EnumInfo(DesaturateMode)
 
 

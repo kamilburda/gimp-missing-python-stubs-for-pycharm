@@ -53,6 +53,10 @@ class __class__(object):
         # no doc
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -131,10 +135,10 @@ class __class__(object):
         pass
 
     __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """list of weak references to the object (if defined)"""
+    """list of weak references to the object"""
 
 
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.module', '__doc__': 'An object which wraps an introspection typelib.\\n\\n    This wrapping creates a python module like representation of the typelib\\n    using gi repository as a foundation. Accessing attributes of the module\\n    will dynamically pull them in and create wrappers for the members.\\n    These members are then cached on this introspection module.\\n    ', '__init__': <function IntrospectionModule.__init__ at 0x000001a3d0d90b80>, '__getattr__': <function IntrospectionModule.__getattr__ at 0x000001a3d0d90c10>, '__repr__': <function IntrospectionModule.__repr__ at 0x000001a3d0d90ca0>, '__dir__': <function IntrospectionModule.__dir__ at 0x000001a3d0d90d30>, '__dict__': <attribute '__dict__' of 'IntrospectionModule' objects>, '__weakref__': <attribute '__weakref__' of 'IntrospectionModule' objects>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.module', '__doc__': 'An object which wraps an introspection typelib.\\n\\n    This wrapping creates a python module like representation of the typelib\\n    using gi repository as a foundation. Accessing attributes of the module\\n    will dynamically pull them in and create wrappers for the members.\\n    These members are then cached on this introspection module.\\n    ', '__init__': <function IntrospectionModule.__init__ at 0x000001af30164860>, '__getattr__': <function IntrospectionModule.__getattr__ at 0x000001af30164a40>, '__repr__': <function IntrospectionModule.__repr__ at 0x000001af30164ae0>, '__dir__': <function IntrospectionModule.__dir__ at 0x000001af30164b80>, '__dict__': <attribute '__dict__' of 'IntrospectionModule' objects>, '__weakref__': <attribute '__weakref__' of 'IntrospectionModule' objects>})"
 
 

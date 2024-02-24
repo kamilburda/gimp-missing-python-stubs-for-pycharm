@@ -81,7 +81,7 @@ class ProgressCommand(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class ProgressCommand(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class ProgressCommand(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -384,7 +389,7 @@ class ProgressCommand(__gobject.GEnum):
     SET_VALUE = 3
     START = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (770690176)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (814712224)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -393,7 +398,7 @@ class ProgressCommand(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (770690176)>'
+    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (814712224)>'
     __info__ = gi.EnumInfo(ProgressCommand)
 
 

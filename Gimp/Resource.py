@@ -21,7 +21,9 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class Resource(__gi_overrides_GObject.Object):
+from .ConfigInterface import ConfigInterface
+
+class Resource(__gi_overrides_GObject.Object, ConfigInterface):
     """
     :Constructors:
     
@@ -35,6 +37,22 @@ class Resource(__gi_overrides_GObject.Object):
     def bind_property_full(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
+
+    def build_data_path(self, name): # real signature unknown; restored from __doc__
+        """ build_data_path(name:str) -> str """
+        return ""
+
+    def build_plug_in_path(self, name): # real signature unknown; restored from __doc__
+        """ build_plug_in_path(name:str) -> str """
+        return ""
+
+    def build_system_path(self, name): # real signature unknown; restored from __doc__
+        """ build_system_path(name:str) -> str """
+        return ""
+
+    def build_writable_path(self, name): # real signature unknown; restored from __doc__
+        """ build_writable_path(name:str) -> str """
+        return ""
 
     def chain(self, *args, **kwargs): # real signature unknown
         pass
@@ -76,6 +94,18 @@ class Resource(__gi_overrides_GObject.Object):
         """ delete(self) -> bool """
         return False
 
+    def deserialize_return(self, scanner, expected_token, nest_level): # real signature unknown; restored from __doc__
+        """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
+        return False
+
+    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
+        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
+        pass
+
+    def diff(self, a, b, flags): # real signature unknown; restored from __doc__
+        """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
+        return []
+
     def disconnect(*args, **kwargs): # reliably restored by inspect
         """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
         pass
@@ -93,6 +123,10 @@ class Resource(__gi_overrides_GObject.Object):
     def emit_stop_by_name(self, detailed_signal): # reliably restored by inspect
         """ Deprecated, please use stop_emission_by_name. """
         pass
+
+    def error_quark(self): # real signature unknown; restored from __doc__
+        """ error_quark() -> int """
+        return 0
 
     def find_property(self, property_name): # real signature unknown; restored from __doc__
         """ find_property(self, property_name:str) -> GObject.ParamSpec """
@@ -269,7 +303,7 @@ class Resource(__gi_overrides_GObject.Object):
         return False
 
     def list_properties(self): # real signature unknown; restored from __doc__
-        """ list_properties(self) -> list, n_properties:int """
+        """ list_properties(self) -> list """
         return []
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -286,6 +320,10 @@ class Resource(__gi_overrides_GObject.Object):
 
     def override_property(self, property_id, name): # real signature unknown; restored from __doc__
         """ override_property(self, property_id:int, name:str) """
+        pass
+
+    def param_spec_duplicate(self, pspec): # real signature unknown; restored from __doc__
+        """ param_spec_duplicate(pspec:GObject.ParamSpec) -> GObject.ParamSpec """
         pass
 
     def ref(self, *args, **kargs): # reliably restored by inspect
@@ -308,21 +346,33 @@ class Resource(__gi_overrides_GObject.Object):
         # no doc
         pass
 
+    def reset_properties(self, p_object): # real signature unknown; restored from __doc__
+        """ reset_properties(object:GObject.Object) """
+        pass
+
+    def reset_property(self, p_object, property_name): # real signature unknown; restored from __doc__
+        """ reset_property(object:GObject.Object, property_name:str) """
+        pass
+
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
 
-    def select_destroy(self, temp_pdb_callback): # real signature unknown; restored from __doc__
-        """ select_destroy(temp_pdb_callback:str) """
-        pass
-
-    def select_new(self, title, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
+    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
+        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
         return ""
 
-    def select_set(self, temp_pdb_callback, resource, resource_type): # real signature unknown; restored from __doc__
-        """ select_set(temp_pdb_callback:str, resource:Gimp.Resource, resource_type:GType) """
+    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
+        """ select_set(callback_name:str, resource:Gimp.Resource) """
         pass
+
+    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
+        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
+        return False
+
+    def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
+        """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
+        return False
 
     def set_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
@@ -350,8 +400,20 @@ class Resource(__gi_overrides_GObject.Object):
         """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
         pass
 
+    def string_append_escaped(self, string, val): # real signature unknown; restored from __doc__
+        """ string_append_escaped(string:GLib.String, val:str) """
+        pass
+
+    def sync(self, src, dest, flags): # real signature unknown; restored from __doc__
+        """ sync(src:GObject.Object, dest:GObject.Object, flags:GObject.ParamFlags) -> bool """
+        return False
+
     def thaw_notify(self): # real signature unknown; restored from __doc__
         """ thaw_notify(self) """
+        pass
+
+    def type_register(self, parent_type, type_name, pspecs): # real signature unknown; restored from __doc__
+        """ type_register(parent_type:GType, type_name:str, pspecs:list) -> GType """
         pass
 
     def unref(self, *args, **kargs): # reliably restored by inspect
@@ -413,6 +475,10 @@ class Resource(__gi_overrides_GObject.Object):
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
         """ Return getattr(self, name). """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -491,6 +557,9 @@ class Resource(__gi_overrides_GObject.Object):
         """
         pass
 
+    def __weakref__(self, *args, **kwargs): # real signature unknown
+        pass
+
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -504,12 +573,12 @@ class Resource(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001e82e1c7dc0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e530>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (769168384)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'select_destroy': gi.FunctionInfo(select_destroy, bound=None), 'select_new': gi.FunctionInfo(select_new, bound=None), 'select_set': gi.FunctionInfo(select_set, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x000001e82e2bc0e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (814332832)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'select_new': gi.FunctionInfo(select_new, bound=None), 'select_set': gi.FunctionInfo(select_set, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x00000207315f8fe0>})"
     __gdoc__ = 'Object GimpResource\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpResource (769168384)>'
+    __gtype__ = None # (!) real value is '<GType GimpResource (814332832)>'
     __info__ = ObjectInfo(Resource)
 
 

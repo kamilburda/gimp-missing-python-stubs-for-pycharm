@@ -1,4 +1,4 @@
-# PyCharm stubs for GIMP 2.99.16 Python Modules
+# PyCharm stubs for GIMP 2.99.18 Python Modules
 
 PyCharm can automatically generate Python stub files for GIMP 2.99 binary modules such as `gi.repository.GimpUi`, `gi.repository.Gtk` and many more to provide code completion suggestions when developing Python plug-ins for GIMP 2.99.
 

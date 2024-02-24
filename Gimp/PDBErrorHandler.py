@@ -81,7 +81,7 @@ class PDBErrorHandler(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class PDBErrorHandler(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class PDBErrorHandler(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -380,12 +385,12 @@ class PDBErrorHandler(__gobject.GEnum):
     INTERNAL = 0
     PLUGIN = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBErrorHandler' objects>, '__doc__': None, '__gtype__': <GType GimpPDBErrorHandler (770685360)>, '__enum_values__': {0: <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 1: <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>}, '__info__': gi.EnumInfo(PDBErrorHandler), 'INTERNAL': <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 'PLUGIN': <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBErrorHandler' objects>, '__doc__': None, '__gtype__': <GType GimpPDBErrorHandler (815080864)>, '__enum_values__': {0: <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 1: <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>}, '__info__': gi.EnumInfo(PDBErrorHandler), 'INTERNAL': <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 'PLUGIN': <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpPDBErrorHandler (770685360)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDBErrorHandler (815080864)>'
     __info__ = gi.EnumInfo(PDBErrorHandler)
 
 

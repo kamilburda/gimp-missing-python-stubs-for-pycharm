@@ -81,7 +81,7 @@ class GridStyle(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -93,13 +93,14 @@ class GridStyle(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -163,6 +164,10 @@ class GridStyle(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -383,7 +388,7 @@ class GridStyle(__gobject.GEnum):
     ON_OFF_DASH = 2
     SOLID = 4
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GridStyle' objects>, '__doc__': None, '__gtype__': <GType GimpGridStyle (770678976)>, '__enum_values__': {0: <enum GIMP_GRID_DOTS of type Gimp.GridStyle>, 1: <enum GIMP_GRID_INTERSECTIONS of type Gimp.GridStyle>, 2: <enum GIMP_GRID_ON_OFF_DASH of type Gimp.GridStyle>, 3: <enum GIMP_GRID_DOUBLE_DASH of type Gimp.GridStyle>, 4: <enum GIMP_GRID_SOLID of type Gimp.GridStyle>}, '__info__': gi.EnumInfo(GridStyle), 'DOTS': <enum GIMP_GRID_DOTS of type Gimp.GridStyle>, 'INTERSECTIONS': <enum GIMP_GRID_INTERSECTIONS of type Gimp.GridStyle>, 'ON_OFF_DASH': <enum GIMP_GRID_ON_OFF_DASH of type Gimp.GridStyle>, 'DOUBLE_DASH': <enum GIMP_GRID_DOUBLE_DASH of type Gimp.GridStyle>, 'SOLID': <enum GIMP_GRID_SOLID of type Gimp.GridStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GridStyle' objects>, '__doc__': None, '__gtype__': <GType GimpGridStyle (815053744)>, '__enum_values__': {0: <enum GIMP_GRID_DOTS of type Gimp.GridStyle>, 1: <enum GIMP_GRID_INTERSECTIONS of type Gimp.GridStyle>, 2: <enum GIMP_GRID_ON_OFF_DASH of type Gimp.GridStyle>, 3: <enum GIMP_GRID_DOUBLE_DASH of type Gimp.GridStyle>, 4: <enum GIMP_GRID_SOLID of type Gimp.GridStyle>}, '__info__': gi.EnumInfo(GridStyle), 'DOTS': <enum GIMP_GRID_DOTS of type Gimp.GridStyle>, 'INTERSECTIONS': <enum GIMP_GRID_INTERSECTIONS of type Gimp.GridStyle>, 'ON_OFF_DASH': <enum GIMP_GRID_ON_OFF_DASH of type Gimp.GridStyle>, 'DOUBLE_DASH': <enum GIMP_GRID_DOUBLE_DASH of type Gimp.GridStyle>, 'SOLID': <enum GIMP_GRID_SOLID of type Gimp.GridStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -391,7 +396,7 @@ class GridStyle(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGridStyle (770678976)>'
+    __gtype__ = None # (!) real value is '<GType GimpGridStyle (815053744)>'
     __info__ = gi.EnumInfo(GridStyle)
 
 

@@ -49,6 +49,10 @@ class ColorConfigClass(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -148,7 +152,7 @@ class ColorConfigClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorConfigClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorConfigClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorConfigClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001e82e2bf9c0>, '_gimp_reserved1': <property object at 0x000001e82e2bfab0>, '_gimp_reserved2': <property object at 0x000001e82e2bfba0>, '_gimp_reserved3': <property object at 0x000001e82e2bfc90>, '_gimp_reserved4': <property object at 0x000001e82e2bfd80>, '_gimp_reserved5': <property object at 0x000001e82e2bfe70>, '_gimp_reserved6': <property object at 0x000001e82e2bff60>, '_gimp_reserved7': <property object at 0x000001e82e2d4090>, '_gimp_reserved8': <property object at 0x000001e82e2d4180>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorConfigClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorConfigClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorConfigClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731608630>, '_gimp_reserved1': <property object at 0x0000020731608720>, '_gimp_reserved2': <property object at 0x0000020731608810>, '_gimp_reserved3': <property object at 0x0000020731608900>, '_gimp_reserved4': <property object at 0x00000207316089f0>, '_gimp_reserved5': <property object at 0x0000020731608ae0>, '_gimp_reserved6': <property object at 0x0000020731608bd0>, '_gimp_reserved7': <property object at 0x0000020731608cc0>, '_gimp_reserved8': <property object at 0x0000020731608db0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorConfigClass)
 

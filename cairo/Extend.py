@@ -78,7 +78,7 @@ class Extend(__gobject.GEnum):
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Indicates whether two's complement is used to represent the integer.
         """
@@ -90,13 +90,14 @@ class Extend(__gobject.GEnum):
         
           length
             Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
+            integer is not representable with the given number of bytes.  Default
+            is length 1.
           byteorder
             The byte order used to represent the integer.  If byteorder is 'big',
             the most significant byte is at the beginning of the byte array.  If
             byteorder is 'little', the most significant byte is at the end of the
             byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
+            `sys.byteorder' as the byte order value.  Default is to use 'big'.
           signed
             Determines whether two's complement is used to represent the integer.
             If signed is False and a negative integer is given, an OverflowError
@@ -160,6 +161,10 @@ class Extend(__gobject.GEnum):
         pass
 
     def __getnewargs__(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
         pass
 
     def __ge__(self, *args, **kwargs): # real signature unknown
@@ -379,14 +384,14 @@ class Extend(__gobject.GEnum):
     REFLECT = 2
     REPEAT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Extend' objects>, '__doc__': None, '__gtype__': <GType cairo_extend_t (3474349040)>, '__enum_values__': {0: <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 1: <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 2: <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 3: <enum CAIRO_EXTEND_PAD of type cairo.Extend>}, '__info__': gi.EnumInfo(Extend), 'NONE': <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 'REPEAT': <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 'REFLECT': <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 'PAD': <enum CAIRO_EXTEND_PAD of type cairo.Extend>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Extend' objects>, '__doc__': None, '__gtype__': <GType cairo_extend_t (804301888)>, '__enum_values__': {0: <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 1: <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 2: <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 3: <enum CAIRO_EXTEND_PAD of type cairo.Extend>}, '__info__': gi.EnumInfo(Extend), 'NONE': <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 'REPEAT': <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 'REFLECT': <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 'PAD': <enum CAIRO_EXTEND_PAD of type cairo.Extend>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_extend_t (3474349040)>'
+    __gtype__ = None # (!) real value is '<GType cairo_extend_t (804301888)>'
     __info__ = gi.EnumInfo(Extend)
 
 

@@ -59,6 +59,10 @@ class Memsize(object):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -139,9 +143,9 @@ class Memsize(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (770674944)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (815081984)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpMemsize (770674944)>'
+    __gtype__ = None # (!) real value is '<GType GimpMemsize (815081984)>'
     __info__ = ObjectInfo(Memsize)
 
 

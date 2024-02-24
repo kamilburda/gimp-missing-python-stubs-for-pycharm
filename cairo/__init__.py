@@ -54,6 +54,10 @@ def __getattribute__(*args, **kwargs): # real signature unknown
 def __getattr__(*args, **kwargs): # real signature unknown
     pass
 
+def __getstate__(*args, **kwargs): # real signature unknown
+    """ Helper for pickle. """
+    pass
+
 def __ge__(*args, **kwargs): # real signature unknown
     """ Return self>=value. """
     pass
@@ -165,11 +169,11 @@ from .TextClusterFlags import TextClusterFlags
 from .__class__ import __class__
 # variables with complex values
 
-__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001a3cf569cc0>'
+__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001af30107750>'
 
 __path__ = [
     'C:\\Program Files\\GIMP 2.99\\lib\\girepository-1.0\\cairo-1.0.typelib',
 ]
 
-__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.cairo', loader=<gi.importer.DynamicImporter object at 0x000001a3cf569cc0>)"
+__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.cairo', loader=<gi.importer.DynamicImporter object at 0x000001af30107750>)"
 

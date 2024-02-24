@@ -65,6 +65,10 @@ class Matrix4(__gi.Struct):
         """ Return getattr(self, name). """
         pass
 
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ Helper for pickle. """
+        pass
+
     def __ge__(self, *args, **kwargs): # real signature unknown
         """ Return self>=value. """
         pass
@@ -148,7 +152,7 @@ class Matrix4(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix4), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Matrix4' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix4' objects>, '__doc__': None, 'coeff': <property object at 0x000001e82e2fdad0>, 'identity': gi.FunctionInfo(identity, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'to_deg': gi.FunctionInfo(to_deg, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix4), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Matrix4' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix4' objects>, '__doc__': None, 'coeff': <property object at 0x0000020731632de0>, 'identity': gi.FunctionInfo(identity, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'to_deg': gi.FunctionInfo(to_deg, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(Matrix4)
 
