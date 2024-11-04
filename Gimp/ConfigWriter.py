@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -47,8 +47,8 @@ class ConfigWriter(__gi.Boxed):
     def copy(self, *args, **kwargs): # real signature unknown
         pass
 
-    def data(self, length, data): # real signature unknown; restored from __doc__
-        """ data(self, length:int, data:int) """
+    def data(self, data): # real signature unknown; restored from __doc__
+        """ data(self, data:list) """
         pass
 
     def finish(self, footer): # real signature unknown; restored from __doc__
@@ -210,8 +210,8 @@ class ConfigWriter(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ConfigWriter), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigWriter (815053296)>, '__dict__': <attribute '__dict__' of 'ConfigWriter' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigWriter' objects>, '__doc__': None, 'new_from_fd': gi.FunctionInfo(new_from_fd, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_stream': gi.FunctionInfo(new_from_stream, bound=None), 'new_from_string': gi.FunctionInfo(new_from_string, bound=None), 'close': gi.FunctionInfo(close, bound=None), 'comment': gi.FunctionInfo(comment, bound=None), 'comment_mode': gi.FunctionInfo(comment_mode, bound=None), 'data': gi.FunctionInfo(data, bound=None), 'finish': gi.FunctionInfo(finish, bound=None), 'identifier': gi.FunctionInfo(identifier, bound=None), 'linefeed': gi.FunctionInfo(linefeed, bound=None), 'open': gi.FunctionInfo(open, bound=None), 'print_': gi.FunctionInfo(print, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'revert': gi.FunctionInfo(revert, bound=None), 'string': gi.FunctionInfo(string, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpConfigWriter (815053296)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ConfigWriter), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigWriter (1069020432)>, '__dict__': <attribute '__dict__' of 'ConfigWriter' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigWriter' objects>, '__doc__': None, 'new_from_fd': gi.FunctionInfo(new_from_fd, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_stream': gi.FunctionInfo(new_from_stream, bound=None), 'new_from_string': gi.FunctionInfo(new_from_string, bound=None), 'close': gi.FunctionInfo(close, bound=None), 'comment': gi.FunctionInfo(comment, bound=None), 'comment_mode': gi.FunctionInfo(comment_mode, bound=None), 'data': gi.FunctionInfo(data, bound=None), 'finish': gi.FunctionInfo(finish, bound=None), 'identifier': gi.FunctionInfo(identifier, bound=None), 'linefeed': gi.FunctionInfo(linefeed, bound=None), 'open': gi.FunctionInfo(open, bound=None), 'print_': gi.FunctionInfo(print, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'revert': gi.FunctionInfo(revert, bound=None), 'string': gi.FunctionInfo(string, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpConfigWriter (1069020432)>'
     __info__ = StructInfo(ConfigWriter)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class PixbufTransparency(__gobject.GEnum):
     LARGE_CHECKS = 2
     SMALL_CHECKS = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PixbufTransparency' objects>, '__doc__': None, '__gtype__': <GType PyGimpPixbufTransparency (814712336)>, '__enum_values__': {0: <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 1: <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 2: <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>}, '__info__': gi.EnumInfo(PixbufTransparency), 'KEEP_ALPHA': <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 'SMALL_CHECKS': <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 'LARGE_CHECKS': <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PixbufTransparency' objects>, '__doc__': None, '__gtype__': <GType PyGimpPixbufTransparency (1072217040)>, '__enum_values__': {0: <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 1: <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 2: <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>}, '__info__': gi.EnumInfo(PixbufTransparency), 'KEEP_ALPHA': <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 'SMALL_CHECKS': <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 'LARGE_CHECKS': <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpPixbufTransparency (814712336)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpPixbufTransparency (1072217040)>'
     __info__ = gi.EnumInfo(PixbufTransparency)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -389,7 +389,7 @@ class ImageType(__gobject.GEnum):
     RGBA_IMAGE = 1
     RGB_IMAGE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ImageType' objects>, '__doc__': None, '__gtype__': <GType GimpImageType (815081312)>, '__enum_values__': {0: <enum GIMP_RGB_IMAGE of type Gimp.ImageType>, 1: <enum GIMP_RGBA_IMAGE of type Gimp.ImageType>, 2: <enum GIMP_GRAY_IMAGE of type Gimp.ImageType>, 3: <enum GIMP_GRAYA_IMAGE of type Gimp.ImageType>, 4: <enum GIMP_INDEXED_IMAGE of type Gimp.ImageType>, 5: <enum GIMP_INDEXEDA_IMAGE of type Gimp.ImageType>}, '__info__': gi.EnumInfo(ImageType), 'RGB_IMAGE': <enum GIMP_RGB_IMAGE of type Gimp.ImageType>, 'RGBA_IMAGE': <enum GIMP_RGBA_IMAGE of type Gimp.ImageType>, 'GRAY_IMAGE': <enum GIMP_GRAY_IMAGE of type Gimp.ImageType>, 'GRAYA_IMAGE': <enum GIMP_GRAYA_IMAGE of type Gimp.ImageType>, 'INDEXED_IMAGE': <enum GIMP_INDEXED_IMAGE of type Gimp.ImageType>, 'INDEXEDA_IMAGE': <enum GIMP_INDEXEDA_IMAGE of type Gimp.ImageType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ImageType' objects>, '__doc__': None, '__gtype__': <GType GimpImageType (1069024688)>, '__enum_values__': {0: <enum GIMP_RGB_IMAGE of type Gimp.ImageType>, 1: <enum GIMP_RGBA_IMAGE of type Gimp.ImageType>, 2: <enum GIMP_GRAY_IMAGE of type Gimp.ImageType>, 3: <enum GIMP_GRAYA_IMAGE of type Gimp.ImageType>, 4: <enum GIMP_INDEXED_IMAGE of type Gimp.ImageType>, 5: <enum GIMP_INDEXEDA_IMAGE of type Gimp.ImageType>}, '__info__': gi.EnumInfo(ImageType), 'RGB_IMAGE': <enum GIMP_RGB_IMAGE of type Gimp.ImageType>, 'RGBA_IMAGE': <enum GIMP_RGBA_IMAGE of type Gimp.ImageType>, 'GRAY_IMAGE': <enum GIMP_GRAY_IMAGE of type Gimp.ImageType>, 'GRAYA_IMAGE': <enum GIMP_GRAYA_IMAGE of type Gimp.ImageType>, 'INDEXED_IMAGE': <enum GIMP_INDEXED_IMAGE of type Gimp.ImageType>, 'INDEXEDA_IMAGE': <enum GIMP_INDEXEDA_IMAGE of type Gimp.ImageType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +398,7 @@ class ImageType(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpImageType (815081312)>'
+    __gtype__ = None # (!) real value is '<GType GimpImageType (1069024688)>'
     __info__ = gi.EnumInfo(ImageType)
 
 

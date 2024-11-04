@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class ColorTransformFlags(__gobject.GEnum):
     GAMUT_CHECK = 4096
     NOOPTIMIZE = 256
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (815047808)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (1069016736)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
     __enum_values__ = {
         256: 256,
         4096: 4096,
         8192: 8192,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (815047808)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (1069016736)>'
     __info__ = gi.EnumInfo(ColorTransformFlags)
 
 

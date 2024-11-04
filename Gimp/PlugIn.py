@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -121,14 +121,6 @@ class PlugIn(__gi_overrides_GObject.Object):
     def error_quark(self): # real signature unknown; restored from __doc__
         """ error_quark() -> int """
         return 0
-
-    def extension_enable(self): # real signature unknown; restored from __doc__
-        """ extension_enable(self) """
-        pass
-
-    def extension_process(self, timeout): # real signature unknown; restored from __doc__
-        """ extension_process(self, timeout:int) """
-        pass
 
     def find_property(self, property_name): # real signature unknown; restored from __doc__
         """ find_property(self, property_name:str) -> GObject.ParamSpec """
@@ -266,6 +258,14 @@ class PlugIn(__gi_overrides_GObject.Object):
 
     def override_property(self, property_id, name): # real signature unknown; restored from __doc__
         """ override_property(self, property_id:int, name:str) """
+        pass
+
+    def persistent_enable(self): # real signature unknown; restored from __doc__
+        """ persistent_enable(self) """
+        pass
+
+    def persistent_process(self, timeout): # real signature unknown; restored from __doc__
+        """ persistent_process(self, timeout:int) """
         pass
 
     def ref(self, *args, **kargs): # reliably restored by inspect
@@ -475,8 +475,6 @@ class PlugIn(__gi_overrides_GObject.Object):
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    priv = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -486,12 +484,12 @@ class PlugIn(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df1270>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066df90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PlugIn), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPlugIn (814712560)>, '__doc__': None, '__gsignals__': {}, 'directory': gi.FunctionInfo(directory, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'add_menu_branch': gi.FunctionInfo(add_menu_branch, bound=None), 'add_temp_procedure': gi.FunctionInfo(add_temp_procedure, bound=None), 'extension_enable': gi.FunctionInfo(extension_enable, bound=None), 'extension_process': gi.FunctionInfo(extension_process, bound=None), 'get_pdb_error_handler': gi.FunctionInfo(get_pdb_error_handler, bound=None), 'get_temp_procedure': gi.FunctionInfo(get_temp_procedure, bound=None), 'get_temp_procedures': gi.FunctionInfo(get_temp_procedures, bound=None), 'remove_temp_procedure': gi.FunctionInfo(remove_temp_procedure, bound=None), 'set_help_domain': gi.FunctionInfo(set_help_domain, bound=None), 'set_pdb_error_handler': gi.FunctionInfo(set_pdb_error_handler, bound=None), 'do_create_procedure': gi.VFuncInfo(create_procedure, bound=None), 'do_init_procedures': gi.VFuncInfo(init_procedures, bound=None), 'do_query_procedures': gi.VFuncInfo(query_procedures, bound=None), 'do_quit': gi.VFuncInfo(quit, bound=None), 'do_set_i18n': gi.VFuncInfo(set_i18n, bound=None), 'parent_instance': <property object at 0x0000020731658f40>, 'priv': <property object at 0x0000020731659030>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PlugIn), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPlugIn (1072210208)>, '__doc__': None, '__gsignals__': {}, 'directory': gi.FunctionInfo(directory, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'add_menu_branch': gi.FunctionInfo(add_menu_branch, bound=None), 'add_temp_procedure': gi.FunctionInfo(add_temp_procedure, bound=None), 'get_pdb_error_handler': gi.FunctionInfo(get_pdb_error_handler, bound=None), 'get_temp_procedure': gi.FunctionInfo(get_temp_procedure, bound=None), 'get_temp_procedures': gi.FunctionInfo(get_temp_procedures, bound=None), 'persistent_enable': gi.FunctionInfo(persistent_enable, bound=None), 'persistent_process': gi.FunctionInfo(persistent_process, bound=None), 'remove_temp_procedure': gi.FunctionInfo(remove_temp_procedure, bound=None), 'set_help_domain': gi.FunctionInfo(set_help_domain, bound=None), 'set_pdb_error_handler': gi.FunctionInfo(set_pdb_error_handler, bound=None), 'do_create_procedure': gi.VFuncInfo(create_procedure, bound=None), 'do_init_procedures': gi.VFuncInfo(init_procedures, bound=None), 'do_query_procedures': gi.VFuncInfo(query_procedures, bound=None), 'do_quit': gi.VFuncInfo(quit, bound=None), 'do_set_i18n': gi.VFuncInfo(set_i18n, bound=None), 'parent_instance': <property object at 0x000001b640d10e00>})"
     __gdoc__ = 'Object GimpPlugIn\n\nProperties from GimpPlugIn:\n  program-name -> gchararray: The plug-in executable\n    The executable name as usually found on argv[0]\n  read-channel -> GIOChannel: Read channel\n    The GIOChanel to read from GIMP\n  write-channel -> GIOChannel: Write channel\n    The GIOChanel to write to GIMP\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPlugIn (814712560)>'
+    __gtype__ = None # (!) real value is '<GType GimpPlugIn (1072210208)>'
     __info__ = ObjectInfo(PlugIn)
 
 

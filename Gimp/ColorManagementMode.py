@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class ColorManagementMode(__gobject.GEnum):
     OFF = 0
     SOFTPROOF = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorManagementMode' objects>, '__doc__': None, '__gtype__': <GType GimpColorManagementMode (815051952)>, '__enum_values__': {0: <enum GIMP_COLOR_MANAGEMENT_OFF of type Gimp.ColorManagementMode>, 1: <enum GIMP_COLOR_MANAGEMENT_DISPLAY of type Gimp.ColorManagementMode>, 2: <enum GIMP_COLOR_MANAGEMENT_SOFTPROOF of type Gimp.ColorManagementMode>}, '__info__': gi.EnumInfo(ColorManagementMode), 'OFF': <enum GIMP_COLOR_MANAGEMENT_OFF of type Gimp.ColorManagementMode>, 'DISPLAY': <enum GIMP_COLOR_MANAGEMENT_DISPLAY of type Gimp.ColorManagementMode>, 'SOFTPROOF': <enum GIMP_COLOR_MANAGEMENT_SOFTPROOF of type Gimp.ColorManagementMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorManagementMode' objects>, '__doc__': None, '__gtype__': <GType GimpColorManagementMode (1069020992)>, '__enum_values__': {0: <enum GIMP_COLOR_MANAGEMENT_OFF of type Gimp.ColorManagementMode>, 1: <enum GIMP_COLOR_MANAGEMENT_DISPLAY of type Gimp.ColorManagementMode>, 2: <enum GIMP_COLOR_MANAGEMENT_SOFTPROOF of type Gimp.ColorManagementMode>}, '__info__': gi.EnumInfo(ColorManagementMode), 'OFF': <enum GIMP_COLOR_MANAGEMENT_OFF of type Gimp.ColorManagementMode>, 'DISPLAY': <enum GIMP_COLOR_MANAGEMENT_DISPLAY of type Gimp.ColorManagementMode>, 'SOFTPROOF': <enum GIMP_COLOR_MANAGEMENT_SOFTPROOF of type Gimp.ColorManagementMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpColorManagementMode (815051952)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorManagementMode (1069020992)>'
     __info__ = gi.EnumInfo(ColorManagementMode)
 
 

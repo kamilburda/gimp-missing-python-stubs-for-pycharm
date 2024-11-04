@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,18 +383,18 @@ class RepeatMode(__gobject.GEnum):
 
 
     NONE = 0
-    SAWTOOTH = 1
-    TRIANGULAR = 2
-    TRUNCATE = 3
+    SAWTOOTH = 2
+    TRIANGULAR = 3
+    TRUNCATE = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RepeatMode' objects>, '__doc__': None, '__gtype__': <GType GimpRepeatMode (814716816)>, '__enum_values__': {0: <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 1: <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 2: <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 3: <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>}, '__info__': gi.EnumInfo(RepeatMode), 'NONE': <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 'SAWTOOTH': <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 'TRIANGULAR': <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>, 'TRUNCATE': <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RepeatMode' objects>, '__doc__': None, '__gtype__': <GType GimpRepeatMode (1072211888)>, '__enum_values__': {0: <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 1: <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>, 2: <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 3: <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>}, '__info__': gi.EnumInfo(RepeatMode), 'NONE': <enum GIMP_REPEAT_NONE of type Gimp.RepeatMode>, 'TRUNCATE': <enum GIMP_REPEAT_TRUNCATE of type Gimp.RepeatMode>, 'SAWTOOTH': <enum GIMP_REPEAT_SAWTOOTH of type Gimp.RepeatMode>, 'TRIANGULAR': <enum GIMP_REPEAT_TRIANGULAR of type Gimp.RepeatMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpRepeatMode (814716816)>'
+    __gtype__ = None # (!) real value is '<GType GimpRepeatMode (1072211888)>'
     __info__ = gi.EnumInfo(RepeatMode)
 
 

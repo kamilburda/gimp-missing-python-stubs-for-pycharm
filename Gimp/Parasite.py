@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -190,8 +190,8 @@ class Parasite(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Parasite), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParasite (814714688)>, '__dict__': <attribute '__dict__' of 'Parasite' objects>, '__weakref__': <attribute '__weakref__' of 'Parasite' objects>, '__doc__': None, 'name': <property object at 0x000002073164f790>, 'flags': <property object at 0x000002073164f880>, 'size': <property object at 0x000002073164f970>, 'data': <property object at 0x000002073164fa60>, 'new': gi.FunctionInfo(new, bound=None), 'compare': gi.FunctionInfo(compare, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_data': gi.FunctionInfo(get_data, bound=None), 'get_flags': gi.FunctionInfo(get_flags, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'has_flag': gi.FunctionInfo(has_flag, bound=None), 'is_persistent': gi.FunctionInfo(is_persistent, bound=None), 'is_type': gi.FunctionInfo(is_type, bound=None), 'is_undoable': gi.FunctionInfo(is_undoable, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpParasite (814714688)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Parasite), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParasite (1072215024)>, '__dict__': <attribute '__dict__' of 'Parasite' objects>, '__weakref__': <attribute '__weakref__' of 'Parasite' objects>, '__doc__': None, 'name': <property object at 0x000001b640d0ae80>, 'flags': <property object at 0x000001b640d0af70>, 'size': <property object at 0x000001b640d0b060>, 'data': <property object at 0x000001b640d0b150>, 'new': gi.FunctionInfo(new, bound=None), 'compare': gi.FunctionInfo(compare, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_data': gi.FunctionInfo(get_data, bound=None), 'get_flags': gi.FunctionInfo(get_flags, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'has_flag': gi.FunctionInfo(has_flag, bound=None), 'is_persistent': gi.FunctionInfo(is_persistent, bound=None), 'is_type': gi.FunctionInfo(is_type, bound=None), 'is_undoable': gi.FunctionInfo(is_undoable, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpParasite (1072215024)>'
     __info__ = StructInfo(Parasite)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class MergeType(__gobject.GEnum):
     EXPAND_AS_NECESSARY = 0
     FLATTEN_IMAGE = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MergeType' objects>, '__doc__': None, '__gtype__': <GType GimpMergeType (815080080)>, '__enum_values__': {0: <enum GIMP_EXPAND_AS_NECESSARY of type Gimp.MergeType>, 1: <enum GIMP_CLIP_TO_IMAGE of type Gimp.MergeType>, 2: <enum GIMP_CLIP_TO_BOTTOM_LAYER of type Gimp.MergeType>, 3: <enum GIMP_FLATTEN_IMAGE of type Gimp.MergeType>}, '__info__': gi.EnumInfo(MergeType), 'EXPAND_AS_NECESSARY': <enum GIMP_EXPAND_AS_NECESSARY of type Gimp.MergeType>, 'CLIP_TO_IMAGE': <enum GIMP_CLIP_TO_IMAGE of type Gimp.MergeType>, 'CLIP_TO_BOTTOM_LAYER': <enum GIMP_CLIP_TO_BOTTOM_LAYER of type Gimp.MergeType>, 'FLATTEN_IMAGE': <enum GIMP_FLATTEN_IMAGE of type Gimp.MergeType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MergeType' objects>, '__doc__': None, '__gtype__': <GType GimpMergeType (1069013600)>, '__enum_values__': {0: <enum GIMP_EXPAND_AS_NECESSARY of type Gimp.MergeType>, 1: <enum GIMP_CLIP_TO_IMAGE of type Gimp.MergeType>, 2: <enum GIMP_CLIP_TO_BOTTOM_LAYER of type Gimp.MergeType>, 3: <enum GIMP_FLATTEN_IMAGE of type Gimp.MergeType>}, '__info__': gi.EnumInfo(MergeType), 'EXPAND_AS_NECESSARY': <enum GIMP_EXPAND_AS_NECESSARY of type Gimp.MergeType>, 'CLIP_TO_IMAGE': <enum GIMP_CLIP_TO_IMAGE of type Gimp.MergeType>, 'CLIP_TO_BOTTOM_LAYER': <enum GIMP_CLIP_TO_BOTTOM_LAYER of type Gimp.MergeType>, 'FLATTEN_IMAGE': <enum GIMP_FLATTEN_IMAGE of type Gimp.MergeType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpMergeType (815080080)>'
+    __gtype__ = None # (!) real value is '<GType GimpMergeType (1069013600)>'
     __info__ = gi.EnumInfo(MergeType)
 
 

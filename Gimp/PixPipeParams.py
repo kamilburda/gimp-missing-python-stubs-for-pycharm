@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -154,7 +154,7 @@ class PixPipeParams(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000002073164fe70>, 'ncells': <property object at 0x000002073164ff60>, 'dim': <property object at 0x0000020731658090>, 'cols': <property object at 0x0000020731658180>, 'rows': <property object at 0x0000020731658270>, 'cellwidth': <property object at 0x0000020731658360>, 'cellheight': <property object at 0x0000020731658450>, 'placement': <property object at 0x0000020731658540>, 'rank': <property object at 0x0000020731658630>, 'selection': <property object at 0x0000020731658720>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000001b640d0bd80>, 'ncells': <property object at 0x000001b640d0be70>, 'dim': <property object at 0x000001b640d0bf60>, 'cols': <property object at 0x000001b640d10090>, 'rows': <property object at 0x000001b640d10180>, 'cellwidth': <property object at 0x000001b640d10270>, 'cellheight': <property object at 0x000001b640d10360>, 'placement': <property object at 0x000001b640d10450>, 'rank': <property object at 0x000001b640d10540>, 'selection': <property object at 0x000001b640d10630>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PixPipeParams)
 

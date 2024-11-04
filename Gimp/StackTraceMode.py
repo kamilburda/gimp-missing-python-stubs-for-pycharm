@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class StackTraceMode(__gobject.GEnum):
     NEVER = 0
     QUERY = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StackTraceMode' objects>, '__doc__': None, '__gtype__': <GType GimpStackTraceMode (814713232)>, '__enum_values__': {0: <enum GIMP_STACK_TRACE_NEVER of type Gimp.StackTraceMode>, 1: <enum GIMP_STACK_TRACE_QUERY of type Gimp.StackTraceMode>, 2: <enum GIMP_STACK_TRACE_ALWAYS of type Gimp.StackTraceMode>}, '__info__': gi.EnumInfo(StackTraceMode), 'NEVER': <enum GIMP_STACK_TRACE_NEVER of type Gimp.StackTraceMode>, 'QUERY': <enum GIMP_STACK_TRACE_QUERY of type Gimp.StackTraceMode>, 'ALWAYS': <enum GIMP_STACK_TRACE_ALWAYS of type Gimp.StackTraceMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StackTraceMode' objects>, '__doc__': None, '__gtype__': <GType GimpStackTraceMode (1072216480)>, '__enum_values__': {0: <enum GIMP_STACK_TRACE_NEVER of type Gimp.StackTraceMode>, 1: <enum GIMP_STACK_TRACE_QUERY of type Gimp.StackTraceMode>, 2: <enum GIMP_STACK_TRACE_ALWAYS of type Gimp.StackTraceMode>}, '__info__': gi.EnumInfo(StackTraceMode), 'NEVER': <enum GIMP_STACK_TRACE_NEVER of type Gimp.StackTraceMode>, 'QUERY': <enum GIMP_STACK_TRACE_QUERY of type Gimp.StackTraceMode>, 'ALWAYS': <enum GIMP_STACK_TRACE_ALWAYS of type Gimp.StackTraceMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpStackTraceMode (814713232)>'
+    __gtype__ = None # (!) real value is '<GType GimpStackTraceMode (1072216480)>'
     __info__ = gi.EnumInfo(StackTraceMode)
 
 

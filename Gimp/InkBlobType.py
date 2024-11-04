@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class InkBlobType(__gobject.GEnum):
     DIAMOND = 2
     SQUARE = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InkBlobType' objects>, '__doc__': None, '__gtype__': <GType GimpInkBlobType (815081536)>, '__enum_values__': {0: <enum GIMP_INK_BLOB_TYPE_CIRCLE of type Gimp.InkBlobType>, 1: <enum GIMP_INK_BLOB_TYPE_SQUARE of type Gimp.InkBlobType>, 2: <enum GIMP_INK_BLOB_TYPE_DIAMOND of type Gimp.InkBlobType>}, '__info__': gi.EnumInfo(InkBlobType), 'CIRCLE': <enum GIMP_INK_BLOB_TYPE_CIRCLE of type Gimp.InkBlobType>, 'SQUARE': <enum GIMP_INK_BLOB_TYPE_SQUARE of type Gimp.InkBlobType>, 'DIAMOND': <enum GIMP_INK_BLOB_TYPE_DIAMOND of type Gimp.InkBlobType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InkBlobType' objects>, '__doc__': None, '__gtype__': <GType GimpInkBlobType (1069023680)>, '__enum_values__': {0: <enum GIMP_INK_BLOB_TYPE_CIRCLE of type Gimp.InkBlobType>, 1: <enum GIMP_INK_BLOB_TYPE_SQUARE of type Gimp.InkBlobType>, 2: <enum GIMP_INK_BLOB_TYPE_DIAMOND of type Gimp.InkBlobType>}, '__info__': gi.EnumInfo(InkBlobType), 'CIRCLE': <enum GIMP_INK_BLOB_TYPE_CIRCLE of type Gimp.InkBlobType>, 'SQUARE': <enum GIMP_INK_BLOB_TYPE_SQUARE of type Gimp.InkBlobType>, 'DIAMOND': <enum GIMP_INK_BLOB_TYPE_DIAMOND of type Gimp.InkBlobType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpInkBlobType (815081536)>'
+    __gtype__ = None # (!) real value is '<GType GimpInkBlobType (1069023680)>'
     __info__ = gi.EnumInfo(InkBlobType)
 
 

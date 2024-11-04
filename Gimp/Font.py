@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -98,10 +98,6 @@ class Font(Resource):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -163,7 +159,7 @@ class Font(Resource):
         pass
 
     def get_by_name(self, name): # real signature unknown; restored from __doc__
-        """ get_by_name(name:str) -> Gimp.Font """
+        """ get_by_name(name:str) -> Gimp.Font or None """
         pass
 
     def get_data(self, *args, **kargs): # reliably restored by inspect
@@ -361,18 +357,6 @@ class Font(Resource):
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
-
-    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
-        return ""
-
-    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
-        """ select_set(callback_name:str, resource:Gimp.Resource) """
-        pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
 
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -577,12 +561,12 @@ class Font(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165eaa0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d930>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Font), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFont (815047360)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_pango_font_description': gi.FunctionInfo(get_pango_font_description, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Font), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFont (1069023120)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_pango_font_description': gi.FunctionInfo(get_pango_font_description, bound=None)})"
     __gdoc__ = 'Object GimpFont\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpFont (815047360)>'
+    __gtype__ = None # (!) real value is '<GType GimpFont (1069023120)>'
     __info__ = ObjectInfo(Font)
 
 

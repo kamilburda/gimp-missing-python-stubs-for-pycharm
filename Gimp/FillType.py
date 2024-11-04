@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -389,7 +389,7 @@ class FillType(__gobject.GEnum):
     TRANSPARENT = 4
     WHITE = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'FillType' objects>, '__doc__': None, '__gtype__': <GType GimpFillType (815047136)>, '__enum_values__': {0: <enum GIMP_FILL_FOREGROUND of type Gimp.FillType>, 1: <enum GIMP_FILL_BACKGROUND of type Gimp.FillType>, 2: <enum GIMP_FILL_CIELAB_MIDDLE_GRAY of type Gimp.FillType>, 3: <enum GIMP_FILL_WHITE of type Gimp.FillType>, 4: <enum GIMP_FILL_TRANSPARENT of type Gimp.FillType>, 5: <enum GIMP_FILL_PATTERN of type Gimp.FillType>}, '__info__': gi.EnumInfo(FillType), 'FOREGROUND': <enum GIMP_FILL_FOREGROUND of type Gimp.FillType>, 'BACKGROUND': <enum GIMP_FILL_BACKGROUND of type Gimp.FillType>, 'CIELAB_MIDDLE_GRAY': <enum GIMP_FILL_CIELAB_MIDDLE_GRAY of type Gimp.FillType>, 'WHITE': <enum GIMP_FILL_WHITE of type Gimp.FillType>, 'TRANSPARENT': <enum GIMP_FILL_TRANSPARENT of type Gimp.FillType>, 'PATTERN': <enum GIMP_FILL_PATTERN of type Gimp.FillType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'FillType' objects>, '__doc__': None, '__gtype__': <GType GimpFillType (1069019984)>, '__enum_values__': {0: <enum GIMP_FILL_FOREGROUND of type Gimp.FillType>, 1: <enum GIMP_FILL_BACKGROUND of type Gimp.FillType>, 2: <enum GIMP_FILL_CIELAB_MIDDLE_GRAY of type Gimp.FillType>, 3: <enum GIMP_FILL_WHITE of type Gimp.FillType>, 4: <enum GIMP_FILL_TRANSPARENT of type Gimp.FillType>, 5: <enum GIMP_FILL_PATTERN of type Gimp.FillType>}, '__info__': gi.EnumInfo(FillType), 'FOREGROUND': <enum GIMP_FILL_FOREGROUND of type Gimp.FillType>, 'BACKGROUND': <enum GIMP_FILL_BACKGROUND of type Gimp.FillType>, 'CIELAB_MIDDLE_GRAY': <enum GIMP_FILL_CIELAB_MIDDLE_GRAY of type Gimp.FillType>, 'WHITE': <enum GIMP_FILL_WHITE of type Gimp.FillType>, 'TRANSPARENT': <enum GIMP_FILL_TRANSPARENT of type Gimp.FillType>, 'PATTERN': <enum GIMP_FILL_PATTERN of type Gimp.FillType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +398,7 @@ class FillType(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpFillType (815047136)>'
+    __gtype__ = None # (!) real value is '<GType GimpFillType (1069019984)>'
     __info__ = gi.EnumInfo(FillType)
 
 

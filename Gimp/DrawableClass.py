@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,6 +134,8 @@ class DrawableClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -154,7 +156,7 @@ class DrawableClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731612de0>, '_gimp_reserved1': <property object at 0x0000020731612ed0>, '_gimp_reserved2': <property object at 0x0000020731612fc0>, '_gimp_reserved3': <property object at 0x00000207316130b0>, '_gimp_reserved4': <property object at 0x00000207316131a0>, '_gimp_reserved5': <property object at 0x0000020731613290>, '_gimp_reserved6': <property object at 0x0000020731613380>, '_gimp_reserved7': <property object at 0x0000020731613470>, '_gimp_reserved8': <property object at 0x0000020731613560>, '_gimp_reserved9': <property object at 0x0000020731613650>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640ccbf10>, '_gimp_reserved0': <property object at 0x000001b640cd8040>, '_gimp_reserved1': <property object at 0x000001b640cd8130>, '_gimp_reserved2': <property object at 0x000001b640cd8220>, '_gimp_reserved3': <property object at 0x000001b640cd8310>, '_gimp_reserved4': <property object at 0x000001b640cd8400>, '_gimp_reserved5': <property object at 0x000001b640cd84f0>, '_gimp_reserved6': <property object at 0x000001b640cd85e0>, '_gimp_reserved7': <property object at 0x000001b640cd86d0>, '_gimp_reserved8': <property object at 0x000001b640cd87c0>, '_gimp_reserved9': <property object at 0x000001b640cd88b0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(DrawableClass)
 

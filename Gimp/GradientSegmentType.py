@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -389,7 +389,7 @@ class GradientSegmentType(__gobject.GEnum):
     SPHERE_INCREASING = 3
     STEP = 5
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentType (815048032)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_LINEAR of type Gimp.GradientSegmentType>, 1: <enum GIMP_GRADIENT_SEGMENT_CURVED of type Gimp.GradientSegmentType>, 2: <enum GIMP_GRADIENT_SEGMENT_SINE of type Gimp.GradientSegmentType>, 3: <enum GIMP_GRADIENT_SEGMENT_SPHERE_INCREASING of type Gimp.GradientSegmentType>, 4: <enum GIMP_GRADIENT_SEGMENT_SPHERE_DECREASING of type Gimp.GradientSegmentType>, 5: <enum GIMP_GRADIENT_SEGMENT_STEP of type Gimp.GradientSegmentType>}, '__info__': gi.EnumInfo(GradientSegmentType), 'LINEAR': <enum GIMP_GRADIENT_SEGMENT_LINEAR of type Gimp.GradientSegmentType>, 'CURVED': <enum GIMP_GRADIENT_SEGMENT_CURVED of type Gimp.GradientSegmentType>, 'SINE': <enum GIMP_GRADIENT_SEGMENT_SINE of type Gimp.GradientSegmentType>, 'SPHERE_INCREASING': <enum GIMP_GRADIENT_SEGMENT_SPHERE_INCREASING of type Gimp.GradientSegmentType>, 'SPHERE_DECREASING': <enum GIMP_GRADIENT_SEGMENT_SPHERE_DECREASING of type Gimp.GradientSegmentType>, 'STEP': <enum GIMP_GRADIENT_SEGMENT_STEP of type Gimp.GradientSegmentType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentType (1069021440)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_LINEAR of type Gimp.GradientSegmentType>, 1: <enum GIMP_GRADIENT_SEGMENT_CURVED of type Gimp.GradientSegmentType>, 2: <enum GIMP_GRADIENT_SEGMENT_SINE of type Gimp.GradientSegmentType>, 3: <enum GIMP_GRADIENT_SEGMENT_SPHERE_INCREASING of type Gimp.GradientSegmentType>, 4: <enum GIMP_GRADIENT_SEGMENT_SPHERE_DECREASING of type Gimp.GradientSegmentType>, 5: <enum GIMP_GRADIENT_SEGMENT_STEP of type Gimp.GradientSegmentType>}, '__info__': gi.EnumInfo(GradientSegmentType), 'LINEAR': <enum GIMP_GRADIENT_SEGMENT_LINEAR of type Gimp.GradientSegmentType>, 'CURVED': <enum GIMP_GRADIENT_SEGMENT_CURVED of type Gimp.GradientSegmentType>, 'SINE': <enum GIMP_GRADIENT_SEGMENT_SINE of type Gimp.GradientSegmentType>, 'SPHERE_INCREASING': <enum GIMP_GRADIENT_SEGMENT_SPHERE_INCREASING of type Gimp.GradientSegmentType>, 'SPHERE_DECREASING': <enum GIMP_GRADIENT_SEGMENT_SPHERE_DECREASING of type Gimp.GradientSegmentType>, 'STEP': <enum GIMP_GRADIENT_SEGMENT_STEP of type Gimp.GradientSegmentType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +398,7 @@ class GradientSegmentType(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentType (815048032)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentType (1069021440)>'
     __info__ = gi.EnumInfo(GradientSegmentType)
 
 

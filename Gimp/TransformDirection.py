@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class TransformDirection(__gobject.GEnum):
     BACKWARD = 1
     FORWARD = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransformDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTransformDirection (814713008)>, '__enum_values__': {0: <enum GIMP_TRANSFORM_FORWARD of type Gimp.TransformDirection>, 1: <enum GIMP_TRANSFORM_BACKWARD of type Gimp.TransformDirection>}, '__info__': gi.EnumInfo(TransformDirection), 'FORWARD': <enum GIMP_TRANSFORM_FORWARD of type Gimp.TransformDirection>, 'BACKWARD': <enum GIMP_TRANSFORM_BACKWARD of type Gimp.TransformDirection>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransformDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTransformDirection (1065743840)>, '__enum_values__': {0: <enum GIMP_TRANSFORM_FORWARD of type Gimp.TransformDirection>, 1: <enum GIMP_TRANSFORM_BACKWARD of type Gimp.TransformDirection>}, '__info__': gi.EnumInfo(TransformDirection), 'FORWARD': <enum GIMP_TRANSFORM_FORWARD of type Gimp.TransformDirection>, 'BACKWARD': <enum GIMP_TRANSFORM_BACKWARD of type Gimp.TransformDirection>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTransformDirection (814713008)>'
+    __gtype__ = None # (!) real value is '<GType GimpTransformDirection (1065743840)>'
     __info__ = gi.EnumInfo(TransformDirection)
 
 

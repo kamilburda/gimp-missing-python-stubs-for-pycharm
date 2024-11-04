@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,25 +134,9 @@ class PDBClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved3 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved4 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved5 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved6 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved7 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PDBClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PDBClass' objects>, '__weakref__': <attribute '__weakref__' of 'PDBClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073163f100>, '_gimp_reserved1': <property object at 0x000002073163f1f0>, '_gimp_reserved2': <property object at 0x000002073163f2e0>, '_gimp_reserved3': <property object at 0x000002073163f3d0>, '_gimp_reserved4': <property object at 0x000002073163f4c0>, '_gimp_reserved5': <property object at 0x000002073163f5b0>, '_gimp_reserved6': <property object at 0x000002073163f6a0>, '_gimp_reserved7': <property object at 0x000002073163f790>, '_gimp_reserved8': <property object at 0x000002073163f880>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PDBClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PDBClass' objects>, '__weakref__': <attribute '__weakref__' of 'PDBClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cfd1c0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PDBClass)
 

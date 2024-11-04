@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,11 +134,15 @@ class ParamSpecUnit(__gi.Struct):
 
     allow_percent = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    allow_pixel = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    default_value = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecUnit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecUnit' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecUnit' objects>, '__doc__': None, 'parent_instance': <property object at 0x000002073164e6b0>, 'allow_percent': <property object at 0x000002073164e7a0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecUnit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecUnit' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecUnit' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d0a3e0>, 'allow_pixel': <property object at 0x000001b640d0a4d0>, 'allow_percent': <property object at 0x000001b640d0a5c0>, 'default_value': <property object at 0x000001b640d0a6b0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecUnit)
 

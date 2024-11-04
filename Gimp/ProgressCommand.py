@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -389,7 +389,7 @@ class ProgressCommand(__gobject.GEnum):
     SET_VALUE = 3
     START = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (814712224)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (1072213904)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +398,7 @@ class ProgressCommand(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (814712224)>'
+    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (1072213904)>'
     __info__ = gi.EnumInfo(ProgressCommand)
 
 

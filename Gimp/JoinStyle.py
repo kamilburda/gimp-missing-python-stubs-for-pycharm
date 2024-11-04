@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class JoinStyle(__gobject.GEnum):
     MITER = 0
     ROUND = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'JoinStyle' objects>, '__doc__': None, '__gtype__': <GType GimpJoinStyle (815084000)>, '__enum_values__': {0: <enum GIMP_JOIN_MITER of type Gimp.JoinStyle>, 1: <enum GIMP_JOIN_ROUND of type Gimp.JoinStyle>, 2: <enum GIMP_JOIN_BEVEL of type Gimp.JoinStyle>}, '__info__': gi.EnumInfo(JoinStyle), 'MITER': <enum GIMP_JOIN_MITER of type Gimp.JoinStyle>, 'ROUND': <enum GIMP_JOIN_ROUND of type Gimp.JoinStyle>, 'BEVEL': <enum GIMP_JOIN_BEVEL of type Gimp.JoinStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'JoinStyle' objects>, '__doc__': None, '__gtype__': <GType GimpJoinStyle (1069012144)>, '__enum_values__': {0: <enum GIMP_JOIN_MITER of type Gimp.JoinStyle>, 1: <enum GIMP_JOIN_ROUND of type Gimp.JoinStyle>, 2: <enum GIMP_JOIN_BEVEL of type Gimp.JoinStyle>}, '__info__': gi.EnumInfo(JoinStyle), 'MITER': <enum GIMP_JOIN_MITER of type Gimp.JoinStyle>, 'ROUND': <enum GIMP_JOIN_ROUND of type Gimp.JoinStyle>, 'BEVEL': <enum GIMP_JOIN_BEVEL of type Gimp.JoinStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpJoinStyle (815084000)>'
+    __gtype__ = None # (!) real value is '<GType GimpJoinStyle (1069012144)>'
     __info__ = gi.EnumInfo(JoinStyle)
 
 

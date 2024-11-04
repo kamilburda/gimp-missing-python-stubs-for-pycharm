@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class ConvolveType(__gobject.GEnum):
     BLUR = 0
     SHARPEN = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvolveType' objects>, '__doc__': None, '__gtype__': <GType GimpConvolveType (815052624)>, '__enum_values__': {0: <enum GIMP_CONVOLVE_BLUR of type Gimp.ConvolveType>, 1: <enum GIMP_CONVOLVE_SHARPEN of type Gimp.ConvolveType>}, '__info__': gi.EnumInfo(ConvolveType), 'BLUR': <enum GIMP_CONVOLVE_BLUR of type Gimp.ConvolveType>, 'SHARPEN': <enum GIMP_CONVOLVE_SHARPEN of type Gimp.ConvolveType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvolveType' objects>, '__doc__': None, '__gtype__': <GType GimpConvolveType (1069016960)>, '__enum_values__': {0: <enum GIMP_CONVOLVE_BLUR of type Gimp.ConvolveType>, 1: <enum GIMP_CONVOLVE_SHARPEN of type Gimp.ConvolveType>}, '__info__': gi.EnumInfo(ConvolveType), 'BLUR': <enum GIMP_CONVOLVE_BLUR of type Gimp.ConvolveType>, 'SHARPEN': <enum GIMP_CONVOLVE_SHARPEN of type Gimp.ConvolveType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpConvolveType (815052624)>'
+    __gtype__ = None # (!) real value is '<GType GimpConvolveType (1069016960)>'
     __info__ = gi.EnumInfo(ConvolveType)
 
 

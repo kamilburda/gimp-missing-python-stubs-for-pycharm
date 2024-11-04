@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -147,9 +147,9 @@ class ConfigPath(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (815050496)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (1069016512)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpConfigPath (815050496)>'
+    __gtype__ = None # (!) real value is '<GType GimpConfigPath (1069016512)>'
     __info__ = ObjectInfo(ConfigPath)
 
 

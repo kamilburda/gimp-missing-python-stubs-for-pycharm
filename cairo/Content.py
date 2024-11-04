@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class Content(__gobject.GEnum):
     COLOR = 4096
     COLOR_ALPHA = 12288
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Content' objects>, '__doc__': None, '__gtype__': <GType cairo_content_t (804301664)>, '__enum_values__': {4096: <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 8192: <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 12288: <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>}, '__info__': gi.EnumInfo(Content), 'COLOR': <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 'ALPHA': <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 'COLOR_ALPHA': <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Content' objects>, '__doc__': None, '__gtype__': <GType cairo_content_t (4003650832)>, '__enum_values__': {4096: <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 8192: <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 12288: <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>}, '__info__': gi.EnumInfo(Content), 'COLOR': <enum CAIRO_CONTENT_COLOR of type cairo.Content>, 'ALPHA': <enum CAIRO_CONTENT_ALPHA of type cairo.Content>, 'COLOR_ALPHA': <enum CAIRO_CONTENT_COLOR_ALPHA of type cairo.Content>})"
     __enum_values__ = {
         4096: 4096,
         8192: 8192,
         12288: 12288,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_content_t (804301664)>'
+    __gtype__ = None # (!) real value is '<GType cairo_content_t (4003650832)>'
     __info__ = gi.EnumInfo(Content)
 
 

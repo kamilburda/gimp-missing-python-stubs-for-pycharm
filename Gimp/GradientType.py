@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -394,7 +394,7 @@ class GradientType(__gobject.GEnum):
     SPIRAL_CLOCKWISE = 9
     SQUARE = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientType (815048256)>, '__enum_values__': {0: <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 1: <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 2: <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 3: <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 4: <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 5: <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 6: <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 7: <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 8: <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 9: <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 10: <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>}, '__info__': gi.EnumInfo(GradientType), 'LINEAR': <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 'BILINEAR': <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 'RADIAL': <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 'SQUARE': <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 'CONICAL_SYMMETRIC': <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 'CONICAL_ASYMMETRIC': <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 'SHAPEBURST_ANGULAR': <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 'SHAPEBURST_SPHERICAL': <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 'SHAPEBURST_DIMPLED': <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 'SPIRAL_CLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 'SPIRAL_ANTICLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientType' objects>, '__doc__': None, '__gtype__': <GType GimpGradientType (1069023792)>, '__enum_values__': {0: <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 1: <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 2: <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 3: <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 4: <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 5: <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 6: <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 7: <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 8: <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 9: <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 10: <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>}, '__info__': gi.EnumInfo(GradientType), 'LINEAR': <enum GIMP_GRADIENT_LINEAR of type Gimp.GradientType>, 'BILINEAR': <enum GIMP_GRADIENT_BILINEAR of type Gimp.GradientType>, 'RADIAL': <enum GIMP_GRADIENT_RADIAL of type Gimp.GradientType>, 'SQUARE': <enum GIMP_GRADIENT_SQUARE of type Gimp.GradientType>, 'CONICAL_SYMMETRIC': <enum GIMP_GRADIENT_CONICAL_SYMMETRIC of type Gimp.GradientType>, 'CONICAL_ASYMMETRIC': <enum GIMP_GRADIENT_CONICAL_ASYMMETRIC of type Gimp.GradientType>, 'SHAPEBURST_ANGULAR': <enum GIMP_GRADIENT_SHAPEBURST_ANGULAR of type Gimp.GradientType>, 'SHAPEBURST_SPHERICAL': <enum GIMP_GRADIENT_SHAPEBURST_SPHERICAL of type Gimp.GradientType>, 'SHAPEBURST_DIMPLED': <enum GIMP_GRADIENT_SHAPEBURST_DIMPLED of type Gimp.GradientType>, 'SPIRAL_CLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_CLOCKWISE of type Gimp.GradientType>, 'SPIRAL_ANTICLOCKWISE': <enum GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE of type Gimp.GradientType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -408,7 +408,7 @@ class GradientType(__gobject.GEnum):
         9: 9,
         10: 10,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientType (815048256)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientType (1069023792)>'
     __info__ = gi.EnumInfo(GradientType)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -145,8 +145,8 @@ class Rectangle(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Rectangle), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRectangle (804006112)>, '__dict__': <attribute '__dict__' of 'Rectangle' objects>, '__weakref__': <attribute '__weakref__' of 'Rectangle' objects>, '__doc__': None, 'x': <property object at 0x000001af302dee30>, 'y': <property object at 0x000001af302def20>, 'width': <property object at 0x000001af302df010>, 'height': <property object at 0x000001af302df100>})"
-    __gtype__ = None # (!) real value is '<GType CairoRectangle (804006112)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Rectangle), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoRectangle (4004032816)>, '__dict__': <attribute '__dict__' of 'Rectangle' objects>, '__weakref__': <attribute '__weakref__' of 'Rectangle' objects>, '__doc__': None, 'x': <property object at 0x00000161ef2387c0>, 'y': <property object at 0x00000161ef2388b0>, 'width': <property object at 0x00000161ef2389a0>, 'height': <property object at 0x00000161ef238a90>})"
+    __gtype__ = None # (!) real value is '<GType CairoRectangle (4004032816)>'
     __info__ = StructInfo(Rectangle)
 
 

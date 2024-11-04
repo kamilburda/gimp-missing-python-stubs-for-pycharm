@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -24,6 +24,14 @@ import gobject as __gobject
 class Int32Array(__gi.Boxed):
     # no doc
     def copy(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def get_values(self, array): # real signature unknown; restored from __doc__
+        """ get_values(array:Gimp.Array) -> list """
+        return []
+
+    def set_values(self, array, values, static_data): # real signature unknown; restored from __doc__
+        """ set_values(array:Gimp.Array, values:list, static_data:bool) """
         pass
 
     def _clear_boxed(self, *args, **kwargs): # real signature unknown
@@ -133,8 +141,8 @@ class Int32Array(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (815083776)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType GimpInt32Array (815083776)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (1069023904)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None, 'get_values': gi.FunctionInfo(get_values, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpInt32Array (1069023904)>'
     __info__ = StructInfo(Int32Array)
 
 

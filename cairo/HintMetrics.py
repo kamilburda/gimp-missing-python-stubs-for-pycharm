@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class HintMetrics(__gobject.GEnum):
     OFF = 1
     ON = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'HintMetrics' objects>, '__doc__': None, '__gtype__': <GType cairo_hint_metrics_t (804300880)>, '__enum_values__': {0: <enum CAIRO_HINT_METRICS_DEFAULT of type cairo.HintMetrics>, 1: <enum CAIRO_HINT_METRICS_OFF of type cairo.HintMetrics>, 2: <enum CAIRO_HINT_METRICS_ON of type cairo.HintMetrics>}, '__info__': gi.EnumInfo(HintMetrics), 'DEFAULT': <enum CAIRO_HINT_METRICS_DEFAULT of type cairo.HintMetrics>, 'OFF': <enum CAIRO_HINT_METRICS_OFF of type cairo.HintMetrics>, 'ON': <enum CAIRO_HINT_METRICS_ON of type cairo.HintMetrics>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'HintMetrics' objects>, '__doc__': None, '__gtype__': <GType cairo_hint_metrics_t (4004030128)>, '__enum_values__': {0: <enum CAIRO_HINT_METRICS_DEFAULT of type cairo.HintMetrics>, 1: <enum CAIRO_HINT_METRICS_OFF of type cairo.HintMetrics>, 2: <enum CAIRO_HINT_METRICS_ON of type cairo.HintMetrics>}, '__info__': gi.EnumInfo(HintMetrics), 'DEFAULT': <enum CAIRO_HINT_METRICS_DEFAULT of type cairo.HintMetrics>, 'OFF': <enum CAIRO_HINT_METRICS_OFF of type cairo.HintMetrics>, 'ON': <enum CAIRO_HINT_METRICS_ON of type cairo.HintMetrics>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_hint_metrics_t (804300880)>'
+    __gtype__ = None # (!) real value is '<GType cairo_hint_metrics_t (4004030128)>'
     __info__ = gi.EnumInfo(HintMetrics)
 
 

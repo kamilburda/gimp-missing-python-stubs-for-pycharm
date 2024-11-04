@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -388,7 +388,7 @@ class InterpolationType(__gobject.GEnum):
     NOHALO = 3
     NONE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (815080416)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (1069009008)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +396,7 @@ class InterpolationType(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (815080416)>'
+    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (1069009008)>'
     __info__ = gi.EnumInfo(InterpolationType)
 
 

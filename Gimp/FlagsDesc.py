@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -140,7 +140,7 @@ class FlagsDesc(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FlagsDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FlagsDesc' objects>, '__weakref__': <attribute '__weakref__' of 'FlagsDesc' objects>, '__doc__': None, 'value': <property object at 0x0000020731618b80>, 'value_desc': <property object at 0x0000020731618c70>, 'value_help': <property object at 0x0000020731618d60>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FlagsDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FlagsDesc' objects>, '__weakref__': <attribute '__weakref__' of 'FlagsDesc' objects>, '__doc__': None, 'value': <property object at 0x000001b640cdb2e0>, 'value_desc': <property object at 0x000001b640cdb3d0>, 'value_help': <property object at 0x000001b640cdb4c0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(FlagsDesc)
 

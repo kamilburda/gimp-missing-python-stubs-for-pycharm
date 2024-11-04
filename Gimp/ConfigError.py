@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -388,7 +388,7 @@ class ConfigError(__gobject.GEnum):
     VERSION = 4
     WRITE = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigError' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigError (815048368)>, '__enum_values__': {0: <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 1: <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 2: <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 3: <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 4: <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>}, '__info__': gi.EnumInfo(ConfigError), 'OPEN': <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 'OPEN_ENOENT': <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 'WRITE': <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 'PARSE': <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 'VERSION': <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigError' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigError (1069019312)>, '__enum_values__': {0: <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 1: <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 2: <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 3: <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 4: <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>}, '__info__': gi.EnumInfo(ConfigError), 'OPEN': <enum GIMP_CONFIG_ERROR_OPEN of type Gimp.ConfigError>, 'OPEN_ENOENT': <enum GIMP_CONFIG_ERROR_OPEN_ENOENT of type Gimp.ConfigError>, 'WRITE': <enum GIMP_CONFIG_ERROR_WRITE of type Gimp.ConfigError>, 'PARSE': <enum GIMP_CONFIG_ERROR_PARSE of type Gimp.ConfigError>, 'VERSION': <enum GIMP_CONFIG_ERROR_VERSION of type Gimp.ConfigError>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +396,7 @@ class ConfigError(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpConfigError (815048368)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpConfigError (1069019312)>'
     __info__ = gi.EnumInfo(ConfigError)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class RegionOverlap(__gobject.GEnum):
     OUT = 1
     PART = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'RegionOverlap' objects>, '__doc__': None, '__gtype__': <GType cairo_region_overlap_t (804000064)>, '__enum_values__': {0: <enum CAIRO_REGION_OVERLAP_IN of type cairo.RegionOverlap>, 1: <enum CAIRO_REGION_OVERLAP_OUT of type cairo.RegionOverlap>, 2: <enum CAIRO_REGION_OVERLAP_PART of type cairo.RegionOverlap>}, '__info__': gi.EnumInfo(RegionOverlap), 'IN': <enum CAIRO_REGION_OVERLAP_IN of type cairo.RegionOverlap>, 'OUT': <enum CAIRO_REGION_OVERLAP_OUT of type cairo.RegionOverlap>, 'PART': <enum CAIRO_REGION_OVERLAP_PART of type cairo.RegionOverlap>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'RegionOverlap' objects>, '__doc__': None, '__gtype__': <GType cairo_region_overlap_t (4004030464)>, '__enum_values__': {0: <enum CAIRO_REGION_OVERLAP_IN of type cairo.RegionOverlap>, 1: <enum CAIRO_REGION_OVERLAP_OUT of type cairo.RegionOverlap>, 2: <enum CAIRO_REGION_OVERLAP_PART of type cairo.RegionOverlap>}, '__info__': gi.EnumInfo(RegionOverlap), 'IN': <enum CAIRO_REGION_OVERLAP_IN of type cairo.RegionOverlap>, 'OUT': <enum CAIRO_REGION_OVERLAP_OUT of type cairo.RegionOverlap>, 'PART': <enum CAIRO_REGION_OVERLAP_PART of type cairo.RegionOverlap>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_region_overlap_t (804000064)>'
+    __gtype__ = None # (!) real value is '<GType cairo_region_overlap_t (4004030464)>'
     __info__ = gi.EnumInfo(RegionOverlap)
 
 

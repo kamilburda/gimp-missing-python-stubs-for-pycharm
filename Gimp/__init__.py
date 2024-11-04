@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -38,6 +38,9 @@ CONFIG_PARAM_DEFAULTS = 16
 CONFIG_PARAM_DONT_COMPARE = 64
 
 CONFIG_PARAM_FLAGS = 7
+
+CONFIG_PARAM_FLAG_SHIFT = 7
+
 CONFIG_PARAM_IGNORE = 32
 CONFIG_PARAM_RESTART = 4
 CONFIG_PARAM_SERIALIZE = 1
@@ -49,7 +52,7 @@ MAX_IMAGE_SIZE = 524288
 MAX_MEMSIZE = 0
 MAX_RESOLUTION = 1048576.0
 
-MICRO_VERSION = 18
+MICRO_VERSION = 19
 
 MINOR_VERSION = 99
 
@@ -59,7 +62,11 @@ MIN_RESOLUTION = 0.005
 
 MODULE_ABI_VERSION = 5
 
-PARAM_NO_VALIDATE = 64
+PARAM_DONT_SERIALIZE = 2
+
+PARAM_FLAG_SHIFT = 2
+
+PARAM_NO_VALIDATE = 1
 
 PARAM_READABLE = 1
 PARAM_READWRITE = 3
@@ -82,11 +89,7 @@ PARASITE_UNDOABLE = 2
 
 PIXPIPE_MAXDIM = 4
 
-RGB_LUMINANCE_BLUE = 0.060608
-RGB_LUMINANCE_GREEN = 0.716904
-RGB_LUMINANCE_RED = 0.222488
-
-VERSION = '2.99.18'
+VERSION = '3.0.0'
 
 _namespace = 'Gimp'
 
@@ -112,6 +115,10 @@ def attach_parasite(parasite): # real signature unknown; restored from __doc__
     """ attach_parasite(parasite:Gimp.Parasite) -> bool """
     return False
 
+def babl_format_get_type(): # real signature unknown; restored from __doc__
+    """ babl_format_get_type() -> GType """
+    pass
+
 def bilinear(x, y, values): # real signature unknown; restored from __doc__
     """ bilinear(x:float, y:float, values:list) -> float """
     return 0.0
@@ -128,12 +135,8 @@ def bilinear_8(x, y, values): # real signature unknown; restored from __doc__
     """ bilinear_8(x:float, y:float, values:list) -> int """
     return 0
 
-def bilinear_rgb(x, y, values): # real signature unknown; restored from __doc__
-    """ bilinear_rgb(x:float, y:float, values:list) -> Gimp.RGB """
-    pass
-
-def bilinear_rgba(x, y, values): # real signature unknown; restored from __doc__
-    """ bilinear_rgba(x:float, y:float, values:list) -> Gimp.RGB """
+def bilinear_rgb(x, y, values, has_alpha, retvalues): # real signature unknown; restored from __doc__
+    """ bilinear_rgb(x:float, y:float, values:list, has_alpha:bool, retvalues:list) """
     pass
 
 def bind_text_domain(domain_name, dir_name): # real signature unknown; restored from __doc__
@@ -160,8 +163,8 @@ def brushes_set_popup(brush_callback, brush): # real signature unknown; restored
     """ brushes_set_popup(brush_callback:str, brush:Gimp.Brush) -> bool """
     return False
 
-def buffers_get_list(filter): # real signature unknown; restored from __doc__
-    """ buffers_get_list(filter:str) -> list """
+def buffers_get_name_list(filter): # real signature unknown; restored from __doc__
+    """ buffers_get_name_list(filter:str) -> list """
     return []
 
 def buffer_delete(buffer_name): # real signature unknown; restored from __doc__
@@ -177,7 +180,7 @@ def buffer_get_height(buffer_name): # real signature unknown; restored from __do
     return 0
 
 def buffer_get_image_type(buffer_name): # real signature unknown; restored from __doc__
-    """ buffer_get_image_type(buffer_name:str) -> Gimp.ImageBaseType """
+    """ buffer_get_image_type(buffer_name:str) -> Gimp.ImageType """
     pass
 
 def buffer_get_width(buffer_name): # real signature unknown; restored from __doc__
@@ -193,15 +196,7 @@ def cache_directory(): # real signature unknown; restored from __doc__
     return ""
 
 def cairo_checkerboard_create(cr, size, light, dark): # real signature unknown; restored from __doc__
-    """ cairo_checkerboard_create(cr:cairo.Context, size:int, light:Gimp.RGB, dark:Gimp.RGB) -> cairo.Pattern """
-    pass
-
-def cairo_set_source_rgb(cr, color): # real signature unknown; restored from __doc__
-    """ cairo_set_source_rgb(cr:cairo.Context, color:Gimp.RGB) """
-    pass
-
-def cairo_set_source_rgba(cr, color): # real signature unknown; restored from __doc__
-    """ cairo_set_source_rgba(cr:cairo.Context, color:Gimp.RGB) """
+    """ cairo_checkerboard_create(cr:cairo.Context, size:int, light:Gegl.Color, dark:Gegl.Color) -> cairo.Pattern """
     pass
 
 def cairo_surface_create_buffer(surface, format): # real signature unknown; restored from __doc__
@@ -244,18 +239,6 @@ def clone_default(drawable, strokes): # real signature unknown; restored from __
     """ clone_default(drawable:Gimp.Drawable, strokes:list) -> bool """
     return False
 
-def cmyka_get_uchar(cmyka): # real signature unknown; restored from __doc__
-    """ cmyka_get_uchar(cmyka:Gimp.CMYK) -> cyan:int, magenta:int, yellow:int, black:int, alpha:int """
-    pass
-
-def cmyka_set(cmyka, cyan, magenta, yellow, black, alpha): # real signature unknown; restored from __doc__
-    """ cmyka_set(cmyka:Gimp.CMYK, cyan:float, magenta:float, yellow:float, black:float, alpha:float) """
-    pass
-
-def cmyka_set_uchar(cmyka, cyan, magenta, yellow, black, alpha): # real signature unknown; restored from __doc__
-    """ cmyka_set_uchar(cmyka:Gimp.CMYK, cyan:int, magenta:int, yellow:int, black:int, alpha:int) """
-    pass
-
 def color_array_copy(array): # real signature unknown; restored from __doc__
     """ color_array_copy(array:Gegl.Color) -> Gegl.Color """
     pass
@@ -284,16 +267,20 @@ def color_is_perceptually_identical(color1, color2): # real signature unknown; r
     """ color_is_perceptually_identical(color1:Gegl.Color, color2:Gegl.Color) -> bool """
     return False
 
+def color_list_names(): # real signature unknown; restored from __doc__
+    """ color_list_names() -> list, colors:list """
+    return []
+
 def color_parse_css(css): # real signature unknown; restored from __doc__
-    """ color_parse_css(css:list) -> Gegl.Color """
+    """ color_parse_css(css:str) -> Gegl.Color """
     pass
 
 def color_parse_hex(hex): # real signature unknown; restored from __doc__
-    """ color_parse_hex(hex:list) -> Gegl.Color """
+    """ color_parse_hex(hex:str) -> Gegl.Color """
     pass
 
 def color_parse_name(name): # real signature unknown; restored from __doc__
-    """ color_parse_name(name:list) -> Gegl.Color """
+    """ color_parse_name(name:str) -> Gegl.Color """
     pass
 
 def color_set_alpha(color, alpha): # real signature unknown; restored from __doc__
@@ -320,10 +307,6 @@ def config_deserialize_return(scanner, expected_token, nest_level): # real signa
     """ config_deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
     return False
 
-def config_deserialize_strv(value, scanner): # real signature unknown; restored from __doc__
-    """ config_deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-    pass
-
 def config_diff(a, b, flags): # real signature unknown; restored from __doc__
     """ config_diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
     return []
@@ -343,10 +326,6 @@ def config_reset_properties(p_object): # real signature unknown; restored from _
 def config_reset_property(p_object, property_name): # real signature unknown; restored from __doc__
     """ config_reset_property(object:GObject.Object, property_name:str) """
     pass
-
-def config_serialize_strv(value, p_str): # real signature unknown; restored from __doc__
-    """ config_serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-    return False
 
 def config_serialize_value(value, p_str, escaped): # real signature unknown; restored from __doc__
     """ config_serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -416,9 +395,13 @@ def context_get_distance_metric(): # real signature unknown; restored from __doc
     """ context_get_distance_metric() -> Gegl.DistanceMetric """
     pass
 
-def context_get_dynamics(): # real signature unknown; restored from __doc__
-    """ context_get_dynamics() -> str """
+def context_get_dynamics_name(): # real signature unknown; restored from __doc__
+    """ context_get_dynamics_name() -> str """
     return ""
+
+def context_get_emulate_brush_dynamics(): # real signature unknown; restored from __doc__
+    """ context_get_emulate_brush_dynamics() -> bool """
+    return False
 
 def context_get_feather(): # real signature unknown; restored from __doc__
     """ context_get_feather() -> bool """
@@ -648,8 +631,12 @@ def context_set_distance_metric(metric): # real signature unknown; restored from
     """ context_set_distance_metric(metric:Gegl.DistanceMetric) -> bool """
     return False
 
-def context_set_dynamics(name): # real signature unknown; restored from __doc__
-    """ context_set_dynamics(name:str) -> bool """
+def context_set_dynamics_name(name): # real signature unknown; restored from __doc__
+    """ context_set_dynamics_name(name:str) -> bool """
+    return False
+
+def context_set_emulate_brush_dynamics(emulate_dynamics): # real signature unknown; restored from __doc__
+    """ context_set_emulate_brush_dynamics(emulate_dynamics:bool) -> bool """
     return False
 
 def context_set_feather(feather): # real signature unknown; restored from __doc__
@@ -832,12 +819,16 @@ def convolve_default(drawable, strokes): # real signature unknown; restored from
     """ convolve_default(drawable:Gimp.Drawable, strokes:list) -> bool """
     return False
 
-def cpu_accel_get_support(): # real signature unknown; restored from __doc__
-    """ cpu_accel_get_support() -> Gimp.CpuAccelFlags """
+def core_object_array_get_length(array): # real signature unknown; restored from __doc__
+    """ core_object_array_get_length(array:GObject.Object) -> int """
+    return 0
+
+def core_object_array_get_type(): # real signature unknown; restored from __doc__
+    """ core_object_array_get_type() -> GType """
     pass
 
-def cpu_accel_set_use(use): # real signature unknown; restored from __doc__
-    """ cpu_accel_set_use(use:bool) """
+def cpu_accel_get_support(): # real signature unknown; restored from __doc__
+    """ cpu_accel_get_support() -> Gimp.CpuAccelFlags """
     pass
 
 def data_directory(): # real signature unknown; restored from __doc__
@@ -880,6 +871,14 @@ def dodgeburn_default(drawable, strokes): # real signature unknown; restored fro
     """ dodgeburn_default(drawable:Gimp.Drawable, strokes:list) -> bool """
     return False
 
+def double_array_get_values(array): # real signature unknown; restored from __doc__
+    """ double_array_get_values(array:Gimp.Array) -> list """
+    return []
+
+def double_array_set_values(array, values, static_data): # real signature unknown; restored from __doc__
+    """ double_array_set_values(array:Gimp.Array, values:list, static_data:bool) """
+    pass
+
 def drawables_close_popup(callback): # real signature unknown; restored from __doc__
     """ drawables_close_popup(callback:str) -> bool """
     return False
@@ -892,8 +891,8 @@ def drawables_set_popup(callback, drawable): # real signature unknown; restored 
     """ drawables_set_popup(callback:str, drawable:Gimp.Drawable) -> bool """
     return False
 
-def dynamics_get_list(filter): # real signature unknown; restored from __doc__
-    """ dynamics_get_list(filter:str) -> list """
+def dynamics_get_name_list(filter): # real signature unknown; restored from __doc__
+    """ dynamics_get_name_list(filter:str) -> list """
     return []
 
 def dynamics_refresh(): # real signature unknown; restored from __doc__
@@ -976,10 +975,6 @@ def enum_value_get_help(enum_class, enum_value): # real signature unknown; resto
     """ enum_value_get_help(enum_class:GObject.EnumClass, enum_value:GObject.EnumValue) -> str """
     return ""
 
-def env_init(plug_in): # real signature unknown; restored from __doc__
-    """ env_init(plug_in:bool) """
-    pass
-
 def eraser(drawable, strokes, hardness, method): # real signature unknown; restored from __doc__
     """ eraser(drawable:Gimp.Drawable, strokes:list, hardness:Gimp.BrushApplicationMode, method:Gimp.PaintApplicationMode) -> bool """
     return False
@@ -1048,8 +1043,8 @@ def file_new_for_config_path(path): # real signature unknown; restored from __do
     """ file_new_for_config_path(path:str) -> Gio.File or None """
     pass
 
-def file_save(run_mode, image, drawables, file): # real signature unknown; restored from __doc__
-    """ file_save(run_mode:Gimp.RunMode, image:Gimp.Image, drawables:list, file:Gio.File) -> bool """
+def file_save(run_mode, image, file, options=None): # real signature unknown; restored from __doc__
+    """ file_save(run_mode:Gimp.RunMode, image:Gimp.Image, file:Gio.File, options:Gimp.ExportOptions=None) -> bool """
     return False
 
 def file_save_thumbnail(image, file): # real signature unknown; restored from __doc__
@@ -1108,10 +1103,6 @@ def fonts_close_popup(font_callback): # real signature unknown; restored from __
     """ fonts_close_popup(font_callback:str) -> bool """
     return False
 
-def fonts_get_by_name(name): # real signature unknown; restored from __doc__
-    """ fonts_get_by_name(name:str) -> list """
-    return []
-
 def fonts_get_list(filter): # real signature unknown; restored from __doc__
     """ fonts_get_list(filter:str) -> list """
     return []
@@ -1143,6 +1134,10 @@ def get_default_comment(): # real signature unknown; restored from __doc__
 def get_default_unit(): # real signature unknown; restored from __doc__
     """ get_default_unit() -> Gimp.Unit """
     pass
+
+def get_images(): # real signature unknown; restored from __doc__
+    """ get_images() -> list """
+    return []
 
 def get_module_load_inhibit(): # real signature unknown; restored from __doc__
     """ get_module_load_inhibit() -> str """
@@ -1216,10 +1211,6 @@ def help(help_domain, help_id): # real signature unknown; restored from __doc__
     """ help(help_domain:str, help_id:str) -> bool """
     return False
 
-def hsva_set(hsva, hue, saturation, value, alpha): # real signature unknown; restored from __doc__
-    """ hsva_set(hsva:Gimp.HSV, hue:float, saturation:float, value:float, alpha:float) """
-    pass
-
 def icon_theme_dir(): # real signature unknown; restored from __doc__
     """ icon_theme_dir() -> str """
     return ""
@@ -1228,13 +1219,17 @@ def installation_directory(): # real signature unknown; restored from __doc__
     """ installation_directory() -> str """
     return ""
 
+def int32_array_get_values(array): # real signature unknown; restored from __doc__
+    """ int32_array_get_values(array:Gimp.Array) -> list """
+    return []
+
+def int32_array_set_values(array, values, static_data): # real signature unknown; restored from __doc__
+    """ int32_array_set_values(array:Gimp.Array, values:list, static_data:bool) """
+    pass
+
 def is_canonical_identifier(identifier): # real signature unknown; restored from __doc__
     """ is_canonical_identifier(identifier:str) -> bool """
     return False
-
-def list_images(): # real signature unknown; restored from __doc__
-    """ list_images() -> list """
-    return []
 
 def locale_directory(): # real signature unknown; restored from __doc__
     """ locale_directory() -> str """
@@ -1292,8 +1287,8 @@ def param_spec_array(name, nick, blurb, flags): # real signature unknown; restor
     """ param_spec_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_brush(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_brush(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_brush(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_brush(name:str, nick:str, blurb:str, none_ok:bool, default_value:Gimp.Brush=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_channel(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
@@ -1304,6 +1299,18 @@ def param_spec_choice(name, nick, blurb, choice, default_value, flags): # real s
     """ param_spec_choice(name:str, nick:str, blurb:str, choice:Gimp.Choice, default_value:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_color(name, nick, blurb, has_alpha, default_color, flags): # real signature unknown; restored from __doc__
+    """ param_spec_color(name:str, nick:str, blurb:str, has_alpha:bool, default_color:Gegl.Color, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_color_from_string(name, nick, blurb, has_alpha, default_color_string, flags): # real signature unknown; restored from __doc__
+    """ param_spec_color_from_string(name:str, nick:str, blurb:str, has_alpha:bool, default_color_string:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_color_has_alpha(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_color_has_alpha(pspec:GObject.ParamSpec) -> bool """
+    return False
+
 def param_spec_config_path(name, nick, blurb, type, default_value, flags): # real signature unknown; restored from __doc__
     """ param_spec_config_path(name:str, nick:str, blurb:str, type:Gimp.ConfigPathType, default_value:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
@@ -1312,24 +1319,36 @@ def param_spec_config_path_type(pspec): # real signature unknown; restored from 
     """ param_spec_config_path_type(pspec:GObject.ParamSpec) -> Gimp.ConfigPathType """
     pass
 
+def param_spec_core_object_array(name, nick, blurb, object_type, flags): # real signature unknown; restored from __doc__
+    """ param_spec_core_object_array(name:str, nick:str, blurb:str, object_type:GType, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
 def param_spec_display(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_display(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_double_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
+    """ param_spec_double_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_drawable(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_drawable(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_float_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
-    """ param_spec_float_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_export_options(name, nick, blurb, flags): # real signature unknown; restored from __doc__
+    """ param_spec_export_options(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_font(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_font(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_font(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_font(name:str, nick:str, blurb:str, none_ok:bool, default_value:Gimp.Font=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_gradient(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_gradient(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_gradient(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_gradient(name:str, nick:str, blurb:str, none_ok:bool, default_value:Gimp.Gradient=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_group_layer(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
+    """ param_spec_group_layer(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_image(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
@@ -1364,41 +1383,41 @@ def param_spec_memsize(name, nick, blurb, minimum, maximum, default_value, flags
     """ param_spec_memsize(name:str, nick:str, blurb:str, minimum:int, maximum:int, default_value:int, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_object_array(name, nick, blurb, object_type, flags): # real signature unknown; restored from __doc__
-    """ param_spec_object_array(name:str, nick:str, blurb:str, object_type:GType, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_object_duplicate(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_object_duplicate(pspec:GObject.ParamSpec) -> GObject.ParamSpec """
     pass
 
-def param_spec_palette(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_palette(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_object_get_default(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_object_get_default(pspec:GObject.ParamSpec) -> GObject.Object """
+    pass
+
+def param_spec_object_has_default(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_object_has_default(pspec:GObject.ParamSpec) -> bool """
+    return False
+
+def param_spec_object_set_default(pspec, default_value=None): # real signature unknown; restored from __doc__
+    """ param_spec_object_set_default(pspec:GObject.ParamSpec, default_value:GObject.Object=None) """
+    pass
+
+def param_spec_palette(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_palette(name:str, nick:str, blurb:str, none_ok:bool, default_value:Gimp.Palette=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_parasite(name, nick, blurb, flags): # real signature unknown; restored from __doc__
     """ param_spec_parasite(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_pattern(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_pattern(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_path(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
+    """ param_spec_path(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_resource(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_resource(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_pattern(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_pattern(name:str, nick:str, blurb:str, none_ok:bool, default_value:Gimp.Pattern=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_rgb(name, nick, blurb, has_alpha, default_value, flags): # real signature unknown; restored from __doc__
-    """ param_spec_rgb(name:str, nick:str, blurb:str, has_alpha:bool, default_value:Gimp.RGB, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_resource(name, nick, blurb, resource_type, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
+    """ param_spec_resource(name:str, nick:str, blurb:str, resource_type:GType, none_ok:bool, default_value:Gimp.Resource=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
-
-def param_spec_rgb_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
-    """ param_spec_rgb_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
-    pass
-
-def param_spec_rgb_get_default(pspec, default_value): # real signature unknown; restored from __doc__
-    """ param_spec_rgb_get_default(pspec:GObject.ParamSpec, default_value:Gimp.RGB) """
-    pass
-
-def param_spec_rgb_has_alpha(pspec): # real signature unknown; restored from __doc__
-    """ param_spec_rgb_has_alpha(pspec:GObject.ParamSpec) -> bool """
-    return False
 
 def param_spec_selection(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_selection(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
@@ -1408,33 +1427,13 @@ def param_spec_text_layer(name, nick, blurb, none_ok, flags): # real signature u
     """ param_spec_text_layer(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
-def param_spec_unit(name, nick, blurb, allow_pixels, allow_percent, default_value, flags): # real signature unknown; restored from __doc__
-    """ param_spec_unit(name:str, nick:str, blurb:str, allow_pixels:bool, allow_percent:bool, default_value:Gimp.Unit, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+def param_spec_unit(name, nick, blurb, allow_pixel, allow_percent, default_value, flags): # real signature unknown; restored from __doc__
+    """ param_spec_unit(name:str, nick:str, blurb:str, allow_pixel:bool, allow_percent:bool, default_value:Gimp.Unit, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
 def param_spec_value_array(name, nick, blurb, element_spec=None, flags): # real signature unknown; restored from __doc__
     """ param_spec_value_array(name:str, nick:str, blurb:str, element_spec:GObject.ParamSpec=None, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
-
-def param_spec_vectors(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
-    """ param_spec_vectors(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
-    pass
-
-def path_free(path): # real signature unknown; restored from __doc__
-    """ path_free(path:list) """
-    pass
-
-def path_get_user_writable_dir(path): # real signature unknown; restored from __doc__
-    """ path_get_user_writable_dir(path:list) -> str """
-    return ""
-
-def path_parse(path, max_paths, check): # real signature unknown; restored from __doc__
-    """ path_parse(path:str, max_paths:int, check:bool) -> list, check_failed:list """
-    return []
-
-def path_to_str(path): # real signature unknown; restored from __doc__
-    """ path_to_str(path:list) -> str """
-    return ""
 
 def patterns_close_popup(pattern_callback): # real signature unknown; restored from __doc__
     """ patterns_close_popup(pattern_callback:str) -> bool """
@@ -1544,50 +1543,6 @@ def rectangle_union(x1, y1, width1, height1, x2, y2, width2, height2): # real si
     """ rectangle_union(x1:int, y1:int, width1:int, height1:int, x2:int, y2:int, width2:int, height2:int) -> dest_x:int, dest_y:int, dest_width:int, dest_height:int """
     pass
 
-def rgba_add(rgba1, rgba2): # real signature unknown; restored from __doc__
-    """ rgba_add(rgba1:Gimp.RGB, rgba2:Gimp.RGB) """
-    pass
-
-def rgba_distance(rgba1, rgba2): # real signature unknown; restored from __doc__
-    """ rgba_distance(rgba1:Gimp.RGB, rgba2:Gimp.RGB) -> float """
-    return 0.0
-
-def rgba_get_pixel(rgba, format): # real signature unknown; restored from __doc__
-    """ rgba_get_pixel(rgba:Gimp.RGB, format:Babl.Object) -> pixel """
-    pass
-
-def rgba_get_uchar(rgba): # real signature unknown; restored from __doc__
-    """ rgba_get_uchar(rgba:Gimp.RGB) -> red:int, green:int, blue:int, alpha:int """
-    pass
-
-def rgba_multiply(rgba, factor): # real signature unknown; restored from __doc__
-    """ rgba_multiply(rgba:Gimp.RGB, factor:float) """
-    pass
-
-def rgba_parse_css(rgba, css): # real signature unknown; restored from __doc__
-    """ rgba_parse_css(rgba:Gimp.RGB, css:list) -> bool """
-    return False
-
-def rgba_set(rgba, red, green, blue, alpha): # real signature unknown; restored from __doc__
-    """ rgba_set(rgba:Gimp.RGB, red:float, green:float, blue:float, alpha:float) """
-    pass
-
-def rgba_set_pixel(rgba, format, pixel=None): # real signature unknown; restored from __doc__
-    """ rgba_set_pixel(rgba:Gimp.RGB, format:Babl.Object, pixel=None) """
-    pass
-
-def rgba_set_uchar(rgba, red, green, blue, alpha): # real signature unknown; restored from __doc__
-    """ rgba_set_uchar(rgba:Gimp.RGB, red:int, green:int, blue:int, alpha:int) """
-    pass
-
-def rgba_subtract(rgba1, rgba2): # real signature unknown; restored from __doc__
-    """ rgba_subtract(rgba1:Gimp.RGB, rgba2:Gimp.RGB) """
-    pass
-
-def rgb_list_names(): # real signature unknown; restored from __doc__
-    """ rgb_list_names() -> names:list, colors:list """
-    pass
-
 def show_help_button(): # real signature unknown; restored from __doc__
     """ show_help_button() -> bool """
     return False
@@ -1676,92 +1631,44 @@ def utf8_strtrim(p_str=None, max_chars): # real signature unknown; restored from
     """ utf8_strtrim(str:str=None, max_chars:int) -> str """
     return ""
 
-def value_dup_float_array(value): # real signature unknown; restored from __doc__
-    """ value_dup_float_array(value:GObject.Value) -> list """
+def value_dup_double_array(value): # real signature unknown; restored from __doc__
+    """ value_dup_double_array(value:GObject.Value) -> list """
     return []
 
 def value_dup_int32_array(value): # real signature unknown; restored from __doc__
     """ value_dup_int32_array(value:GObject.Value) -> list """
     return []
 
-def value_dup_object_array(value): # real signature unknown; restored from __doc__
-    """ value_dup_object_array(value:GObject.Value) -> GObject.Object """
-    pass
-
-def value_dup_rgb_array(value): # real signature unknown; restored from __doc__
-    """ value_dup_rgb_array(value:GObject.Value) -> list """
-    return []
-
-def value_get_float_array(value): # real signature unknown; restored from __doc__
-    """ value_get_float_array(value:GObject.Value) -> list """
+def value_get_double_array(value): # real signature unknown; restored from __doc__
+    """ value_get_double_array(value:GObject.Value) -> list """
     return []
 
 def value_get_int32_array(value): # real signature unknown; restored from __doc__
     """ value_get_int32_array(value:GObject.Value) -> list """
     return []
 
-def value_get_object_array(value): # real signature unknown; restored from __doc__
-    """ value_get_object_array(value:GObject.Value) -> GObject.Object """
-    pass
-
-def value_get_rgb(value, rgb): # real signature unknown; restored from __doc__
-    """ value_get_rgb(value:GObject.Value, rgb:Gimp.RGB) """
-    pass
-
-def value_get_rgb_array(value): # real signature unknown; restored from __doc__
-    """ value_get_rgb_array(value:GObject.Value) -> list """
-    return []
-
-def value_set_float_array(value, data): # real signature unknown; restored from __doc__
-    """ value_set_float_array(value:GObject.Value, data:list) """
+def value_set_double_array(value, data): # real signature unknown; restored from __doc__
+    """ value_set_double_array(value:GObject.Value, data:list) """
     pass
 
 def value_set_int32_array(value, data): # real signature unknown; restored from __doc__
     """ value_set_int32_array(value:GObject.Value, data:list) """
     pass
 
-def value_set_object_array(value, object_type, data): # real signature unknown; restored from __doc__
-    """ value_set_object_array(value:GObject.Value, object_type:GType, data:list) """
-    pass
-
-def value_set_rgb(value, rgb): # real signature unknown; restored from __doc__
-    """ value_set_rgb(value:GObject.Value, rgb:Gimp.RGB) """
-    pass
-
-def value_set_rgb_array(value, data): # real signature unknown; restored from __doc__
-    """ value_set_rgb_array(value:GObject.Value, data:list) """
-    pass
-
-def value_set_static_float_array(value, data): # real signature unknown; restored from __doc__
-    """ value_set_static_float_array(value:GObject.Value, data:list) """
+def value_set_static_double_array(value, data): # real signature unknown; restored from __doc__
+    """ value_set_static_double_array(value:GObject.Value, data:list) """
     pass
 
 def value_set_static_int32_array(value, data): # real signature unknown; restored from __doc__
     """ value_set_static_int32_array(value:GObject.Value, data:list) """
     pass
 
-def value_set_static_object_array(value, object_type, data): # real signature unknown; restored from __doc__
-    """ value_set_static_object_array(value:GObject.Value, object_type:GType, data:list) """
-    pass
-
-def value_set_static_rgb_array(value, data): # real signature unknown; restored from __doc__
-    """ value_set_static_rgb_array(value:GObject.Value, data:list) """
-    pass
-
-def value_take_float_array(value, data): # real signature unknown; restored from __doc__
-    """ value_take_float_array(value:GObject.Value, data:list) """
+def value_take_double_array(value, data): # real signature unknown; restored from __doc__
+    """ value_take_double_array(value:GObject.Value, data:list) """
     pass
 
 def value_take_int32_array(value, data): # real signature unknown; restored from __doc__
     """ value_take_int32_array(value:GObject.Value, data:list) """
-    pass
-
-def value_take_object_array(value, object_type, data): # real signature unknown; restored from __doc__
-    """ value_take_object_array(value:GObject.Value, object_type:GType, data:list) """
-    pass
-
-def value_take_rgb_array(value, data): # real signature unknown; restored from __doc__
-    """ value_take_rgb_array(value:GObject.Value, data:list) """
     pass
 
 def vector2_add(vector1, vector2): # real signature unknown; restored from __doc__
@@ -1788,8 +1695,8 @@ def vector_2d_to_3d_val(sx, sy, w, h, x, y, vp, p): # real signature unknown; re
     """ vector_2d_to_3d_val(sx:int, sy:int, w:int, h:int, x:int, y:int, vp:Gimp.Vector3, p:Gimp.Vector3) -> Gimp.Vector3 """
     pass
 
-def vector_3d_to_2d(sx, sy, w, h, x, y, vp, p): # real signature unknown; restored from __doc__
-    """ vector_3d_to_2d(sx:int, sy:int, w:int, h:int, x:float, y:float, vp:Gimp.Vector3, p:Gimp.Vector3) """
+def vector_3d_to_2d(sx, sy, w, h, vp, p): # real signature unknown; restored from __doc__
+    """ vector_3d_to_2d(sx:int, sy:int, w:int, h:int, vp:Gimp.Vector3, p:Gimp.Vector3) -> x:float, y:float """
     pass
 
 def version(): # real signature unknown; restored from __doc__
@@ -1910,7 +1817,6 @@ from .Array import Array
 from .Procedure import Procedure
 from .BatchProcedure import BatchProcedure
 from .BatchProcedureClass import BatchProcedureClass
-from .BatchProcedurePrivate import BatchProcedurePrivate
 from .ConfigInterface import ConfigInterface
 from .Resource import Resource
 from .Brush import Brush
@@ -1927,23 +1833,20 @@ from .ChannelType import ChannelType
 from .CheckSize import CheckSize
 from .CheckType import CheckType
 from .Choice import Choice
+from .ChoiceClass import ChoiceClass
 from .CloneType import CloneType
-from .CMYK import CMYK
 from .ColorConfig import ColorConfig
 from .ColorConfigClass import ColorConfigClass
-from .ColorConfigPrivate import ColorConfigPrivate
 from .ColorManaged import ColorManaged
 from .ColorManagedInterface import ColorManagedInterface
 from .ColorManagementMode import ColorManagementMode
 from .ColorProfile import ColorProfile
 from .ColorProfileClass import ColorProfileClass
-from .ColorProfilePrivate import ColorProfilePrivate
 from .ColorRenderingIntent import ColorRenderingIntent
 from .ColorTag import ColorTag
 from .ColorTransform import ColorTransform
 from .ColorTransformClass import ColorTransformClass
 from .ColorTransformFlags import ColorTransformFlags
-from .ColorTransformPrivate import ColorTransformPrivate
 from .ComponentType import ComponentType
 from .Config import Config
 from .ConfigError import ConfigError
@@ -1956,15 +1859,20 @@ from .ConvolveType import ConvolveType
 from .DesaturateMode import DesaturateMode
 from .Display import Display
 from .DisplayClass import DisplayClass
-from .DisplayPrivate import DisplayPrivate
 from .DodgeBurnType import DodgeBurnType
+from .DoubleArray import DoubleArray
 from .DrawableClass import DrawableClass
 from .EnumDesc import EnumDesc
+from .ExportCapabilities import ExportCapabilities
+from .ExportOptions import ExportOptions
+from .ExportOptionsClass import ExportOptionsClass
 from .FileProcedure import FileProcedure
+from .ExportProcedure import ExportProcedure
+from .ExportProcedureClass import ExportProcedureClass
+from .ExportReturn import ExportReturn
 from .FileProcedureClass import FileProcedureClass
 from .FillType import FillType
 from .FlagsDesc import FlagsDesc
-from .FloatArray import FloatArray
 from .Font import Font
 from .FontClass import FontClass
 from .ForegroundExtractMode import ForegroundExtractMode
@@ -1975,9 +1883,10 @@ from .GradientSegmentColor import GradientSegmentColor
 from .GradientSegmentType import GradientSegmentType
 from .GradientType import GradientType
 from .GridStyle import GridStyle
+from .Layer import Layer
+from .GroupLayer import GroupLayer
+from .GroupLayerClass import GroupLayerClass
 from .HistogramChannel import HistogramChannel
-from .HSL import HSL
-from .HSV import HSV
 from .HueRange import HueRange
 from .IconType import IconType
 from .Image import Image
@@ -1985,14 +1894,12 @@ from .ImageBaseType import ImageBaseType
 from .ImageClass import ImageClass
 from .ImageProcedure import ImageProcedure
 from .ImageProcedureClass import ImageProcedureClass
-from .ImageProcedurePrivate import ImageProcedurePrivate
 from .ImageType import ImageType
 from .InkBlobType import InkBlobType
 from .Int32Array import Int32Array
 from .InterpolationType import InterpolationType
 from .ItemClass import ItemClass
 from .JoinStyle import JoinStyle
-from .Layer import Layer
 from .LayerClass import LayerClass
 from .LayerColorSpace import LayerColorSpace
 from .LayerCompositeMode import LayerCompositeMode
@@ -2001,7 +1908,6 @@ from .LayerMaskClass import LayerMaskClass
 from .LayerMode import LayerMode
 from .LoadProcedure import LoadProcedure
 from .LoadProcedureClass import LoadProcedureClass
-from .LoadProcedurePrivate import LoadProcedurePrivate
 from .MaskApplyMode import MaskApplyMode
 from .Matrix2 import Matrix2
 from .Matrix3 import Matrix3
@@ -2010,6 +1916,7 @@ from .Memsize import Memsize
 from .MergeType import MergeType
 from .MessageHandlerType import MessageHandlerType
 from .Metadata import Metadata
+from .MetadataClass import MetadataClass
 from .MetadataColorspace import MetadataColorspace
 from .MetadataLoadFlags import MetadataLoadFlags
 from .MetadataSaveFlags import MetadataSaveFlags
@@ -2019,103 +1926,81 @@ from .ModuleDB import ModuleDB
 from .ModuleDBClass import ModuleDBClass
 from .ModuleError import ModuleError
 from .ModuleInfo import ModuleInfo
-from .ModulePrivate import ModulePrivate
 from .ModuleState import ModuleState
-from .ObjectArray import ObjectArray
 from .OffsetType import OffsetType
 from .OrientationType import OrientationType
 from .PaintApplicationMode import PaintApplicationMode
 from .Palette import Palette
 from .PaletteClass import PaletteClass
 from .ParamArray import ParamArray
+from .ParamObject import ParamObject
 from .ParamResource import ParamResource
 from .ParamBrush import ParamBrush
 from .ParamItem import ParamItem
 from .ParamDrawable import ParamDrawable
 from .ParamChannel import ParamChannel
 from .ParamChoice import ParamChoice
+from .ParamColor import ParamColor
 from .ParamConfigPath import ParamConfigPath
+from .ParamCoreObjectArray import ParamCoreObjectArray
 from .ParamDisplay import ParamDisplay
-from .ParamFloatArray import ParamFloatArray
+from .ParamDoubleArray import ParamDoubleArray
+from .ParamExportOptions import ParamExportOptions
 from .ParamFont import ParamFont
 from .ParamGradient import ParamGradient
+from .ParamLayer import ParamLayer
+from .ParamGroupLayer import ParamGroupLayer
 from .ParamImage import ParamImage
 from .ParamInt32Array import ParamInt32Array
-from .ParamLayer import ParamLayer
 from .ParamLayerMask import ParamLayerMask
 from .ParamMatrix2 import ParamMatrix2
 from .ParamMatrix3 import ParamMatrix3
 from .ParamMemsize import ParamMemsize
-from .ParamObjectArray import ParamObjectArray
 from .ParamPalette import ParamPalette
 from .ParamParasite import ParamParasite
+from .ParamPath import ParamPath
 from .ParamPattern import ParamPattern
-from .ParamRGB import ParamRGB
-from .ParamRGBArray import ParamRGBArray
 from .ParamSelection import ParamSelection
-from .ParamSpecArray import ParamSpecArray
-from .ParamSpecBrush import ParamSpecBrush
-from .ParamSpecChannel import ParamSpecChannel
 from .ParamSpecChoice import ParamSpecChoice
+from .ParamSpecColor import ParamSpecColor
+from .ParamSpecCoreObjectArray import ParamSpecCoreObjectArray
 from .ParamSpecDisplay import ParamSpecDisplay
-from .ParamSpecDrawable import ParamSpecDrawable
-from .ParamSpecFloatArray import ParamSpecFloatArray
-from .ParamSpecFont import ParamSpecFont
-from .ParamSpecGradient import ParamSpecGradient
 from .ParamSpecImage import ParamSpecImage
-from .ParamSpecInt32Array import ParamSpecInt32Array
 from .ParamSpecItem import ParamSpecItem
-from .ParamSpecLayer import ParamSpecLayer
-from .ParamSpecLayerMask import ParamSpecLayerMask
-from .ParamSpecObjectArray import ParamSpecObjectArray
-from .ParamSpecPalette import ParamSpecPalette
-from .ParamSpecParasite import ParamSpecParasite
-from .ParamSpecPattern import ParamSpecPattern
+from .ParamSpecObject import ParamSpecObject
+from .ParamSpecObjectClass import ParamSpecObjectClass
 from .ParamSpecResource import ParamSpecResource
-from .ParamSpecRGB import ParamSpecRGB
-from .ParamSpecRGBArray import ParamSpecRGBArray
-from .ParamSpecSelection import ParamSpecSelection
-from .ParamSpecTextLayer import ParamSpecTextLayer
 from .ParamSpecUnit import ParamSpecUnit
 from .ParamSpecValueArray import ParamSpecValueArray
-from .ParamSpecVectors import ParamSpecVectors
 from .ParamTextLayer import ParamTextLayer
 from .ParamUnit import ParamUnit
 from .ParamValueArray import ParamValueArray
-from .ParamVectors import ParamVectors
 from .Parasite import Parasite
+from .Path import Path
+from .PathClass import PathClass
+from .PathStrokeType import PathStrokeType
 from .Pattern import Pattern
 from .PatternClass import PatternClass
 from .PDB import PDB
 from .PDBClass import PDBClass
 from .PDBErrorHandler import PDBErrorHandler
-from .PDBPrivate import PDBPrivate
 from .PDBProcType import PDBProcType
 from .PDBStatusType import PDBStatusType
 from .PixbufTransparency import PixbufTransparency
 from .PixPipeParams import PixPipeParams
 from .PlugIn import PlugIn
 from .PlugInClass import PlugInClass
-from .PlugInPrivate import PlugInPrivate
 from .Precision import Precision
 from .ProcedureClass import ProcedureClass
 from .ProcedureConfig import ProcedureConfig
 from .ProcedureConfigClass import ProcedureConfigClass
-from .ProcedureConfigPrivate import ProcedureConfigPrivate
-from .ProcedurePrivate import ProcedurePrivate
 from .ProcedureSensitivityMask import ProcedureSensitivityMask
 from .ProgressCommand import ProgressCommand
 from .ProgressVtable import ProgressVtable
 from .RepeatMode import RepeatMode
 from .ResourceClass import ResourceClass
-from .RGB import RGB
-from .RGBArray import RGBArray
-from .RGBCompositeMode import RGBCompositeMode
 from .RotationType import RotationType
 from .RunMode import RunMode
-from .SaveProcedure import SaveProcedure
-from .SaveProcedureClass import SaveProcedureClass
-from .SaveProcedurePrivate import SaveProcedurePrivate
 from .Scanner import Scanner
 from .SelectCriterion import SelectCriterion
 from .Selection import Selection
@@ -2130,26 +2015,27 @@ from .TextLayer import TextLayer
 from .TextLayerClass import TextLayerClass
 from .ThumbnailProcedure import ThumbnailProcedure
 from .ThumbnailProcedureClass import ThumbnailProcedureClass
-from .ThumbnailProcedurePrivate import ThumbnailProcedurePrivate
 from .TransferMode import TransferMode
 from .TransformDirection import TransformDirection
 from .TransformResize import TransformResize
 from .Unit import Unit
+from .UnitClass import UnitClass
+from .UnitID import UnitID
 from .ValueArray import ValueArray
 from .Vector2 import Vector2
 from .Vector3 import Vector3
 from .Vector4 import Vector4
-from .Vectors import Vectors
-from .VectorsClass import VectorsClass
-from .VectorsStrokeType import VectorsStrokeType
+from .VectorLoadData import VectorLoadData
+from .VectorLoadProcedure import VectorLoadProcedure
+from .VectorLoadProcedureClass import VectorLoadProcedureClass
 from .__class__ import __class__
 # variables with complex values
 
-__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000020730ae7750>'
+__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001b63fcf1290>'
 
 __path__ = [
-    'C:\\Program Files\\GIMP 2.99\\lib\\girepository-1.0\\Gimp-3.0.typelib',
+    'C:\\Program Files\\GIMP 3\\lib\\girepository-1.0\\Gimp-3.0.typelib',
 ]
 
-__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x0000020730ae7750>)"
+__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x000001b63fcf1290>)"
 

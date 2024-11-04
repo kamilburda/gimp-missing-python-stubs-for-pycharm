@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class TransferMode(__gobject.GEnum):
     MIDTONES = 1
     SHADOWS = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransferMode' objects>, '__doc__': None, '__gtype__': <GType GimpTransferMode (814715360)>, '__enum_values__': {0: <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 1: <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 2: <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>}, '__info__': gi.EnumInfo(TransferMode), 'SHADOWS': <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 'MIDTONES': <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 'HIGHLIGHTS': <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransferMode' objects>, '__doc__': None, '__gtype__': <GType GimpTransferMode (1065743728)>, '__enum_values__': {0: <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 1: <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 2: <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>}, '__info__': gi.EnumInfo(TransferMode), 'SHADOWS': <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 'MIDTONES': <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 'HIGHLIGHTS': <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTransferMode (814715360)>'
+    __gtype__ = None # (!) real value is '<GType GimpTransferMode (1065743728)>'
     __info__ = gi.EnumInfo(TransferMode)
 
 

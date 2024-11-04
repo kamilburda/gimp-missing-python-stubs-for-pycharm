@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class ArgumentSync(__gobject.GEnum):
     NONE = 0
     PARASITE = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ArgumentSync' objects>, '__doc__': None, '__gtype__': <GType PyGimpArgumentSync (814332608)>, '__enum_values__': {0: <enum GIMP_ARGUMENT_SYNC_NONE of type Gimp.ArgumentSync>, 1: <enum GIMP_ARGUMENT_SYNC_PARASITE of type Gimp.ArgumentSync>}, '__info__': gi.EnumInfo(ArgumentSync), 'NONE': <enum GIMP_ARGUMENT_SYNC_NONE of type Gimp.ArgumentSync>, 'PARASITE': <enum GIMP_ARGUMENT_SYNC_PARASITE of type Gimp.ArgumentSync>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ArgumentSync' objects>, '__doc__': None, '__gtype__': <GType PyGimpArgumentSync (1071861520)>, '__enum_values__': {0: <enum GIMP_ARGUMENT_SYNC_NONE of type Gimp.ArgumentSync>, 1: <enum GIMP_ARGUMENT_SYNC_PARASITE of type Gimp.ArgumentSync>}, '__info__': gi.EnumInfo(ArgumentSync), 'NONE': <enum GIMP_ARGUMENT_SYNC_NONE of type Gimp.ArgumentSync>, 'PARASITE': <enum GIMP_ARGUMENT_SYNC_PARASITE of type Gimp.ArgumentSync>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpArgumentSync (814332608)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpArgumentSync (1071861520)>'
     __info__ = gi.EnumInfo(ArgumentSync)
 
 

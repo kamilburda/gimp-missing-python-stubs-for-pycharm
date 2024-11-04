@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class StrokeMethod(__gobject.GEnum):
     LINE = 0
     PAINT_METHOD = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StrokeMethod' objects>, '__doc__': None, '__gtype__': <GType GimpStrokeMethod (814710768)>, '__enum_values__': {0: <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 1: <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>}, '__info__': gi.EnumInfo(StrokeMethod), 'LINE': <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 'PAINT_METHOD': <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StrokeMethod' objects>, '__doc__': None, '__gtype__': <GType GimpStrokeMethod (1065744176)>, '__enum_values__': {0: <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 1: <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>}, '__info__': gi.EnumInfo(StrokeMethod), 'LINE': <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 'PAINT_METHOD': <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpStrokeMethod (814710768)>'
+    __gtype__ = None # (!) real value is '<GType GimpStrokeMethod (1065744176)>'
     __info__ = gi.EnumInfo(StrokeMethod)
 
 

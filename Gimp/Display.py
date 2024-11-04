@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -442,10 +442,6 @@ class Display(__gi_overrides_GObject.Object):
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    priv = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -455,12 +451,12 @@ class Display(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165dc90>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d630>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (815046576)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None), 'parent_instance': <property object at 0x0000020731611f80>, 'priv': <property object at 0x0000020731612070>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (1069022448)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None)})"
     __gdoc__ = 'Object GimpDisplay\n\nProperties from GimpDisplay:\n  id -> gint: The display id\n    The display id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpDisplay (815046576)>'
+    __gtype__ = None # (!) real value is '<GType GimpDisplay (1069022448)>'
     __info__ = ObjectInfo(Display)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -382,12 +382,12 @@ class FontWeight(__gobject.GEnum):
     BOLD = 1
     NORMAL = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontWeight' objects>, '__doc__': None, '__gtype__': <GType cairo_font_weight_t (804302448)>, '__enum_values__': {0: <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 1: <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>}, '__info__': gi.EnumInfo(FontWeight), 'NORMAL': <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 'BOLD': <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontWeight' objects>, '__doc__': None, '__gtype__': <GType cairo_font_weight_t (4004037408)>, '__enum_values__': {0: <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 1: <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>}, '__info__': gi.EnumInfo(FontWeight), 'NORMAL': <enum CAIRO_FONT_WEIGHT_NORMAL of type cairo.FontWeight>, 'BOLD': <enum CAIRO_FONT_WEIGHT_BOLD of type cairo.FontWeight>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_font_weight_t (804302448)>'
+    __gtype__ = None # (!) real value is '<GType cairo_font_weight_t (4004037408)>'
     __info__ = gi.EnumInfo(FontWeight)
 
 

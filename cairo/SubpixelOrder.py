@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,7 +385,7 @@ class SubpixelOrder(__gobject.GEnum):
     VBGR = 4
     VRGB = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'SubpixelOrder' objects>, '__doc__': None, '__gtype__': <GType cairo_subpixel_order_t (804006224)>, '__enum_values__': {0: <enum CAIRO_SUBPIXEL_ORDER_DEFAULT of type cairo.SubpixelOrder>, 1: <enum CAIRO_SUBPIXEL_ORDER_RGB of type cairo.SubpixelOrder>, 2: <enum CAIRO_SUBPIXEL_ORDER_BGR of type cairo.SubpixelOrder>, 3: <enum CAIRO_SUBPIXEL_ORDER_VRGB of type cairo.SubpixelOrder>, 4: <enum CAIRO_SUBPIXEL_ORDER_VBGR of type cairo.SubpixelOrder>}, '__info__': gi.EnumInfo(SubpixelOrder), 'DEFAULT': <enum CAIRO_SUBPIXEL_ORDER_DEFAULT of type cairo.SubpixelOrder>, 'RGB': <enum CAIRO_SUBPIXEL_ORDER_RGB of type cairo.SubpixelOrder>, 'BGR': <enum CAIRO_SUBPIXEL_ORDER_BGR of type cairo.SubpixelOrder>, 'VRGB': <enum CAIRO_SUBPIXEL_ORDER_VRGB of type cairo.SubpixelOrder>, 'VBGR': <enum CAIRO_SUBPIXEL_ORDER_VBGR of type cairo.SubpixelOrder>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'SubpixelOrder' objects>, '__doc__': None, '__gtype__': <GType cairo_subpixel_order_t (4004031472)>, '__enum_values__': {0: <enum CAIRO_SUBPIXEL_ORDER_DEFAULT of type cairo.SubpixelOrder>, 1: <enum CAIRO_SUBPIXEL_ORDER_RGB of type cairo.SubpixelOrder>, 2: <enum CAIRO_SUBPIXEL_ORDER_BGR of type cairo.SubpixelOrder>, 3: <enum CAIRO_SUBPIXEL_ORDER_VRGB of type cairo.SubpixelOrder>, 4: <enum CAIRO_SUBPIXEL_ORDER_VBGR of type cairo.SubpixelOrder>}, '__info__': gi.EnumInfo(SubpixelOrder), 'DEFAULT': <enum CAIRO_SUBPIXEL_ORDER_DEFAULT of type cairo.SubpixelOrder>, 'RGB': <enum CAIRO_SUBPIXEL_ORDER_RGB of type cairo.SubpixelOrder>, 'BGR': <enum CAIRO_SUBPIXEL_ORDER_BGR of type cairo.SubpixelOrder>, 'VRGB': <enum CAIRO_SUBPIXEL_ORDER_VRGB of type cairo.SubpixelOrder>, 'VBGR': <enum CAIRO_SUBPIXEL_ORDER_VBGR of type cairo.SubpixelOrder>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -393,7 +393,7 @@ class SubpixelOrder(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_subpixel_order_t (804006224)>'
+    __gtype__ = None # (!) real value is '<GType cairo_subpixel_order_t (4004031472)>'
     __info__ = gi.EnumInfo(SubpixelOrder)
 
 

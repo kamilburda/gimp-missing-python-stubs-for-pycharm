@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class GradientSegmentColor(__gobject.GEnum):
     HSV_CW = 2
     RGB = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentColor' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentColor (815049152)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 1: <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 2: <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>}, '__info__': gi.EnumInfo(GradientSegmentColor), 'RGB': <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 'HSV_CCW': <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 'HSV_CW': <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientSegmentColor' objects>, '__doc__': None, '__gtype__': <GType GimpGradientSegmentColor (1069017968)>, '__enum_values__': {0: <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 1: <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 2: <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>}, '__info__': gi.EnumInfo(GradientSegmentColor), 'RGB': <enum GIMP_GRADIENT_SEGMENT_RGB of type Gimp.GradientSegmentColor>, 'HSV_CCW': <enum GIMP_GRADIENT_SEGMENT_HSV_CCW of type Gimp.GradientSegmentColor>, 'HSV_CW': <enum GIMP_GRADIENT_SEGMENT_HSV_CW of type Gimp.GradientSegmentColor>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentColor (815049152)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientSegmentColor (1069017968)>'
     __info__ = gi.EnumInfo(GradientSegmentColor)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class ImageBaseType(__gobject.GEnum):
     INDEXED = 2
     RGB = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ImageBaseType' objects>, '__doc__': None, '__gtype__': <GType GimpImageBaseType (815082432)>, '__enum_values__': {0: <enum GIMP_RGB of type Gimp.ImageBaseType>, 1: <enum GIMP_GRAY of type Gimp.ImageBaseType>, 2: <enum GIMP_INDEXED of type Gimp.ImageBaseType>}, '__info__': gi.EnumInfo(ImageBaseType), 'RGB': <enum GIMP_RGB of type Gimp.ImageBaseType>, 'GRAY': <enum GIMP_GRAY of type Gimp.ImageBaseType>, 'INDEXED': <enum GIMP_INDEXED of type Gimp.ImageBaseType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ImageBaseType' objects>, '__doc__': None, '__gtype__': <GType GimpImageBaseType (1069024128)>, '__enum_values__': {0: <enum GIMP_RGB of type Gimp.ImageBaseType>, 1: <enum GIMP_GRAY of type Gimp.ImageBaseType>, 2: <enum GIMP_INDEXED of type Gimp.ImageBaseType>}, '__info__': gi.EnumInfo(ImageBaseType), 'RGB': <enum GIMP_RGB of type Gimp.ImageBaseType>, 'GRAY': <enum GIMP_GRAY of type Gimp.ImageBaseType>, 'INDEXED': <enum GIMP_INDEXED of type Gimp.ImageBaseType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpImageBaseType (815082432)>'
+    __gtype__ = None # (!) real value is '<GType GimpImageBaseType (1069024128)>'
     __info__ = gi.EnumInfo(ImageBaseType)
 
 

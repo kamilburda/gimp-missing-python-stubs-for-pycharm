@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -388,7 +388,7 @@ class DesaturateMode(__gobject.GEnum):
     LUMINANCE = 3
     VALUE = 4
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DesaturateMode' objects>, '__doc__': None, '__gtype__': <GType GimpDesaturateMode (815052960)>, '__enum_values__': {0: <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 1: <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 2: <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 3: <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 4: <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>}, '__info__': gi.EnumInfo(DesaturateMode), 'LIGHTNESS': <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 'LUMA': <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 'AVERAGE': <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 'LUMINANCE': <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 'VALUE': <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DesaturateMode' objects>, '__doc__': None, '__gtype__': <GType GimpDesaturateMode (1069019648)>, '__enum_values__': {0: <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 1: <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 2: <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 3: <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 4: <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>}, '__info__': gi.EnumInfo(DesaturateMode), 'LIGHTNESS': <enum GIMP_DESATURATE_LIGHTNESS of type Gimp.DesaturateMode>, 'LUMA': <enum GIMP_DESATURATE_LUMA of type Gimp.DesaturateMode>, 'AVERAGE': <enum GIMP_DESATURATE_AVERAGE of type Gimp.DesaturateMode>, 'LUMINANCE': <enum GIMP_DESATURATE_LUMINANCE of type Gimp.DesaturateMode>, 'VALUE': <enum GIMP_DESATURATE_VALUE of type Gimp.DesaturateMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +396,7 @@ class DesaturateMode(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpDesaturateMode (815052960)>'
+    __gtype__ = None # (!) real value is '<GType GimpDesaturateMode (1069019648)>'
     __info__ = gi.EnumInfo(DesaturateMode)
 
 

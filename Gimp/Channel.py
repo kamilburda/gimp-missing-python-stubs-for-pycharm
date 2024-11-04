@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -220,6 +220,10 @@ class Channel(Drawable):
         """ get_by_id(channel_id:int) -> Gimp.Channel or None """
         pass
 
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
+
     def get_color(self): # real signature unknown; restored from __doc__
         """ get_color(self) -> Gegl.Color """
         pass
@@ -400,12 +404,20 @@ class Channel(Drawable):
         """ id_is_drawable(item_id:int) -> bool """
         return False
 
+    def id_is_group_layer(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_group_layer(item_id:int) -> bool """
+        return False
+
     def id_is_layer(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer(item_id:int) -> bool """
         return False
 
     def id_is_layer_mask(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer_mask(item_id:int) -> bool """
+        return False
+
+    def id_is_path(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_path(item_id:int) -> bool """
         return False
 
     def id_is_selection(self, item_id): # real signature unknown; restored from __doc__
@@ -418,10 +430,6 @@ class Channel(Drawable):
 
     def id_is_valid(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_valid(item_id:int) -> bool """
-        return False
-
-    def id_is_vectors(self, item_id): # real signature unknown; restored from __doc__
-        """ id_is_vectors(item_id:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -468,6 +476,10 @@ class Channel(Drawable):
         """ is_group(self) -> bool """
         return False
 
+    def is_group_layer(self): # real signature unknown; restored from __doc__
+        """ is_group_layer(self) -> bool """
+        return False
+
     def is_indexed(self): # real signature unknown; restored from __doc__
         """ is_indexed(self) -> bool """
         return False
@@ -478,6 +490,10 @@ class Channel(Drawable):
 
     def is_layer_mask(self): # real signature unknown; restored from __doc__
         """ is_layer_mask(self) -> bool """
+        return False
+
+    def is_path(self): # real signature unknown; restored from __doc__
+        """ is_path(self) -> bool """
         return False
 
     def is_rgb(self): # real signature unknown; restored from __doc__
@@ -496,10 +512,6 @@ class Channel(Drawable):
         """ is_valid(self) -> bool """
         return False
 
-    def is_vectors(self): # real signature unknown; restored from __doc__
-        """ is_vectors(self) -> bool """
-        return False
-
     def levels(self, channel, low_input, high_input, clamp_input, gamma, low_output, high_output, clamp_output): # real signature unknown; restored from __doc__
         """ levels(self, channel:Gimp.HistogramChannel, low_input:float, high_input:float, clamp_input:bool, gamma:float, low_output:float, high_output:float, clamp_output:bool) -> bool """
         return False
@@ -507,10 +519,6 @@ class Channel(Drawable):
     def levels_stretch(self): # real signature unknown; restored from __doc__
         """ levels_stretch(self) -> bool """
         return False
-
-    def list_children(self): # real signature unknown; restored from __doc__
-        """ list_children(self) -> list """
-        return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
@@ -876,12 +884,12 @@ class Channel(Drawable):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e830>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069da80>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Channel), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChannel (819735216)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_component': gi.FunctionInfo(new_from_component, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'combine_masks': gi.FunctionInfo(combine_masks, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_masked': gi.FunctionInfo(get_show_masked, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_masked': gi.FunctionInfo(set_show_masked, bound=None), 'parent_instance': <property object at 0x00000207315faa20>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Channel), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChannel (1066677664)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_component': gi.FunctionInfo(new_from_component, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'combine_masks': gi.FunctionInfo(combine_masks, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_masked': gi.FunctionInfo(get_show_masked, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_masked': gi.FunctionInfo(set_show_masked, bound=None), 'parent_instance': <property object at 0x000001b640cae0c0>})"
     __gdoc__ = 'Object GimpChannel\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpChannel (819735216)>'
+    __gtype__ = None # (!) real value is '<GType GimpChannel (1066677664)>'
     __info__ = ObjectInfo(Channel)
 
 

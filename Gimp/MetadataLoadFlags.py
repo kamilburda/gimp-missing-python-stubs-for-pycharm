@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -394,7 +394,7 @@ class MetadataLoadFlags(__gobject.GFlags):
     ORIENTATION = 4
     RESOLUTION = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataLoadFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataLoadFlags (815080752)>, '__flags_values__': {0: <flags 0 of type Gimp.MetadataLoadFlags>, 1: <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 2: <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 4: <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 8: <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 4294967295: <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>}, '__info__': gi.EnumInfo(MetadataLoadFlags), 'NONE': <flags 0 of type Gimp.MetadataLoadFlags>, 'COMMENT': <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 'RESOLUTION': <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 'ORIENTATION': <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 'COLORSPACE': <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 'ALL': <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataLoadFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataLoadFlags (1069012256)>, '__flags_values__': {0: <flags 0 of type Gimp.MetadataLoadFlags>, 1: <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 2: <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 4: <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 8: <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 4294967295: <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>}, '__info__': gi.EnumInfo(MetadataLoadFlags), 'NONE': <flags 0 of type Gimp.MetadataLoadFlags>, 'COMMENT': <flags GIMP_METADATA_LOAD_COMMENT of type Gimp.MetadataLoadFlags>, 'RESOLUTION': <flags GIMP_METADATA_LOAD_RESOLUTION of type Gimp.MetadataLoadFlags>, 'ORIENTATION': <flags GIMP_METADATA_LOAD_ORIENTATION of type Gimp.MetadataLoadFlags>, 'COLORSPACE': <flags GIMP_METADATA_LOAD_COLORSPACE of type Gimp.MetadataLoadFlags>, 'ALL': <flags GIMP_METADATA_LOAD_COMMENT | GIMP_METADATA_LOAD_RESOLUTION | GIMP_METADATA_LOAD_ORIENTATION | GIMP_METADATA_LOAD_COLORSPACE | GIMP_METADATA_LOAD_ALL of type Gimp.MetadataLoadFlags>})"
     __flags_values__ = {
         0: 0,
         1: 1,
@@ -403,7 +403,7 @@ class MetadataLoadFlags(__gobject.GFlags):
         8: 8,
         4294967295: 4294967295,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpMetadataLoadFlags (815080752)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpMetadataLoadFlags (1069012256)>'
     __info__ = gi.EnumInfo(MetadataLoadFlags)
 
 

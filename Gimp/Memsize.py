@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -31,8 +31,8 @@ class Memsize(object):
     
         Memsize(**properties)
     """
-    def deserialize(self, string, memsize): # real signature unknown; restored from __doc__
-        """ deserialize(string:str, memsize:int) -> bool """
+    def deserialize(self, string): # real signature unknown; restored from __doc__
+        """ deserialize(string:str) -> bool, memsize:int """
         return False
 
     def serialize(self, memsize): # real signature unknown; restored from __doc__
@@ -143,9 +143,9 @@ class Memsize(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (815081984)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (1069015280)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpMemsize (815081984)>'
+    __gtype__ = None # (!) real value is '<GType GimpMemsize (1069015280)>'
     __info__ = ObjectInfo(Memsize)
 
 

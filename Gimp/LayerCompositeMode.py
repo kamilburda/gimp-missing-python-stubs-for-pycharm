@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -388,7 +388,7 @@ class LayerCompositeMode(__gobject.GEnum):
     INTERSECTION = 4
     UNION = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerCompositeMode' objects>, '__doc__': None, '__gtype__': <GType GimpLayerCompositeMode (815082880)>, '__enum_values__': {0: <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 1: <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 2: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 3: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 4: <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>}, '__info__': gi.EnumInfo(LayerCompositeMode), 'AUTO': <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 'UNION': <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 'CLIP_TO_BACKDROP': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 'CLIP_TO_LAYER': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 'INTERSECTION': <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerCompositeMode' objects>, '__doc__': None, '__gtype__': <GType GimpLayerCompositeMode (1069011136)>, '__enum_values__': {0: <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 1: <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 2: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 3: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 4: <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>}, '__info__': gi.EnumInfo(LayerCompositeMode), 'AUTO': <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 'UNION': <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 'CLIP_TO_BACKDROP': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 'CLIP_TO_LAYER': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 'INTERSECTION': <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +396,7 @@ class LayerCompositeMode(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpLayerCompositeMode (815082880)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayerCompositeMode (1069011136)>'
     __info__ = gi.EnumInfo(LayerCompositeMode)
 
 

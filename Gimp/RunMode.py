@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class RunMode(__gobject.GEnum):
     NONINTERACTIVE = 1
     WITH_LAST_VALS = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RunMode' objects>, '__doc__': None, '__gtype__': <GType GimpRunMode (814710656)>, '__enum_values__': {0: <enum GIMP_RUN_INTERACTIVE of type Gimp.RunMode>, 1: <enum GIMP_RUN_NONINTERACTIVE of type Gimp.RunMode>, 2: <enum GIMP_RUN_WITH_LAST_VALS of type Gimp.RunMode>}, '__info__': gi.EnumInfo(RunMode), 'INTERACTIVE': <enum GIMP_RUN_INTERACTIVE of type Gimp.RunMode>, 'NONINTERACTIVE': <enum GIMP_RUN_NONINTERACTIVE of type Gimp.RunMode>, 'WITH_LAST_VALS': <enum GIMP_RUN_WITH_LAST_VALS of type Gimp.RunMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'RunMode' objects>, '__doc__': None, '__gtype__': <GType GimpRunMode (1072213120)>, '__enum_values__': {0: <enum GIMP_RUN_INTERACTIVE of type Gimp.RunMode>, 1: <enum GIMP_RUN_NONINTERACTIVE of type Gimp.RunMode>, 2: <enum GIMP_RUN_WITH_LAST_VALS of type Gimp.RunMode>}, '__info__': gi.EnumInfo(RunMode), 'INTERACTIVE': <enum GIMP_RUN_INTERACTIVE of type Gimp.RunMode>, 'NONINTERACTIVE': <enum GIMP_RUN_NONINTERACTIVE of type Gimp.RunMode>, 'WITH_LAST_VALS': <enum GIMP_RUN_WITH_LAST_VALS of type Gimp.RunMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpRunMode (814710656)>'
+    __gtype__ = None # (!) real value is '<GType GimpRunMode (1072213120)>'
     __info__ = gi.EnumInfo(RunMode)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -132,13 +132,15 @@ class ParamSpecResource(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
+    default_to_context = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     none_ok = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecResource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecResource' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecResource' objects>, '__doc__': None, 'parent_instance': <property object at 0x000002073164e020>, 'none_ok': <property object at 0x000002073164e110>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecResource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecResource' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecResource' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d09f80>, 'none_ok': <property object at 0x000001b640d0a070>, 'default_to_context': <property object at 0x000001b640d0a1b0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecResource)
 

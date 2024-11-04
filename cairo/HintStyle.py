@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,7 +385,7 @@ class HintStyle(__gobject.GEnum):
     NONE = 1
     SLIGHT = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'HintStyle' objects>, '__doc__': None, '__gtype__': <GType cairo_hint_style_t (804300992)>, '__enum_values__': {0: <enum CAIRO_HINT_STYLE_DEFAULT of type cairo.HintStyle>, 1: <enum CAIRO_HINT_STYLE_NONE of type cairo.HintStyle>, 2: <enum CAIRO_HINT_STYLE_SLIGHT of type cairo.HintStyle>, 3: <enum CAIRO_HINT_STYLE_MEDIUM of type cairo.HintStyle>, 4: <enum CAIRO_HINT_STYLE_FULL of type cairo.HintStyle>}, '__info__': gi.EnumInfo(HintStyle), 'DEFAULT': <enum CAIRO_HINT_STYLE_DEFAULT of type cairo.HintStyle>, 'NONE': <enum CAIRO_HINT_STYLE_NONE of type cairo.HintStyle>, 'SLIGHT': <enum CAIRO_HINT_STYLE_SLIGHT of type cairo.HintStyle>, 'MEDIUM': <enum CAIRO_HINT_STYLE_MEDIUM of type cairo.HintStyle>, 'FULL': <enum CAIRO_HINT_STYLE_FULL of type cairo.HintStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'HintStyle' objects>, '__doc__': None, '__gtype__': <GType cairo_hint_style_t (4004031360)>, '__enum_values__': {0: <enum CAIRO_HINT_STYLE_DEFAULT of type cairo.HintStyle>, 1: <enum CAIRO_HINT_STYLE_NONE of type cairo.HintStyle>, 2: <enum CAIRO_HINT_STYLE_SLIGHT of type cairo.HintStyle>, 3: <enum CAIRO_HINT_STYLE_MEDIUM of type cairo.HintStyle>, 4: <enum CAIRO_HINT_STYLE_FULL of type cairo.HintStyle>}, '__info__': gi.EnumInfo(HintStyle), 'DEFAULT': <enum CAIRO_HINT_STYLE_DEFAULT of type cairo.HintStyle>, 'NONE': <enum CAIRO_HINT_STYLE_NONE of type cairo.HintStyle>, 'SLIGHT': <enum CAIRO_HINT_STYLE_SLIGHT of type cairo.HintStyle>, 'MEDIUM': <enum CAIRO_HINT_STYLE_MEDIUM of type cairo.HintStyle>, 'FULL': <enum CAIRO_HINT_STYLE_FULL of type cairo.HintStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -393,7 +393,7 @@ class HintStyle(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_hint_style_t (804300992)>'
+    __gtype__ = None # (!) real value is '<GType cairo_hint_style_t (4004031360)>'
     __info__ = gi.EnumInfo(HintStyle)
 
 

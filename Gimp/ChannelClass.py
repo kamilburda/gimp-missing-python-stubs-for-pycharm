@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,6 +134,8 @@ class ChannelClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -150,9 +152,11 @@ class ChannelClass(__gi.Struct):
 
     _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved9 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChannelClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChannelClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChannelClass' objects>, '__doc__': None, 'parent_class': <property object at 0x00000207315fabb0>, '_gimp_reserved1': <property object at 0x00000207315faca0>, '_gimp_reserved2': <property object at 0x00000207315fad90>, '_gimp_reserved3': <property object at 0x00000207315fae80>, '_gimp_reserved4': <property object at 0x00000207315faf70>, '_gimp_reserved5': <property object at 0x00000207315fb060>, '_gimp_reserved6': <property object at 0x00000207315fb150>, '_gimp_reserved7': <property object at 0x00000207315fb240>, '_gimp_reserved8': <property object at 0x00000207315fb330>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChannelClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChannelClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChannelClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cae250>, '_gimp_reserved0': <property object at 0x000001b640cae340>, '_gimp_reserved1': <property object at 0x000001b640cae430>, '_gimp_reserved2': <property object at 0x000001b640cae520>, '_gimp_reserved3': <property object at 0x000001b640cae610>, '_gimp_reserved4': <property object at 0x000001b640cae700>, '_gimp_reserved5': <property object at 0x000001b640cae7f0>, '_gimp_reserved6': <property object at 0x000001b640cae8e0>, '_gimp_reserved7': <property object at 0x000001b640cae9d0>, '_gimp_reserved8': <property object at 0x000001b640caeac0>, '_gimp_reserved9': <property object at 0x000001b640caeb60>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ChannelClass)
 

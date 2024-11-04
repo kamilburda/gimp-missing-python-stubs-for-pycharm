@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -478,12 +478,12 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165d960>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069f550>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (815085568)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (1069016064)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
     __gdoc__ = 'Object GimpModuleDB\n\nSignals from GListModel:\n  items-changed (guint, guint, guint)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpModuleDB (815085568)>'
+    __gtype__ = None # (!) real value is '<GType GimpModuleDB (1069016064)>'
     __info__ = ObjectInfo(ModuleDB)
 
 

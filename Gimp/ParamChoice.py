@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -21,7 +21,7 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
+class ParamChoice(__gi_repository_GObject.ParamSpecString):
     """
     :Constructors:
     
@@ -29,8 +29,20 @@ class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
     
         ParamChoice(**properties)
     """
+    def blurb(self, *args, **kwargs): # real signature unknown
+        """  """
+        pass
+
     def do_finalize(self, *args, **kwargs): # real signature unknown
         """ finalize(self) """
+        pass
+
+    def do_get_property(self, pspec): # reliably restored by inspect
+        # no doc
+        pass
+
+    def do_set_property(self, pspec, value): # reliably restored by inspect
+        # no doc
         pass
 
     def do_values_cmp(self, *args, **kwargs): # real signature unknown
@@ -80,6 +92,10 @@ class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
     def is_valid_name(self, name): # real signature unknown; restored from __doc__
         """ is_valid_name(name:str) -> bool """
         return False
+
+    def nick(self, *args, **kwargs): # real signature unknown
+        """  """
+        pass
 
     def set_qdata(self, quark, data=None): # real signature unknown; restored from __doc__
         """ set_qdata(self, quark:int, data=None) """
@@ -193,14 +209,21 @@ class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
         """
         pass
 
-    def __weakref__(self, *args, **kwargs): # real signature unknown
-        pass
+    cset_first = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    cset_nth = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    default_value = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    ensure_non_null = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     flags = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    null_fold_if_empty = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     owner_type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
@@ -212,6 +235,8 @@ class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    substitutor = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     value_type = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _blurb = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -220,9 +245,18 @@ class ParamChoice(__gi_repository_GObject.ParamSpecBoxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamChoice (815086688)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamChoice (1069010240)>, '__doc__': None, '__gsignals__': {}})"
+    __gproperties__ = {
+        'blurb': (
+            None, # (!) real value is '<GType PyObject (1065322800)>'
+            '',
+            '',
+            3,
+        ),
+        'nick': '<value is a self-reference, replaced by this string>',
+    }
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamChoice (815086688)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamChoice (1069010240)>'
     __info__ = ObjectInfo(ParamChoice)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class ConvertPaletteType(__gobject.GEnum):
     MONO = 2
     WEB = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertPaletteType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertPaletteType (815046464)>, '__enum_values__': {0: <enum GIMP_CONVERT_PALETTE_GENERATE of type Gimp.ConvertPaletteType>, 1: <enum GIMP_CONVERT_PALETTE_WEB of type Gimp.ConvertPaletteType>, 2: <enum GIMP_CONVERT_PALETTE_MONO of type Gimp.ConvertPaletteType>, 3: <enum GIMP_CONVERT_PALETTE_CUSTOM of type Gimp.ConvertPaletteType>}, '__info__': gi.EnumInfo(ConvertPaletteType), 'GENERATE': <enum GIMP_CONVERT_PALETTE_GENERATE of type Gimp.ConvertPaletteType>, 'WEB': <enum GIMP_CONVERT_PALETTE_WEB of type Gimp.ConvertPaletteType>, 'MONO': <enum GIMP_CONVERT_PALETTE_MONO of type Gimp.ConvertPaletteType>, 'CUSTOM': <enum GIMP_CONVERT_PALETTE_CUSTOM of type Gimp.ConvertPaletteType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertPaletteType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertPaletteType (1069016624)>, '__enum_values__': {0: <enum GIMP_CONVERT_PALETTE_GENERATE of type Gimp.ConvertPaletteType>, 1: <enum GIMP_CONVERT_PALETTE_WEB of type Gimp.ConvertPaletteType>, 2: <enum GIMP_CONVERT_PALETTE_MONO of type Gimp.ConvertPaletteType>, 3: <enum GIMP_CONVERT_PALETTE_CUSTOM of type Gimp.ConvertPaletteType>}, '__info__': gi.EnumInfo(ConvertPaletteType), 'GENERATE': <enum GIMP_CONVERT_PALETTE_GENERATE of type Gimp.ConvertPaletteType>, 'WEB': <enum GIMP_CONVERT_PALETTE_WEB of type Gimp.ConvertPaletteType>, 'MONO': <enum GIMP_CONVERT_PALETTE_MONO of type Gimp.ConvertPaletteType>, 'CUSTOM': <enum GIMP_CONVERT_PALETTE_CUSTOM of type Gimp.ConvertPaletteType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpConvertPaletteType (815046464)>'
+    __gtype__ = None # (!) real value is '<GType GimpConvertPaletteType (1069016624)>'
     __info__ = gi.EnumInfo(ConvertPaletteType)
 
 

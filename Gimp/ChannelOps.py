@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class ChannelOps(__gobject.GEnum):
     REPLACE = 2
     SUBTRACT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ChannelOps' objects>, '__doc__': None, '__gtype__': <GType GimpChannelOps (815049488)>, '__enum_values__': {0: <enum GIMP_CHANNEL_OP_ADD of type Gimp.ChannelOps>, 1: <enum GIMP_CHANNEL_OP_SUBTRACT of type Gimp.ChannelOps>, 2: <enum GIMP_CHANNEL_OP_REPLACE of type Gimp.ChannelOps>, 3: <enum GIMP_CHANNEL_OP_INTERSECT of type Gimp.ChannelOps>}, '__info__': gi.EnumInfo(ChannelOps), 'ADD': <enum GIMP_CHANNEL_OP_ADD of type Gimp.ChannelOps>, 'SUBTRACT': <enum GIMP_CHANNEL_OP_SUBTRACT of type Gimp.ChannelOps>, 'REPLACE': <enum GIMP_CHANNEL_OP_REPLACE of type Gimp.ChannelOps>, 'INTERSECT': <enum GIMP_CHANNEL_OP_INTERSECT of type Gimp.ChannelOps>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ChannelOps' objects>, '__doc__': None, '__gtype__': <GType GimpChannelOps (1071867456)>, '__enum_values__': {0: <enum GIMP_CHANNEL_OP_ADD of type Gimp.ChannelOps>, 1: <enum GIMP_CHANNEL_OP_SUBTRACT of type Gimp.ChannelOps>, 2: <enum GIMP_CHANNEL_OP_REPLACE of type Gimp.ChannelOps>, 3: <enum GIMP_CHANNEL_OP_INTERSECT of type Gimp.ChannelOps>}, '__info__': gi.EnumInfo(ChannelOps), 'ADD': <enum GIMP_CHANNEL_OP_ADD of type Gimp.ChannelOps>, 'SUBTRACT': <enum GIMP_CHANNEL_OP_SUBTRACT of type Gimp.ChannelOps>, 'REPLACE': <enum GIMP_CHANNEL_OP_REPLACE of type Gimp.ChannelOps>, 'INTERSECT': <enum GIMP_CHANNEL_OP_INTERSECT of type Gimp.ChannelOps>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpChannelOps (815049488)>'
+    __gtype__ = None # (!) real value is '<GType GimpChannelOps (1071867456)>'
     __info__ = gi.EnumInfo(ChannelOps)
 
 

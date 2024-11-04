@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -384,11 +384,11 @@ class ForegroundExtractMode(__gobject.GEnum):
 
     MATTING = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ForegroundExtractMode' objects>, '__doc__': None, '__gtype__': <GType GimpForegroundExtractMode (815051168)>, '__enum_values__': {0: <enum GIMP_FOREGROUND_EXTRACT_MATTING of type Gimp.ForegroundExtractMode>}, '__info__': gi.EnumInfo(ForegroundExtractMode), 'MATTING': <enum GIMP_FOREGROUND_EXTRACT_MATTING of type Gimp.ForegroundExtractMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ForegroundExtractMode' objects>, '__doc__': None, '__gtype__': <GType GimpForegroundExtractMode (1069017632)>, '__enum_values__': {0: <enum GIMP_FOREGROUND_EXTRACT_MATTING of type Gimp.ForegroundExtractMode>}, '__info__': gi.EnumInfo(ForegroundExtractMode), 'MATTING': <enum GIMP_FOREGROUND_EXTRACT_MATTING of type Gimp.ForegroundExtractMode>})"
     __enum_values__ = {
         0: 0,
     }
-    __gtype__ = None # (!) real value is '<GType GimpForegroundExtractMode (815051168)>'
+    __gtype__ = None # (!) real value is '<GType GimpForegroundExtractMode (1069017632)>'
     __info__ = gi.EnumInfo(ForegroundExtractMode)
 
 

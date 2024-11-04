@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class LayerColorSpace(__gobject.GEnum):
     RGB_LINEAR = 1
     RGB_PERCEPTUAL = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpLayerColorSpace (815081200)>, '__enum_values__': {0: <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 1: <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 2: <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>}, '__info__': gi.EnumInfo(LayerColorSpace), 'AUTO': <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 'RGB_LINEAR': <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 'RGB_PERCEPTUAL': <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpLayerColorSpace (1069015392)>, '__enum_values__': {0: <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 1: <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 2: <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>}, '__info__': gi.EnumInfo(LayerColorSpace), 'AUTO': <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 'RGB_LINEAR': <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 'RGB_PERCEPTUAL': <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpLayerColorSpace (815081200)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayerColorSpace (1069015392)>'
     __info__ = gi.EnumInfo(LayerColorSpace)
 
 

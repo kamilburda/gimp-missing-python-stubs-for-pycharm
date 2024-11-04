@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class LineCap(__gobject.GEnum):
     ROUND = 1
     SQUARE = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'LineCap' objects>, '__doc__': None, '__gtype__': <GType cairo_line_cap_t (804004096)>, '__enum_values__': {0: <enum CAIRO_LINE_CAP_BUTT of type cairo.LineCap>, 1: <enum CAIRO_LINE_CAP_ROUND of type cairo.LineCap>, 2: <enum CAIRO_LINE_CAP_SQUARE of type cairo.LineCap>}, '__info__': gi.EnumInfo(LineCap), 'BUTT': <enum CAIRO_LINE_CAP_BUTT of type cairo.LineCap>, 'ROUND': <enum CAIRO_LINE_CAP_ROUND of type cairo.LineCap>, 'SQUARE': <enum CAIRO_LINE_CAP_SQUARE of type cairo.LineCap>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'LineCap' objects>, '__doc__': None, '__gtype__': <GType cairo_line_cap_t (4004031920)>, '__enum_values__': {0: <enum CAIRO_LINE_CAP_BUTT of type cairo.LineCap>, 1: <enum CAIRO_LINE_CAP_ROUND of type cairo.LineCap>, 2: <enum CAIRO_LINE_CAP_SQUARE of type cairo.LineCap>}, '__info__': gi.EnumInfo(LineCap), 'BUTT': <enum CAIRO_LINE_CAP_BUTT of type cairo.LineCap>, 'ROUND': <enum CAIRO_LINE_CAP_ROUND of type cairo.LineCap>, 'SQUARE': <enum CAIRO_LINE_CAP_SQUARE of type cairo.LineCap>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_line_cap_t (804004096)>'
+    __gtype__ = None # (!) real value is '<GType cairo_line_cap_t (4004031920)>'
     __info__ = gi.EnumInfo(LineCap)
 
 

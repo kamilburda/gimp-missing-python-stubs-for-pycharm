@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class DodgeBurnType(__gobject.GEnum):
     BURN = 1
     DODGE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DodgeBurnType' objects>, '__doc__': None, '__gtype__': <GType GimpDodgeBurnType (815050832)>, '__enum_values__': {0: <enum GIMP_DODGE_BURN_TYPE_DODGE of type Gimp.DodgeBurnType>, 1: <enum GIMP_DODGE_BURN_TYPE_BURN of type Gimp.DodgeBurnType>}, '__info__': gi.EnumInfo(DodgeBurnType), 'DODGE': <enum GIMP_DODGE_BURN_TYPE_DODGE of type Gimp.DodgeBurnType>, 'BURN': <enum GIMP_DODGE_BURN_TYPE_BURN of type Gimp.DodgeBurnType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'DodgeBurnType' objects>, '__doc__': None, '__gtype__': <GType GimpDodgeBurnType (1069020880)>, '__enum_values__': {0: <enum GIMP_DODGE_BURN_TYPE_DODGE of type Gimp.DodgeBurnType>, 1: <enum GIMP_DODGE_BURN_TYPE_BURN of type Gimp.DodgeBurnType>}, '__info__': gi.EnumInfo(DodgeBurnType), 'DODGE': <enum GIMP_DODGE_BURN_TYPE_DODGE of type Gimp.DodgeBurnType>, 'BURN': <enum GIMP_DODGE_BURN_TYPE_BURN of type Gimp.DodgeBurnType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpDodgeBurnType (815050832)>'
+    __gtype__ = None # (!) real value is '<GType GimpDodgeBurnType (1069020880)>'
     __info__ = gi.EnumInfo(DodgeBurnType)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class GradientBlendColorSpace(__gobject.GEnum):
     RGB_LINEAR = 1
     RGB_PERCEPTUAL = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientBlendColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpGradientBlendColorSpace (815046800)>, '__enum_values__': {0: <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 1: <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 2: <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>}, '__info__': gi.EnumInfo(GradientBlendColorSpace), 'RGB_PERCEPTUAL': <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 'RGB_LINEAR': <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 'CIE_LAB': <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientBlendColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpGradientBlendColorSpace (1069021552)>, '__enum_values__': {0: <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 1: <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 2: <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>}, '__info__': gi.EnumInfo(GradientBlendColorSpace), 'RGB_PERCEPTUAL': <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 'RGB_LINEAR': <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 'CIE_LAB': <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientBlendColorSpace (815046800)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientBlendColorSpace (1069021552)>'
     __info__ = gi.EnumInfo(GradientBlendColorSpace)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -394,7 +394,7 @@ class SelectCriterion(__gobject.GEnum):
     RGB_GREEN = 2
     RGB_RED = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'SelectCriterion' objects>, '__doc__': None, '__gtype__': <GType GimpSelectCriterion (814717040)>, '__enum_values__': {0: <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 1: <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 2: <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 3: <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 4: <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 5: <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 6: <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 7: <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 8: <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 9: <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 10: <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>}, '__info__': gi.EnumInfo(SelectCriterion), 'COMPOSITE': <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 'RGB_RED': <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 'RGB_GREEN': <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 'RGB_BLUE': <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 'HSV_HUE': <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 'HSV_SATURATION': <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 'HSV_VALUE': <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 'LCH_LIGHTNESS': <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 'LCH_CHROMA': <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 'LCH_HUE': <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 'ALPHA': <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'SelectCriterion' objects>, '__doc__': None, '__gtype__': <GType GimpSelectCriterion (1072212672)>, '__enum_values__': {0: <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 1: <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 2: <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 3: <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 4: <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 5: <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 6: <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 7: <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 8: <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 9: <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 10: <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>}, '__info__': gi.EnumInfo(SelectCriterion), 'COMPOSITE': <enum GIMP_SELECT_CRITERION_COMPOSITE of type Gimp.SelectCriterion>, 'RGB_RED': <enum GIMP_SELECT_CRITERION_RGB_RED of type Gimp.SelectCriterion>, 'RGB_GREEN': <enum GIMP_SELECT_CRITERION_RGB_GREEN of type Gimp.SelectCriterion>, 'RGB_BLUE': <enum GIMP_SELECT_CRITERION_RGB_BLUE of type Gimp.SelectCriterion>, 'HSV_HUE': <enum GIMP_SELECT_CRITERION_HSV_HUE of type Gimp.SelectCriterion>, 'HSV_SATURATION': <enum GIMP_SELECT_CRITERION_HSV_SATURATION of type Gimp.SelectCriterion>, 'HSV_VALUE': <enum GIMP_SELECT_CRITERION_HSV_VALUE of type Gimp.SelectCriterion>, 'LCH_LIGHTNESS': <enum GIMP_SELECT_CRITERION_LCH_LIGHTNESS of type Gimp.SelectCriterion>, 'LCH_CHROMA': <enum GIMP_SELECT_CRITERION_LCH_CHROMA of type Gimp.SelectCriterion>, 'LCH_HUE': <enum GIMP_SELECT_CRITERION_LCH_HUE of type Gimp.SelectCriterion>, 'ALPHA': <enum GIMP_SELECT_CRITERION_ALPHA of type Gimp.SelectCriterion>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -408,7 +408,7 @@ class SelectCriterion(__gobject.GEnum):
         9: 9,
         10: 10,
     }
-    __gtype__ = None # (!) real value is '<GType GimpSelectCriterion (814717040)>'
+    __gtype__ = None # (!) real value is '<GType GimpSelectCriterion (1072212672)>'
     __info__ = gi.EnumInfo(SelectCriterion)
 
 

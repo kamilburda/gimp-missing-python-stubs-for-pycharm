@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -384,14 +384,14 @@ class Extend(__gobject.GEnum):
     REFLECT = 2
     REPEAT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Extend' objects>, '__doc__': None, '__gtype__': <GType cairo_extend_t (804301888)>, '__enum_values__': {0: <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 1: <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 2: <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 3: <enum CAIRO_EXTEND_PAD of type cairo.Extend>}, '__info__': gi.EnumInfo(Extend), 'NONE': <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 'REPEAT': <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 'REFLECT': <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 'PAD': <enum CAIRO_EXTEND_PAD of type cairo.Extend>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Extend' objects>, '__doc__': None, '__gtype__': <GType cairo_extend_t (4003650608)>, '__enum_values__': {0: <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 1: <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 2: <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 3: <enum CAIRO_EXTEND_PAD of type cairo.Extend>}, '__info__': gi.EnumInfo(Extend), 'NONE': <enum CAIRO_EXTEND_NONE of type cairo.Extend>, 'REPEAT': <enum CAIRO_EXTEND_REPEAT of type cairo.Extend>, 'REFLECT': <enum CAIRO_EXTEND_REFLECT of type cairo.Extend>, 'PAD': <enum CAIRO_EXTEND_PAD of type cairo.Extend>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_extend_t (804301888)>'
+    __gtype__ = None # (!) real value is '<GType cairo_extend_t (4003650608)>'
     __info__ = gi.EnumInfo(Extend)
 
 

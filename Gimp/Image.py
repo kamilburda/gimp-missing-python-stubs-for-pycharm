@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -160,6 +160,14 @@ class Image(__gi_overrides_GObject.Object):
         """ Deprecated, please use stop_emission_by_name. """
         pass
 
+    def export_path_to_file(self, file, path=None): # real signature unknown; restored from __doc__
+        """ export_path_to_file(self, file:Gio.File, path:Gimp.Path=None) -> bool """
+        return False
+
+    def export_path_to_string(self, path=None): # real signature unknown; restored from __doc__
+        """ export_path_to_string(self, path:Gimp.Path=None) -> str """
+        return ""
+
     def find_next_guide(self, guide): # real signature unknown; restored from __doc__
         """ find_next_guide(self, guide:int) -> int """
         return 0
@@ -214,8 +222,8 @@ class Image(__gi_overrides_GObject.Object):
         """
         pass
 
-    def freeze_vectors(self): # real signature unknown; restored from __doc__
-        """ freeze_vectors(self) -> bool """
+    def freeze_paths(self): # real signature unknown; restored from __doc__
+        """ freeze_paths(self) -> bool """
         return False
 
     def getv(self, names, values): # real signature unknown; restored from __doc__
@@ -230,6 +238,10 @@ class Image(__gi_overrides_GObject.Object):
         """ get_by_id(image_id:int) -> Gimp.Image or None """
         pass
 
+    def get_channels(self): # real signature unknown; restored from __doc__
+        """ get_channels(self) -> list """
+        return []
+
     def get_channel_by_name(self, name): # real signature unknown; restored from __doc__
         """ get_channel_by_name(self, name:str) -> Gimp.Channel """
         pass
@@ -237,10 +249,6 @@ class Image(__gi_overrides_GObject.Object):
     def get_channel_by_tattoo(self, tattoo): # real signature unknown; restored from __doc__
         """ get_channel_by_tattoo(self, tattoo:int) -> Gimp.Channel """
         pass
-
-    def get_colormap(self): # real signature unknown; restored from __doc__
-        """ get_colormap(self) -> list, num_colors:int """
-        return []
 
     def get_color_profile(self): # real signature unknown; restored from __doc__
         """ get_color_profile(self) -> Gimp.ColorProfile """
@@ -302,6 +310,10 @@ class Image(__gi_overrides_GObject.Object):
         """ get_item_position(self, item:Gimp.Item) -> int """
         return 0
 
+    def get_layers(self): # real signature unknown; restored from __doc__
+        """ get_layers(self) -> list """
+        return []
+
     def get_layer_by_name(self, name): # real signature unknown; restored from __doc__
         """ get_layer_by_name(self, name:str) -> Gimp.Layer """
         pass
@@ -330,6 +342,18 @@ class Image(__gi_overrides_GObject.Object):
         """ get_parasite_list(self) -> list """
         return []
 
+    def get_paths(self): # real signature unknown; restored from __doc__
+        """ get_paths(self) -> list """
+        return []
+
+    def get_path_by_name(self, name): # real signature unknown; restored from __doc__
+        """ get_path_by_name(self, name:str) -> Gimp.Path """
+        pass
+
+    def get_path_by_tattoo(self, tattoo): # real signature unknown; restored from __doc__
+        """ get_path_by_tattoo(self, tattoo:int) -> Gimp.Path """
+        pass
+
     def get_precision(self): # real signature unknown; restored from __doc__
         """ get_precision(self) -> Gimp.Precision """
         pass
@@ -352,8 +376,20 @@ class Image(__gi_overrides_GObject.Object):
         """ get_sample_point_position(self, sample_point:int) -> int, position_y:int """
         return 0
 
+    def get_selected_channels(self): # real signature unknown; restored from __doc__
+        """ get_selected_channels(self) -> list """
+        return []
+
     def get_selected_drawables(self): # real signature unknown; restored from __doc__
         """ get_selected_drawables(self) -> list """
+        return []
+
+    def get_selected_layers(self): # real signature unknown; restored from __doc__
+        """ get_selected_layers(self) -> list """
+        return []
+
+    def get_selected_paths(self): # real signature unknown; restored from __doc__
+        """ get_selected_paths(self) -> list """
         return []
 
     def get_selection(self): # real signature unknown; restored from __doc__
@@ -386,14 +422,6 @@ class Image(__gi_overrides_GObject.Object):
 
     def get_unit(self): # real signature unknown; restored from __doc__
         """ get_unit(self) -> Gimp.Unit """
-        pass
-
-    def get_vectors_by_name(self, name): # real signature unknown; restored from __doc__
-        """ get_vectors_by_name(self, name:str) -> Gimp.Vectors """
-        pass
-
-    def get_vectors_by_tattoo(self, tattoo): # real signature unknown; restored from __doc__
-        """ get_vectors_by_tattoo(self, tattoo:int) -> Gimp.Vectors """
         pass
 
     def get_width(self): # real signature unknown; restored from __doc__
@@ -486,6 +514,14 @@ class Image(__gi_overrides_GObject.Object):
         """ id_is_valid(image_id:int) -> bool """
         return False
 
+    def import_paths_from_file(self, file, merge, scale): # real signature unknown; restored from __doc__
+        """ import_paths_from_file(self, file:Gio.File, merge:bool, scale:bool) -> bool, paths:list """
+        return False
+
+    def import_paths_from_string(self, string, length, merge, scale): # real signature unknown; restored from __doc__
+        """ import_paths_from_string(self, string:str, length:int, merge:bool, scale:bool) -> bool, paths:list """
+        return False
+
     def insert_channel(self, channel, parent=None, position): # real signature unknown; restored from __doc__
         """ insert_channel(self, channel:Gimp.Channel, parent:Gimp.Channel=None, position:int) -> bool """
         return False
@@ -494,8 +530,8 @@ class Image(__gi_overrides_GObject.Object):
         """ insert_layer(self, layer:Gimp.Layer, parent:Gimp.Layer=None, position:int) -> bool """
         return False
 
-    def insert_vectors(self, vectors, parent=None, position): # real signature unknown; restored from __doc__
-        """ insert_vectors(self, vectors:Gimp.Vectors, parent:Gimp.Vectors=None, position:int) -> bool """
+    def insert_path(self, path, parent=None, position): # real signature unknown; restored from __doc__
+        """ insert_path(self, path:Gimp.Path, parent:Gimp.Path=None, position:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -530,36 +566,8 @@ class Image(__gi_overrides_GObject.Object):
         """ is_valid(self) -> bool """
         return False
 
-    def list_channels(self): # real signature unknown; restored from __doc__
-        """ list_channels(self) -> list """
-        return []
-
-    def list_layers(self): # real signature unknown; restored from __doc__
-        """ list_layers(self) -> list """
-        return []
-
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
-        return []
-
-    def list_selected_channels(self): # real signature unknown; restored from __doc__
-        """ list_selected_channels(self) -> list """
-        return []
-
-    def list_selected_drawables(self): # real signature unknown; restored from __doc__
-        """ list_selected_drawables(self) -> list """
-        return []
-
-    def list_selected_layers(self): # real signature unknown; restored from __doc__
-        """ list_selected_layers(self) -> list """
-        return []
-
-    def list_selected_vectors(self): # real signature unknown; restored from __doc__
-        """ list_selected_vectors(self) -> list """
-        return []
-
-    def list_vectors(self): # real signature unknown; restored from __doc__
-        """ list_vectors(self) -> list """
         return []
 
     def lower_item(self, item): # real signature unknown; restored from __doc__
@@ -574,20 +582,8 @@ class Image(__gi_overrides_GObject.Object):
         """ merge_down(self, merge_layer:Gimp.Layer, merge_type:Gimp.MergeType) -> Gimp.Layer """
         pass
 
-    def merge_layer_group(self, layer_group): # real signature unknown; restored from __doc__
-        """ merge_layer_group(self, layer_group:Gimp.Layer) -> Gimp.Layer """
-        pass
-
     def merge_visible_layers(self, merge_type): # real signature unknown; restored from __doc__
         """ merge_visible_layers(self, merge_type:Gimp.MergeType) -> Gimp.Layer """
-        pass
-
-    def metadata_load_finish(self, mime_type, metadata, flags): # real signature unknown; restored from __doc__
-        """ metadata_load_finish(self, mime_type:str, metadata:Gimp.Metadata, flags:Gimp.MetadataLoadFlags) """
-        pass
-
-    def metadata_load_prepare(self, mime_type, file): # real signature unknown; restored from __doc__
-        """ metadata_load_prepare(self, mime_type:str, file:Gio.File) -> Gimp.Metadata """
         pass
 
     def metadata_load_thumbnail(self, file): # real signature unknown; restored from __doc__
@@ -597,10 +593,6 @@ class Image(__gi_overrides_GObject.Object):
     def metadata_save_filter(self, mime_type, metadata, flags, file): # real signature unknown; restored from __doc__
         """ metadata_save_filter(self, mime_type:str, metadata:Gimp.Metadata, flags:Gimp.MetadataSaveFlags, file:Gio.File) -> Gimp.Metadata """
         pass
-
-    def metadata_save_finish(self, mime_type, metadata, flags, file): # real signature unknown; restored from __doc__
-        """ metadata_save_finish(self, mime_type:str, metadata:Gimp.Metadata, flags:Gimp.MetadataSaveFlags, file:Gio.File) -> bool """
-        return False
 
     def metadata_save_prepare(self, mime_type, suggested_flags): # real signature unknown; restored from __doc__
         """ metadata_save_prepare(self, mime_type:str, suggested_flags:Gimp.MetadataSaveFlags) -> Gimp.Metadata """
@@ -670,8 +662,8 @@ class Image(__gi_overrides_GObject.Object):
         """ remove_layer(self, layer:Gimp.Layer) -> bool """
         return False
 
-    def remove_vectors(self, vectors): # real signature unknown; restored from __doc__
-        """ remove_vectors(self, vectors:Gimp.Vectors) -> bool """
+    def remove_path(self, path): # real signature unknown; restored from __doc__
+        """ remove_path(self, path:Gimp.Path) -> bool """
         return False
 
     def reorder_item(self, item, parent=None, position): # real signature unknown; restored from __doc__
@@ -734,10 +726,6 @@ class Image(__gi_overrides_GObject.Object):
         """ select_round_rectangle(self, operation:Gimp.ChannelOps, x:float, y:float, width:float, height:float, corner_radius_x:float, corner_radius_y:float) -> bool """
         return False
 
-    def set_colormap(self, colormap, num_colors): # real signature unknown; restored from __doc__
-        """ set_colormap(self, colormap:list, num_colors:int) -> bool """
-        return False
-
     def set_color_profile(self, profile=None): # real signature unknown; restored from __doc__
         """ set_color_profile(self, profile:Gimp.ColorProfile=None) -> bool """
         return False
@@ -766,6 +754,10 @@ class Image(__gi_overrides_GObject.Object):
         """ set_metadata(self, metadata:Gimp.Metadata) -> bool """
         return False
 
+    def set_palette(self, new_palette): # real signature unknown; restored from __doc__
+        """ set_palette(self, new_palette:Gimp.Palette) -> Gimp.Palette """
+        pass
+
     def set_properties(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -784,8 +776,8 @@ class Image(__gi_overrides_GObject.Object):
         """ set_selected_layers(self, layers:list) -> bool """
         return False
 
-    def set_selected_vectors(self, vectors): # real signature unknown; restored from __doc__
-        """ set_selected_vectors(self, vectors:list) -> bool """
+    def set_selected_paths(self, paths): # real signature unknown; restored from __doc__
+        """ set_selected_paths(self, paths:list) -> bool """
         return False
 
     def set_simulation_bpc(self, bpc): # real signature unknown; restored from __doc__
@@ -796,8 +788,8 @@ class Image(__gi_overrides_GObject.Object):
         """ set_simulation_intent(self, intent:Gimp.ColorRenderingIntent) -> bool """
         return False
 
-    def set_simulation_profile(self, profile): # real signature unknown; restored from __doc__
-        """ set_simulation_profile(self, profile:Gimp.ColorProfile) -> bool """
+    def set_simulation_profile(self, profile=None): # real signature unknown; restored from __doc__
+        """ set_simulation_profile(self, profile:Gimp.ColorProfile=None) -> bool """
         return False
 
     def set_simulation_profile_from_file(self, file): # real signature unknown; restored from __doc__
@@ -836,8 +828,8 @@ class Image(__gi_overrides_GObject.Object):
         """ take_selected_layers(self, layers:list) -> bool """
         return False
 
-    def take_selected_vectors(self, vectors): # real signature unknown; restored from __doc__
-        """ take_selected_vectors(self, vectors:list) -> bool """
+    def take_selected_paths(self, paths): # real signature unknown; restored from __doc__
+        """ take_selected_paths(self, paths:list) -> bool """
         return False
 
     def thaw_channels(self): # real signature unknown; restored from __doc__
@@ -852,8 +844,8 @@ class Image(__gi_overrides_GObject.Object):
         """ thaw_notify(self) """
         pass
 
-    def thaw_vectors(self): # real signature unknown; restored from __doc__
-        """ thaw_vectors(self) -> bool """
+    def thaw_paths(self): # real signature unknown; restored from __doc__
+        """ thaw_paths(self) -> bool """
         return False
 
     def undo_disable(self): # real signature unknown; restored from __doc__
@@ -1040,12 +1032,12 @@ class Image(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165ef50>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d090>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Image), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpImage (815083216)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_with_precision': gi.FunctionInfo(new_with_precision, bound=None), 'convert_set_dither_matrix': gi.FunctionInfo(convert_set_dither_matrix, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'metadata_load_thumbnail': gi.FunctionInfo(metadata_load_thumbnail, bound=None), 'add_hguide': gi.FunctionInfo(add_hguide, bound=None), 'add_sample_point': gi.FunctionInfo(add_sample_point, bound=None), 'add_vguide': gi.FunctionInfo(add_vguide, bound=None), 'attach_parasite': gi.FunctionInfo(attach_parasite, bound=None), 'clean_all': gi.FunctionInfo(clean_all, bound=None), 'convert_color_profile': gi.FunctionInfo(convert_color_profile, bound=None), 'convert_color_profile_from_file': gi.FunctionInfo(convert_color_profile_from_file, bound=None), 'convert_grayscale': gi.FunctionInfo(convert_grayscale, bound=None), 'convert_indexed': gi.FunctionInfo(convert_indexed, bound=None), 'convert_precision': gi.FunctionInfo(convert_precision, bound=None), 'convert_rgb': gi.FunctionInfo(convert_rgb, bound=None), 'crop': gi.FunctionInfo(crop, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'delete_guide': gi.FunctionInfo(delete_guide, bound=None), 'delete_sample_point': gi.FunctionInfo(delete_sample_point, bound=None), 'detach_parasite': gi.FunctionInfo(detach_parasite, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'find_next_guide': gi.FunctionInfo(find_next_guide, bound=None), 'find_next_sample_point': gi.FunctionInfo(find_next_sample_point, bound=None), 'flatten': gi.FunctionInfo(flatten, bound=None), 'flip': gi.FunctionInfo(flip, bound=None), 'floating_sel_attached_to': gi.FunctionInfo(floating_sel_attached_to, bound=None), 'freeze_channels': gi.FunctionInfo(freeze_channels, bound=None), 'freeze_layers': gi.FunctionInfo(freeze_layers, bound=None), 'freeze_vectors': gi.FunctionInfo(freeze_vectors, bound=None), 'get_base_type': gi.FunctionInfo(get_base_type, bound=None), 'get_channel_by_name': gi.FunctionInfo(get_channel_by_name, bound=None), 'get_channel_by_tattoo': gi.FunctionInfo(get_channel_by_tattoo, bound=None), 'get_color_profile': gi.FunctionInfo(get_color_profile, bound=None), 'get_colormap': gi.FunctionInfo(get_colormap, bound=None), 'get_component_active': gi.FunctionInfo(get_component_active, bound=None), 'get_component_visible': gi.FunctionInfo(get_component_visible, bound=None), 'get_default_new_layer_mode': gi.FunctionInfo(get_default_new_layer_mode, bound=None), 'get_effective_color_profile': gi.FunctionInfo(get_effective_color_profile, bound=None), 'get_exported_file': gi.FunctionInfo(get_exported_file, bound=None), 'get_file': gi.FunctionInfo(get_file, bound=None), 'get_floating_sel': gi.FunctionInfo(get_floating_sel, bound=None), 'get_guide_orientation': gi.FunctionInfo(get_guide_orientation, bound=None), 'get_guide_position': gi.FunctionInfo(get_guide_position, bound=None), 'get_height': gi.FunctionInfo(get_height, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_imported_file': gi.FunctionInfo(get_imported_file, bound=None), 'get_item_position': gi.FunctionInfo(get_item_position, bound=None), 'get_layer_by_name': gi.FunctionInfo(get_layer_by_name, bound=None), 'get_layer_by_tattoo': gi.FunctionInfo(get_layer_by_tattoo, bound=None), 'get_metadata': gi.FunctionInfo(get_metadata, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_palette': gi.FunctionInfo(get_palette, bound=None), 'get_parasite': gi.FunctionInfo(get_parasite, bound=None), 'get_parasite_list': gi.FunctionInfo(get_parasite_list, bound=None), 'get_precision': gi.FunctionInfo(get_precision, bound=None), 'get_resolution': gi.FunctionInfo(get_resolution, bound=None), 'get_sample_point_position': gi.FunctionInfo(get_sample_point_position, bound=None), 'get_selected_drawables': gi.FunctionInfo(get_selected_drawables, bound=None), 'get_selection': gi.FunctionInfo(get_selection, bound=None), 'get_simulation_bpc': gi.FunctionInfo(get_simulation_bpc, bound=None), 'get_simulation_intent': gi.FunctionInfo(get_simulation_intent, bound=None), 'get_simulation_profile': gi.FunctionInfo(get_simulation_profile, bound=None), 'get_tattoo_state': gi.FunctionInfo(get_tattoo_state, bound=None), 'get_thumbnail': gi.FunctionInfo(get_thumbnail, bound=None), 'get_thumbnail_data': gi.FunctionInfo(get_thumbnail_data, bound=None), 'get_unit': gi.FunctionInfo(get_unit, bound=None), 'get_vectors_by_name': gi.FunctionInfo(get_vectors_by_name, bound=None), 'get_vectors_by_tattoo': gi.FunctionInfo(get_vectors_by_tattoo, bound=None), 'get_width': gi.FunctionInfo(get_width, bound=None), 'get_xcf_file': gi.FunctionInfo(get_xcf_file, bound=None), 'grid_get_background_color': gi.FunctionInfo(grid_get_background_color, bound=None), 'grid_get_foreground_color': gi.FunctionInfo(grid_get_foreground_color, bound=None), 'grid_get_offset': gi.FunctionInfo(grid_get_offset, bound=None), 'grid_get_spacing': gi.FunctionInfo(grid_get_spacing, bound=None), 'grid_get_style': gi.FunctionInfo(grid_get_style, bound=None), 'grid_set_background_color': gi.FunctionInfo(grid_set_background_color, bound=None), 'grid_set_foreground_color': gi.FunctionInfo(grid_set_foreground_color, bound=None), 'grid_set_offset': gi.FunctionInfo(grid_set_offset, bound=None), 'grid_set_spacing': gi.FunctionInfo(grid_set_spacing, bound=None), 'grid_set_style': gi.FunctionInfo(grid_set_style, bound=None), 'insert_channel': gi.FunctionInfo(insert_channel, bound=None), 'insert_layer': gi.FunctionInfo(insert_layer, bound=None), 'insert_vectors': gi.FunctionInfo(insert_vectors, bound=None), 'is_dirty': gi.FunctionInfo(is_dirty, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'list_channels': gi.FunctionInfo(list_channels, bound=None), 'list_layers': gi.FunctionInfo(list_layers, bound=None), 'list_selected_channels': gi.FunctionInfo(list_selected_channels, bound=None), 'list_selected_drawables': gi.FunctionInfo(list_selected_drawables, bound=None), 'list_selected_layers': gi.FunctionInfo(list_selected_layers, bound=None), 'list_selected_vectors': gi.FunctionInfo(list_selected_vectors, bound=None), 'list_vectors': gi.FunctionInfo(list_vectors, bound=None), 'lower_item': gi.FunctionInfo(lower_item, bound=None), 'lower_item_to_bottom': gi.FunctionInfo(lower_item_to_bottom, bound=None), 'merge_down': gi.FunctionInfo(merge_down, bound=None), 'merge_layer_group': gi.FunctionInfo(merge_layer_group, bound=None), 'merge_visible_layers': gi.FunctionInfo(merge_visible_layers, bound=None), 'metadata_load_finish': gi.FunctionInfo(metadata_load_finish, bound=None), 'metadata_load_prepare': gi.FunctionInfo(metadata_load_prepare, bound=None), 'metadata_save_filter': gi.FunctionInfo(metadata_save_filter, bound=None), 'metadata_save_finish': gi.FunctionInfo(metadata_save_finish, bound=None), 'metadata_save_prepare': gi.FunctionInfo(metadata_save_prepare, bound=None), 'pick_color': gi.FunctionInfo(pick_color, bound=None), 'pick_correlate_layer': gi.FunctionInfo(pick_correlate_layer, bound=None), 'policy_color_profile': gi.FunctionInfo(policy_color_profile, bound=None), 'policy_rotate': gi.FunctionInfo(policy_rotate, bound=None), 'raise_item': gi.FunctionInfo(raise_item, bound=None), 'raise_item_to_top': gi.FunctionInfo(raise_item_to_top, bound=None), 'remove_channel': gi.FunctionInfo(remove_channel, bound=None), 'remove_layer': gi.FunctionInfo(remove_layer, bound=None), 'remove_vectors': gi.FunctionInfo(remove_vectors, bound=None), 'reorder_item': gi.FunctionInfo(reorder_item, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'resize_to_layers': gi.FunctionInfo(resize_to_layers, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'select_color': gi.FunctionInfo(select_color, bound=None), 'select_contiguous_color': gi.FunctionInfo(select_contiguous_color, bound=None), 'select_ellipse': gi.FunctionInfo(select_ellipse, bound=None), 'select_item': gi.FunctionInfo(select_item, bound=None), 'select_polygon': gi.FunctionInfo(select_polygon, bound=None), 'select_rectangle': gi.FunctionInfo(select_rectangle, bound=None), 'select_round_rectangle': gi.FunctionInfo(select_round_rectangle, bound=None), 'set_color_profile': gi.FunctionInfo(set_color_profile, bound=None), 'set_color_profile_from_file': gi.FunctionInfo(set_color_profile_from_file, bound=None), 'set_colormap': gi.FunctionInfo(set_colormap, bound=None), 'set_component_active': gi.FunctionInfo(set_component_active, bound=None), 'set_component_visible': gi.FunctionInfo(set_component_visible, bound=None), 'set_file': gi.FunctionInfo(set_file, bound=None), 'set_metadata': gi.FunctionInfo(set_metadata, bound=None), 'set_resolution': gi.FunctionInfo(set_resolution, bound=None), 'set_selected_channels': gi.FunctionInfo(set_selected_channels, bound=None), 'set_selected_layers': gi.FunctionInfo(set_selected_layers, bound=None), 'set_selected_vectors': gi.FunctionInfo(set_selected_vectors, bound=None), 'set_simulation_bpc': gi.FunctionInfo(set_simulation_bpc, bound=None), 'set_simulation_intent': gi.FunctionInfo(set_simulation_intent, bound=None), 'set_simulation_profile': gi.FunctionInfo(set_simulation_profile, bound=None), 'set_simulation_profile_from_file': gi.FunctionInfo(set_simulation_profile_from_file, bound=None), 'set_tattoo_state': gi.FunctionInfo(set_tattoo_state, bound=None), 'set_unit': gi.FunctionInfo(set_unit, bound=None), 'take_selected_channels': gi.FunctionInfo(take_selected_channels, bound=None), 'take_selected_layers': gi.FunctionInfo(take_selected_layers, bound=None), 'take_selected_vectors': gi.FunctionInfo(take_selected_vectors, bound=None), 'thaw_channels': gi.FunctionInfo(thaw_channels, bound=None), 'thaw_layers': gi.FunctionInfo(thaw_layers, bound=None), 'thaw_vectors': gi.FunctionInfo(thaw_vectors, bound=None), 'undo_disable': gi.FunctionInfo(undo_disable, bound=None), 'undo_enable': gi.FunctionInfo(undo_enable, bound=None), 'undo_freeze': gi.FunctionInfo(undo_freeze, bound=None), 'undo_group_end': gi.FunctionInfo(undo_group_end, bound=None), 'undo_group_start': gi.FunctionInfo(undo_group_start, bound=None), 'undo_is_enabled': gi.FunctionInfo(undo_is_enabled, bound=None), 'undo_thaw': gi.FunctionInfo(undo_thaw, bound=None), 'unset_active_channel': gi.FunctionInfo(unset_active_channel, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Image), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpImage (1069024576)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_with_precision': gi.FunctionInfo(new_with_precision, bound=None), 'convert_set_dither_matrix': gi.FunctionInfo(convert_set_dither_matrix, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'metadata_load_thumbnail': gi.FunctionInfo(metadata_load_thumbnail, bound=None), 'add_hguide': gi.FunctionInfo(add_hguide, bound=None), 'add_sample_point': gi.FunctionInfo(add_sample_point, bound=None), 'add_vguide': gi.FunctionInfo(add_vguide, bound=None), 'attach_parasite': gi.FunctionInfo(attach_parasite, bound=None), 'clean_all': gi.FunctionInfo(clean_all, bound=None), 'convert_color_profile': gi.FunctionInfo(convert_color_profile, bound=None), 'convert_color_profile_from_file': gi.FunctionInfo(convert_color_profile_from_file, bound=None), 'convert_grayscale': gi.FunctionInfo(convert_grayscale, bound=None), 'convert_indexed': gi.FunctionInfo(convert_indexed, bound=None), 'convert_precision': gi.FunctionInfo(convert_precision, bound=None), 'convert_rgb': gi.FunctionInfo(convert_rgb, bound=None), 'crop': gi.FunctionInfo(crop, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'delete_guide': gi.FunctionInfo(delete_guide, bound=None), 'delete_sample_point': gi.FunctionInfo(delete_sample_point, bound=None), 'detach_parasite': gi.FunctionInfo(detach_parasite, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'export_path_to_file': gi.FunctionInfo(export_path_to_file, bound=None), 'export_path_to_string': gi.FunctionInfo(export_path_to_string, bound=None), 'find_next_guide': gi.FunctionInfo(find_next_guide, bound=None), 'find_next_sample_point': gi.FunctionInfo(find_next_sample_point, bound=None), 'flatten': gi.FunctionInfo(flatten, bound=None), 'flip': gi.FunctionInfo(flip, bound=None), 'floating_sel_attached_to': gi.FunctionInfo(floating_sel_attached_to, bound=None), 'freeze_channels': gi.FunctionInfo(freeze_channels, bound=None), 'freeze_layers': gi.FunctionInfo(freeze_layers, bound=None), 'freeze_paths': gi.FunctionInfo(freeze_paths, bound=None), 'get_base_type': gi.FunctionInfo(get_base_type, bound=None), 'get_channel_by_name': gi.FunctionInfo(get_channel_by_name, bound=None), 'get_channel_by_tattoo': gi.FunctionInfo(get_channel_by_tattoo, bound=None), 'get_channels': gi.FunctionInfo(get_channels, bound=None), 'get_color_profile': gi.FunctionInfo(get_color_profile, bound=None), 'get_component_active': gi.FunctionInfo(get_component_active, bound=None), 'get_component_visible': gi.FunctionInfo(get_component_visible, bound=None), 'get_default_new_layer_mode': gi.FunctionInfo(get_default_new_layer_mode, bound=None), 'get_effective_color_profile': gi.FunctionInfo(get_effective_color_profile, bound=None), 'get_exported_file': gi.FunctionInfo(get_exported_file, bound=None), 'get_file': gi.FunctionInfo(get_file, bound=None), 'get_floating_sel': gi.FunctionInfo(get_floating_sel, bound=None), 'get_guide_orientation': gi.FunctionInfo(get_guide_orientation, bound=None), 'get_guide_position': gi.FunctionInfo(get_guide_position, bound=None), 'get_height': gi.FunctionInfo(get_height, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_imported_file': gi.FunctionInfo(get_imported_file, bound=None), 'get_item_position': gi.FunctionInfo(get_item_position, bound=None), 'get_layer_by_name': gi.FunctionInfo(get_layer_by_name, bound=None), 'get_layer_by_tattoo': gi.FunctionInfo(get_layer_by_tattoo, bound=None), 'get_layers': gi.FunctionInfo(get_layers, bound=None), 'get_metadata': gi.FunctionInfo(get_metadata, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_palette': gi.FunctionInfo(get_palette, bound=None), 'get_parasite': gi.FunctionInfo(get_parasite, bound=None), 'get_parasite_list': gi.FunctionInfo(get_parasite_list, bound=None), 'get_path_by_name': gi.FunctionInfo(get_path_by_name, bound=None), 'get_path_by_tattoo': gi.FunctionInfo(get_path_by_tattoo, bound=None), 'get_paths': gi.FunctionInfo(get_paths, bound=None), 'get_precision': gi.FunctionInfo(get_precision, bound=None), 'get_resolution': gi.FunctionInfo(get_resolution, bound=None), 'get_sample_point_position': gi.FunctionInfo(get_sample_point_position, bound=None), 'get_selected_channels': gi.FunctionInfo(get_selected_channels, bound=None), 'get_selected_drawables': gi.FunctionInfo(get_selected_drawables, bound=None), 'get_selected_layers': gi.FunctionInfo(get_selected_layers, bound=None), 'get_selected_paths': gi.FunctionInfo(get_selected_paths, bound=None), 'get_selection': gi.FunctionInfo(get_selection, bound=None), 'get_simulation_bpc': gi.FunctionInfo(get_simulation_bpc, bound=None), 'get_simulation_intent': gi.FunctionInfo(get_simulation_intent, bound=None), 'get_simulation_profile': gi.FunctionInfo(get_simulation_profile, bound=None), 'get_tattoo_state': gi.FunctionInfo(get_tattoo_state, bound=None), 'get_thumbnail': gi.FunctionInfo(get_thumbnail, bound=None), 'get_thumbnail_data': gi.FunctionInfo(get_thumbnail_data, bound=None), 'get_unit': gi.FunctionInfo(get_unit, bound=None), 'get_width': gi.FunctionInfo(get_width, bound=None), 'get_xcf_file': gi.FunctionInfo(get_xcf_file, bound=None), 'grid_get_background_color': gi.FunctionInfo(grid_get_background_color, bound=None), 'grid_get_foreground_color': gi.FunctionInfo(grid_get_foreground_color, bound=None), 'grid_get_offset': gi.FunctionInfo(grid_get_offset, bound=None), 'grid_get_spacing': gi.FunctionInfo(grid_get_spacing, bound=None), 'grid_get_style': gi.FunctionInfo(grid_get_style, bound=None), 'grid_set_background_color': gi.FunctionInfo(grid_set_background_color, bound=None), 'grid_set_foreground_color': gi.FunctionInfo(grid_set_foreground_color, bound=None), 'grid_set_offset': gi.FunctionInfo(grid_set_offset, bound=None), 'grid_set_spacing': gi.FunctionInfo(grid_set_spacing, bound=None), 'grid_set_style': gi.FunctionInfo(grid_set_style, bound=None), 'import_paths_from_file': gi.FunctionInfo(import_paths_from_file, bound=None), 'import_paths_from_string': gi.FunctionInfo(import_paths_from_string, bound=None), 'insert_channel': gi.FunctionInfo(insert_channel, bound=None), 'insert_layer': gi.FunctionInfo(insert_layer, bound=None), 'insert_path': gi.FunctionInfo(insert_path, bound=None), 'is_dirty': gi.FunctionInfo(is_dirty, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'lower_item': gi.FunctionInfo(lower_item, bound=None), 'lower_item_to_bottom': gi.FunctionInfo(lower_item_to_bottom, bound=None), 'merge_down': gi.FunctionInfo(merge_down, bound=None), 'merge_visible_layers': gi.FunctionInfo(merge_visible_layers, bound=None), 'metadata_save_filter': gi.FunctionInfo(metadata_save_filter, bound=None), 'metadata_save_prepare': gi.FunctionInfo(metadata_save_prepare, bound=None), 'pick_color': gi.FunctionInfo(pick_color, bound=None), 'pick_correlate_layer': gi.FunctionInfo(pick_correlate_layer, bound=None), 'policy_color_profile': gi.FunctionInfo(policy_color_profile, bound=None), 'policy_rotate': gi.FunctionInfo(policy_rotate, bound=None), 'raise_item': gi.FunctionInfo(raise_item, bound=None), 'raise_item_to_top': gi.FunctionInfo(raise_item_to_top, bound=None), 'remove_channel': gi.FunctionInfo(remove_channel, bound=None), 'remove_layer': gi.FunctionInfo(remove_layer, bound=None), 'remove_path': gi.FunctionInfo(remove_path, bound=None), 'reorder_item': gi.FunctionInfo(reorder_item, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'resize_to_layers': gi.FunctionInfo(resize_to_layers, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'select_color': gi.FunctionInfo(select_color, bound=None), 'select_contiguous_color': gi.FunctionInfo(select_contiguous_color, bound=None), 'select_ellipse': gi.FunctionInfo(select_ellipse, bound=None), 'select_item': gi.FunctionInfo(select_item, bound=None), 'select_polygon': gi.FunctionInfo(select_polygon, bound=None), 'select_rectangle': gi.FunctionInfo(select_rectangle, bound=None), 'select_round_rectangle': gi.FunctionInfo(select_round_rectangle, bound=None), 'set_color_profile': gi.FunctionInfo(set_color_profile, bound=None), 'set_color_profile_from_file': gi.FunctionInfo(set_color_profile_from_file, bound=None), 'set_component_active': gi.FunctionInfo(set_component_active, bound=None), 'set_component_visible': gi.FunctionInfo(set_component_visible, bound=None), 'set_file': gi.FunctionInfo(set_file, bound=None), 'set_metadata': gi.FunctionInfo(set_metadata, bound=None), 'set_palette': gi.FunctionInfo(set_palette, bound=None), 'set_resolution': gi.FunctionInfo(set_resolution, bound=None), 'set_selected_channels': gi.FunctionInfo(set_selected_channels, bound=None), 'set_selected_layers': gi.FunctionInfo(set_selected_layers, bound=None), 'set_selected_paths': gi.FunctionInfo(set_selected_paths, bound=None), 'set_simulation_bpc': gi.FunctionInfo(set_simulation_bpc, bound=None), 'set_simulation_intent': gi.FunctionInfo(set_simulation_intent, bound=None), 'set_simulation_profile': gi.FunctionInfo(set_simulation_profile, bound=None), 'set_simulation_profile_from_file': gi.FunctionInfo(set_simulation_profile_from_file, bound=None), 'set_tattoo_state': gi.FunctionInfo(set_tattoo_state, bound=None), 'set_unit': gi.FunctionInfo(set_unit, bound=None), 'take_selected_channels': gi.FunctionInfo(take_selected_channels, bound=None), 'take_selected_layers': gi.FunctionInfo(take_selected_layers, bound=None), 'take_selected_paths': gi.FunctionInfo(take_selected_paths, bound=None), 'thaw_channels': gi.FunctionInfo(thaw_channels, bound=None), 'thaw_layers': gi.FunctionInfo(thaw_layers, bound=None), 'thaw_paths': gi.FunctionInfo(thaw_paths, bound=None), 'undo_disable': gi.FunctionInfo(undo_disable, bound=None), 'undo_enable': gi.FunctionInfo(undo_enable, bound=None), 'undo_freeze': gi.FunctionInfo(undo_freeze, bound=None), 'undo_group_end': gi.FunctionInfo(undo_group_end, bound=None), 'undo_group_start': gi.FunctionInfo(undo_group_start, bound=None), 'undo_is_enabled': gi.FunctionInfo(undo_is_enabled, bound=None), 'undo_thaw': gi.FunctionInfo(undo_thaw, bound=None), 'unset_active_channel': gi.FunctionInfo(unset_active_channel, bound=None)})"
     __gdoc__ = 'Object GimpImage\n\nProperties from GimpImage:\n  id -> gint: The image id\n    The image id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpImage (815083216)>'
+    __gtype__ = None # (!) real value is '<GType GimpImage (1069024576)>'
     __info__ = ObjectInfo(Image)
 
 

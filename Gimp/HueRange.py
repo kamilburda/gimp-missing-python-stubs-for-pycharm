@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -390,7 +390,7 @@ class HueRange(__gobject.GEnum):
     RED = 1
     YELLOW = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'HueRange' objects>, '__doc__': None, '__gtype__': <GType GimpHueRange (815054416)>, '__enum_values__': {0: <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 1: <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 2: <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 3: <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 4: <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 5: <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 6: <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>}, '__info__': gi.EnumInfo(HueRange), 'ALL': <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 'RED': <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 'YELLOW': <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 'GREEN': <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 'CYAN': <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 'BLUE': <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 'MAGENTA': <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'HueRange' objects>, '__doc__': None, '__gtype__': <GType GimpHueRange (1069024912)>, '__enum_values__': {0: <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 1: <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 2: <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 3: <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 4: <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 5: <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 6: <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>}, '__info__': gi.EnumInfo(HueRange), 'ALL': <enum GIMP_HUE_RANGE_ALL of type Gimp.HueRange>, 'RED': <enum GIMP_HUE_RANGE_RED of type Gimp.HueRange>, 'YELLOW': <enum GIMP_HUE_RANGE_YELLOW of type Gimp.HueRange>, 'GREEN': <enum GIMP_HUE_RANGE_GREEN of type Gimp.HueRange>, 'CYAN': <enum GIMP_HUE_RANGE_CYAN of type Gimp.HueRange>, 'BLUE': <enum GIMP_HUE_RANGE_BLUE of type Gimp.HueRange>, 'MAGENTA': <enum GIMP_HUE_RANGE_MAGENTA of type Gimp.HueRange>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -400,7 +400,7 @@ class HueRange(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType GimpHueRange (815054416)>'
+    __gtype__ = None # (!) real value is '<GType GimpHueRange (1069024912)>'
     __info__ = gi.EnumInfo(HueRange)
 
 

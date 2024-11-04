@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class PDBErrorHandler(__gobject.GEnum):
     INTERNAL = 0
     PLUGIN = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBErrorHandler' objects>, '__doc__': None, '__gtype__': <GType GimpPDBErrorHandler (815080864)>, '__enum_values__': {0: <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 1: <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>}, '__info__': gi.EnumInfo(PDBErrorHandler), 'INTERNAL': <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 'PLUGIN': <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBErrorHandler' objects>, '__doc__': None, '__gtype__': <GType GimpPDBErrorHandler (1069009120)>, '__enum_values__': {0: <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 1: <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>}, '__info__': gi.EnumInfo(PDBErrorHandler), 'INTERNAL': <enum GIMP_PDB_ERROR_HANDLER_INTERNAL of type Gimp.PDBErrorHandler>, 'PLUGIN': <enum GIMP_PDB_ERROR_HANDLER_PLUGIN of type Gimp.PDBErrorHandler>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpPDBErrorHandler (815080864)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDBErrorHandler (1069009120)>'
     __info__ = gi.EnumInfo(PDBErrorHandler)
 
 

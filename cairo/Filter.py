@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,7 +386,7 @@ class Filter(__gobject.GEnum):
     GOOD = 1
     NEAREST = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Filter' objects>, '__doc__': None, '__gtype__': <GType cairo_filter_t (804299088)>, '__enum_values__': {0: <enum CAIRO_FILTER_FAST of type cairo.Filter>, 1: <enum CAIRO_FILTER_GOOD of type cairo.Filter>, 2: <enum CAIRO_FILTER_BEST of type cairo.Filter>, 3: <enum CAIRO_FILTER_NEAREST of type cairo.Filter>, 4: <enum CAIRO_FILTER_BILINEAR of type cairo.Filter>, 5: <enum CAIRO_FILTER_GAUSSIAN of type cairo.Filter>}, '__info__': gi.EnumInfo(Filter), 'FAST': <enum CAIRO_FILTER_FAST of type cairo.Filter>, 'GOOD': <enum CAIRO_FILTER_GOOD of type cairo.Filter>, 'BEST': <enum CAIRO_FILTER_BEST of type cairo.Filter>, 'NEAREST': <enum CAIRO_FILTER_NEAREST of type cairo.Filter>, 'BILINEAR': <enum CAIRO_FILTER_BILINEAR of type cairo.Filter>, 'GAUSSIAN': <enum CAIRO_FILTER_GAUSSIAN of type cairo.Filter>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Filter' objects>, '__doc__': None, '__gtype__': <GType cairo_filter_t (4004037184)>, '__enum_values__': {0: <enum CAIRO_FILTER_FAST of type cairo.Filter>, 1: <enum CAIRO_FILTER_GOOD of type cairo.Filter>, 2: <enum CAIRO_FILTER_BEST of type cairo.Filter>, 3: <enum CAIRO_FILTER_NEAREST of type cairo.Filter>, 4: <enum CAIRO_FILTER_BILINEAR of type cairo.Filter>, 5: <enum CAIRO_FILTER_GAUSSIAN of type cairo.Filter>}, '__info__': gi.EnumInfo(Filter), 'FAST': <enum CAIRO_FILTER_FAST of type cairo.Filter>, 'GOOD': <enum CAIRO_FILTER_GOOD of type cairo.Filter>, 'BEST': <enum CAIRO_FILTER_BEST of type cairo.Filter>, 'NEAREST': <enum CAIRO_FILTER_NEAREST of type cairo.Filter>, 'BILINEAR': <enum CAIRO_FILTER_BILINEAR of type cairo.Filter>, 'GAUSSIAN': <enum CAIRO_FILTER_GAUSSIAN of type cairo.Filter>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -395,7 +395,7 @@ class Filter(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_filter_t (804299088)>'
+    __gtype__ = None # (!) real value is '<GType cairo_filter_t (4004037184)>'
     __info__ = gi.EnumInfo(Filter)
 
 

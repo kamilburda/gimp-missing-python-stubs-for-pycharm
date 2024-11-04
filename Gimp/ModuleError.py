@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -384,11 +384,11 @@ class ModuleError(__gobject.GEnum):
 
     MODULE_FAILED = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ModuleError' objects>, '__doc__': None, '__gtype__': <GType PyGimpModuleError (815079632)>, '__enum_values__': {0: <enum GIMP_MODULE_FAILED of type Gimp.ModuleError>}, '__info__': gi.EnumInfo(ModuleError), 'MODULE_FAILED': <enum GIMP_MODULE_FAILED of type Gimp.ModuleError>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ModuleError' objects>, '__doc__': None, '__gtype__': <GType PyGimpModuleError (1069010016)>, '__enum_values__': {0: <enum GIMP_MODULE_FAILED of type Gimp.ModuleError>}, '__info__': gi.EnumInfo(ModuleError), 'MODULE_FAILED': <enum GIMP_MODULE_FAILED of type Gimp.ModuleError>})"
     __enum_values__ = {
         0: 0,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpModuleError (815079632)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpModuleError (1069010016)>'
     __info__ = gi.EnumInfo(ModuleError)
 
 

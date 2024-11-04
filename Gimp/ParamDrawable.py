@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -31,8 +31,20 @@ class ParamDrawable(ParamItem):
     
         ParamDrawable(**properties)
     """
+    def blurb(self, *args, **kwargs): # real signature unknown
+        """  """
+        pass
+
     def do_finalize(self, *args, **kwargs): # real signature unknown
         """ finalize(self) """
+        pass
+
+    def do_get_property(self, pspec): # reliably restored by inspect
+        # no doc
+        pass
+
+    def do_set_property(self, pspec, value): # reliably restored by inspect
+        # no doc
         pass
 
     def do_values_cmp(self, *args, **kwargs): # real signature unknown
@@ -82,6 +94,10 @@ class ParamDrawable(ParamItem):
     def is_valid_name(self, name): # real signature unknown; restored from __doc__
         """ is_valid_name(name:str) -> bool """
         return False
+
+    def nick(self, *args, **kwargs): # real signature unknown
+        """  """
+        pass
 
     def set_qdata(self, quark, data=None): # real signature unknown; restored from __doc__
         """ set_qdata(self, quark:int, data=None) """
@@ -195,9 +211,6 @@ class ParamDrawable(ParamItem):
         """
         pass
 
-    def __weakref__(self, *args, **kwargs): # real signature unknown
-        pass
-
     flags = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -222,9 +235,18 @@ class ParamDrawable(ParamItem):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamDrawable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamDrawable (814606864)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamDrawable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamDrawable (1066929456)>, '__doc__': None, '__gsignals__': {}})"
+    __gproperties__ = {
+        'blurb': (
+            None, # (!) real value is '<GType PyObject (1065322800)>'
+            '',
+            '',
+            3,
+        ),
+        'nick': '<value is a self-reference, replaced by this string>',
+    }
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamDrawable (814606864)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamDrawable (1066929456)>'
     __info__ = ObjectInfo(ParamDrawable)
 
 

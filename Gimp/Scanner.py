@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -58,8 +58,8 @@ class Scanner(__gi.Boxed):
         """ parse_data(self) -> bool, dest:list """
         return False
 
-    def parse_float(self): # real signature unknown; restored from __doc__
-        """ parse_float(self) -> bool, dest:float """
+    def parse_double(self): # real signature unknown; restored from __doc__
+        """ parse_double(self) -> bool, dest:float """
         return False
 
     def parse_identifier(self): # real signature unknown; restored from __doc__
@@ -205,8 +205,8 @@ class Scanner(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Scanner), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpScanner (814711776)>, '__dict__': <attribute '__dict__' of 'Scanner' objects>, '__weakref__': <attribute '__weakref__' of 'Scanner' objects>, '__doc__': None, 'new_file': gi.FunctionInfo(new_file, bound=None), 'new_stream': gi.FunctionInfo(new_stream, bound=None), 'new_string': gi.FunctionInfo(new_string, bound=None), 'parse_boolean': gi.FunctionInfo(parse_boolean, bound=None), 'parse_color': gi.FunctionInfo(parse_color, bound=None), 'parse_data': gi.FunctionInfo(parse_data, bound=None), 'parse_float': gi.FunctionInfo(parse_float, bound=None), 'parse_identifier': gi.FunctionInfo(parse_identifier, bound=None), 'parse_int': gi.FunctionInfo(parse_int, bound=None), 'parse_int64': gi.FunctionInfo(parse_int64, bound=None), 'parse_matrix2': gi.FunctionInfo(parse_matrix2, bound=None), 'parse_string': gi.FunctionInfo(parse_string, bound=None), 'parse_string_no_validate': gi.FunctionInfo(parse_string_no_validate, bound=None), 'parse_token': gi.FunctionInfo(parse_token, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpScanner (814711776)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Scanner), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpScanner (1072213344)>, '__dict__': <attribute '__dict__' of 'Scanner' objects>, '__weakref__': <attribute '__weakref__' of 'Scanner' objects>, '__doc__': None, 'new_file': gi.FunctionInfo(new_file, bound=None), 'new_stream': gi.FunctionInfo(new_stream, bound=None), 'new_string': gi.FunctionInfo(new_string, bound=None), 'parse_boolean': gi.FunctionInfo(parse_boolean, bound=None), 'parse_color': gi.FunctionInfo(parse_color, bound=None), 'parse_data': gi.FunctionInfo(parse_data, bound=None), 'parse_double': gi.FunctionInfo(parse_double, bound=None), 'parse_identifier': gi.FunctionInfo(parse_identifier, bound=None), 'parse_int': gi.FunctionInfo(parse_int, bound=None), 'parse_int64': gi.FunctionInfo(parse_int64, bound=None), 'parse_matrix2': gi.FunctionInfo(parse_matrix2, bound=None), 'parse_string': gi.FunctionInfo(parse_string, bound=None), 'parse_string_no_validate': gi.FunctionInfo(parse_string_no_validate, bound=None), 'parse_token': gi.FunctionInfo(parse_token, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpScanner (1072213344)>'
     __info__ = StructInfo(Scanner)
 
 

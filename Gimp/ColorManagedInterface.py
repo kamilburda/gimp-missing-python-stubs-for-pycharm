@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -154,7 +154,7 @@ class ColorManagedInterface(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorManagedInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorManagedInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ColorManagedInterface' objects>, '__doc__': None, 'base_iface': <property object at 0x0000020731609210>, 'get_icc_profile': <property object at 0x0000020731609300>, 'profile_changed': <property object at 0x00000207316093f0>, 'simulation_profile_changed': <property object at 0x0000020731609530>, 'simulation_intent_changed': <property object at 0x0000020731609620>, 'simulation_bpc_changed': <property object at 0x0000020731609710>, 'get_color_profile': <property object at 0x0000020731609800>, 'get_simulation_profile': <property object at 0x00000207316098f0>, 'get_simulation_intent': <property object at 0x00000207316099e0>, 'get_simulation_bpc': <property object at 0x0000020731609ad0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorManagedInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorManagedInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ColorManagedInterface' objects>, '__doc__': None, 'base_iface': <property object at 0x000001b640cc8220>, 'get_icc_profile': <property object at 0x000001b640cc8310>, 'profile_changed': <property object at 0x000001b640cc8400>, 'simulation_profile_changed': <property object at 0x000001b640cc8540>, 'simulation_intent_changed': <property object at 0x000001b640cc8630>, 'simulation_bpc_changed': <property object at 0x000001b640cc8720>, 'get_color_profile': <property object at 0x000001b640cc8810>, 'get_simulation_profile': <property object at 0x000001b640cc8900>, 'get_simulation_intent': <property object at 0x000001b640cc89f0>, 'get_simulation_bpc': <property object at 0x000001b640cc8ae0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorManagedInterface)
 

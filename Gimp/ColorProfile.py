@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -149,8 +149,8 @@ class ColorProfile(__gi_overrides_GObject.Object):
         """ get_label(self) -> str """
         return ""
 
-    def get_lcms_format(self, format, lcms_format): # real signature unknown; restored from __doc__
-        """ get_lcms_format(format:Babl.Object, lcms_format:int) -> Babl.Object or None """
+    def get_lcms_format(self, format): # real signature unknown; restored from __doc__
+        """ get_lcms_format(format:Babl.Object) -> Babl.Object or None, lcms_format:int """
         pass
 
     def get_lcms_profile(self): # real signature unknown; restored from __doc__
@@ -526,10 +526,6 @@ class ColorProfile(__gi_overrides_GObject.Object):
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    priv = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -539,12 +535,12 @@ class ColorProfile(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165eb60>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d5d0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorProfile), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorProfile (815049264)>, '__doc__': None, '__gsignals__': {}, 'new_d50_gray_lab_trc': gi.FunctionInfo(new_d50_gray_lab_trc, bound=None), 'new_d65_gray_linear': gi.FunctionInfo(new_d65_gray_linear, bound=None), 'new_d65_gray_srgb_trc': gi.FunctionInfo(new_d65_gray_srgb_trc, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_icc_profile': gi.FunctionInfo(new_from_icc_profile, bound=None), 'new_from_lcms_profile': gi.FunctionInfo(new_from_lcms_profile, bound=None), 'new_rgb_adobe': gi.FunctionInfo(new_rgb_adobe, bound=None), 'new_rgb_srgb': gi.FunctionInfo(new_rgb_srgb, bound=None), 'new_rgb_srgb_linear': gi.FunctionInfo(new_rgb_srgb_linear, bound=None), 'get_lcms_format': gi.FunctionInfo(get_lcms_format, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_description': gi.FunctionInfo(get_description, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_icc_profile': gi.FunctionInfo(get_icc_profile, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'get_lcms_profile': gi.FunctionInfo(get_lcms_profile, bound=None), 'get_manufacturer': gi.FunctionInfo(get_manufacturer, bound=None), 'get_model': gi.FunctionInfo(get_model, bound=None), 'get_space': gi.FunctionInfo(get_space, bound=None), 'get_summary': gi.FunctionInfo(get_summary, bound=None), 'is_cmyk': gi.FunctionInfo(is_cmyk, bound=None), 'is_equal': gi.FunctionInfo(is_equal, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_linear': gi.FunctionInfo(is_linear, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'new_linear_from_color_profile': gi.FunctionInfo(new_linear_from_color_profile, bound=None), 'new_srgb_trc_from_color_profile': gi.FunctionInfo(new_srgb_trc_from_color_profile, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None), 'parent_instance': <property object at 0x000002073160a0c0>, 'priv': <property object at 0x000002073160a1b0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorProfile), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorProfile (1069022000)>, '__doc__': None, '__gsignals__': {}, 'new_d50_gray_lab_trc': gi.FunctionInfo(new_d50_gray_lab_trc, bound=None), 'new_d65_gray_linear': gi.FunctionInfo(new_d65_gray_linear, bound=None), 'new_d65_gray_srgb_trc': gi.FunctionInfo(new_d65_gray_srgb_trc, bound=None), 'new_from_file': gi.FunctionInfo(new_from_file, bound=None), 'new_from_icc_profile': gi.FunctionInfo(new_from_icc_profile, bound=None), 'new_from_lcms_profile': gi.FunctionInfo(new_from_lcms_profile, bound=None), 'new_rgb_adobe': gi.FunctionInfo(new_rgb_adobe, bound=None), 'new_rgb_srgb': gi.FunctionInfo(new_rgb_srgb, bound=None), 'new_rgb_srgb_linear': gi.FunctionInfo(new_rgb_srgb_linear, bound=None), 'get_lcms_format': gi.FunctionInfo(get_lcms_format, bound=None), 'get_copyright': gi.FunctionInfo(get_copyright, bound=None), 'get_description': gi.FunctionInfo(get_description, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_icc_profile': gi.FunctionInfo(get_icc_profile, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'get_lcms_profile': gi.FunctionInfo(get_lcms_profile, bound=None), 'get_manufacturer': gi.FunctionInfo(get_manufacturer, bound=None), 'get_model': gi.FunctionInfo(get_model, bound=None), 'get_space': gi.FunctionInfo(get_space, bound=None), 'get_summary': gi.FunctionInfo(get_summary, bound=None), 'is_cmyk': gi.FunctionInfo(is_cmyk, bound=None), 'is_equal': gi.FunctionInfo(is_equal, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_linear': gi.FunctionInfo(is_linear, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'new_linear_from_color_profile': gi.FunctionInfo(new_linear_from_color_profile, bound=None), 'new_srgb_trc_from_color_profile': gi.FunctionInfo(new_srgb_trc_from_color_profile, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None)})"
     __gdoc__ = 'Object GimpColorProfile\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpColorProfile (815049264)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorProfile (1069022000)>'
     __info__ = ObjectInfo(ColorProfile)
 
 

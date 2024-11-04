@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -107,10 +107,6 @@ class Palette(Resource):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -132,22 +128,6 @@ class Palette(Resource):
     def emit_stop_by_name(self, detailed_signal): # reliably restored by inspect
         """ Deprecated, please use stop_emission_by_name. """
         pass
-
-    def entry_get_color(self, entry_num): # real signature unknown; restored from __doc__
-        """ entry_get_color(self, entry_num:int) -> Gegl.Color """
-        pass
-
-    def entry_get_name(self, entry_num): # real signature unknown; restored from __doc__
-        """ entry_get_name(self, entry_num:int) -> bool, entry_name:str """
-        return False
-
-    def entry_set_color(self, entry_num, color): # real signature unknown; restored from __doc__
-        """ entry_set_color(self, entry_num:int, color:Gegl.Color) -> bool """
-        return False
-
-    def entry_set_name(self, entry_num, entry_name): # real signature unknown; restored from __doc__
-        """ entry_set_name(self, entry_num:int, entry_name:str) -> bool """
-        return False
 
     def error_quark(self): # real signature unknown; restored from __doc__
         """ error_quark() -> int """
@@ -188,8 +168,12 @@ class Palette(Resource):
         pass
 
     def get_by_name(self, name): # real signature unknown; restored from __doc__
-        """ get_by_name(name:str) -> Gimp.Palette """
+        """ get_by_name(name:str) -> Gimp.Palette or None """
         pass
+
+    def get_colormap(self, format): # real signature unknown; restored from __doc__
+        """ get_colormap(self, format:Babl.Object) -> list, num_colors:int """
+        return []
 
     def get_colors(self): # real signature unknown; restored from __doc__
         """ get_colors(self) -> list """
@@ -206,6 +190,14 @@ class Palette(Resource):
     def get_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
+
+    def get_entry_color(self, entry_num): # real signature unknown; restored from __doc__
+        """ get_entry_color(self, entry_num:int) -> Gegl.Color """
+        pass
+
+    def get_entry_name(self, entry_num): # real signature unknown; restored from __doc__
+        """ get_entry_name(self, entry_num:int) -> bool, entry_name:str """
+        return False
 
     def get_id(self): # real signature unknown; restored from __doc__
         """ get_id(self) -> int """
@@ -399,20 +391,12 @@ class Palette(Resource):
         """ run_dispose(self) """
         pass
 
-    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
-        return ""
-
-    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
-        """ select_set(callback_name:str, resource:Gimp.Resource) """
-        pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
-
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
+        return False
+
+    def set_colormap(self, format, colormap, num_bytes): # real signature unknown; restored from __doc__
+        """ set_colormap(self, format:Babl.Object, colormap:int, num_bytes:int) -> bool """
         return False
 
     def set_columns(self, columns): # real signature unknown; restored from __doc__
@@ -422,6 +406,14 @@ class Palette(Resource):
     def set_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
+
+    def set_entry_color(self, entry_num, color): # real signature unknown; restored from __doc__
+        """ set_entry_color(self, entry_num:int, color:Gegl.Color) -> bool """
+        return False
+
+    def set_entry_name(self, entry_num, entry_name): # real signature unknown; restored from __doc__
+        """ set_entry_name(self, entry_num:int, entry_name:str) -> bool """
+        return False
 
     def set_properties(self, *args, **kwargs): # real signature unknown
         pass
@@ -618,12 +610,12 @@ class Palette(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165f940>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069e050>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Palette), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPalette (815082096)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'add_entry': gi.FunctionInfo(add_entry, bound=None), 'delete_entry': gi.FunctionInfo(delete_entry, bound=None), 'entry_get_color': gi.FunctionInfo(entry_get_color, bound=None), 'entry_get_name': gi.FunctionInfo(entry_get_name, bound=None), 'entry_set_color': gi.FunctionInfo(entry_set_color, bound=None), 'entry_set_name': gi.FunctionInfo(entry_set_name, bound=None), 'get_color_count': gi.FunctionInfo(get_color_count, bound=None), 'get_colors': gi.FunctionInfo(get_colors, bound=None), 'get_columns': gi.FunctionInfo(get_columns, bound=None), 'set_columns': gi.FunctionInfo(set_columns, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Palette), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPalette (1069009792)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'add_entry': gi.FunctionInfo(add_entry, bound=None), 'delete_entry': gi.FunctionInfo(delete_entry, bound=None), 'get_color_count': gi.FunctionInfo(get_color_count, bound=None), 'get_colormap': gi.FunctionInfo(get_colormap, bound=None), 'get_colors': gi.FunctionInfo(get_colors, bound=None), 'get_columns': gi.FunctionInfo(get_columns, bound=None), 'get_entry_color': gi.FunctionInfo(get_entry_color, bound=None), 'get_entry_name': gi.FunctionInfo(get_entry_name, bound=None), 'set_colormap': gi.FunctionInfo(set_colormap, bound=None), 'set_columns': gi.FunctionInfo(set_columns, bound=None), 'set_entry_color': gi.FunctionInfo(set_entry_color, bound=None), 'set_entry_name': gi.FunctionInfo(set_entry_name, bound=None)})"
     __gdoc__ = 'Object GimpPalette\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPalette (815082096)>'
+    __gtype__ = None # (!) real value is '<GType GimpPalette (1069009792)>'
     __info__ = ObjectInfo(Palette)
 
 

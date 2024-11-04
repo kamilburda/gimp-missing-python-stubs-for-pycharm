@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -255,6 +255,10 @@ class TextLayer(Layer):
         """ get_by_id(layer_id:int) -> Gimp.TextLayer or None """
         pass
 
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
+
     def get_color(self): # real signature unknown; restored from __doc__
         """ get_color(self) -> Gegl.Color """
         pass
@@ -445,10 +449,6 @@ class TextLayer(Layer):
         """ get_width(self) -> int """
         return 0
 
-    def group_new(self, image): # real signature unknown; restored from __doc__
-        """ group_new(image:Gimp.Image) -> Gimp.Layer """
-        pass
-
     def handler_block(obj, handler_id): # reliably restored by inspect
         """
         Blocks the signal handler from being invoked until
@@ -507,12 +507,20 @@ class TextLayer(Layer):
         """ id_is_drawable(item_id:int) -> bool """
         return False
 
+    def id_is_group_layer(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_group_layer(item_id:int) -> bool """
+        return False
+
     def id_is_layer(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer(item_id:int) -> bool """
         return False
 
     def id_is_layer_mask(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer_mask(item_id:int) -> bool """
+        return False
+
+    def id_is_path(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_path(item_id:int) -> bool """
         return False
 
     def id_is_selection(self, item_id): # real signature unknown; restored from __doc__
@@ -525,10 +533,6 @@ class TextLayer(Layer):
 
     def id_is_valid(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_valid(item_id:int) -> bool """
-        return False
-
-    def id_is_vectors(self, item_id): # real signature unknown; restored from __doc__
-        """ id_is_vectors(item_id:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -579,6 +583,10 @@ class TextLayer(Layer):
         """ is_group(self) -> bool """
         return False
 
+    def is_group_layer(self): # real signature unknown; restored from __doc__
+        """ is_group_layer(self) -> bool """
+        return False
+
     def is_indexed(self): # real signature unknown; restored from __doc__
         """ is_indexed(self) -> bool """
         return False
@@ -589,6 +597,10 @@ class TextLayer(Layer):
 
     def is_layer_mask(self): # real signature unknown; restored from __doc__
         """ is_layer_mask(self) -> bool """
+        return False
+
+    def is_path(self): # real signature unknown; restored from __doc__
+        """ is_path(self) -> bool """
         return False
 
     def is_rgb(self): # real signature unknown; restored from __doc__
@@ -607,10 +619,6 @@ class TextLayer(Layer):
         """ is_valid(self) -> bool """
         return False
 
-    def is_vectors(self): # real signature unknown; restored from __doc__
-        """ is_vectors(self) -> bool """
-        return False
-
     def levels(self, channel, low_input, high_input, clamp_input, gamma, low_output, high_output, clamp_output): # real signature unknown; restored from __doc__
         """ levels(self, channel:Gimp.HistogramChannel, low_input:float, high_input:float, clamp_input:bool, gamma:float, low_output:float, high_output:float, clamp_output:bool) -> bool """
         return False
@@ -618,10 +626,6 @@ class TextLayer(Layer):
     def levels_stretch(self): # real signature unknown; restored from __doc__
         """ levels_stretch(self) -> bool """
         return False
-
-    def list_children(self): # real signature unknown; restored from __doc__
-        """ list_children(self) -> list """
-        return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
@@ -740,7 +744,7 @@ class TextLayer(Layer):
         return False
 
     def set_color(self, color): # real signature unknown; restored from __doc__
-        """ set_color(self, color:Gimp.RGB) -> bool """
+        """ set_color(self, color:Gegl.Color) -> bool """
         return False
 
     def set_color_tag(self, color_tag): # real signature unknown; restored from __doc__
@@ -1099,12 +1103,12 @@ class TextLayer(Layer):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df06a0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066de10>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(TextLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpTextLayer (814611984)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_antialias': gi.FunctionInfo(get_antialias, bound=None), 'get_base_direction': gi.FunctionInfo(get_base_direction, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_font': gi.FunctionInfo(get_font, bound=None), 'get_font_size': gi.FunctionInfo(get_font_size, bound=None), 'get_hint_style': gi.FunctionInfo(get_hint_style, bound=None), 'get_indent': gi.FunctionInfo(get_indent, bound=None), 'get_justification': gi.FunctionInfo(get_justification, bound=None), 'get_kerning': gi.FunctionInfo(get_kerning, bound=None), 'get_language': gi.FunctionInfo(get_language, bound=None), 'get_letter_spacing': gi.FunctionInfo(get_letter_spacing, bound=None), 'get_line_spacing': gi.FunctionInfo(get_line_spacing, bound=None), 'get_markup': gi.FunctionInfo(get_markup, bound=None), 'get_text': gi.FunctionInfo(get_text, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'set_antialias': gi.FunctionInfo(set_antialias, bound=None), 'set_base_direction': gi.FunctionInfo(set_base_direction, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_font': gi.FunctionInfo(set_font, bound=None), 'set_font_size': gi.FunctionInfo(set_font_size, bound=None), 'set_hint_style': gi.FunctionInfo(set_hint_style, bound=None), 'set_indent': gi.FunctionInfo(set_indent, bound=None), 'set_justification': gi.FunctionInfo(set_justification, bound=None), 'set_kerning': gi.FunctionInfo(set_kerning, bound=None), 'set_language': gi.FunctionInfo(set_language, bound=None), 'set_letter_spacing': gi.FunctionInfo(set_letter_spacing, bound=None), 'set_line_spacing': gi.FunctionInfo(set_line_spacing, bound=None), 'set_markup': gi.FunctionInfo(set_markup, bound=None), 'set_text': gi.FunctionInfo(set_text, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(TextLayer), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpTextLayer (1066928176)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_antialias': gi.FunctionInfo(get_antialias, bound=None), 'get_base_direction': gi.FunctionInfo(get_base_direction, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_font': gi.FunctionInfo(get_font, bound=None), 'get_font_size': gi.FunctionInfo(get_font_size, bound=None), 'get_hint_style': gi.FunctionInfo(get_hint_style, bound=None), 'get_indent': gi.FunctionInfo(get_indent, bound=None), 'get_justification': gi.FunctionInfo(get_justification, bound=None), 'get_kerning': gi.FunctionInfo(get_kerning, bound=None), 'get_language': gi.FunctionInfo(get_language, bound=None), 'get_letter_spacing': gi.FunctionInfo(get_letter_spacing, bound=None), 'get_line_spacing': gi.FunctionInfo(get_line_spacing, bound=None), 'get_markup': gi.FunctionInfo(get_markup, bound=None), 'get_text': gi.FunctionInfo(get_text, bound=None), 'resize': gi.FunctionInfo(resize, bound=None), 'set_antialias': gi.FunctionInfo(set_antialias, bound=None), 'set_base_direction': gi.FunctionInfo(set_base_direction, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_font': gi.FunctionInfo(set_font, bound=None), 'set_font_size': gi.FunctionInfo(set_font_size, bound=None), 'set_hint_style': gi.FunctionInfo(set_hint_style, bound=None), 'set_indent': gi.FunctionInfo(set_indent, bound=None), 'set_justification': gi.FunctionInfo(set_justification, bound=None), 'set_kerning': gi.FunctionInfo(set_kerning, bound=None), 'set_language': gi.FunctionInfo(set_language, bound=None), 'set_letter_spacing': gi.FunctionInfo(set_letter_spacing, bound=None), 'set_line_spacing': gi.FunctionInfo(set_line_spacing, bound=None), 'set_markup': gi.FunctionInfo(set_markup, bound=None), 'set_text': gi.FunctionInfo(set_text, bound=None)})"
     __gdoc__ = 'Object GimpTextLayer\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpTextLayer (814611984)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextLayer (1066928176)>'
     __info__ = ObjectInfo(TextLayer)
 
 

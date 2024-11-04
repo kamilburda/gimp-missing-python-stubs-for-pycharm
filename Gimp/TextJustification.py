@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class TextJustification(__gobject.GEnum):
     LEFT = 0
     RIGHT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextJustification' objects>, '__doc__': None, '__gtype__': <GType GimpTextJustification (814713680)>, '__enum_values__': {0: <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 1: <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 2: <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 3: <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>}, '__info__': gi.EnumInfo(TextJustification), 'LEFT': <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 'RIGHT': <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 'CENTER': <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 'FILL': <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextJustification' objects>, '__doc__': None, '__gtype__': <GType GimpTextJustification (1065744064)>, '__enum_values__': {0: <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 1: <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 2: <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 3: <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>}, '__info__': gi.EnumInfo(TextJustification), 'LEFT': <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 'RIGHT': <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 'CENTER': <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 'FILL': <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextJustification (814713680)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextJustification (1065744064)>'
     __info__ = gi.EnumInfo(TextJustification)
 
 

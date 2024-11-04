@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -389,7 +389,7 @@ class TextDirection(__gobject.GEnum):
     TTB_RTL = 2
     TTB_RTL_UPRIGHT = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (814714912)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (1065743616)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +398,7 @@ class TextDirection(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextDirection (814714912)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextDirection (1065743616)>'
     __info__ = gi.EnumInfo(TextDirection)
 
 

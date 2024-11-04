@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -487,12 +487,12 @@ class Metadata(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165fd30>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d0c0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Metadata), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMetadata (815079408)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'get_guid': gi.FunctionInfo(get_guid, bound=None), 'is_tag_supported': gi.FunctionInfo(is_tag_supported, bound=None), 'load_from_file': gi.FunctionInfo(load_from_file, bound=None), 'add_xmp_history': gi.FunctionInfo(add_xmp_history, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_colorspace': gi.FunctionInfo(get_colorspace, bound=None), 'get_resolution': gi.FunctionInfo(get_resolution, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None), 'set_bits_per_sample': gi.FunctionInfo(set_bits_per_sample, bound=None), 'set_colorspace': gi.FunctionInfo(set_colorspace, bound=None), 'set_from_exif': gi.FunctionInfo(set_from_exif, bound=None), 'set_from_iptc': gi.FunctionInfo(set_from_iptc, bound=None), 'set_from_xmp': gi.FunctionInfo(set_from_xmp, bound=None), 'set_pixel_size': gi.FunctionInfo(set_pixel_size, bound=None), 'set_resolution': gi.FunctionInfo(set_resolution, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Metadata), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMetadata (1069014944)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'get_guid': gi.FunctionInfo(get_guid, bound=None), 'is_tag_supported': gi.FunctionInfo(is_tag_supported, bound=None), 'load_from_file': gi.FunctionInfo(load_from_file, bound=None), 'add_xmp_history': gi.FunctionInfo(add_xmp_history, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_colorspace': gi.FunctionInfo(get_colorspace, bound=None), 'get_resolution': gi.FunctionInfo(get_resolution, bound=None), 'save_to_file': gi.FunctionInfo(save_to_file, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None), 'set_bits_per_sample': gi.FunctionInfo(set_bits_per_sample, bound=None), 'set_colorspace': gi.FunctionInfo(set_colorspace, bound=None), 'set_from_exif': gi.FunctionInfo(set_from_exif, bound=None), 'set_from_iptc': gi.FunctionInfo(set_from_iptc, bound=None), 'set_from_xmp': gi.FunctionInfo(set_from_xmp, bound=None), 'set_pixel_size': gi.FunctionInfo(set_pixel_size, bound=None), 'set_resolution': gi.FunctionInfo(set_resolution, bound=None)})"
     __gdoc__ = 'Object GimpMetadata\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpMetadata (815079408)>'
+    __gtype__ = None # (!) real value is '<GType GimpMetadata (1069014944)>'
     __info__ = ObjectInfo(Metadata)
 
 

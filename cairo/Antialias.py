@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,7 +387,7 @@ class Antialias(__gobject.GEnum):
     NONE = 1
     SUBPIXEL = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Antialias' objects>, '__doc__': None, '__gtype__': <GType cairo_antialias_t (804301552)>, '__enum_values__': {0: <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 1: <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 2: <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 3: <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 4: <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 5: <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 6: <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>}, '__info__': gi.EnumInfo(Antialias), 'DEFAULT': <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 'NONE': <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 'GRAY': <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 'SUBPIXEL': <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 'FAST': <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 'GOOD': <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 'BEST': <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'Antialias' objects>, '__doc__': None, '__gtype__': <GType cairo_antialias_t (4003651056)>, '__enum_values__': {0: <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 1: <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 2: <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 3: <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 4: <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 5: <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 6: <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>}, '__info__': gi.EnumInfo(Antialias), 'DEFAULT': <enum CAIRO_ANTIALIAS_DEFAULT of type cairo.Antialias>, 'NONE': <enum CAIRO_ANTIALIAS_NONE of type cairo.Antialias>, 'GRAY': <enum CAIRO_ANTIALIAS_GRAY of type cairo.Antialias>, 'SUBPIXEL': <enum CAIRO_ANTIALIAS_SUBPIXEL of type cairo.Antialias>, 'FAST': <enum CAIRO_ANTIALIAS_FAST of type cairo.Antialias>, 'GOOD': <enum CAIRO_ANTIALIAS_GOOD of type cairo.Antialias>, 'BEST': <enum CAIRO_ANTIALIAS_BEST of type cairo.Antialias>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -397,7 +397,7 @@ class Antialias(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_antialias_t (804301552)>'
+    __gtype__ = None # (!) real value is '<GType cairo_antialias_t (4003651056)>'
     __info__ = gi.EnumInfo(Antialias)
 
 

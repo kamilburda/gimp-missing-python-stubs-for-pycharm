@@ -1,6 +1,6 @@
-# PyCharm stubs for GIMP 2.99.18 Python Modules
+# PyCharm stubs for GIMP 3 Python Modules
 
-PyCharm can automatically generate Python stub files for GIMP 2.99 binary modules such as `gi.repository.GimpUi`, `gi.repository.Gtk` and many more to provide code completion suggestions when developing Python plug-ins for GIMP 2.99.
+PyCharm can automatically generate Python stub files for GIMP 3 binary modules such as `gi.repository.GimpUi`, `gi.repository.Gtk` and many more to provide code completion suggestions when developing Python plug-ins for GIMP 3.
 
 However, PyCharm currently fails to generate modules for `gi.repository.Gimp` and `gi.repository.cairo` modules (the former being the most important module for plug-in development). I worked around the problem by modifying the source code responsible for generating PyCharm stubs to ignore any exceptions along the process (which causes the problematic constants to be omitted in the stubs).
 
@@ -8,7 +8,7 @@ This repository contains the missing stubs for `gi.repository.Gimp` and `gi.repo
 
 ## Installation
 
-Download the repository and copy the `cairo` and `Gimp` directories to a PyCharm directory containing other generated stubs for GIMP 2.99 under the `gi/repository` directory.
+Download the repository and copy the `cairo` and `Gimp` directories to a PyCharm directory containing other generated stubs for GIMP 3 under the `gi/repository` directory.
 
 Assuming you added GIMP Python modules to your Python interpreter in PyCharm, you can find the path as follows:
 

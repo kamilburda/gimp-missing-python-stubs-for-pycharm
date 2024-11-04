@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -384,14 +384,14 @@ class PathDataType(__gobject.GEnum):
     LINE_TO = 1
     MOVE_TO = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'PathDataType' objects>, '__doc__': None, '__gtype__': <GType cairo_path_data_type_t (804005776)>, '__enum_values__': {0: <enum CAIRO_PATH_MOVE_TO of type cairo.PathDataType>, 1: <enum CAIRO_PATH_LINE_TO of type cairo.PathDataType>, 2: <enum CAIRO_PATH_CURVE_TO of type cairo.PathDataType>, 3: <enum CAIRO_PATH_CLOSE_PATH of type cairo.PathDataType>}, '__info__': gi.EnumInfo(PathDataType), 'MOVE_TO': <enum CAIRO_PATH_MOVE_TO of type cairo.PathDataType>, 'LINE_TO': <enum CAIRO_PATH_LINE_TO of type cairo.PathDataType>, 'CURVE_TO': <enum CAIRO_PATH_CURVE_TO of type cairo.PathDataType>, 'CLOSE_PATH': <enum CAIRO_PATH_CLOSE_PATH of type cairo.PathDataType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'PathDataType' objects>, '__doc__': None, '__gtype__': <GType cairo_path_data_type_t (4004031696)>, '__enum_values__': {0: <enum CAIRO_PATH_MOVE_TO of type cairo.PathDataType>, 1: <enum CAIRO_PATH_LINE_TO of type cairo.PathDataType>, 2: <enum CAIRO_PATH_CURVE_TO of type cairo.PathDataType>, 3: <enum CAIRO_PATH_CLOSE_PATH of type cairo.PathDataType>}, '__info__': gi.EnumInfo(PathDataType), 'MOVE_TO': <enum CAIRO_PATH_MOVE_TO of type cairo.PathDataType>, 'LINE_TO': <enum CAIRO_PATH_LINE_TO of type cairo.PathDataType>, 'CURVE_TO': <enum CAIRO_PATH_CURVE_TO of type cairo.PathDataType>, 'CLOSE_PATH': <enum CAIRO_PATH_CLOSE_PATH of type cairo.PathDataType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_path_data_type_t (804005776)>'
+    __gtype__ = None # (!) real value is '<GType cairo_path_data_type_t (4004031696)>'
     __info__ = gi.EnumInfo(PathDataType)
 
 

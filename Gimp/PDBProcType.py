@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -382,19 +382,19 @@ class PDBProcType(__gobject.GEnum):
     value_nick = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    EXTENSION = 2
     INTERNAL = 0
+    PERSISTENT = 2
     PLUGIN = 1
     TEMPORARY = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBProcType' objects>, '__doc__': None, '__gtype__': <GType GimpPDBProcType (815080528)>, '__enum_values__': {0: <enum GIMP_PDB_PROC_TYPE_INTERNAL of type Gimp.PDBProcType>, 1: <enum GIMP_PDB_PROC_TYPE_PLUGIN of type Gimp.PDBProcType>, 2: <enum GIMP_PDB_PROC_TYPE_EXTENSION of type Gimp.PDBProcType>, 3: <enum GIMP_PDB_PROC_TYPE_TEMPORARY of type Gimp.PDBProcType>}, '__info__': gi.EnumInfo(PDBProcType), 'INTERNAL': <enum GIMP_PDB_PROC_TYPE_INTERNAL of type Gimp.PDBProcType>, 'PLUGIN': <enum GIMP_PDB_PROC_TYPE_PLUGIN of type Gimp.PDBProcType>, 'EXTENSION': <enum GIMP_PDB_PROC_TYPE_EXTENSION of type Gimp.PDBProcType>, 'TEMPORARY': <enum GIMP_PDB_PROC_TYPE_TEMPORARY of type Gimp.PDBProcType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBProcType' objects>, '__doc__': None, '__gtype__': <GType GimpPDBProcType (1069015952)>, '__enum_values__': {0: <enum GIMP_PDB_PROC_TYPE_INTERNAL of type Gimp.PDBProcType>, 1: <enum GIMP_PDB_PROC_TYPE_PLUGIN of type Gimp.PDBProcType>, 2: <enum GIMP_PDB_PROC_TYPE_PERSISTENT of type Gimp.PDBProcType>, 3: <enum GIMP_PDB_PROC_TYPE_TEMPORARY of type Gimp.PDBProcType>}, '__info__': gi.EnumInfo(PDBProcType), 'INTERNAL': <enum GIMP_PDB_PROC_TYPE_INTERNAL of type Gimp.PDBProcType>, 'PLUGIN': <enum GIMP_PDB_PROC_TYPE_PLUGIN of type Gimp.PDBProcType>, 'PERSISTENT': <enum GIMP_PDB_PROC_TYPE_PERSISTENT of type Gimp.PDBProcType>, 'TEMPORARY': <enum GIMP_PDB_PROC_TYPE_TEMPORARY of type Gimp.PDBProcType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpPDBProcType (815080528)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDBProcType (1069015952)>'
     __info__ = gi.EnumInfo(PDBProcType)
 
 

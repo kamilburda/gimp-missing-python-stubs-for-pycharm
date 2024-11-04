@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -138,7 +138,7 @@ class ParamSpecImage(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecImage), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecImage' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecImage' objects>, '__doc__': None, 'parent_instance': <property object at 0x000002073164ca90>, 'none_ok': <property object at 0x000002073164cb80>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecImage), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecImage' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecImage' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d08900>, 'none_ok': <property object at 0x000001b640d089f0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecImage)
 

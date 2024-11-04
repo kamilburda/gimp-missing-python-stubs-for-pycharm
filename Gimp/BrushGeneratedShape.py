@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class BrushGeneratedShape(__gobject.GEnum):
     DIAMOND = 2
     SQUARE = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'BrushGeneratedShape' objects>, '__doc__': None, '__gtype__': <GType GimpBrushGeneratedShape (815052736)>, '__enum_values__': {0: <enum GIMP_BRUSH_GENERATED_CIRCLE of type Gimp.BrushGeneratedShape>, 1: <enum GIMP_BRUSH_GENERATED_SQUARE of type Gimp.BrushGeneratedShape>, 2: <enum GIMP_BRUSH_GENERATED_DIAMOND of type Gimp.BrushGeneratedShape>}, '__info__': gi.EnumInfo(BrushGeneratedShape), 'CIRCLE': <enum GIMP_BRUSH_GENERATED_CIRCLE of type Gimp.BrushGeneratedShape>, 'SQUARE': <enum GIMP_BRUSH_GENERATED_SQUARE of type Gimp.BrushGeneratedShape>, 'DIAMOND': <enum GIMP_BRUSH_GENERATED_DIAMOND of type Gimp.BrushGeneratedShape>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'BrushGeneratedShape' objects>, '__doc__': None, '__gtype__': <GType GimpBrushGeneratedShape (1071866784)>, '__enum_values__': {0: <enum GIMP_BRUSH_GENERATED_CIRCLE of type Gimp.BrushGeneratedShape>, 1: <enum GIMP_BRUSH_GENERATED_SQUARE of type Gimp.BrushGeneratedShape>, 2: <enum GIMP_BRUSH_GENERATED_DIAMOND of type Gimp.BrushGeneratedShape>}, '__info__': gi.EnumInfo(BrushGeneratedShape), 'CIRCLE': <enum GIMP_BRUSH_GENERATED_CIRCLE of type Gimp.BrushGeneratedShape>, 'SQUARE': <enum GIMP_BRUSH_GENERATED_SQUARE of type Gimp.BrushGeneratedShape>, 'DIAMOND': <enum GIMP_BRUSH_GENERATED_DIAMOND of type Gimp.BrushGeneratedShape>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpBrushGeneratedShape (815052736)>'
+    __gtype__ = None # (!) real value is '<GType GimpBrushGeneratedShape (1071866784)>'
     __info__ = gi.EnumInfo(BrushGeneratedShape)
 
 

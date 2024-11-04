@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class ColorRenderingIntent(__gobject.GEnum):
     RELATIVE_COLORIMETRIC = 1
     SATURATION = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorRenderingIntent' objects>, '__doc__': None, '__gtype__': <GType GimpColorRenderingIntent (815053072)>, '__enum_values__': {0: <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 1: <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 2: <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 3: <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>}, '__info__': gi.EnumInfo(ColorRenderingIntent), 'PERCEPTUAL': <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 'RELATIVE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 'SATURATION': <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 'ABSOLUTE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorRenderingIntent' objects>, '__doc__': None, '__gtype__': <GType GimpColorRenderingIntent (1069017184)>, '__enum_values__': {0: <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 1: <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 2: <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 3: <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>}, '__info__': gi.EnumInfo(ColorRenderingIntent), 'PERCEPTUAL': <enum GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL of type Gimp.ColorRenderingIntent>, 'RELATIVE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC of type Gimp.ColorRenderingIntent>, 'SATURATION': <enum GIMP_COLOR_RENDERING_INTENT_SATURATION of type Gimp.ColorRenderingIntent>, 'ABSOLUTE_COLORIMETRIC': <enum GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC of type Gimp.ColorRenderingIntent>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpColorRenderingIntent (815053072)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorRenderingIntent (1069017184)>'
     __info__ = gi.EnumInfo(ColorRenderingIntent)
 
 

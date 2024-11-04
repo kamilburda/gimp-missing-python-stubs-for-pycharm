@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -381,11 +381,11 @@ class TextClusterFlags(__gobject.GEnum):
 
     BACKWARD = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'TextClusterFlags' objects>, '__doc__': None, '__gtype__': <GType cairo_text_cluster_flags_t (804001296)>, '__enum_values__': {1: <enum CAIRO_TEXT_CLUSTER_FLAG_BACKWARD of type cairo.TextClusterFlags>}, '__info__': gi.EnumInfo(TextClusterFlags), 'BACKWARD': <enum CAIRO_TEXT_CLUSTER_FLAG_BACKWARD of type cairo.TextClusterFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'TextClusterFlags' objects>, '__doc__': None, '__gtype__': <GType cairo_text_cluster_flags_t (4004032144)>, '__enum_values__': {1: <enum CAIRO_TEXT_CLUSTER_FLAG_BACKWARD of type cairo.TextClusterFlags>}, '__info__': gi.EnumInfo(TextClusterFlags), 'BACKWARD': <enum CAIRO_TEXT_CLUSTER_FLAG_BACKWARD of type cairo.TextClusterFlags>})"
     __enum_values__ = {
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_text_cluster_flags_t (804001296)>'
+    __gtype__ = None # (!) real value is '<GType cairo_text_cluster_flags_t (4004032144)>'
     __info__ = gi.EnumInfo(TextClusterFlags)
 
 

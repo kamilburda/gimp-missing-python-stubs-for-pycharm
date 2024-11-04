@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class TextHintStyle(__gobject.GEnum):
     NONE = 0
     SLIGHT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextHintStyle' objects>, '__doc__': None, '__gtype__': <GType GimpTextHintStyle (814711328)>, '__enum_values__': {0: <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 1: <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 2: <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 3: <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>}, '__info__': gi.EnumInfo(TextHintStyle), 'NONE': <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 'SLIGHT': <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 'MEDIUM': <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 'FULL': <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextHintStyle' objects>, '__doc__': None, '__gtype__': <GType GimpTextHintStyle (1065744288)>, '__enum_values__': {0: <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 1: <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 2: <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 3: <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>}, '__info__': gi.EnumInfo(TextHintStyle), 'NONE': <enum GIMP_TEXT_HINT_STYLE_NONE of type Gimp.TextHintStyle>, 'SLIGHT': <enum GIMP_TEXT_HINT_STYLE_SLIGHT of type Gimp.TextHintStyle>, 'MEDIUM': <enum GIMP_TEXT_HINT_STYLE_MEDIUM of type Gimp.TextHintStyle>, 'FULL': <enum GIMP_TEXT_HINT_STYLE_FULL of type Gimp.TextHintStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextHintStyle (814711328)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextHintStyle (1065744288)>'
     __info__ = gi.EnumInfo(TextHintStyle)
 
 

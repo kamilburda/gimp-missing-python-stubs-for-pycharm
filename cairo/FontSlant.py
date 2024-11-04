@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class FontSlant(__gobject.GEnum):
     NORMAL = 0
     OBLIQUE = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontSlant' objects>, '__doc__': None, '__gtype__': <GType cairo_font_slant_t (804299536)>, '__enum_values__': {0: <enum CAIRO_FONT_SLANT_NORMAL of type cairo.FontSlant>, 1: <enum CAIRO_FONT_SLANT_ITALIC of type cairo.FontSlant>, 2: <enum CAIRO_FONT_SLANT_OBLIQUE of type cairo.FontSlant>}, '__info__': gi.EnumInfo(FontSlant), 'NORMAL': <enum CAIRO_FONT_SLANT_NORMAL of type cairo.FontSlant>, 'ITALIC': <enum CAIRO_FONT_SLANT_ITALIC of type cairo.FontSlant>, 'OBLIQUE': <enum CAIRO_FONT_SLANT_OBLIQUE of type cairo.FontSlant>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'FontSlant' objects>, '__doc__': None, '__gtype__': <GType cairo_font_slant_t (4004036624)>, '__enum_values__': {0: <enum CAIRO_FONT_SLANT_NORMAL of type cairo.FontSlant>, 1: <enum CAIRO_FONT_SLANT_ITALIC of type cairo.FontSlant>, 2: <enum CAIRO_FONT_SLANT_OBLIQUE of type cairo.FontSlant>}, '__info__': gi.EnumInfo(FontSlant), 'NORMAL': <enum CAIRO_FONT_SLANT_NORMAL of type cairo.FontSlant>, 'ITALIC': <enum CAIRO_FONT_SLANT_ITALIC of type cairo.FontSlant>, 'OBLIQUE': <enum CAIRO_FONT_SLANT_OBLIQUE of type cairo.FontSlant>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_font_slant_t (804299536)>'
+    __gtype__ = None # (!) real value is '<GType cairo_font_slant_t (4004036624)>'
     __info__ = gi.EnumInfo(FontSlant)
 
 

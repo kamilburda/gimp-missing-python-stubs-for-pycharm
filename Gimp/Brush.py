@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -99,10 +99,6 @@ class Brush(Resource):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -176,7 +172,7 @@ class Brush(Resource):
         pass
 
     def get_by_name(self, name): # real signature unknown; restored from __doc__
-        """ get_by_name(name:str) -> Gimp.Brush """
+        """ get_by_name(name:str) -> Gimp.Brush or None """
         pass
 
     def get_data(self, *args, **kargs): # reliably restored by inspect
@@ -406,18 +402,6 @@ class Brush(Resource):
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
-
-    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
-        return ""
-
-    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
-        """ select_set(callback_name:str, resource:Gimp.Resource) """
-        pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
 
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -650,12 +634,12 @@ class Brush(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e950>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d810>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Brush), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBrush (814333056)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_angle': gi.FunctionInfo(get_angle, bound=None), 'get_aspect_ratio': gi.FunctionInfo(get_aspect_ratio, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_hardness': gi.FunctionInfo(get_hardness, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_radius': gi.FunctionInfo(get_radius, bound=None), 'get_shape': gi.FunctionInfo(get_shape, bound=None), 'get_spacing': gi.FunctionInfo(get_spacing, bound=None), 'get_spikes': gi.FunctionInfo(get_spikes, bound=None), 'is_generated': gi.FunctionInfo(is_generated, bound=None), 'set_angle': gi.FunctionInfo(set_angle, bound=None), 'set_aspect_ratio': gi.FunctionInfo(set_aspect_ratio, bound=None), 'set_hardness': gi.FunctionInfo(set_hardness, bound=None), 'set_radius': gi.FunctionInfo(set_radius, bound=None), 'set_shape': gi.FunctionInfo(set_shape, bound=None), 'set_spacing': gi.FunctionInfo(set_spacing, bound=None), 'set_spikes': gi.FunctionInfo(set_spikes, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Brush), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBrush (1071866672)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_angle': gi.FunctionInfo(get_angle, bound=None), 'get_aspect_ratio': gi.FunctionInfo(get_aspect_ratio, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_hardness': gi.FunctionInfo(get_hardness, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_radius': gi.FunctionInfo(get_radius, bound=None), 'get_shape': gi.FunctionInfo(get_shape, bound=None), 'get_spacing': gi.FunctionInfo(get_spacing, bound=None), 'get_spikes': gi.FunctionInfo(get_spikes, bound=None), 'is_generated': gi.FunctionInfo(is_generated, bound=None), 'set_angle': gi.FunctionInfo(set_angle, bound=None), 'set_aspect_ratio': gi.FunctionInfo(set_aspect_ratio, bound=None), 'set_hardness': gi.FunctionInfo(set_hardness, bound=None), 'set_radius': gi.FunctionInfo(set_radius, bound=None), 'set_shape': gi.FunctionInfo(set_shape, bound=None), 'set_spacing': gi.FunctionInfo(set_spacing, bound=None), 'set_spikes': gi.FunctionInfo(set_spikes, bound=None)})"
     __gdoc__ = 'Object GimpBrush\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpBrush (814333056)>'
+    __gtype__ = None # (!) real value is '<GType GimpBrush (1071866672)>'
     __info__ = ObjectInfo(Brush)
 
 

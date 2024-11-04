@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -383,13 +383,13 @@ class LineJoin(__gobject.GEnum):
     MITER = 0
     ROUND = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'LineJoin' objects>, '__doc__': None, '__gtype__': <GType cairo_line_join_t (804001072)>, '__enum_values__': {0: <enum CAIRO_LINE_JOIN_MITER of type cairo.LineJoin>, 1: <enum CAIRO_LINE_JOIN_ROUND of type cairo.LineJoin>, 2: <enum CAIRO_LINE_JOIN_BEVEL of type cairo.LineJoin>}, '__info__': gi.EnumInfo(LineJoin), 'MITER': <enum CAIRO_LINE_JOIN_MITER of type cairo.LineJoin>, 'ROUND': <enum CAIRO_LINE_JOIN_ROUND of type cairo.LineJoin>, 'BEVEL': <enum CAIRO_LINE_JOIN_BEVEL of type cairo.LineJoin>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.cairo', '__dict__': <attribute '__dict__' of 'LineJoin' objects>, '__doc__': None, '__gtype__': <GType cairo_line_join_t (4004035616)>, '__enum_values__': {0: <enum CAIRO_LINE_JOIN_MITER of type cairo.LineJoin>, 1: <enum CAIRO_LINE_JOIN_ROUND of type cairo.LineJoin>, 2: <enum CAIRO_LINE_JOIN_BEVEL of type cairo.LineJoin>}, '__info__': gi.EnumInfo(LineJoin), 'MITER': <enum CAIRO_LINE_JOIN_MITER of type cairo.LineJoin>, 'ROUND': <enum CAIRO_LINE_JOIN_ROUND of type cairo.LineJoin>, 'BEVEL': <enum CAIRO_LINE_JOIN_BEVEL of type cairo.LineJoin>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType cairo_line_join_t (804001072)>'
+    __gtype__ = None # (!) real value is '<GType cairo_line_join_t (4004035616)>'
     __info__ = gi.EnumInfo(LineJoin)
 
 

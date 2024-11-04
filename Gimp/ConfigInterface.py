@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -43,10 +43,6 @@ class ConfigInterface(__gobject.GInterface):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -66,10 +62,6 @@ class ConfigInterface(__gobject.GInterface):
     def reset_property(self, p_object, property_name): # real signature unknown; restored from __doc__
         """ reset_property(object:GObject.Object, property_name:str) """
         pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
 
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -191,10 +183,10 @@ class ConfigInterface(__gobject.GInterface):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': InterfaceInfo(ConfigInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigInterface (814335408)>, '__dict__': <attribute '__dict__' of 'ConfigInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigInterface' objects>, '__doc__': None, '__gsignals__': {}, 'build_data_path': gi.FunctionInfo(build_data_path, bound=None), 'build_plug_in_path': gi.FunctionInfo(build_plug_in_path, bound=None), 'build_system_path': gi.FunctionInfo(build_system_path, bound=None), 'build_writable_path': gi.FunctionInfo(build_writable_path, bound=None), 'deserialize_return': gi.FunctionInfo(deserialize_return, bound=None), 'deserialize_strv': gi.FunctionInfo(deserialize_strv, bound=None), 'diff': gi.FunctionInfo(diff, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'param_spec_duplicate': gi.FunctionInfo(param_spec_duplicate, bound=None), 'reset_properties': gi.FunctionInfo(reset_properties, bound=None), 'reset_property': gi.FunctionInfo(reset_property, bound=None), 'serialize_strv': gi.FunctionInfo(serialize_strv, bound=None), 'serialize_value': gi.FunctionInfo(serialize_value, bound=None), 'string_append_escaped': gi.FunctionInfo(string_append_escaped, bound=None), 'sync': gi.FunctionInfo(sync, bound=None), 'type_register': gi.FunctionInfo(type_register, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': InterfaceInfo(ConfigInterface), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigInterface (1071866560)>, '__dict__': <attribute '__dict__' of 'ConfigInterface' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigInterface' objects>, '__doc__': None, '__gsignals__': {}, 'build_data_path': gi.FunctionInfo(build_data_path, bound=None), 'build_plug_in_path': gi.FunctionInfo(build_plug_in_path, bound=None), 'build_system_path': gi.FunctionInfo(build_system_path, bound=None), 'build_writable_path': gi.FunctionInfo(build_writable_path, bound=None), 'deserialize_return': gi.FunctionInfo(deserialize_return, bound=None), 'diff': gi.FunctionInfo(diff, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'param_spec_duplicate': gi.FunctionInfo(param_spec_duplicate, bound=None), 'reset_properties': gi.FunctionInfo(reset_properties, bound=None), 'reset_property': gi.FunctionInfo(reset_property, bound=None), 'serialize_value': gi.FunctionInfo(serialize_value, bound=None), 'string_append_escaped': gi.FunctionInfo(string_append_escaped, bound=None), 'sync': gi.FunctionInfo(sync, bound=None), 'type_register': gi.FunctionInfo(type_register, bound=None)})"
     __gdoc__ = 'Interface GimpConfigInterface\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpConfigInterface (814335408)>'
+    __gtype__ = None # (!) real value is '<GType GimpConfigInterface (1071866560)>'
     __info__ = InterfaceInfo(ConfigInterface)
 
 

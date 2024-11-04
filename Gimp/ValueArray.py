@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -37,6 +37,14 @@ class ValueArray(__gi.Boxed):
     def copy(self): # real signature unknown; restored from __doc__
         """ copy(self) -> Gimp.ValueArray """
         pass
+
+    def get_color_array(self, index): # real signature unknown; restored from __doc__
+        """ get_color_array(self, index:int) -> list """
+        return []
+
+    def get_core_object_array(self, index): # real signature unknown; restored from __doc__
+        """ get_core_object_array(self, index:int) -> list """
+        return []
 
     def index(self, index): # real signature unknown; restored from __doc__
         """ index(self, index:int) -> GObject.Value """
@@ -186,8 +194,8 @@ class ValueArray(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ValueArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpValueArray (814711440)>, '__dict__': <attribute '__dict__' of 'ValueArray' objects>, '__weakref__': <attribute '__weakref__' of 'ValueArray' objects>, '__doc__': None, 'new': gi.FunctionInfo(new, bound=None), 'new_from_values': gi.FunctionInfo(new_from_values, bound=None), 'append': gi.FunctionInfo(append, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'index': gi.FunctionInfo(index, bound=None), 'insert': gi.FunctionInfo(insert, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'prepend': gi.FunctionInfo(prepend, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'remove': gi.FunctionInfo(remove, bound=None), 'truncate': gi.FunctionInfo(truncate, bound=None), 'unref': gi.FunctionInfo(unref, bound=None), '__new__': <staticmethod(gi.FunctionInfo(new, bound=None))>, '__init__': <function nothing at 0x0000020730b447c0>})"
-    __gtype__ = None # (!) real value is '<GType GimpValueArray (814711440)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ValueArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpValueArray (1072257088)>, '__dict__': <attribute '__dict__' of 'ValueArray' objects>, '__weakref__': <attribute '__weakref__' of 'ValueArray' objects>, '__doc__': None, 'new': gi.FunctionInfo(new, bound=None), 'new_from_values': gi.FunctionInfo(new_from_values, bound=None), 'append': gi.FunctionInfo(append, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_color_array': gi.FunctionInfo(get_color_array, bound=None), 'get_core_object_array': gi.FunctionInfo(get_core_object_array, bound=None), 'index': gi.FunctionInfo(index, bound=None), 'insert': gi.FunctionInfo(insert, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'prepend': gi.FunctionInfo(prepend, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'remove': gi.FunctionInfo(remove, bound=None), 'truncate': gi.FunctionInfo(truncate, bound=None), 'unref': gi.FunctionInfo(unref, bound=None), '__new__': <staticmethod(gi.FunctionInfo(new, bound=None))>, '__init__': <function nothing at 0x000001b6405f6c00>})"
+    __gtype__ = None # (!) real value is '<GType GimpValueArray (1072257088)>'
     __info__ = StructInfo(ValueArray)
 
 

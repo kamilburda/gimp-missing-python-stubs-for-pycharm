@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class ConvertDitherType(__gobject.GEnum):
     FS_LOWBLEED = 2
     NONE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertDitherType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertDitherType (815046912)>, '__enum_values__': {0: <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 1: <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 2: <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 3: <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>}, '__info__': gi.EnumInfo(ConvertDitherType), 'NONE': <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 'FS': <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 'FS_LOWBLEED': <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 'FIXED': <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConvertDitherType' objects>, '__doc__': None, '__gtype__': <GType GimpConvertDitherType (1069021104)>, '__enum_values__': {0: <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 1: <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 2: <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 3: <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>}, '__info__': gi.EnumInfo(ConvertDitherType), 'NONE': <enum GIMP_CONVERT_DITHER_NONE of type Gimp.ConvertDitherType>, 'FS': <enum GIMP_CONVERT_DITHER_FS of type Gimp.ConvertDitherType>, 'FS_LOWBLEED': <enum GIMP_CONVERT_DITHER_FS_LOWBLEED of type Gimp.ConvertDitherType>, 'FIXED': <enum GIMP_CONVERT_DITHER_FIXED of type Gimp.ConvertDitherType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpConvertDitherType (815046912)>'
+    __gtype__ = None # (!) real value is '<GType GimpConvertDitherType (1069021104)>'
     __info__ = gi.EnumInfo(ConvertDitherType)
 
 

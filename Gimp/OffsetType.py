@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class OffsetType(__gobject.GEnum):
     TRANSPARENT = 1
     WRAP_AROUND = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OffsetType' objects>, '__doc__': None, '__gtype__': <GType GimpOffsetType (815081872)>, '__enum_values__': {0: <enum GIMP_OFFSET_BACKGROUND of type Gimp.OffsetType>, 1: <enum GIMP_OFFSET_TRANSPARENT of type Gimp.OffsetType>, 2: <enum GIMP_OFFSET_WRAP_AROUND of type Gimp.OffsetType>}, '__info__': gi.EnumInfo(OffsetType), 'BACKGROUND': <enum GIMP_OFFSET_BACKGROUND of type Gimp.OffsetType>, 'TRANSPARENT': <enum GIMP_OFFSET_TRANSPARENT of type Gimp.OffsetType>, 'WRAP_AROUND': <enum GIMP_OFFSET_WRAP_AROUND of type Gimp.OffsetType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OffsetType' objects>, '__doc__': None, '__gtype__': <GType GimpOffsetType (1069013712)>, '__enum_values__': {0: <enum GIMP_OFFSET_BACKGROUND of type Gimp.OffsetType>, 1: <enum GIMP_OFFSET_TRANSPARENT of type Gimp.OffsetType>, 2: <enum GIMP_OFFSET_WRAP_AROUND of type Gimp.OffsetType>}, '__info__': gi.EnumInfo(OffsetType), 'BACKGROUND': <enum GIMP_OFFSET_BACKGROUND of type Gimp.OffsetType>, 'TRANSPARENT': <enum GIMP_OFFSET_TRANSPARENT of type Gimp.OffsetType>, 'WRAP_AROUND': <enum GIMP_OFFSET_WRAP_AROUND of type Gimp.OffsetType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpOffsetType (815081872)>'
+    __gtype__ = None # (!) real value is '<GType GimpOffsetType (1069013712)>'
     __info__ = gi.EnumInfo(OffsetType)
 
 

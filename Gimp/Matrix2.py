@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -162,8 +162,8 @@ class Matrix2(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix2 (815086128)>, '__dict__': <attribute '__dict__' of 'Matrix2' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix2' objects>, '__doc__': None, 'coeff': <property object at 0x0000020731632a70>, 'determinant': gi.FunctionInfo(determinant, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpMatrix2 (815086128)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix2 (1069015504)>, '__dict__': <attribute '__dict__' of 'Matrix2' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix2' objects>, '__doc__': None, 'coeff': <property object at 0x000001b640cf4f90>, 'determinant': gi.FunctionInfo(determinant, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpMatrix2 (1069015504)>'
     __info__ = StructInfo(Matrix2)
 
 

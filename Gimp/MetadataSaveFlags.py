@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -395,7 +395,7 @@ class MetadataSaveFlags(__gobject.GFlags):
     THUMBNAIL = 8
     XMP = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataSaveFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataSaveFlags (815086240)>, '__flags_values__': {1: <flags GIMP_METADATA_SAVE_EXIF of type Gimp.MetadataSaveFlags>, 2: <flags GIMP_METADATA_SAVE_XMP of type Gimp.MetadataSaveFlags>, 4: <flags GIMP_METADATA_SAVE_IPTC of type Gimp.MetadataSaveFlags>, 8: <flags GIMP_METADATA_SAVE_THUMBNAIL of type Gimp.MetadataSaveFlags>, 16: <flags GIMP_METADATA_SAVE_COLOR_PROFILE of type Gimp.MetadataSaveFlags>, 32: <flags GIMP_METADATA_SAVE_COMMENT of type Gimp.MetadataSaveFlags>, 4294967295: <flags GIMP_METADATA_SAVE_EXIF | GIMP_METADATA_SAVE_XMP | GIMP_METADATA_SAVE_IPTC | GIMP_METADATA_SAVE_THUMBNAIL | GIMP_METADATA_SAVE_COLOR_PROFILE | GIMP_METADATA_SAVE_COMMENT | GIMP_METADATA_SAVE_ALL of type Gimp.MetadataSaveFlags>}, '__info__': gi.EnumInfo(MetadataSaveFlags), 'EXIF': <flags GIMP_METADATA_SAVE_EXIF of type Gimp.MetadataSaveFlags>, 'XMP': <flags GIMP_METADATA_SAVE_XMP of type Gimp.MetadataSaveFlags>, 'IPTC': <flags GIMP_METADATA_SAVE_IPTC of type Gimp.MetadataSaveFlags>, 'THUMBNAIL': <flags GIMP_METADATA_SAVE_THUMBNAIL of type Gimp.MetadataSaveFlags>, 'COLOR_PROFILE': <flags GIMP_METADATA_SAVE_COLOR_PROFILE of type Gimp.MetadataSaveFlags>, 'COMMENT': <flags GIMP_METADATA_SAVE_COMMENT of type Gimp.MetadataSaveFlags>, 'ALL': <flags GIMP_METADATA_SAVE_EXIF | GIMP_METADATA_SAVE_XMP | GIMP_METADATA_SAVE_IPTC | GIMP_METADATA_SAVE_THUMBNAIL | GIMP_METADATA_SAVE_COLOR_PROFILE | GIMP_METADATA_SAVE_COMMENT | GIMP_METADATA_SAVE_ALL of type Gimp.MetadataSaveFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataSaveFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataSaveFlags (1069013376)>, '__flags_values__': {1: <flags GIMP_METADATA_SAVE_EXIF of type Gimp.MetadataSaveFlags>, 2: <flags GIMP_METADATA_SAVE_XMP of type Gimp.MetadataSaveFlags>, 4: <flags GIMP_METADATA_SAVE_IPTC of type Gimp.MetadataSaveFlags>, 8: <flags GIMP_METADATA_SAVE_THUMBNAIL of type Gimp.MetadataSaveFlags>, 16: <flags GIMP_METADATA_SAVE_COLOR_PROFILE of type Gimp.MetadataSaveFlags>, 32: <flags GIMP_METADATA_SAVE_COMMENT of type Gimp.MetadataSaveFlags>, 4294967295: <flags GIMP_METADATA_SAVE_EXIF | GIMP_METADATA_SAVE_XMP | GIMP_METADATA_SAVE_IPTC | GIMP_METADATA_SAVE_THUMBNAIL | GIMP_METADATA_SAVE_COLOR_PROFILE | GIMP_METADATA_SAVE_COMMENT | GIMP_METADATA_SAVE_ALL of type Gimp.MetadataSaveFlags>}, '__info__': gi.EnumInfo(MetadataSaveFlags), 'EXIF': <flags GIMP_METADATA_SAVE_EXIF of type Gimp.MetadataSaveFlags>, 'XMP': <flags GIMP_METADATA_SAVE_XMP of type Gimp.MetadataSaveFlags>, 'IPTC': <flags GIMP_METADATA_SAVE_IPTC of type Gimp.MetadataSaveFlags>, 'THUMBNAIL': <flags GIMP_METADATA_SAVE_THUMBNAIL of type Gimp.MetadataSaveFlags>, 'COLOR_PROFILE': <flags GIMP_METADATA_SAVE_COLOR_PROFILE of type Gimp.MetadataSaveFlags>, 'COMMENT': <flags GIMP_METADATA_SAVE_COMMENT of type Gimp.MetadataSaveFlags>, 'ALL': <flags GIMP_METADATA_SAVE_EXIF | GIMP_METADATA_SAVE_XMP | GIMP_METADATA_SAVE_IPTC | GIMP_METADATA_SAVE_THUMBNAIL | GIMP_METADATA_SAVE_COLOR_PROFILE | GIMP_METADATA_SAVE_COMMENT | GIMP_METADATA_SAVE_ALL of type Gimp.MetadataSaveFlags>})"
     __flags_values__ = {
         1: 1,
         2: 2,
@@ -405,7 +405,7 @@ class MetadataSaveFlags(__gobject.GFlags):
         32: 32,
         4294967295: 4294967295,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpMetadataSaveFlags (815086240)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpMetadataSaveFlags (1069013376)>'
     __info__ = gi.EnumInfo(MetadataSaveFlags)
 
 

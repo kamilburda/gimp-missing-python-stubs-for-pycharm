@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -98,10 +98,6 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -163,7 +159,7 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
         pass
 
     def get_by_name(self, resource_type, resource_name): # real signature unknown; restored from __doc__
-        """ get_by_name(resource_type:GType, resource_name:str) -> Gimp.Resource """
+        """ get_by_name(resource_type:GType, resource_name:str) -> Gimp.Resource or None """
         pass
 
     def get_data(self, *args, **kargs): # reliably restored by inspect
@@ -357,18 +353,6 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
-
-    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
-        return ""
-
-    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
-        """ select_set(callback_name:str, resource:Gimp.Resource) """
-        pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
 
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -573,12 +557,12 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e530>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069ce50>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (814332832)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'select_new': gi.FunctionInfo(select_new, bound=None), 'select_set': gi.FunctionInfo(select_set, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x00000207315f8fe0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (1071868240)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x000001b640cacc20>})"
     __gdoc__ = 'Object GimpResource\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpResource (814332832)>'
+    __gtype__ = None # (!) real value is '<GType GimpResource (1071868240)>'
     __info__ = ObjectInfo(Resource)
 
 

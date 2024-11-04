@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -93,10 +93,6 @@ class ColorConfig(__gi_overrides_GObject.Object, ConfigInterface):
     def deserialize_return(self, scanner, expected_token, nest_level): # real signature unknown; restored from __doc__
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
-
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
 
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
@@ -338,10 +334,6 @@ class ColorConfig(__gi_overrides_GObject.Object, ConfigInterface):
         """ run_dispose(self) """
         pass
 
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
-
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
         return False
@@ -534,10 +526,6 @@ class ColorConfig(__gi_overrides_GObject.Object, ConfigInterface):
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    priv = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -547,12 +535,12 @@ class ColorConfig(__gi_overrides_GObject.Object, ConfigInterface):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165ed10>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d750>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorConfig (815049824)>, '__doc__': None, '__gsignals__': {}, 'get_cmyk_color_profile': gi.FunctionInfo(get_cmyk_color_profile, bound=None), 'get_display_bpc': gi.FunctionInfo(get_display_bpc, bound=None), 'get_display_color_profile': gi.FunctionInfo(get_display_color_profile, bound=None), 'get_display_intent': gi.FunctionInfo(get_display_intent, bound=None), 'get_display_optimize': gi.FunctionInfo(get_display_optimize, bound=None), 'get_display_profile_from_gdk': gi.FunctionInfo(get_display_profile_from_gdk, bound=None), 'get_gray_color_profile': gi.FunctionInfo(get_gray_color_profile, bound=None), 'get_mode': gi.FunctionInfo(get_mode, bound=None), 'get_out_of_gamut_color': gi.FunctionInfo(get_out_of_gamut_color, bound=None), 'get_rgb_color_profile': gi.FunctionInfo(get_rgb_color_profile, bound=None), 'get_simulation_bpc': gi.FunctionInfo(get_simulation_bpc, bound=None), 'get_simulation_color_profile': gi.FunctionInfo(get_simulation_color_profile, bound=None), 'get_simulation_gamut_check': gi.FunctionInfo(get_simulation_gamut_check, bound=None), 'get_simulation_intent': gi.FunctionInfo(get_simulation_intent, bound=None), 'get_simulation_optimize': gi.FunctionInfo(get_simulation_optimize, bound=None), 'parent_instance': <property object at 0x00000207316083b0>, 'priv': <property object at 0x00000207316084a0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorConfig (1069018528)>, '__doc__': None, '__gsignals__': {}, 'get_cmyk_color_profile': gi.FunctionInfo(get_cmyk_color_profile, bound=None), 'get_display_bpc': gi.FunctionInfo(get_display_bpc, bound=None), 'get_display_color_profile': gi.FunctionInfo(get_display_color_profile, bound=None), 'get_display_intent': gi.FunctionInfo(get_display_intent, bound=None), 'get_display_optimize': gi.FunctionInfo(get_display_optimize, bound=None), 'get_display_profile_from_gdk': gi.FunctionInfo(get_display_profile_from_gdk, bound=None), 'get_gray_color_profile': gi.FunctionInfo(get_gray_color_profile, bound=None), 'get_mode': gi.FunctionInfo(get_mode, bound=None), 'get_out_of_gamut_color': gi.FunctionInfo(get_out_of_gamut_color, bound=None), 'get_rgb_color_profile': gi.FunctionInfo(get_rgb_color_profile, bound=None), 'get_simulation_bpc': gi.FunctionInfo(get_simulation_bpc, bound=None), 'get_simulation_color_profile': gi.FunctionInfo(get_simulation_color_profile, bound=None), 'get_simulation_gamut_check': gi.FunctionInfo(get_simulation_gamut_check, bound=None), 'get_simulation_intent': gi.FunctionInfo(get_simulation_intent, bound=None), 'get_simulation_optimize': gi.FunctionInfo(get_simulation_optimize, bound=None)})"
     __gdoc__ = "Object GimpColorConfig\n\nProperties from GimpColorConfig:\n  mode -> GimpColorManagementMode: Mode of operation\n    How images are displayed on screen.\n  rgb-profile -> GimpConfigPath: Preferred RGB profile\n    The preferred RGB working space color profile. It will be offered next to the built-in RGB profile when a color profile can be chosen.\n  gray-profile -> GimpConfigPath: Preferred grayscale profile\n    The preferred grayscale working space color profile. It will be offered next to the built-in grayscale profile when a color profile can be chosen.\n  cmyk-profile -> GimpConfigPath: CMYK profile\n    The CMYK color profile used to convert between RGB and CMYK.\n  display-profile -> GimpConfigPath: Monitor profile\n    The color profile of your (primary) monitor.\n  display-profile-from-gdk -> gboolean: Use the system monitor profile\n    When enabled, GIMP will try to use the display color profile from the windowing system.  The configured monitor profile is then only used as a fallback.\n  simulation-profile -> GimpConfigPath: Simulation profile for soft-proofing\n    The color profile to use for soft-proofing from your image's color space to some other color space, including soft-proofing to a printer or other output device profile.\n  display-rendering-intent -> GimpColorRenderingIntent: Display rendering intent\n    How colors are converted from your image's color space to your display device. Relative colorimetric is usually the best choice. Unless you use a LUT monitor profile (most monitor profiles are matrix), choosing perceptual intent really gives you relative colorimetric.\n  display-use-black-point-compensation -> gboolean: Use black point compensation for the display\n    Do use black point compensation (unless you know you have a reason not to).\n  display-optimize -> gboolean: Optimize display color transformations\n    When disabled, image display might be of better quality at the cost of speed.\n  simulation-rendering-intent -> GimpColorRenderingIntent: Soft-proofing rendering intent\n    How colors are converted from your image's color space to the output simulation device (usually your monitor). Try them all and choose what looks the best.\n  simulation-use-black-point-compensation -> gboolean: Use black point compensation for soft-proofing\n    Try with and without black point compensation and choose what looks best.\n  simulation-optimize -> gboolean: Optimize soft-proofing color transformations\n    When disabled, soft-proofing might be of better quality at the cost of speed.\n  simulation-gamut-check -> gboolean: Mark out of gamut colors\n    When enabled, the soft-proofing will mark colors which can not be represented in the target color space.\n  out-of-gamut-color -> GeglColor: Out of gamut warning color\n    The color to use for marking colors which are out of gamut.\n  show-rgb-u8 -> gboolean: Show RGB 0..255\n    Show RGB 0..255 scales\n  show-hsv -> gboolean: Show HSV\n    Show HSV instead of LCH\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpColorConfig (815049824)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorConfig (1069018528)>'
     __info__ = ObjectInfo(ColorConfig)
 
 

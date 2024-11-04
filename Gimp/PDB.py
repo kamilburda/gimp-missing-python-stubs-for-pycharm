@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -433,10 +433,6 @@ class PDB(__gi_overrides_GObject.Object):
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    priv = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -446,12 +442,12 @@ class PDB(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df0280>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069eec0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (815084336)>, '__doc__': None, '__gsignals__': {}, 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None), 'parent_instance': <property object at 0x000002073163ee80>, 'priv': <property object at 0x000002073163ef70>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (1069014384)>, '__doc__': None, '__gsignals__': {}, 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None)})"
     __gdoc__ = 'Object GimpPDB\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPDB (815084336)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDB (1069014384)>'
     __info__ = ObjectInfo(PDB)
 
 

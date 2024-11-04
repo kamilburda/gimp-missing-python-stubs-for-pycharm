@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class CapStyle(__gobject.GEnum):
     ROUND = 1
     SQUARE = 2
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CapStyle' objects>, '__doc__': None, '__gtype__': <GType GimpCapStyle (815050272)>, '__enum_values__': {0: <enum GIMP_CAP_BUTT of type Gimp.CapStyle>, 1: <enum GIMP_CAP_ROUND of type Gimp.CapStyle>, 2: <enum GIMP_CAP_SQUARE of type Gimp.CapStyle>}, '__info__': gi.EnumInfo(CapStyle), 'BUTT': <enum GIMP_CAP_BUTT of type Gimp.CapStyle>, 'ROUND': <enum GIMP_CAP_ROUND of type Gimp.CapStyle>, 'SQUARE': <enum GIMP_CAP_SQUARE of type Gimp.CapStyle>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CapStyle' objects>, '__doc__': None, '__gtype__': <GType GimpCapStyle (1071866896)>, '__enum_values__': {0: <enum GIMP_CAP_BUTT of type Gimp.CapStyle>, 1: <enum GIMP_CAP_ROUND of type Gimp.CapStyle>, 2: <enum GIMP_CAP_SQUARE of type Gimp.CapStyle>}, '__info__': gi.EnumInfo(CapStyle), 'BUTT': <enum GIMP_CAP_BUTT of type Gimp.CapStyle>, 'ROUND': <enum GIMP_CAP_ROUND of type Gimp.CapStyle>, 'SQUARE': <enum GIMP_CAP_SQUARE of type Gimp.CapStyle>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpCapStyle (815050272)>'
+    __gtype__ = None # (!) real value is '<GType GimpCapStyle (1071866896)>'
     __info__ = gi.EnumInfo(CapStyle)
 
 

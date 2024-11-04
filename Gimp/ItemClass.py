@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,6 +134,8 @@ class ItemClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -150,9 +152,11 @@ class ItemClass(__gi.Struct):
 
     _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved9 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ItemClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ItemClass' objects>, '__weakref__': <attribute '__weakref__' of 'ItemClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731626890>, '_gimp_reserved1': <property object at 0x0000020731626980>, '_gimp_reserved2': <property object at 0x0000020731626a70>, '_gimp_reserved3': <property object at 0x0000020731626b60>, '_gimp_reserved4': <property object at 0x0000020731626c50>, '_gimp_reserved5': <property object at 0x0000020731626d40>, '_gimp_reserved6': <property object at 0x0000020731626e30>, '_gimp_reserved7': <property object at 0x0000020731626f20>, '_gimp_reserved8': <property object at 0x0000020731627010>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ItemClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ItemClass' objects>, '__weakref__': <attribute '__weakref__' of 'ItemClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640ce89f0>, '_gimp_reserved0': <property object at 0x000001b640ce8ae0>, '_gimp_reserved1': <property object at 0x000001b640ce8bd0>, '_gimp_reserved2': <property object at 0x000001b640ce8cc0>, '_gimp_reserved3': <property object at 0x000001b640ce8db0>, '_gimp_reserved4': <property object at 0x000001b640ce8ea0>, '_gimp_reserved5': <property object at 0x000001b640ce8f90>, '_gimp_reserved6': <property object at 0x000001b640ce9080>, '_gimp_reserved7': <property object at 0x000001b640ce9170>, '_gimp_reserved8': <property object at 0x000001b640ce9260>, '_gimp_reserved9': <property object at 0x000001b640ce9350>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ItemClass)
 

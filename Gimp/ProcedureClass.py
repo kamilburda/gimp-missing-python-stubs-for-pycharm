@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -144,6 +144,8 @@ class ProcedureClass(__gi.Struct):
 
     uninstall = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
     _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -160,9 +162,11 @@ class ProcedureClass(__gi.Struct):
 
     _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
+    _gimp_reserved9 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'ProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000002073165aa70>, 'install': <property object at 0x000002073165ab60>, 'uninstall': <property object at 0x000002073165ac50>, 'run': <property object at 0x000002073165ad40>, 'create_config': <property object at 0x000002073165ae30>, 'set_sensitivity': <property object at 0x000002073165af20>, '_gimp_reserved1': <property object at 0x000002073165b010>, '_gimp_reserved2': <property object at 0x000002073165b100>, '_gimp_reserved3': <property object at 0x000002073165b1f0>, '_gimp_reserved4': <property object at 0x000002073165b2e0>, '_gimp_reserved5': <property object at 0x000002073165b3d0>, '_gimp_reserved6': <property object at 0x000002073165b4c0>, '_gimp_reserved7': <property object at 0x000002073165b5b0>, '_gimp_reserved8': <property object at 0x000002073165b6a0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'ProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640d12750>, 'install': <property object at 0x000001b640d12840>, 'uninstall': <property object at 0x000001b640d12930>, 'run': <property object at 0x000001b640d12a20>, 'create_config': <property object at 0x000001b640d12b10>, 'set_sensitivity': <property object at 0x000001b640d12c00>, '_gimp_reserved0': <property object at 0x000001b640d12cf0>, '_gimp_reserved1': <property object at 0x000001b640d12de0>, '_gimp_reserved2': <property object at 0x000001b640d12ed0>, '_gimp_reserved3': <property object at 0x000001b640d12fc0>, '_gimp_reserved4': <property object at 0x000001b640d130b0>, '_gimp_reserved5': <property object at 0x000001b640d131a0>, '_gimp_reserved6': <property object at 0x000001b640d13290>, '_gimp_reserved7': <property object at 0x000001b640d13380>, '_gimp_reserved8': <property object at 0x000001b640d13470>, '_gimp_reserved9': <property object at 0x000001b640d13560>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ProcedureClass)
 

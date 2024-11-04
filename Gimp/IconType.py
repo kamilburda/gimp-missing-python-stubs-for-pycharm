@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class IconType(__gobject.GEnum):
     IMAGE_FILE = 2
     PIXBUF = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'IconType' objects>, '__doc__': None, '__gtype__': <GType GimpIconType (815079744)>, '__enum_values__': {0: <enum GIMP_ICON_TYPE_ICON_NAME of type Gimp.IconType>, 1: <enum GIMP_ICON_TYPE_PIXBUF of type Gimp.IconType>, 2: <enum GIMP_ICON_TYPE_IMAGE_FILE of type Gimp.IconType>}, '__info__': gi.EnumInfo(IconType), 'ICON_NAME': <enum GIMP_ICON_TYPE_ICON_NAME of type Gimp.IconType>, 'PIXBUF': <enum GIMP_ICON_TYPE_PIXBUF of type Gimp.IconType>, 'IMAGE_FILE': <enum GIMP_ICON_TYPE_IMAGE_FILE of type Gimp.IconType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'IconType' objects>, '__doc__': None, '__gtype__': <GType GimpIconType (1069024240)>, '__enum_values__': {0: <enum GIMP_ICON_TYPE_ICON_NAME of type Gimp.IconType>, 1: <enum GIMP_ICON_TYPE_PIXBUF of type Gimp.IconType>, 2: <enum GIMP_ICON_TYPE_IMAGE_FILE of type Gimp.IconType>}, '__info__': gi.EnumInfo(IconType), 'ICON_NAME': <enum GIMP_ICON_TYPE_ICON_NAME of type Gimp.IconType>, 'PIXBUF': <enum GIMP_ICON_TYPE_PIXBUF of type Gimp.IconType>, 'IMAGE_FILE': <enum GIMP_ICON_TYPE_IMAGE_FILE of type Gimp.IconType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpIconType (815079744)>'
+    __gtype__ = None # (!) real value is '<GType GimpIconType (1069024240)>'
     __info__ = gi.EnumInfo(IconType)
 
 

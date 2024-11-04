@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -388,7 +388,7 @@ class PDBStatusType(__gobject.GEnum):
     PASS_THROUGH = 2
     SUCCESS = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBStatusType' objects>, '__doc__': None, '__gtype__': <GType GimpPDBStatusType (815084672)>, '__enum_values__': {0: <enum GIMP_PDB_EXECUTION_ERROR of type Gimp.PDBStatusType>, 1: <enum GIMP_PDB_CALLING_ERROR of type Gimp.PDBStatusType>, 2: <enum GIMP_PDB_PASS_THROUGH of type Gimp.PDBStatusType>, 3: <enum GIMP_PDB_SUCCESS of type Gimp.PDBStatusType>, 4: <enum GIMP_PDB_CANCEL of type Gimp.PDBStatusType>}, '__info__': gi.EnumInfo(PDBStatusType), 'EXECUTION_ERROR': <enum GIMP_PDB_EXECUTION_ERROR of type Gimp.PDBStatusType>, 'CALLING_ERROR': <enum GIMP_PDB_CALLING_ERROR of type Gimp.PDBStatusType>, 'PASS_THROUGH': <enum GIMP_PDB_PASS_THROUGH of type Gimp.PDBStatusType>, 'SUCCESS': <enum GIMP_PDB_SUCCESS of type Gimp.PDBStatusType>, 'CANCEL': <enum GIMP_PDB_CANCEL of type Gimp.PDBStatusType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PDBStatusType' objects>, '__doc__': None, '__gtype__': <GType GimpPDBStatusType (1069009456)>, '__enum_values__': {0: <enum GIMP_PDB_EXECUTION_ERROR of type Gimp.PDBStatusType>, 1: <enum GIMP_PDB_CALLING_ERROR of type Gimp.PDBStatusType>, 2: <enum GIMP_PDB_PASS_THROUGH of type Gimp.PDBStatusType>, 3: <enum GIMP_PDB_SUCCESS of type Gimp.PDBStatusType>, 4: <enum GIMP_PDB_CANCEL of type Gimp.PDBStatusType>}, '__info__': gi.EnumInfo(PDBStatusType), 'EXECUTION_ERROR': <enum GIMP_PDB_EXECUTION_ERROR of type Gimp.PDBStatusType>, 'CALLING_ERROR': <enum GIMP_PDB_CALLING_ERROR of type Gimp.PDBStatusType>, 'PASS_THROUGH': <enum GIMP_PDB_PASS_THROUGH of type Gimp.PDBStatusType>, 'SUCCESS': <enum GIMP_PDB_SUCCESS of type Gimp.PDBStatusType>, 'CANCEL': <enum GIMP_PDB_CANCEL of type Gimp.PDBStatusType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +396,7 @@ class PDBStatusType(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpPDBStatusType (815084672)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDBStatusType (1069009456)>'
     __info__ = gi.EnumInfo(PDBStatusType)
 
 

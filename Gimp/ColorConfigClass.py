@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -134,25 +134,9 @@ class ColorConfigClass(__gi.Struct):
 
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved3 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved4 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved5 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved6 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved7 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorConfigClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorConfigClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorConfigClass' objects>, '__doc__': None, 'parent_class': <property object at 0x0000020731608630>, '_gimp_reserved1': <property object at 0x0000020731608720>, '_gimp_reserved2': <property object at 0x0000020731608810>, '_gimp_reserved3': <property object at 0x0000020731608900>, '_gimp_reserved4': <property object at 0x00000207316089f0>, '_gimp_reserved5': <property object at 0x0000020731608ae0>, '_gimp_reserved6': <property object at 0x0000020731608bd0>, '_gimp_reserved7': <property object at 0x0000020731608cc0>, '_gimp_reserved8': <property object at 0x0000020731608db0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorConfigClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorConfigClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorConfigClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cafe20>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorConfigClass)
 

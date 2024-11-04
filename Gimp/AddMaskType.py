@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -390,7 +390,7 @@ class AddMaskType(__gobject.GEnum):
     SELECTION = 4
     WHITE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'AddMaskType' objects>, '__doc__': None, '__gtype__': <GType GimpAddMaskType (814332272)>, '__enum_values__': {0: <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 1: <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 2: <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 3: <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 4: <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 5: <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 6: <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>}, '__info__': gi.EnumInfo(AddMaskType), 'WHITE': <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 'BLACK': <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 'ALPHA': <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 'ALPHA_TRANSFER': <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 'SELECTION': <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 'COPY': <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 'CHANNEL': <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'AddMaskType' objects>, '__doc__': None, '__gtype__': <GType GimpAddMaskType (1071860064)>, '__enum_values__': {0: <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 1: <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 2: <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 3: <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 4: <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 5: <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 6: <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>}, '__info__': gi.EnumInfo(AddMaskType), 'WHITE': <enum GIMP_ADD_MASK_WHITE of type Gimp.AddMaskType>, 'BLACK': <enum GIMP_ADD_MASK_BLACK of type Gimp.AddMaskType>, 'ALPHA': <enum GIMP_ADD_MASK_ALPHA of type Gimp.AddMaskType>, 'ALPHA_TRANSFER': <enum GIMP_ADD_MASK_ALPHA_TRANSFER of type Gimp.AddMaskType>, 'SELECTION': <enum GIMP_ADD_MASK_SELECTION of type Gimp.AddMaskType>, 'COPY': <enum GIMP_ADD_MASK_COPY of type Gimp.AddMaskType>, 'CHANNEL': <enum GIMP_ADD_MASK_CHANNEL of type Gimp.AddMaskType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -400,7 +400,7 @@ class AddMaskType(__gobject.GEnum):
         5: 5,
         6: 6,
     }
-    __gtype__ = None # (!) real value is '<GType GimpAddMaskType (814332272)>'
+    __gtype__ = None # (!) real value is '<GType GimpAddMaskType (1071860064)>'
     __info__ = gi.EnumInfo(AddMaskType)
 
 

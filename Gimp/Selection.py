@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -242,6 +242,10 @@ class Selection(Channel):
         """ get_by_id(selection_id:int) -> Gimp.Selection or None """
         pass
 
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
+
     def get_color(self): # real signature unknown; restored from __doc__
         """ get_color(self) -> Gegl.Color """
         pass
@@ -426,12 +430,20 @@ class Selection(Channel):
         """ id_is_drawable(item_id:int) -> bool """
         return False
 
+    def id_is_group_layer(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_group_layer(item_id:int) -> bool """
+        return False
+
     def id_is_layer(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer(item_id:int) -> bool """
         return False
 
     def id_is_layer_mask(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer_mask(item_id:int) -> bool """
+        return False
+
+    def id_is_path(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_path(item_id:int) -> bool """
         return False
 
     def id_is_selection(self, item_id): # real signature unknown; restored from __doc__
@@ -444,10 +456,6 @@ class Selection(Channel):
 
     def id_is_valid(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_valid(item_id:int) -> bool """
-        return False
-
-    def id_is_vectors(self, item_id): # real signature unknown; restored from __doc__
-        """ id_is_vectors(item_id:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -498,6 +506,10 @@ class Selection(Channel):
         """ is_group(self) -> bool """
         return False
 
+    def is_group_layer(self): # real signature unknown; restored from __doc__
+        """ is_group_layer(self) -> bool """
+        return False
+
     def is_indexed(self): # real signature unknown; restored from __doc__
         """ is_indexed(self) -> bool """
         return False
@@ -508,6 +520,10 @@ class Selection(Channel):
 
     def is_layer_mask(self): # real signature unknown; restored from __doc__
         """ is_layer_mask(self) -> bool """
+        return False
+
+    def is_path(self): # real signature unknown; restored from __doc__
+        """ is_path(self) -> bool """
         return False
 
     def is_rgb(self): # real signature unknown; restored from __doc__
@@ -526,10 +542,6 @@ class Selection(Channel):
         """ is_valid(self) -> bool """
         return False
 
-    def is_vectors(self): # real signature unknown; restored from __doc__
-        """ is_vectors(self) -> bool """
-        return False
-
     def levels(self, channel, low_input, high_input, clamp_input, gamma, low_output, high_output, clamp_output): # real signature unknown; restored from __doc__
         """ levels(self, channel:Gimp.HistogramChannel, low_input:float, high_input:float, clamp_input:bool, gamma:float, low_output:float, high_output:float, clamp_output:bool) -> bool """
         return False
@@ -537,10 +549,6 @@ class Selection(Channel):
     def levels_stretch(self): # real signature unknown; restored from __doc__
         """ levels_stretch(self) -> bool """
         return False
-
-    def list_children(self): # real signature unknown; restored from __doc__
-        """ list_children(self) -> list """
-        return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
@@ -930,12 +938,12 @@ class Selection(Channel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df0310>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066e170>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (814609680)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (1066925744)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
     __gdoc__ = 'Object GimpSelection\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpSelection (814609680)>'
+    __gtype__ = None # (!) real value is '<GType GimpSelection (1066925744)>'
     __info__ = ObjectInfo(Selection)
 
 

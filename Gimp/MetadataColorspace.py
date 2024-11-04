@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class MetadataColorspace(__gobject.GEnum):
     UNCALIBRATED = 1
     UNSPECIFIED = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataColorspace' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataColorspace (815086016)>, '__enum_values__': {0: <enum GIMP_METADATA_COLORSPACE_UNSPECIFIED of type Gimp.MetadataColorspace>, 1: <enum GIMP_METADATA_COLORSPACE_UNCALIBRATED of type Gimp.MetadataColorspace>, 2: <enum GIMP_METADATA_COLORSPACE_SRGB of type Gimp.MetadataColorspace>, 3: <enum GIMP_METADATA_COLORSPACE_ADOBERGB of type Gimp.MetadataColorspace>}, '__info__': gi.EnumInfo(MetadataColorspace), 'UNSPECIFIED': <enum GIMP_METADATA_COLORSPACE_UNSPECIFIED of type Gimp.MetadataColorspace>, 'UNCALIBRATED': <enum GIMP_METADATA_COLORSPACE_UNCALIBRATED of type Gimp.MetadataColorspace>, 'SRGB': <enum GIMP_METADATA_COLORSPACE_SRGB of type Gimp.MetadataColorspace>, 'ADOBERGB': <enum GIMP_METADATA_COLORSPACE_ADOBERGB of type Gimp.MetadataColorspace>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'MetadataColorspace' objects>, '__doc__': None, '__gtype__': <GType PyGimpMetadataColorspace (1069013264)>, '__enum_values__': {0: <enum GIMP_METADATA_COLORSPACE_UNSPECIFIED of type Gimp.MetadataColorspace>, 1: <enum GIMP_METADATA_COLORSPACE_UNCALIBRATED of type Gimp.MetadataColorspace>, 2: <enum GIMP_METADATA_COLORSPACE_SRGB of type Gimp.MetadataColorspace>, 3: <enum GIMP_METADATA_COLORSPACE_ADOBERGB of type Gimp.MetadataColorspace>}, '__info__': gi.EnumInfo(MetadataColorspace), 'UNSPECIFIED': <enum GIMP_METADATA_COLORSPACE_UNSPECIFIED of type Gimp.MetadataColorspace>, 'UNCALIBRATED': <enum GIMP_METADATA_COLORSPACE_UNCALIBRATED of type Gimp.MetadataColorspace>, 'SRGB': <enum GIMP_METADATA_COLORSPACE_SRGB of type Gimp.MetadataColorspace>, 'ADOBERGB': <enum GIMP_METADATA_COLORSPACE_ADOBERGB of type Gimp.MetadataColorspace>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpMetadataColorspace (815086016)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpMetadataColorspace (1069013264)>'
     __info__ = gi.EnumInfo(MetadataColorspace)
 
 

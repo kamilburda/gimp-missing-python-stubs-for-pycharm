@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -130,8 +130,8 @@ class FontFace(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FontFace), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoFontFace (802854720)>, '__dict__': <attribute '__dict__' of 'FontFace' objects>, '__weakref__': <attribute '__weakref__' of 'FontFace' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoFontFace (802854720)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FontFace), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoFontFace (4003645792)>, '__dict__': <attribute '__dict__' of 'FontFace' objects>, '__weakref__': <attribute '__weakref__' of 'FontFace' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoFontFace (4003645792)>'
     __info__ = StructInfo(FontFace)
 
 

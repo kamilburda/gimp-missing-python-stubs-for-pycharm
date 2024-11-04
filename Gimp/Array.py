@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -156,8 +156,8 @@ class Array(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (814334288)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x00000207315f7c40>, 'length': <property object at 0x00000207315f7d30>, 'static_data': <property object at 0x00000207315f7e20>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpArray (814334288)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (1071864880)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x000001b640cbde40>, 'length': <property object at 0x000001b640cbdf30>, 'static_data': <property object at 0x000001b640cbe020>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpArray (1071864880)>'
     __info__ = StructInfo(Array)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\cairo-1.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -130,8 +130,8 @@ class Context(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Context), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoContext (802315616)>, '__dict__': <attribute '__dict__' of 'Context' objects>, '__weakref__': <attribute '__weakref__' of 'Context' objects>, '__doc__': None})"
-    __gtype__ = None # (!) real value is '<GType CairoContext (802315616)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Context), '__module__': 'gi.repository.cairo', '__gtype__': <GType CairoContext (4003646352)>, '__dict__': <attribute '__dict__' of 'Context' objects>, '__weakref__': <attribute '__weakref__' of 'Context' objects>, '__doc__': None})"
+    __gtype__ = None # (!) real value is '<GType CairoContext (4003646352)>'
     __info__ = StructInfo(Context)
 
 

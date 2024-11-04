@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -210,6 +210,10 @@ class Drawable(Item):
         """ get_by_id(drawable_id:int) -> Gimp.Drawable or None """
         pass
 
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
+
     def get_color_tag(self): # real signature unknown; restored from __doc__
         """ get_color_tag(self) -> Gimp.ColorTag """
         pass
@@ -378,12 +382,20 @@ class Drawable(Item):
         """ id_is_drawable(item_id:int) -> bool """
         return False
 
+    def id_is_group_layer(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_group_layer(item_id:int) -> bool """
+        return False
+
     def id_is_layer(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer(item_id:int) -> bool """
         return False
 
     def id_is_layer_mask(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer_mask(item_id:int) -> bool """
+        return False
+
+    def id_is_path(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_path(item_id:int) -> bool """
         return False
 
     def id_is_selection(self, item_id): # real signature unknown; restored from __doc__
@@ -396,10 +408,6 @@ class Drawable(Item):
 
     def id_is_valid(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_valid(item_id:int) -> bool """
-        return False
-
-    def id_is_vectors(self, item_id): # real signature unknown; restored from __doc__
-        """ id_is_vectors(item_id:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -446,6 +454,10 @@ class Drawable(Item):
         """ is_group(self) -> bool """
         return False
 
+    def is_group_layer(self): # real signature unknown; restored from __doc__
+        """ is_group_layer(self) -> bool """
+        return False
+
     def is_indexed(self): # real signature unknown; restored from __doc__
         """ is_indexed(self) -> bool """
         return False
@@ -456,6 +468,10 @@ class Drawable(Item):
 
     def is_layer_mask(self): # real signature unknown; restored from __doc__
         """ is_layer_mask(self) -> bool """
+        return False
+
+    def is_path(self): # real signature unknown; restored from __doc__
+        """ is_path(self) -> bool """
         return False
 
     def is_rgb(self): # real signature unknown; restored from __doc__
@@ -474,10 +490,6 @@ class Drawable(Item):
         """ is_valid(self) -> bool """
         return False
 
-    def is_vectors(self): # real signature unknown; restored from __doc__
-        """ is_vectors(self) -> bool """
-        return False
-
     def levels(self, channel, low_input, high_input, clamp_input, gamma, low_output, high_output, clamp_output): # real signature unknown; restored from __doc__
         """ levels(self, channel:Gimp.HistogramChannel, low_input:float, high_input:float, clamp_input:bool, gamma:float, low_output:float, high_output:float, clamp_output:bool) -> bool """
         return False
@@ -485,10 +497,6 @@ class Drawable(Item):
     def levels_stretch(self): # real signature unknown; restored from __doc__
         """ levels_stretch(self) -> bool """
         return False
-
-    def list_children(self): # real signature unknown; restored from __doc__
-        """ list_children(self) -> list """
-        return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
@@ -834,12 +842,12 @@ class Drawable(Item):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165e650>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d630>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Drawable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDrawable (815048480)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'brightness_contrast': gi.FunctionInfo(brightness_contrast, bound=None), 'color_balance': gi.FunctionInfo(color_balance, bound=None), 'colorize_hsl': gi.FunctionInfo(colorize_hsl, bound=None), 'curves_explicit': gi.FunctionInfo(curves_explicit, bound=None), 'curves_spline': gi.FunctionInfo(curves_spline, bound=None), 'desaturate': gi.FunctionInfo(desaturate, bound=None), 'edit_bucket_fill': gi.FunctionInfo(edit_bucket_fill, bound=None), 'edit_clear': gi.FunctionInfo(edit_clear, bound=None), 'edit_fill': gi.FunctionInfo(edit_fill, bound=None), 'edit_gradient_fill': gi.FunctionInfo(edit_gradient_fill, bound=None), 'edit_stroke_item': gi.FunctionInfo(edit_stroke_item, bound=None), 'edit_stroke_selection': gi.FunctionInfo(edit_stroke_selection, bound=None), 'equalize': gi.FunctionInfo(equalize, bound=None), 'extract_component': gi.FunctionInfo(extract_component, bound=None), 'fill': gi.FunctionInfo(fill, bound=None), 'foreground_extract': gi.FunctionInfo(foreground_extract, bound=None), 'free_shadow': gi.FunctionInfo(free_shadow, bound=None), 'get_bpp': gi.FunctionInfo(get_bpp, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_height': gi.FunctionInfo(get_height, bound=None), 'get_offsets': gi.FunctionInfo(get_offsets, bound=None), 'get_pixel': gi.FunctionInfo(get_pixel, bound=None), 'get_shadow_buffer': gi.FunctionInfo(get_shadow_buffer, bound=None), 'get_sub_thumbnail': gi.FunctionInfo(get_sub_thumbnail, bound=None), 'get_sub_thumbnail_data': gi.FunctionInfo(get_sub_thumbnail_data, bound=None), 'get_thumbnail': gi.FunctionInfo(get_thumbnail, bound=None), 'get_thumbnail_data': gi.FunctionInfo(get_thumbnail_data, bound=None), 'get_thumbnail_format': gi.FunctionInfo(get_thumbnail_format, bound=None), 'get_width': gi.FunctionInfo(get_width, bound=None), 'has_alpha': gi.FunctionInfo(has_alpha, bound=None), 'histogram': gi.FunctionInfo(histogram, bound=None), 'hue_saturation': gi.FunctionInfo(hue_saturation, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_indexed': gi.FunctionInfo(is_indexed, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'levels': gi.FunctionInfo(levels, bound=None), 'levels_stretch': gi.FunctionInfo(levels_stretch, bound=None), 'mask_bounds': gi.FunctionInfo(mask_bounds, bound=None), 'mask_intersect': gi.FunctionInfo(mask_intersect, bound=None), 'merge_filters': gi.FunctionInfo(merge_filters, bound=None), 'merge_shadow': gi.FunctionInfo(merge_shadow, bound=None), 'offset': gi.FunctionInfo(offset, bound=None), 'posterize': gi.FunctionInfo(posterize, bound=None), 'set_pixel': gi.FunctionInfo(set_pixel, bound=None), 'shadows_highlights': gi.FunctionInfo(shadows_highlights, bound=None), 'threshold': gi.FunctionInfo(threshold, bound=None), 'type': gi.FunctionInfo(type, bound=None), 'type_with_alpha': gi.FunctionInfo(type_with_alpha, bound=None), 'update': gi.FunctionInfo(update, bound=None), 'parent_instance': <property object at 0x00000207315fa840>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Drawable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDrawable (1071867232)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'brightness_contrast': gi.FunctionInfo(brightness_contrast, bound=None), 'color_balance': gi.FunctionInfo(color_balance, bound=None), 'colorize_hsl': gi.FunctionInfo(colorize_hsl, bound=None), 'curves_explicit': gi.FunctionInfo(curves_explicit, bound=None), 'curves_spline': gi.FunctionInfo(curves_spline, bound=None), 'desaturate': gi.FunctionInfo(desaturate, bound=None), 'edit_bucket_fill': gi.FunctionInfo(edit_bucket_fill, bound=None), 'edit_clear': gi.FunctionInfo(edit_clear, bound=None), 'edit_fill': gi.FunctionInfo(edit_fill, bound=None), 'edit_gradient_fill': gi.FunctionInfo(edit_gradient_fill, bound=None), 'edit_stroke_item': gi.FunctionInfo(edit_stroke_item, bound=None), 'edit_stroke_selection': gi.FunctionInfo(edit_stroke_selection, bound=None), 'equalize': gi.FunctionInfo(equalize, bound=None), 'extract_component': gi.FunctionInfo(extract_component, bound=None), 'fill': gi.FunctionInfo(fill, bound=None), 'foreground_extract': gi.FunctionInfo(foreground_extract, bound=None), 'free_shadow': gi.FunctionInfo(free_shadow, bound=None), 'get_bpp': gi.FunctionInfo(get_bpp, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_format': gi.FunctionInfo(get_format, bound=None), 'get_height': gi.FunctionInfo(get_height, bound=None), 'get_offsets': gi.FunctionInfo(get_offsets, bound=None), 'get_pixel': gi.FunctionInfo(get_pixel, bound=None), 'get_shadow_buffer': gi.FunctionInfo(get_shadow_buffer, bound=None), 'get_sub_thumbnail': gi.FunctionInfo(get_sub_thumbnail, bound=None), 'get_sub_thumbnail_data': gi.FunctionInfo(get_sub_thumbnail_data, bound=None), 'get_thumbnail': gi.FunctionInfo(get_thumbnail, bound=None), 'get_thumbnail_data': gi.FunctionInfo(get_thumbnail_data, bound=None), 'get_thumbnail_format': gi.FunctionInfo(get_thumbnail_format, bound=None), 'get_width': gi.FunctionInfo(get_width, bound=None), 'has_alpha': gi.FunctionInfo(has_alpha, bound=None), 'histogram': gi.FunctionInfo(histogram, bound=None), 'hue_saturation': gi.FunctionInfo(hue_saturation, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_gray': gi.FunctionInfo(is_gray, bound=None), 'is_indexed': gi.FunctionInfo(is_indexed, bound=None), 'is_rgb': gi.FunctionInfo(is_rgb, bound=None), 'levels': gi.FunctionInfo(levels, bound=None), 'levels_stretch': gi.FunctionInfo(levels_stretch, bound=None), 'mask_bounds': gi.FunctionInfo(mask_bounds, bound=None), 'mask_intersect': gi.FunctionInfo(mask_intersect, bound=None), 'merge_filters': gi.FunctionInfo(merge_filters, bound=None), 'merge_shadow': gi.FunctionInfo(merge_shadow, bound=None), 'offset': gi.FunctionInfo(offset, bound=None), 'posterize': gi.FunctionInfo(posterize, bound=None), 'set_pixel': gi.FunctionInfo(set_pixel, bound=None), 'shadows_highlights': gi.FunctionInfo(shadows_highlights, bound=None), 'threshold': gi.FunctionInfo(threshold, bound=None), 'type': gi.FunctionInfo(type, bound=None), 'type_with_alpha': gi.FunctionInfo(type_with_alpha, bound=None), 'update': gi.FunctionInfo(update, bound=None), 'parent_instance': <property object at 0x000001b640cadf30>})"
     __gdoc__ = 'Object GimpDrawable\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpDrawable (815048480)>'
+    __gtype__ = None # (!) real value is '<GType GimpDrawable (1071867232)>'
     __info__ = ObjectInfo(Drawable)
 
 

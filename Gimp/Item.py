@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -132,6 +132,10 @@ class Item(__gi_overrides_GObject.Object):
         """ get_by_id(item_id:int) -> Gimp.Item or None """
         pass
 
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
+
     def get_color_tag(self): # real signature unknown; restored from __doc__
         """ get_color_tag(self) -> Gimp.ColorTag """
         pass
@@ -244,12 +248,20 @@ class Item(__gi_overrides_GObject.Object):
         """ id_is_drawable(item_id:int) -> bool """
         return False
 
+    def id_is_group_layer(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_group_layer(item_id:int) -> bool """
+        return False
+
     def id_is_layer(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer(item_id:int) -> bool """
         return False
 
     def id_is_layer_mask(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_layer_mask(item_id:int) -> bool """
+        return False
+
+    def id_is_path(self, item_id): # real signature unknown; restored from __doc__
+        """ id_is_path(item_id:int) -> bool """
         return False
 
     def id_is_selection(self, item_id): # real signature unknown; restored from __doc__
@@ -262,10 +274,6 @@ class Item(__gi_overrides_GObject.Object):
 
     def id_is_valid(self, item_id): # real signature unknown; restored from __doc__
         """ id_is_valid(item_id:int) -> bool """
-        return False
-
-    def id_is_vectors(self, item_id): # real signature unknown; restored from __doc__
-        """ id_is_vectors(item_id:int) -> bool """
         return False
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -304,12 +312,20 @@ class Item(__gi_overrides_GObject.Object):
         """ is_group(self) -> bool """
         return False
 
+    def is_group_layer(self): # real signature unknown; restored from __doc__
+        """ is_group_layer(self) -> bool """
+        return False
+
     def is_layer(self): # real signature unknown; restored from __doc__
         """ is_layer(self) -> bool """
         return False
 
     def is_layer_mask(self): # real signature unknown; restored from __doc__
         """ is_layer_mask(self) -> bool """
+        return False
+
+    def is_path(self): # real signature unknown; restored from __doc__
+        """ is_path(self) -> bool """
         return False
 
     def is_selection(self): # real signature unknown; restored from __doc__
@@ -323,14 +339,6 @@ class Item(__gi_overrides_GObject.Object):
     def is_valid(self): # real signature unknown; restored from __doc__
         """ is_valid(self) -> bool """
         return False
-
-    def is_vectors(self): # real signature unknown; restored from __doc__
-        """ is_vectors(self) -> bool """
-        return False
-
-    def list_children(self): # real signature unknown; restored from __doc__
-        """ list_children(self) -> list """
-        return []
 
     def list_properties(self): # real signature unknown; restored from __doc__
         """ list_properties(self) -> list """
@@ -628,12 +636,12 @@ class Item(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000002073165dc90>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069db40>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Item), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpItem (815048592)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_channel': gi.FunctionInfo(id_is_channel, bound=None), 'id_is_drawable': gi.FunctionInfo(id_is_drawable, bound=None), 'id_is_layer': gi.FunctionInfo(id_is_layer, bound=None), 'id_is_layer_mask': gi.FunctionInfo(id_is_layer_mask, bound=None), 'id_is_selection': gi.FunctionInfo(id_is_selection, bound=None), 'id_is_text_layer': gi.FunctionInfo(id_is_text_layer, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'id_is_vectors': gi.FunctionInfo(id_is_vectors, bound=None), 'attach_parasite': gi.FunctionInfo(attach_parasite, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'detach_parasite': gi.FunctionInfo(detach_parasite, bound=None), 'get_color_tag': gi.FunctionInfo(get_color_tag, bound=None), 'get_expanded': gi.FunctionInfo(get_expanded, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_image': gi.FunctionInfo(get_image, bound=None), 'get_lock_content': gi.FunctionInfo(get_lock_content, bound=None), 'get_lock_position': gi.FunctionInfo(get_lock_position, bound=None), 'get_lock_visibility': gi.FunctionInfo(get_lock_visibility, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_parasite': gi.FunctionInfo(get_parasite, bound=None), 'get_parasite_list': gi.FunctionInfo(get_parasite_list, bound=None), 'get_parent': gi.FunctionInfo(get_parent, bound=None), 'get_tattoo': gi.FunctionInfo(get_tattoo, bound=None), 'get_visible': gi.FunctionInfo(get_visible, bound=None), 'is_channel': gi.FunctionInfo(is_channel, bound=None), 'is_drawable': gi.FunctionInfo(is_drawable, bound=None), 'is_group': gi.FunctionInfo(is_group, bound=None), 'is_layer': gi.FunctionInfo(is_layer, bound=None), 'is_layer_mask': gi.FunctionInfo(is_layer_mask, bound=None), 'is_selection': gi.FunctionInfo(is_selection, bound=None), 'is_text_layer': gi.FunctionInfo(is_text_layer, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'is_vectors': gi.FunctionInfo(is_vectors, bound=None), 'list_children': gi.FunctionInfo(list_children, bound=None), 'set_color_tag': gi.FunctionInfo(set_color_tag, bound=None), 'set_expanded': gi.FunctionInfo(set_expanded, bound=None), 'set_lock_content': gi.FunctionInfo(set_lock_content, bound=None), 'set_lock_position': gi.FunctionInfo(set_lock_position, bound=None), 'set_lock_visibility': gi.FunctionInfo(set_lock_visibility, bound=None), 'set_name': gi.FunctionInfo(set_name, bound=None), 'set_tattoo': gi.FunctionInfo(set_tattoo, bound=None), 'set_visible': gi.FunctionInfo(set_visible, bound=None), 'transform_2d': gi.FunctionInfo(transform_2d, bound=None), 'transform_flip': gi.FunctionInfo(transform_flip, bound=None), 'transform_flip_simple': gi.FunctionInfo(transform_flip_simple, bound=None), 'transform_matrix': gi.FunctionInfo(transform_matrix, bound=None), 'transform_perspective': gi.FunctionInfo(transform_perspective, bound=None), 'transform_rotate': gi.FunctionInfo(transform_rotate, bound=None), 'transform_rotate_simple': gi.FunctionInfo(transform_rotate_simple, bound=None), 'transform_scale': gi.FunctionInfo(transform_scale, bound=None), 'transform_shear': gi.FunctionInfo(transform_shear, bound=None), 'transform_translate': gi.FunctionInfo(transform_translate, bound=None), 'parent_instance': <property object at 0x00000207315fa2a0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Item), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpItem (1071867120)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_channel': gi.FunctionInfo(id_is_channel, bound=None), 'id_is_drawable': gi.FunctionInfo(id_is_drawable, bound=None), 'id_is_group_layer': gi.FunctionInfo(id_is_group_layer, bound=None), 'id_is_layer': gi.FunctionInfo(id_is_layer, bound=None), 'id_is_layer_mask': gi.FunctionInfo(id_is_layer_mask, bound=None), 'id_is_path': gi.FunctionInfo(id_is_path, bound=None), 'id_is_selection': gi.FunctionInfo(id_is_selection, bound=None), 'id_is_text_layer': gi.FunctionInfo(id_is_text_layer, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'attach_parasite': gi.FunctionInfo(attach_parasite, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'detach_parasite': gi.FunctionInfo(detach_parasite, bound=None), 'get_children': gi.FunctionInfo(get_children, bound=None), 'get_color_tag': gi.FunctionInfo(get_color_tag, bound=None), 'get_expanded': gi.FunctionInfo(get_expanded, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_image': gi.FunctionInfo(get_image, bound=None), 'get_lock_content': gi.FunctionInfo(get_lock_content, bound=None), 'get_lock_position': gi.FunctionInfo(get_lock_position, bound=None), 'get_lock_visibility': gi.FunctionInfo(get_lock_visibility, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_parasite': gi.FunctionInfo(get_parasite, bound=None), 'get_parasite_list': gi.FunctionInfo(get_parasite_list, bound=None), 'get_parent': gi.FunctionInfo(get_parent, bound=None), 'get_tattoo': gi.FunctionInfo(get_tattoo, bound=None), 'get_visible': gi.FunctionInfo(get_visible, bound=None), 'is_channel': gi.FunctionInfo(is_channel, bound=None), 'is_drawable': gi.FunctionInfo(is_drawable, bound=None), 'is_group': gi.FunctionInfo(is_group, bound=None), 'is_group_layer': gi.FunctionInfo(is_group_layer, bound=None), 'is_layer': gi.FunctionInfo(is_layer, bound=None), 'is_layer_mask': gi.FunctionInfo(is_layer_mask, bound=None), 'is_path': gi.FunctionInfo(is_path, bound=None), 'is_selection': gi.FunctionInfo(is_selection, bound=None), 'is_text_layer': gi.FunctionInfo(is_text_layer, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'set_color_tag': gi.FunctionInfo(set_color_tag, bound=None), 'set_expanded': gi.FunctionInfo(set_expanded, bound=None), 'set_lock_content': gi.FunctionInfo(set_lock_content, bound=None), 'set_lock_position': gi.FunctionInfo(set_lock_position, bound=None), 'set_lock_visibility': gi.FunctionInfo(set_lock_visibility, bound=None), 'set_name': gi.FunctionInfo(set_name, bound=None), 'set_tattoo': gi.FunctionInfo(set_tattoo, bound=None), 'set_visible': gi.FunctionInfo(set_visible, bound=None), 'transform_2d': gi.FunctionInfo(transform_2d, bound=None), 'transform_flip': gi.FunctionInfo(transform_flip, bound=None), 'transform_flip_simple': gi.FunctionInfo(transform_flip_simple, bound=None), 'transform_matrix': gi.FunctionInfo(transform_matrix, bound=None), 'transform_perspective': gi.FunctionInfo(transform_perspective, bound=None), 'transform_rotate': gi.FunctionInfo(transform_rotate, bound=None), 'transform_rotate_simple': gi.FunctionInfo(transform_rotate_simple, bound=None), 'transform_scale': gi.FunctionInfo(transform_scale, bound=None), 'transform_shear': gi.FunctionInfo(transform_shear, bound=None), 'transform_translate': gi.FunctionInfo(transform_translate, bound=None), 'parent_instance': <property object at 0x000001b640cada30>})"
     __gdoc__ = 'Object GimpItem\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpItem (815048592)>'
+    __gtype__ = None # (!) real value is '<GType GimpItem (1071867120)>'
     __info__ = ObjectInfo(Item)
 
 

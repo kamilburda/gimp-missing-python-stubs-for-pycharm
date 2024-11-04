@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -98,10 +98,6 @@ class Pattern(Resource):
         """ deserialize_return(scanner:GLib.Scanner, expected_token:GLib.TokenType, nest_level:int) -> bool """
         return False
 
-    def deserialize_strv(self, value, scanner): # real signature unknown; restored from __doc__
-        """ deserialize_strv(value:GObject.Value, scanner:GLib.Scanner) -> GLib.TokenType """
-        pass
-
     def diff(self, a, b, flags): # real signature unknown; restored from __doc__
         """ diff(a:GObject.Object, b:GObject.Object, flags:GObject.ParamFlags) -> list """
         return []
@@ -167,7 +163,7 @@ class Pattern(Resource):
         pass
 
     def get_by_name(self, name): # real signature unknown; restored from __doc__
-        """ get_by_name(name:str) -> Gimp.Pattern """
+        """ get_by_name(name:str) -> Gimp.Pattern or None """
         pass
 
     def get_data(self, *args, **kargs): # reliably restored by inspect
@@ -365,18 +361,6 @@ class Pattern(Resource):
     def run_dispose(self): # real signature unknown; restored from __doc__
         """ run_dispose(self) """
         pass
-
-    def select_new(self, title, parent_handle, resource, resource_type, callback=None): # real signature unknown; restored from __doc__
-        """ select_new(title:str, parent_handle:GLib.Bytes, resource:Gimp.Resource, resource_type:GType, callback:Gimp.ResourceChoosedCallback=None) -> str """
-        return ""
-
-    def select_set(self, callback_name, resource): # real signature unknown; restored from __doc__
-        """ select_set(callback_name:str, resource:Gimp.Resource) """
-        pass
-
-    def serialize_strv(self, value, p_str): # real signature unknown; restored from __doc__
-        """ serialize_strv(value:GObject.Value, str:GLib.String) -> bool """
-        return False
 
     def serialize_value(self, value, p_str, escaped): # real signature unknown; restored from __doc__
         """ serialize_value(value:GObject.Value, str:GLib.String, escaped:bool) -> bool """
@@ -581,12 +565,12 @@ class Pattern(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x0000020731df1180>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d030>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Pattern), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPattern (814711104)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Pattern), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPattern (1072209984)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None)})"
     __gdoc__ = 'Object GimpPattern\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPattern (814711104)>'
+    __gtype__ = None # (!) real value is '<GType GimpPattern (1072209984)>'
     __info__ = ObjectInfo(Pattern)
 
 

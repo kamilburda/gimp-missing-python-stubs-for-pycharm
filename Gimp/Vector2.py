@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -233,8 +233,8 @@ class Vector2(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVector2 (814718608)>, '__dict__': <attribute '__dict__' of 'Vector2' objects>, '__weakref__': <attribute '__weakref__' of 'Vector2' objects>, '__doc__': None, 'x': <property object at 0x000002073166a2f0>, 'y': <property object at 0x000002073166a3e0>, 'new': gi.FunctionInfo(new, bound=None), 'add_val': gi.FunctionInfo(add_val, bound=None), 'cross_product': gi.FunctionInfo(cross_product, bound=None), 'cross_product_val': gi.FunctionInfo(cross_product_val, bound=None), 'inner_product': gi.FunctionInfo(inner_product, bound=None), 'inner_product_val': gi.FunctionInfo(inner_product_val, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'length_val': gi.FunctionInfo(length_val, bound=None), 'mul': gi.FunctionInfo(mul, bound=None), 'mul_val': gi.FunctionInfo(mul_val, bound=None), 'neg': gi.FunctionInfo(neg, bound=None), 'neg_val': gi.FunctionInfo(neg_val, bound=None), 'normal': gi.FunctionInfo(normal, bound=None), 'normal_val': gi.FunctionInfo(normal_val, bound=None), 'normalize': gi.FunctionInfo(normalize, bound=None), 'normalize_val': gi.FunctionInfo(normalize_val, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'rotate_val': gi.FunctionInfo(rotate_val, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'sub_val': gi.FunctionInfo(sub_val, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'sub': gi.FunctionInfo(sub, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpVector2 (814718608)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector2), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVector2 (1072256192)>, '__dict__': <attribute '__dict__' of 'Vector2' objects>, '__weakref__': <attribute '__weakref__' of 'Vector2' objects>, '__doc__': None, 'x': <property object at 0x000001b640d21620>, 'y': <property object at 0x000001b640d21710>, 'new': gi.FunctionInfo(new, bound=None), 'add_val': gi.FunctionInfo(add_val, bound=None), 'cross_product': gi.FunctionInfo(cross_product, bound=None), 'cross_product_val': gi.FunctionInfo(cross_product_val, bound=None), 'inner_product': gi.FunctionInfo(inner_product, bound=None), 'inner_product_val': gi.FunctionInfo(inner_product_val, bound=None), 'length': gi.FunctionInfo(length, bound=None), 'length_val': gi.FunctionInfo(length_val, bound=None), 'mul': gi.FunctionInfo(mul, bound=None), 'mul_val': gi.FunctionInfo(mul_val, bound=None), 'neg': gi.FunctionInfo(neg, bound=None), 'neg_val': gi.FunctionInfo(neg_val, bound=None), 'normal': gi.FunctionInfo(normal, bound=None), 'normal_val': gi.FunctionInfo(normal_val, bound=None), 'normalize': gi.FunctionInfo(normalize, bound=None), 'normalize_val': gi.FunctionInfo(normalize_val, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'rotate_val': gi.FunctionInfo(rotate_val, bound=None), 'set': gi.FunctionInfo(set, bound=None), 'sub_val': gi.FunctionInfo(sub_val, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'sub': gi.FunctionInfo(sub, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpVector2 (1072256192)>'
     __info__ = StructInfo(Vector2)
 
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class BrushApplicationMode(__gobject.GEnum):
     HARD = 0
     SOFT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'BrushApplicationMode' objects>, '__doc__': None, '__gtype__': <GType GimpBrushApplicationMode (814333616)>, '__enum_values__': {0: <enum GIMP_BRUSH_HARD of type Gimp.BrushApplicationMode>, 1: <enum GIMP_BRUSH_SOFT of type Gimp.BrushApplicationMode>}, '__info__': gi.EnumInfo(BrushApplicationMode), 'HARD': <enum GIMP_BRUSH_HARD of type Gimp.BrushApplicationMode>, 'SOFT': <enum GIMP_BRUSH_SOFT of type Gimp.BrushApplicationMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'BrushApplicationMode' objects>, '__doc__': None, '__gtype__': <GType GimpBrushApplicationMode (1071867680)>, '__enum_values__': {0: <enum GIMP_BRUSH_HARD of type Gimp.BrushApplicationMode>, 1: <enum GIMP_BRUSH_SOFT of type Gimp.BrushApplicationMode>}, '__info__': gi.EnumInfo(BrushApplicationMode), 'HARD': <enum GIMP_BRUSH_HARD of type Gimp.BrushApplicationMode>, 'SOFT': <enum GIMP_BRUSH_SOFT of type Gimp.BrushApplicationMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpBrushApplicationMode (814333616)>'
+    __gtype__ = None # (!) real value is '<GType GimpBrushApplicationMode (1071867680)>'
     __info__ = gi.EnumInfo(BrushApplicationMode)
 
 

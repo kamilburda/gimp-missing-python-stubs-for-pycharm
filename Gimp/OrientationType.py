@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -386,13 +386,13 @@ class OrientationType(__gobject.GEnum):
     UNKNOWN = 2
     VERTICAL = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OrientationType' objects>, '__doc__': None, '__gtype__': <GType GimpOrientationType (815084112)>, '__enum_values__': {0: <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 1: <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 2: <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>}, '__info__': gi.EnumInfo(OrientationType), 'HORIZONTAL': <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 'VERTICAL': <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 'UNKNOWN': <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'OrientationType' objects>, '__doc__': None, '__gtype__': <GType GimpOrientationType (1069014160)>, '__enum_values__': {0: <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 1: <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 2: <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>}, '__info__': gi.EnumInfo(OrientationType), 'HORIZONTAL': <enum GIMP_ORIENTATION_HORIZONTAL of type Gimp.OrientationType>, 'VERTICAL': <enum GIMP_ORIENTATION_VERTICAL of type Gimp.OrientationType>, 'UNKNOWN': <enum GIMP_ORIENTATION_UNKNOWN of type Gimp.OrientationType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpOrientationType (815084112)>'
+    __gtype__ = None # (!) real value is '<GType GimpOrientationType (1069014160)>'
     __info__ = gi.EnumInfo(OrientationType)
 
 

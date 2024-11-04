@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -385,12 +385,12 @@ class CloneType(__gobject.GEnum):
     IMAGE = 0
     PATTERN = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CloneType' objects>, '__doc__': None, '__gtype__': <GType GimpCloneType (815052512)>, '__enum_values__': {0: <enum GIMP_CLONE_IMAGE of type Gimp.CloneType>, 1: <enum GIMP_CLONE_PATTERN of type Gimp.CloneType>}, '__info__': gi.EnumInfo(CloneType), 'IMAGE': <enum GIMP_CLONE_IMAGE of type Gimp.CloneType>, 'PATTERN': <enum GIMP_CLONE_PATTERN of type Gimp.CloneType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'CloneType' objects>, '__doc__': None, '__gtype__': <GType GimpCloneType (1069018416)>, '__enum_values__': {0: <enum GIMP_CLONE_IMAGE of type Gimp.CloneType>, 1: <enum GIMP_CLONE_PATTERN of type Gimp.CloneType>}, '__info__': gi.EnumInfo(CloneType), 'IMAGE': <enum GIMP_CLONE_IMAGE of type Gimp.CloneType>, 'PATTERN': <enum GIMP_CLONE_PATTERN of type Gimp.CloneType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpCloneType (815052512)>'
+    __gtype__ = None # (!) real value is '<GType GimpCloneType (1069018416)>'
     __info__ = gi.EnumInfo(CloneType)
 
 

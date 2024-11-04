@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 2.99\lib\girepository-1.0\Gimp-3.0.typelib
+# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -387,14 +387,14 @@ class ModuleState(__gobject.GEnum):
     LOAD_FAILED = 2
     NOT_LOADED = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ModuleState' objects>, '__doc__': None, '__gtype__': <GType PyGimpModuleState (815083664)>, '__enum_values__': {0: <enum GIMP_MODULE_STATE_ERROR of type Gimp.ModuleState>, 1: <enum GIMP_MODULE_STATE_LOADED of type Gimp.ModuleState>, 2: <enum GIMP_MODULE_STATE_LOAD_FAILED of type Gimp.ModuleState>, 3: <enum GIMP_MODULE_STATE_NOT_LOADED of type Gimp.ModuleState>}, '__info__': gi.EnumInfo(ModuleState), 'ERROR': <enum GIMP_MODULE_STATE_ERROR of type Gimp.ModuleState>, 'LOADED': <enum GIMP_MODULE_STATE_LOADED of type Gimp.ModuleState>, 'LOAD_FAILED': <enum GIMP_MODULE_STATE_LOAD_FAILED of type Gimp.ModuleState>, 'NOT_LOADED': <enum GIMP_MODULE_STATE_NOT_LOADED of type Gimp.ModuleState>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ModuleState' objects>, '__doc__': None, '__gtype__': <GType PyGimpModuleState (1069013824)>, '__enum_values__': {0: <enum GIMP_MODULE_STATE_ERROR of type Gimp.ModuleState>, 1: <enum GIMP_MODULE_STATE_LOADED of type Gimp.ModuleState>, 2: <enum GIMP_MODULE_STATE_LOAD_FAILED of type Gimp.ModuleState>, 3: <enum GIMP_MODULE_STATE_NOT_LOADED of type Gimp.ModuleState>}, '__info__': gi.EnumInfo(ModuleState), 'ERROR': <enum GIMP_MODULE_STATE_ERROR of type Gimp.ModuleState>, 'LOADED': <enum GIMP_MODULE_STATE_LOADED of type Gimp.ModuleState>, 'LOAD_FAILED': <enum GIMP_MODULE_STATE_LOAD_FAILED of type Gimp.ModuleState>, 'NOT_LOADED': <enum GIMP_MODULE_STATE_NOT_LOADED of type Gimp.ModuleState>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpModuleState (815083664)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpModuleState (1069013824)>'
     __info__ = gi.EnumInfo(ModuleState)
 
 
