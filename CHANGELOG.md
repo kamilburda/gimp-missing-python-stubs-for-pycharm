@@ -1,3 +1,9 @@
+3.1
+===
+
+* Fixed incorrect version components for the `Gimp` module.
+
+
 3.0
 ===
 
