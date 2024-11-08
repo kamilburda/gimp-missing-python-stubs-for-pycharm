@@ -14,11 +14,3 @@ Assuming you added GIMP Python modules to your Python interpreter in PyCharm, yo
 
 1. Go to your PyCharm project and display the Project view.
 2. Find `External Libraries `, expand it to find `Binary Skeletons`, right-click on the `gi/repository` directory, select `Copy Path/Reference...` and select `Absolute Path`.
-
-
-On Windows, the path should be
-
-    C:\Users\<your username>\AppData\Local\JetBrains\<PyCharm directory, e.g. PyCharmCE2023.2>\python_stubs\<number>\gi\repository.
-
-
-To find the correct `<number>` directory, look for all directories whose name is a number and select the one that contains the `gi` subdirectory.
