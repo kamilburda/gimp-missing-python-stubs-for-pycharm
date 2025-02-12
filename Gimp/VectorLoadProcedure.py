@@ -188,12 +188,12 @@ class VectorLoadProcedure(LoadProcedure):
         """ add_enum_return_value(self, name:str, nick:str, blurb:str, enum_type:GType, value:int, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_aux_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_aux_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
     def add_file_return_value(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -771,6 +771,10 @@ class VectorLoadProcedure(LoadProcedure):
         # no doc
         pass
 
+    def is_core(self): # real signature unknown; restored from __doc__
+        """ is_core(self) -> bool """
+        return False
+
     def is_floating(self): # real signature unknown; restored from __doc__
         """ is_floating(self) -> bool """
         return False
@@ -987,7 +991,11 @@ class VectorLoadProcedure(LoadProcedure):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1087,12 +1095,12 @@ class VectorLoadProcedure(LoadProcedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066ef20>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd918bee0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(VectorLoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVectorLoadProcedure (1066925232)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'extract_dimensions': gi.FunctionInfo(extract_dimensions, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(VectorLoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpVectorLoadProcedure (3644680592)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'extract_dimensions': gi.FunctionInfo(extract_dimensions, bound=None)})"
     __gdoc__ = "Object GimpVectorLoadProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpVectorLoadProcedure (1066925232)>'
+    __gtype__ = None # (!) real value is '<GType GimpVectorLoadProcedure (3644680592)>'
     __info__ = ObjectInfo(VectorLoadProcedure)
 
 

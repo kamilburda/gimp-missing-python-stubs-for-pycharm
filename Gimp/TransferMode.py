@@ -25,10 +25,9 @@ class TransferMode(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class TransferMode(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class TransferMode(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -386,13 +390,13 @@ class TransferMode(__gobject.GEnum):
     MIDTONES = 1
     SHADOWS = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransferMode' objects>, '__doc__': None, '__gtype__': <GType GimpTransferMode (1065743728)>, '__enum_values__': {0: <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 1: <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 2: <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>}, '__info__': gi.EnumInfo(TransferMode), 'SHADOWS': <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 'MIDTONES': <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 'HIGHLIGHTS': <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TransferMode' objects>, '__doc__': None, '__gtype__': <GType GimpTransferMode (3595425152)>, '__enum_values__': {0: <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 1: <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 2: <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>}, '__info__': gi.EnumInfo(TransferMode), 'SHADOWS': <enum GIMP_TRANSFER_SHADOWS of type Gimp.TransferMode>, 'MIDTONES': <enum GIMP_TRANSFER_MIDTONES of type Gimp.TransferMode>, 'HIGHLIGHTS': <enum GIMP_TRANSFER_HIGHLIGHTS of type Gimp.TransferMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTransferMode (1065743728)>'
+    __gtype__ = None # (!) real value is '<GType GimpTransferMode (3595425152)>'
     __info__ = gi.EnumInfo(TransferMode)
 
 

@@ -42,7 +42,11 @@ class DrawableClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -156,7 +160,7 @@ class DrawableClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640ccbf10>, '_gimp_reserved0': <property object at 0x000001b640cd8040>, '_gimp_reserved1': <property object at 0x000001b640cd8130>, '_gimp_reserved2': <property object at 0x000001b640cd8220>, '_gimp_reserved3': <property object at 0x000001b640cd8310>, '_gimp_reserved4': <property object at 0x000001b640cd8400>, '_gimp_reserved5': <property object at 0x000001b640cd84f0>, '_gimp_reserved6': <property object at 0x000001b640cd85e0>, '_gimp_reserved7': <property object at 0x000001b640cd86d0>, '_gimp_reserved8': <property object at 0x000001b640cd87c0>, '_gimp_reserved9': <property object at 0x000001b640cd88b0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90aec00>, '_gimp_reserved0': <property object at 0x000001dcd90aecf0>, '_gimp_reserved1': <property object at 0x000001dcd90aede0>, '_gimp_reserved2': <property object at 0x000001dcd90aeed0>, '_gimp_reserved3': <property object at 0x000001dcd90aefc0>, '_gimp_reserved4': <property object at 0x000001dcd90af0b0>, '_gimp_reserved5': <property object at 0x000001dcd90af1a0>, '_gimp_reserved6': <property object at 0x000001dcd90af290>, '_gimp_reserved7': <property object at 0x000001dcd90af380>, '_gimp_reserved8': <property object at 0x000001dcd90af470>, '_gimp_reserved9': <property object at 0x000001dcd90af560>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(DrawableClass)
 

@@ -42,7 +42,11 @@ class LoadProcedureClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -156,7 +160,7 @@ class LoadProcedureClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LoadProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LoadProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'LoadProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cf4360>, '_gimp_reserved0': <property object at 0x000001b640cf4450>, '_gimp_reserved1': <property object at 0x000001b640cf4540>, '_gimp_reserved2': <property object at 0x000001b640cf4630>, '_gimp_reserved3': <property object at 0x000001b640cf4720>, '_gimp_reserved4': <property object at 0x000001b640cf4810>, '_gimp_reserved5': <property object at 0x000001b640cf4900>, '_gimp_reserved6': <property object at 0x000001b640cf49f0>, '_gimp_reserved7': <property object at 0x000001b640cf4ae0>, '_gimp_reserved8': <property object at 0x000001b640cf4bd0>, '_gimp_reserved9': <property object at 0x000001b640cf4cc0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LoadProcedureClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LoadProcedureClass' objects>, '__weakref__': <attribute '__weakref__' of 'LoadProcedureClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd92a49f0>, '_gimp_reserved0': <property object at 0x000001dcd92a4ae0>, '_gimp_reserved1': <property object at 0x000001dcd92a4bd0>, '_gimp_reserved2': <property object at 0x000001dcd92a4cc0>, '_gimp_reserved3': <property object at 0x000001dcd92a4db0>, '_gimp_reserved4': <property object at 0x000001dcd92a4ea0>, '_gimp_reserved5': <property object at 0x000001dcd92a4f90>, '_gimp_reserved6': <property object at 0x000001dcd92a5080>, '_gimp_reserved7': <property object at 0x000001dcd92a5170>, '_gimp_reserved8': <property object at 0x000001dcd92a5260>, '_gimp_reserved9': <property object at 0x000001dcd92a5350>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(LoadProcedureClass)
 

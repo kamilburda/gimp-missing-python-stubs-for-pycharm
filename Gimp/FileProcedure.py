@@ -187,12 +187,12 @@ class FileProcedure(Procedure):
         """ add_enum_return_value(self, name:str, nick:str, blurb:str, enum_type:GType, value:int, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_aux_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_aux_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
     def add_file_return_value(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -758,6 +758,10 @@ class FileProcedure(Procedure):
         # no doc
         pass
 
+    def is_core(self): # real signature unknown; restored from __doc__
+        """ is_core(self) -> bool """
+        return False
+
     def is_floating(self): # real signature unknown; restored from __doc__
         """ is_floating(self) -> bool """
         return False
@@ -966,7 +970,11 @@ class FileProcedure(Procedure):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1066,12 +1074,12 @@ class FileProcedure(Procedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d0f0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90d5e40>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(FileProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFileProcedure (1069019872)>, '__doc__': None, '__gsignals__': {}, 'get_extensions': gi.FunctionInfo(get_extensions, bound=None), 'get_format_name': gi.FunctionInfo(get_format_name, bound=None), 'get_handles_remote': gi.FunctionInfo(get_handles_remote, bound=None), 'get_magics': gi.FunctionInfo(get_magics, bound=None), 'get_mime_types': gi.FunctionInfo(get_mime_types, bound=None), 'get_prefixes': gi.FunctionInfo(get_prefixes, bound=None), 'get_priority': gi.FunctionInfo(get_priority, bound=None), 'set_extensions': gi.FunctionInfo(set_extensions, bound=None), 'set_format_name': gi.FunctionInfo(set_format_name, bound=None), 'set_handles_remote': gi.FunctionInfo(set_handles_remote, bound=None), 'set_magics': gi.FunctionInfo(set_magics, bound=None), 'set_mime_types': gi.FunctionInfo(set_mime_types, bound=None), 'set_prefixes': gi.FunctionInfo(set_prefixes, bound=None), 'set_priority': gi.FunctionInfo(set_priority, bound=None), 'parent_instance': <property object at 0x000001b640cd9b70>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(FileProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFileProcedure (3595401408)>, '__doc__': None, '__gsignals__': {}, 'get_extensions': gi.FunctionInfo(get_extensions, bound=None), 'get_format_name': gi.FunctionInfo(get_format_name, bound=None), 'get_handles_remote': gi.FunctionInfo(get_handles_remote, bound=None), 'get_magics': gi.FunctionInfo(get_magics, bound=None), 'get_mime_types': gi.FunctionInfo(get_mime_types, bound=None), 'get_prefixes': gi.FunctionInfo(get_prefixes, bound=None), 'get_priority': gi.FunctionInfo(get_priority, bound=None), 'set_extensions': gi.FunctionInfo(set_extensions, bound=None), 'set_format_name': gi.FunctionInfo(set_format_name, bound=None), 'set_handles_remote': gi.FunctionInfo(set_handles_remote, bound=None), 'set_magics': gi.FunctionInfo(set_magics, bound=None), 'set_mime_types': gi.FunctionInfo(set_mime_types, bound=None), 'set_prefixes': gi.FunctionInfo(set_prefixes, bound=None), 'set_priority': gi.FunctionInfo(set_priority, bound=None), 'parent_instance': <property object at 0x000001dcd90c09f0>})"
     __gdoc__ = "Object GimpFileProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpFileProcedure (1069019872)>'
+    __gtype__ = None # (!) real value is '<GType GimpFileProcedure (3595401408)>'
     __info__ = ObjectInfo(FileProcedure)
 
 

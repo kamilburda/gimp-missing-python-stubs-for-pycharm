@@ -25,10 +25,9 @@ class LayerColorSpace(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class LayerColorSpace(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class LayerColorSpace(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -383,16 +387,20 @@ class LayerColorSpace(__gobject.GEnum):
 
 
     AUTO = 0
+    LAB = 3
     RGB_LINEAR = 1
-    RGB_PERCEPTUAL = 2
+    RGB_NON_LINEAR = 2
+    RGB_PERCEPTUAL = 4
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpLayerColorSpace (1069015392)>, '__enum_values__': {0: <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 1: <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 2: <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>}, '__info__': gi.EnumInfo(LayerColorSpace), 'AUTO': <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 'RGB_LINEAR': <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 'RGB_PERCEPTUAL': <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpLayerColorSpace (3595405440)>, '__enum_values__': {0: <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 1: <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 2: <enum GIMP_LAYER_COLOR_SPACE_RGB_NON_LINEAR of type Gimp.LayerColorSpace>, 3: <enum GIMP_LAYER_COLOR_SPACE_LAB of type Gimp.LayerColorSpace>, 4: <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>}, '__info__': gi.EnumInfo(LayerColorSpace), 'AUTO': <enum GIMP_LAYER_COLOR_SPACE_AUTO of type Gimp.LayerColorSpace>, 'RGB_LINEAR': <enum GIMP_LAYER_COLOR_SPACE_RGB_LINEAR of type Gimp.LayerColorSpace>, 'RGB_NON_LINEAR': <enum GIMP_LAYER_COLOR_SPACE_RGB_NON_LINEAR of type Gimp.LayerColorSpace>, 'LAB': <enum GIMP_LAYER_COLOR_SPACE_LAB of type Gimp.LayerColorSpace>, 'RGB_PERCEPTUAL': <enum GIMP_LAYER_COLOR_SPACE_RGB_PERCEPTUAL of type Gimp.LayerColorSpace>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
+        3: 3,
+        4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpLayerColorSpace (1069015392)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayerColorSpace (3595405440)>'
     __info__ = gi.EnumInfo(LayerColorSpace)
 
 

@@ -122,7 +122,11 @@ class ParamMatrix3(__gi_repository_GObject.ParamSpecBoxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -233,10 +237,10 @@ class ParamMatrix3(__gi_repository_GObject.ParamSpecBoxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamMatrix3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamMatrix3 (1069014720)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamMatrix3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamMatrix3 (3595419216)>, '__doc__': None, '__gsignals__': {}})"
     __gproperties__ = {
         'blurb': (
-            None, # (!) real value is '<GType PyObject (1065322800)>'
+            None, # (!) real value is '<GType PyObject (3594023216)>'
             '',
             '',
             3,
@@ -244,7 +248,7 @@ class ParamMatrix3(__gi_repository_GObject.ParamSpecBoxed):
         'nick': '<value is a self-reference, replaced by this string>',
     }
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamMatrix3 (1069014720)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamMatrix3 (3595419216)>'
     __info__ = ObjectInfo(ParamMatrix3)
 
 

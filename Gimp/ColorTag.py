@@ -25,10 +25,9 @@ class ColorTag(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ColorTag(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ColorTag(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -392,7 +396,7 @@ class ColorTag(__gobject.GEnum):
     VIOLET = 7
     YELLOW = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTag' objects>, '__doc__': None, '__gtype__': <GType GimpColorTag (1069019200)>, '__enum_values__': {0: <enum GIMP_COLOR_TAG_NONE of type Gimp.ColorTag>, 1: <enum GIMP_COLOR_TAG_BLUE of type Gimp.ColorTag>, 2: <enum GIMP_COLOR_TAG_GREEN of type Gimp.ColorTag>, 3: <enum GIMP_COLOR_TAG_YELLOW of type Gimp.ColorTag>, 4: <enum GIMP_COLOR_TAG_ORANGE of type Gimp.ColorTag>, 5: <enum GIMP_COLOR_TAG_BROWN of type Gimp.ColorTag>, 6: <enum GIMP_COLOR_TAG_RED of type Gimp.ColorTag>, 7: <enum GIMP_COLOR_TAG_VIOLET of type Gimp.ColorTag>, 8: <enum GIMP_COLOR_TAG_GRAY of type Gimp.ColorTag>}, '__info__': gi.EnumInfo(ColorTag), 'NONE': <enum GIMP_COLOR_TAG_NONE of type Gimp.ColorTag>, 'BLUE': <enum GIMP_COLOR_TAG_BLUE of type Gimp.ColorTag>, 'GREEN': <enum GIMP_COLOR_TAG_GREEN of type Gimp.ColorTag>, 'YELLOW': <enum GIMP_COLOR_TAG_YELLOW of type Gimp.ColorTag>, 'ORANGE': <enum GIMP_COLOR_TAG_ORANGE of type Gimp.ColorTag>, 'BROWN': <enum GIMP_COLOR_TAG_BROWN of type Gimp.ColorTag>, 'RED': <enum GIMP_COLOR_TAG_RED of type Gimp.ColorTag>, 'VIOLET': <enum GIMP_COLOR_TAG_VIOLET of type Gimp.ColorTag>, 'GRAY': <enum GIMP_COLOR_TAG_GRAY of type Gimp.ColorTag>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTag' objects>, '__doc__': None, '__gtype__': <GType GimpColorTag (3595402864)>, '__enum_values__': {0: <enum GIMP_COLOR_TAG_NONE of type Gimp.ColorTag>, 1: <enum GIMP_COLOR_TAG_BLUE of type Gimp.ColorTag>, 2: <enum GIMP_COLOR_TAG_GREEN of type Gimp.ColorTag>, 3: <enum GIMP_COLOR_TAG_YELLOW of type Gimp.ColorTag>, 4: <enum GIMP_COLOR_TAG_ORANGE of type Gimp.ColorTag>, 5: <enum GIMP_COLOR_TAG_BROWN of type Gimp.ColorTag>, 6: <enum GIMP_COLOR_TAG_RED of type Gimp.ColorTag>, 7: <enum GIMP_COLOR_TAG_VIOLET of type Gimp.ColorTag>, 8: <enum GIMP_COLOR_TAG_GRAY of type Gimp.ColorTag>}, '__info__': gi.EnumInfo(ColorTag), 'NONE': <enum GIMP_COLOR_TAG_NONE of type Gimp.ColorTag>, 'BLUE': <enum GIMP_COLOR_TAG_BLUE of type Gimp.ColorTag>, 'GREEN': <enum GIMP_COLOR_TAG_GREEN of type Gimp.ColorTag>, 'YELLOW': <enum GIMP_COLOR_TAG_YELLOW of type Gimp.ColorTag>, 'ORANGE': <enum GIMP_COLOR_TAG_ORANGE of type Gimp.ColorTag>, 'BROWN': <enum GIMP_COLOR_TAG_BROWN of type Gimp.ColorTag>, 'RED': <enum GIMP_COLOR_TAG_RED of type Gimp.ColorTag>, 'VIOLET': <enum GIMP_COLOR_TAG_VIOLET of type Gimp.ColorTag>, 'GRAY': <enum GIMP_COLOR_TAG_GRAY of type Gimp.ColorTag>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -404,7 +408,7 @@ class ColorTag(__gobject.GEnum):
         7: 7,
         8: 8,
     }
-    __gtype__ = None # (!) real value is '<GType GimpColorTag (1069019200)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorTag (3595402864)>'
     __info__ = gi.EnumInfo(ColorTag)
 
 

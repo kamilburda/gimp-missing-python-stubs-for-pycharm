@@ -58,7 +58,11 @@ class ParamSpecObject(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -156,7 +160,7 @@ class ParamSpecObject(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecObject), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecObject' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecObject' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d08ea0>, '_default_value': <property object at 0x000001b640d08f90>, '_has_default': <property object at 0x000001b640d09080>, 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_default': gi.FunctionInfo(get_default, bound=None), 'has_default': gi.FunctionInfo(has_default, bound=None), 'set_default': gi.FunctionInfo(set_default, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecObject), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecObject' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecObject' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001dcd92dd2b0>, '_default_value': <property object at 0x000001dcd92dd3a0>, '_has_default': <property object at 0x000001dcd92dd490>, 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_default': gi.FunctionInfo(get_default, bound=None), 'has_default': gi.FunctionInfo(has_default, bound=None), 'set_default': gi.FunctionInfo(set_default, bound=None)})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecObject)
 

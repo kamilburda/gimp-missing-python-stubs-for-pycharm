@@ -42,7 +42,11 @@ class VectorLoadData(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -154,7 +158,7 @@ class VectorLoadData(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(VectorLoadData), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'VectorLoadData' objects>, '__weakref__': <attribute '__weakref__' of 'VectorLoadData' objects>, '__doc__': None, 'width': <property object at 0x000001b640d221b0>, 'width_unit': <property object at 0x000001b640d222a0>, 'exact_width': <property object at 0x000001b640d22390>, 'height': <property object at 0x000001b640d22480>, 'height_unit': <property object at 0x000001b640d22570>, 'exact_height': <property object at 0x000001b640d22660>, 'correct_ratio': <property object at 0x000001b640d22750>, 'pixel_density': <property object at 0x000001b640d22840>, 'density_unit': <property object at 0x000001b640d22930>, 'exact_density': <property object at 0x000001b640d22a20>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(VectorLoadData), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'VectorLoadData' objects>, '__weakref__': <attribute '__weakref__' of 'VectorLoadData' objects>, '__doc__': None, 'width': <property object at 0x000001dcd92f1ad0>, 'width_unit': <property object at 0x000001dcd92f1bc0>, 'exact_width': <property object at 0x000001dcd92f1cb0>, 'height': <property object at 0x000001dcd92f1da0>, 'height_unit': <property object at 0x000001dcd92f1e90>, 'exact_height': <property object at 0x000001dcd92f1f80>, 'correct_ratio': <property object at 0x000001dcd92f2070>, 'pixel_density': <property object at 0x000001dcd92f2160>, 'density_unit': <property object at 0x000001dcd92f2250>, 'exact_density': <property object at 0x000001dcd92f2340>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(VectorLoadData)
 

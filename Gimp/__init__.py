@@ -89,7 +89,7 @@ PARASITE_UNDOABLE = 2
 
 PIXPIPE_MAXDIM = 4
 
-VERSION = '3.0.0'
+VERSION = '3.0.0-RC3'
 
 _namespace = 'Gimp'
 
@@ -151,8 +151,8 @@ def brushes_get_list(filter): # real signature unknown; restored from __doc__
     """ brushes_get_list(filter:str) -> list """
     return []
 
-def brushes_popup(brush_callback, popup_title, initial_brush, parent_window): # real signature unknown; restored from __doc__
-    """ brushes_popup(brush_callback:str, popup_title:str, initial_brush:Gimp.Brush, parent_window:GLib.Bytes) -> bool """
+def brushes_popup(brush_callback, popup_title, initial_brush=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ brushes_popup(brush_callback:str, popup_title:str, initial_brush:Gimp.Brush=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def brushes_refresh(): # real signature unknown; restored from __doc__
@@ -163,8 +163,8 @@ def brushes_set_popup(brush_callback, brush): # real signature unknown; restored
     """ brushes_set_popup(brush_callback:str, brush:Gimp.Brush) -> bool """
     return False
 
-def buffers_get_name_list(filter): # real signature unknown; restored from __doc__
-    """ buffers_get_name_list(filter:str) -> list """
+def buffers_get_name_list(filter=None): # real signature unknown; restored from __doc__
+    """ buffers_get_name_list(filter:str=None) -> list """
     return []
 
 def buffer_delete(buffer_name): # real signature unknown; restored from __doc__
@@ -883,16 +883,16 @@ def drawables_close_popup(callback): # real signature unknown; restored from __d
     """ drawables_close_popup(callback:str) -> bool """
     return False
 
-def drawables_popup(callback, popup_title, drawable_type, initial_drawable, parent_window): # real signature unknown; restored from __doc__
-    """ drawables_popup(callback:str, popup_title:str, drawable_type:str, initial_drawable:Gimp.Drawable, parent_window:GLib.Bytes) -> bool """
+def drawables_popup(callback, popup_title, drawable_type, initial_drawable=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ drawables_popup(callback:str, popup_title:str, drawable_type:str, initial_drawable:Gimp.Drawable=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def drawables_set_popup(callback, drawable): # real signature unknown; restored from __doc__
     """ drawables_set_popup(callback:str, drawable:Gimp.Drawable) -> bool """
     return False
 
-def dynamics_get_name_list(filter): # real signature unknown; restored from __doc__
-    """ dynamics_get_name_list(filter:str) -> list """
+def dynamics_get_name_list(filter=None): # real signature unknown; restored from __doc__
+    """ dynamics_get_name_list(filter:str=None) -> list """
     return []
 
 def dynamics_refresh(): # real signature unknown; restored from __doc__
@@ -1015,6 +1015,10 @@ def filename_to_utf8(filename): # real signature unknown; restored from __doc__
     """ filename_to_utf8(filename:str) -> str """
     return ""
 
+def file_create_thumbnail(image, file): # real signature unknown; restored from __doc__
+    """ file_create_thumbnail(image:Gimp.Image, file:Gio.File) -> bool """
+    return False
+
 def file_get_config_path(file): # real signature unknown; restored from __doc__
     """ file_get_config_path(file:Gio.File) -> str """
     return ""
@@ -1045,10 +1049,6 @@ def file_new_for_config_path(path): # real signature unknown; restored from __do
 
 def file_save(run_mode, image, file, options=None): # real signature unknown; restored from __doc__
     """ file_save(run_mode:Gimp.RunMode, image:Gimp.Image, file:Gio.File, options:Gimp.ExportOptions=None) -> bool """
-    return False
-
-def file_save_thumbnail(image, file): # real signature unknown; restored from __doc__
-    """ file_save_thumbnail(image:Gimp.Image, file:Gio.File) -> bool """
     return False
 
 def file_show_in_file_manager(file): # real signature unknown; restored from __doc__
@@ -1103,12 +1103,12 @@ def fonts_close_popup(font_callback): # real signature unknown; restored from __
     """ fonts_close_popup(font_callback:str) -> bool """
     return False
 
-def fonts_get_list(filter): # real signature unknown; restored from __doc__
-    """ fonts_get_list(filter:str) -> list """
+def fonts_get_list(filter=None): # real signature unknown; restored from __doc__
+    """ fonts_get_list(filter:str=None) -> list """
     return []
 
-def fonts_popup(font_callback, popup_title, initial_font, parent_window): # real signature unknown; restored from __doc__
-    """ fonts_popup(font_callback:str, popup_title:str, initial_font:Gimp.Font, parent_window:GLib.Bytes) -> bool """
+def fonts_popup(font_callback, popup_title, initial_font=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ fonts_popup(font_callback:str, popup_title:str, initial_font:Gimp.Font=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def fonts_refresh(): # real signature unknown; restored from __doc__
@@ -1183,12 +1183,12 @@ def gradients_close_popup(gradient_callback): # real signature unknown; restored
     """ gradients_close_popup(gradient_callback:str) -> bool """
     return False
 
-def gradients_get_list(filter): # real signature unknown; restored from __doc__
-    """ gradients_get_list(filter:str) -> list """
+def gradients_get_list(filter=None): # real signature unknown; restored from __doc__
+    """ gradients_get_list(filter:str=None) -> list """
     return []
 
-def gradients_popup(gradient_callback, popup_title, initial_gradient, parent_window): # real signature unknown; restored from __doc__
-    """ gradients_popup(gradient_callback:str, popup_title:str, initial_gradient:Gimp.Gradient, parent_window:GLib.Bytes) -> bool """
+def gradients_popup(gradient_callback, popup_title, initial_gradient=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ gradients_popup(gradient_callback:str, popup_title:str, initial_gradient:Gimp.Gradient=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def gradients_refresh(): # real signature unknown; restored from __doc__
@@ -1207,8 +1207,8 @@ def heal_default(drawable, strokes): # real signature unknown; restored from __d
     """ heal_default(drawable:Gimp.Drawable, strokes:list) -> bool """
     return False
 
-def help(help_domain, help_id): # real signature unknown; restored from __doc__
-    """ help(help_domain:str, help_id:str) -> bool """
+def help(help_domain=None, help_id): # real signature unknown; restored from __doc__
+    """ help(help_domain:str=None, help_id:str) -> bool """
     return False
 
 def icon_theme_dir(): # real signature unknown; restored from __doc__
@@ -1267,12 +1267,12 @@ def palettes_close_popup(palette_callback): # real signature unknown; restored f
     """ palettes_close_popup(palette_callback:str) -> bool """
     return False
 
-def palettes_get_list(filter): # real signature unknown; restored from __doc__
-    """ palettes_get_list(filter:str) -> list """
+def palettes_get_list(filter=None): # real signature unknown; restored from __doc__
+    """ palettes_get_list(filter:str=None) -> list """
     return []
 
-def palettes_popup(palette_callback, popup_title, initial_palette, parent_window): # real signature unknown; restored from __doc__
-    """ palettes_popup(palette_callback:str, popup_title:str, initial_palette:Gimp.Palette, parent_window:GLib.Bytes) -> bool """
+def palettes_popup(palette_callback, popup_title, initial_palette=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ palettes_popup(palette_callback:str, popup_title:str, initial_palette:Gimp.Palette=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def palettes_refresh(): # real signature unknown; restored from __doc__
@@ -1299,6 +1299,14 @@ def param_spec_choice(name, nick, blurb, choice, default_value, flags): # real s
     """ param_spec_choice(name:str, nick:str, blurb:str, choice:Gimp.Choice, default_value:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_choice_get_choice(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_choice_get_choice(pspec:GObject.ParamSpec) -> Gimp.Choice """
+    pass
+
+def param_spec_choice_get_default(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_choice_get_default(pspec:GObject.ParamSpec) -> str """
+    return ""
+
 def param_spec_color(name, nick, blurb, has_alpha, default_color, flags): # real signature unknown; restored from __doc__
     """ param_spec_color(name:str, nick:str, blurb:str, has_alpha:bool, default_color:Gegl.Color, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
@@ -1323,9 +1331,17 @@ def param_spec_core_object_array(name, nick, blurb, object_type, flags): # real 
     """ param_spec_core_object_array(name:str, nick:str, blurb:str, object_type:GType, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_core_object_array_get_object_type(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_core_object_array_get_object_type(pspec:GObject.ParamSpec) -> GType """
+    pass
+
 def param_spec_display(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_display(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
+
+def param_spec_display_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_display_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
 
 def param_spec_double_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
     """ param_spec_double_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
@@ -1335,8 +1351,32 @@ def param_spec_drawable(name, nick, blurb, none_ok, flags): # real signature unk
     """ param_spec_drawable(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_drawable_filter(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
+    """ param_spec_drawable_filter(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_drawable_filter_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_drawable_filter_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
 def param_spec_export_options(name, nick, blurb, flags): # real signature unknown; restored from __doc__
     """ param_spec_export_options(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_file(name, nick, blurb, action, none_ok, default_value=None, flags): # real signature unknown; restored from __doc__
+    """ param_spec_file(name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_value:Gio.File=None, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_file_get_action(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_file_get_action(pspec:GObject.ParamSpec) -> Gimp.FileChooserAction """
+    pass
+
+def param_spec_file_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_file_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
+def param_spec_file_set_action(pspec, action): # real signature unknown; restored from __doc__
+    """ param_spec_file_set_action(pspec:GObject.ParamSpec, action:Gimp.FileChooserAction) """
     pass
 
 def param_spec_font(name, nick, blurb, none_ok, default_value=None, default_to_context, flags): # real signature unknown; restored from __doc__
@@ -1355,6 +1395,10 @@ def param_spec_image(name, nick, blurb, none_ok, flags): # real signature unknow
     """ param_spec_image(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_image_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_image_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
 def param_spec_int32_array(name, nick, blurb, flags): # real signature unknown; restored from __doc__
     """ param_spec_int32_array(name:str, nick:str, blurb:str, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
@@ -1362,6 +1406,10 @@ def param_spec_int32_array(name, nick, blurb, flags): # real signature unknown; 
 def param_spec_item(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_item(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
+
+def param_spec_item_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_item_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
 
 def param_spec_layer(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_layer(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
@@ -1419,6 +1467,14 @@ def param_spec_resource(name, nick, blurb, resource_type, none_ok, default_value
     """ param_spec_resource(name:str, nick:str, blurb:str, resource_type:GType, none_ok:bool, default_value:Gimp.Resource=None, default_to_context:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_resource_defaults_to_context(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_resource_defaults_to_context(pspec:GObject.ParamSpec) -> bool """
+    return False
+
+def param_spec_resource_none_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_resource_none_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
 def param_spec_selection(name, nick, blurb, none_ok, flags): # real signature unknown; restored from __doc__
     """ param_spec_selection(name:str, nick:str, blurb:str, none_ok:bool, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
@@ -1431,20 +1487,32 @@ def param_spec_unit(name, nick, blurb, allow_pixel, allow_percent, default_value
     """ param_spec_unit(name:str, nick:str, blurb:str, allow_pixel:bool, allow_percent:bool, default_value:Gimp.Unit, flags:GObject.ParamFlags) -> GObject.ParamSpec """
     pass
 
+def param_spec_unit_percent_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_unit_percent_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
+def param_spec_unit_pixel_allowed(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_unit_pixel_allowed(pspec:GObject.ParamSpec) -> bool """
+    return False
+
 def param_spec_value_array(name, nick, blurb, element_spec=None, flags): # real signature unknown; restored from __doc__
     """ param_spec_value_array(name:str, nick:str, blurb:str, element_spec:GObject.ParamSpec=None, flags:GObject.ParamFlags) -> GObject.ParamSpec """
+    pass
+
+def param_spec_value_array_get_element_spec(pspec): # real signature unknown; restored from __doc__
+    """ param_spec_value_array_get_element_spec(pspec:GObject.ParamSpec) -> GObject.ParamSpec """
     pass
 
 def patterns_close_popup(pattern_callback): # real signature unknown; restored from __doc__
     """ patterns_close_popup(pattern_callback:str) -> bool """
     return False
 
-def patterns_get_list(filter): # real signature unknown; restored from __doc__
-    """ patterns_get_list(filter:str) -> list """
+def patterns_get_list(filter=None): # real signature unknown; restored from __doc__
+    """ patterns_get_list(filter:str=None) -> list """
     return []
 
-def patterns_popup(pattern_callback, popup_title, initial_pattern, parent_window): # real signature unknown; restored from __doc__
-    """ patterns_popup(pattern_callback:str, popup_title:str, initial_pattern:Gimp.Pattern, parent_window:GLib.Bytes) -> bool """
+def patterns_popup(pattern_callback, popup_title, initial_pattern=None, parent_window=None): # real signature unknown; restored from __doc__
+    """ patterns_popup(pattern_callback:str, popup_title:str, initial_pattern:Gimp.Pattern=None, parent_window:GLib.Bytes=None) -> bool """
     return False
 
 def patterns_refresh(): # real signature unknown; restored from __doc__
@@ -1515,8 +1583,8 @@ def progress_pulse(): # real signature unknown; restored from __doc__
     """ progress_pulse() -> bool """
     return False
 
-def progress_set_text(message): # real signature unknown; restored from __doc__
-    """ progress_set_text(message:str) -> bool """
+def progress_set_text(message=None): # real signature unknown; restored from __doc__
+    """ progress_set_text(message:str=None) -> bool """
     return False
 
 def progress_uninstall(progress_callback): # real signature unknown; restored from __doc__
@@ -1579,8 +1647,8 @@ def temp_directory(): # real signature unknown; restored from __doc__
     """ temp_directory() -> str """
     return ""
 
-def temp_file(extension): # real signature unknown; restored from __doc__
-    """ temp_file(extension:str) -> Gio.File """
+def temp_file(extension=None): # real signature unknown; restored from __doc__
+    """ temp_file(extension:str=None) -> Gio.File """
     pass
 
 def text_font(image, drawable=None, x, y, text, border, antialias, size, font): # real signature unknown; restored from __doc__
@@ -1719,7 +1787,11 @@ def __eq__(*args, **kwargs): # real signature unknown
     pass
 
 def __format__(*args, **kwargs): # real signature unknown
-    """ Default object formatter. """
+    """
+    Default object formatter.
+    
+    Return str(self) if format_spec is empty. Raise TypeError otherwise.
+    """
     pass
 
 def __getattribute__(*args, **kwargs): # real signature unknown
@@ -1862,6 +1934,10 @@ from .DisplayClass import DisplayClass
 from .DodgeBurnType import DodgeBurnType
 from .DoubleArray import DoubleArray
 from .DrawableClass import DrawableClass
+from .DrawableFilter import DrawableFilter
+from .DrawableFilterClass import DrawableFilterClass
+from .DrawableFilterConfig import DrawableFilterConfig
+from .DrawableFilterConfigClass import DrawableFilterConfigClass
 from .EnumDesc import EnumDesc
 from .ExportCapabilities import ExportCapabilities
 from .ExportOptions import ExportOptions
@@ -1870,6 +1946,7 @@ from .FileProcedure import FileProcedure
 from .ExportProcedure import ExportProcedure
 from .ExportProcedureClass import ExportProcedureClass
 from .ExportReturn import ExportReturn
+from .FileChooserAction import FileChooserAction
 from .FileProcedureClass import FileProcedureClass
 from .FillType import FillType
 from .FlagsDesc import FlagsDesc
@@ -1945,7 +2022,9 @@ from .ParamConfigPath import ParamConfigPath
 from .ParamCoreObjectArray import ParamCoreObjectArray
 from .ParamDisplay import ParamDisplay
 from .ParamDoubleArray import ParamDoubleArray
+from .ParamDrawableFilter import ParamDrawableFilter
 from .ParamExportOptions import ParamExportOptions
+from .ParamFile import ParamFile
 from .ParamFont import ParamFont
 from .ParamGradient import ParamGradient
 from .ParamLayer import ParamLayer
@@ -1961,17 +2040,8 @@ from .ParamParasite import ParamParasite
 from .ParamPath import ParamPath
 from .ParamPattern import ParamPattern
 from .ParamSelection import ParamSelection
-from .ParamSpecChoice import ParamSpecChoice
-from .ParamSpecColor import ParamSpecColor
-from .ParamSpecCoreObjectArray import ParamSpecCoreObjectArray
-from .ParamSpecDisplay import ParamSpecDisplay
-from .ParamSpecImage import ParamSpecImage
-from .ParamSpecItem import ParamSpecItem
 from .ParamSpecObject import ParamSpecObject
 from .ParamSpecObjectClass import ParamSpecObjectClass
-from .ParamSpecResource import ParamSpecResource
-from .ParamSpecUnit import ParamSpecUnit
-from .ParamSpecValueArray import ParamSpecValueArray
 from .ParamTextLayer import ParamTextLayer
 from .ParamUnit import ParamUnit
 from .ParamValueArray import ParamValueArray
@@ -2031,11 +2101,11 @@ from .VectorLoadProcedureClass import VectorLoadProcedureClass
 from .__class__ import __class__
 # variables with complex values
 
-__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001b63fcf1290>'
+__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001dcd66d06b0>'
 
 __path__ = [
     'C:\\Program Files\\GIMP 3\\lib\\girepository-1.0\\Gimp-3.0.typelib',
 ]
 
-__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x000001b63fcf1290>)"
+__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x000001dcd66d06b0>)"
 

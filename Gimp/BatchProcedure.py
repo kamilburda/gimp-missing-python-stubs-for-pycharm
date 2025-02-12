@@ -188,12 +188,12 @@ class BatchProcedure(Procedure):
         """ add_enum_return_value(self, name:str, nick:str, blurb:str, enum_type:GType, value:int, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_aux_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_aux_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
     def add_file_return_value(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -735,6 +735,10 @@ class BatchProcedure(Procedure):
         # no doc
         pass
 
+    def is_core(self): # real signature unknown; restored from __doc__
+        """ is_core(self) -> bool """
+        return False
+
     def is_floating(self): # real signature unknown; restored from __doc__
         """ is_floating(self) -> bool """
         return False
@@ -919,7 +923,11 @@ class BatchProcedure(Procedure):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1019,12 +1027,12 @@ class BatchProcedure(Procedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d720>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd5f54190>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(BatchProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBatchProcedure (1071865440)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_interpreter_name': gi.FunctionInfo(get_interpreter_name, bound=None), 'set_interpreter_name': gi.FunctionInfo(set_interpreter_name, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(BatchProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBatchProcedure (3599984672)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_interpreter_name': gi.FunctionInfo(get_interpreter_name, bound=None), 'set_interpreter_name': gi.FunctionInfo(set_interpreter_name, bound=None)})"
     __gdoc__ = "Object GimpBatchProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpBatchProcedure (1071865440)>'
+    __gtype__ = None # (!) real value is '<GType GimpBatchProcedure (3599984672)>'
     __info__ = ObjectInfo(BatchProcedure)
 
 

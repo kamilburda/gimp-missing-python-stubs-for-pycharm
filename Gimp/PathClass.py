@@ -42,7 +42,11 @@ class PathClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -136,7 +140,7 @@ class PathClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PathClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PathClass' objects>, '__weakref__': <attribute '__weakref__' of 'PathClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640d0b7e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PathClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PathClass' objects>, '__weakref__': <attribute '__weakref__' of 'PathClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd92de890>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PathClass)
 

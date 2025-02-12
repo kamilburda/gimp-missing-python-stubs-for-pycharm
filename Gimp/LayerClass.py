@@ -42,7 +42,11 @@ class LayerClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -132,8 +136,6 @@ class LayerClass(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    copy = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -158,7 +160,7 @@ class LayerClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LayerClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LayerClass' objects>, '__weakref__': <attribute '__weakref__' of 'LayerClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640ce96c0>, 'copy': <property object at 0x000001b640ce97b0>, '_gimp_reserved0': <property object at 0x000001b640ce98a0>, '_gimp_reserved1': <property object at 0x000001b640ce9990>, '_gimp_reserved2': <property object at 0x000001b640ce9a80>, '_gimp_reserved3': <property object at 0x000001b640ce9b70>, '_gimp_reserved4': <property object at 0x000001b640ce9c60>, '_gimp_reserved5': <property object at 0x000001b640ce9d50>, '_gimp_reserved6': <property object at 0x000001b640ce9e40>, '_gimp_reserved7': <property object at 0x000001b640ce9f30>, '_gimp_reserved8': <property object at 0x000001b640cea020>, '_gimp_reserved9': <property object at 0x000001b640cea110>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(LayerClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'LayerClass' objects>, '__weakref__': <attribute '__weakref__' of 'LayerClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90c3b50>, '_gimp_reserved0': <property object at 0x000001dcd90c3c40>, '_gimp_reserved1': <property object at 0x000001dcd90c3d30>, '_gimp_reserved2': <property object at 0x000001dcd90c3e20>, '_gimp_reserved3': <property object at 0x000001dcd90c3f10>, '_gimp_reserved4': <property object at 0x000001dcd92a4040>, '_gimp_reserved5': <property object at 0x000001dcd92a4130>, '_gimp_reserved6': <property object at 0x000001dcd92a4220>, '_gimp_reserved7': <property object at 0x000001dcd92a4310>, '_gimp_reserved8': <property object at 0x000001dcd92a4400>, '_gimp_reserved9': <property object at 0x000001dcd92a44f0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(LayerClass)
 

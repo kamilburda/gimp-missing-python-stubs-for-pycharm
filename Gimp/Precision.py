@@ -25,10 +25,9 @@ class Precision(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class Precision(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class Precision(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -401,7 +405,7 @@ class Precision(__gobject.GEnum):
     U8_NON_LINEAR = 150
     U8_PERCEPTUAL = 175
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'Precision' objects>, '__doc__': None, '__gtype__': <GType GimpPrecision (1072216368)>, '__enum_values__': {100: <enum GIMP_PRECISION_U8_LINEAR of type Gimp.Precision>, 150: <enum GIMP_PRECISION_U8_NON_LINEAR of type Gimp.Precision>, 175: <enum GIMP_PRECISION_U8_PERCEPTUAL of type Gimp.Precision>, 200: <enum GIMP_PRECISION_U16_LINEAR of type Gimp.Precision>, 250: <enum GIMP_PRECISION_U16_NON_LINEAR of type Gimp.Precision>, 275: <enum GIMP_PRECISION_U16_PERCEPTUAL of type Gimp.Precision>, 300: <enum GIMP_PRECISION_U32_LINEAR of type Gimp.Precision>, 350: <enum GIMP_PRECISION_U32_NON_LINEAR of type Gimp.Precision>, 375: <enum GIMP_PRECISION_U32_PERCEPTUAL of type Gimp.Precision>, 500: <enum GIMP_PRECISION_HALF_LINEAR of type Gimp.Precision>, 550: <enum GIMP_PRECISION_HALF_NON_LINEAR of type Gimp.Precision>, 575: <enum GIMP_PRECISION_HALF_PERCEPTUAL of type Gimp.Precision>, 600: <enum GIMP_PRECISION_FLOAT_LINEAR of type Gimp.Precision>, 650: <enum GIMP_PRECISION_FLOAT_NON_LINEAR of type Gimp.Precision>, 675: <enum GIMP_PRECISION_FLOAT_PERCEPTUAL of type Gimp.Precision>, 700: <enum GIMP_PRECISION_DOUBLE_LINEAR of type Gimp.Precision>, 750: <enum GIMP_PRECISION_DOUBLE_NON_LINEAR of type Gimp.Precision>, 775: <enum GIMP_PRECISION_DOUBLE_PERCEPTUAL of type Gimp.Precision>}, '__info__': gi.EnumInfo(Precision), 'U8_LINEAR': <enum GIMP_PRECISION_U8_LINEAR of type Gimp.Precision>, 'U8_NON_LINEAR': <enum GIMP_PRECISION_U8_NON_LINEAR of type Gimp.Precision>, 'U8_PERCEPTUAL': <enum GIMP_PRECISION_U8_PERCEPTUAL of type Gimp.Precision>, 'U16_LINEAR': <enum GIMP_PRECISION_U16_LINEAR of type Gimp.Precision>, 'U16_NON_LINEAR': <enum GIMP_PRECISION_U16_NON_LINEAR of type Gimp.Precision>, 'U16_PERCEPTUAL': <enum GIMP_PRECISION_U16_PERCEPTUAL of type Gimp.Precision>, 'U32_LINEAR': <enum GIMP_PRECISION_U32_LINEAR of type Gimp.Precision>, 'U32_NON_LINEAR': <enum GIMP_PRECISION_U32_NON_LINEAR of type Gimp.Precision>, 'U32_PERCEPTUAL': <enum GIMP_PRECISION_U32_PERCEPTUAL of type Gimp.Precision>, 'HALF_LINEAR': <enum GIMP_PRECISION_HALF_LINEAR of type Gimp.Precision>, 'HALF_NON_LINEAR': <enum GIMP_PRECISION_HALF_NON_LINEAR of type Gimp.Precision>, 'HALF_PERCEPTUAL': <enum GIMP_PRECISION_HALF_PERCEPTUAL of type Gimp.Precision>, 'FLOAT_LINEAR': <enum GIMP_PRECISION_FLOAT_LINEAR of type Gimp.Precision>, 'FLOAT_NON_LINEAR': <enum GIMP_PRECISION_FLOAT_NON_LINEAR of type Gimp.Precision>, 'FLOAT_PERCEPTUAL': <enum GIMP_PRECISION_FLOAT_PERCEPTUAL of type Gimp.Precision>, 'DOUBLE_LINEAR': <enum GIMP_PRECISION_DOUBLE_LINEAR of type Gimp.Precision>, 'DOUBLE_NON_LINEAR': <enum GIMP_PRECISION_DOUBLE_NON_LINEAR of type Gimp.Precision>, 'DOUBLE_PERCEPTUAL': <enum GIMP_PRECISION_DOUBLE_PERCEPTUAL of type Gimp.Precision>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'Precision' objects>, '__doc__': None, '__gtype__': <GType GimpPrecision (3595417424)>, '__enum_values__': {100: <enum GIMP_PRECISION_U8_LINEAR of type Gimp.Precision>, 150: <enum GIMP_PRECISION_U8_NON_LINEAR of type Gimp.Precision>, 175: <enum GIMP_PRECISION_U8_PERCEPTUAL of type Gimp.Precision>, 200: <enum GIMP_PRECISION_U16_LINEAR of type Gimp.Precision>, 250: <enum GIMP_PRECISION_U16_NON_LINEAR of type Gimp.Precision>, 275: <enum GIMP_PRECISION_U16_PERCEPTUAL of type Gimp.Precision>, 300: <enum GIMP_PRECISION_U32_LINEAR of type Gimp.Precision>, 350: <enum GIMP_PRECISION_U32_NON_LINEAR of type Gimp.Precision>, 375: <enum GIMP_PRECISION_U32_PERCEPTUAL of type Gimp.Precision>, 500: <enum GIMP_PRECISION_HALF_LINEAR of type Gimp.Precision>, 550: <enum GIMP_PRECISION_HALF_NON_LINEAR of type Gimp.Precision>, 575: <enum GIMP_PRECISION_HALF_PERCEPTUAL of type Gimp.Precision>, 600: <enum GIMP_PRECISION_FLOAT_LINEAR of type Gimp.Precision>, 650: <enum GIMP_PRECISION_FLOAT_NON_LINEAR of type Gimp.Precision>, 675: <enum GIMP_PRECISION_FLOAT_PERCEPTUAL of type Gimp.Precision>, 700: <enum GIMP_PRECISION_DOUBLE_LINEAR of type Gimp.Precision>, 750: <enum GIMP_PRECISION_DOUBLE_NON_LINEAR of type Gimp.Precision>, 775: <enum GIMP_PRECISION_DOUBLE_PERCEPTUAL of type Gimp.Precision>}, '__info__': gi.EnumInfo(Precision), 'U8_LINEAR': <enum GIMP_PRECISION_U8_LINEAR of type Gimp.Precision>, 'U8_NON_LINEAR': <enum GIMP_PRECISION_U8_NON_LINEAR of type Gimp.Precision>, 'U8_PERCEPTUAL': <enum GIMP_PRECISION_U8_PERCEPTUAL of type Gimp.Precision>, 'U16_LINEAR': <enum GIMP_PRECISION_U16_LINEAR of type Gimp.Precision>, 'U16_NON_LINEAR': <enum GIMP_PRECISION_U16_NON_LINEAR of type Gimp.Precision>, 'U16_PERCEPTUAL': <enum GIMP_PRECISION_U16_PERCEPTUAL of type Gimp.Precision>, 'U32_LINEAR': <enum GIMP_PRECISION_U32_LINEAR of type Gimp.Precision>, 'U32_NON_LINEAR': <enum GIMP_PRECISION_U32_NON_LINEAR of type Gimp.Precision>, 'U32_PERCEPTUAL': <enum GIMP_PRECISION_U32_PERCEPTUAL of type Gimp.Precision>, 'HALF_LINEAR': <enum GIMP_PRECISION_HALF_LINEAR of type Gimp.Precision>, 'HALF_NON_LINEAR': <enum GIMP_PRECISION_HALF_NON_LINEAR of type Gimp.Precision>, 'HALF_PERCEPTUAL': <enum GIMP_PRECISION_HALF_PERCEPTUAL of type Gimp.Precision>, 'FLOAT_LINEAR': <enum GIMP_PRECISION_FLOAT_LINEAR of type Gimp.Precision>, 'FLOAT_NON_LINEAR': <enum GIMP_PRECISION_FLOAT_NON_LINEAR of type Gimp.Precision>, 'FLOAT_PERCEPTUAL': <enum GIMP_PRECISION_FLOAT_PERCEPTUAL of type Gimp.Precision>, 'DOUBLE_LINEAR': <enum GIMP_PRECISION_DOUBLE_LINEAR of type Gimp.Precision>, 'DOUBLE_NON_LINEAR': <enum GIMP_PRECISION_DOUBLE_NON_LINEAR of type Gimp.Precision>, 'DOUBLE_PERCEPTUAL': <enum GIMP_PRECISION_DOUBLE_PERCEPTUAL of type Gimp.Precision>})"
     __enum_values__ = {
         100: 100,
         150: 150,
@@ -422,7 +426,7 @@ class Precision(__gobject.GEnum):
         750: 750,
         775: 775,
     }
-    __gtype__ = None # (!) real value is '<GType GimpPrecision (1072216368)>'
+    __gtype__ = None # (!) real value is '<GType GimpPrecision (3595417424)>'
     __info__ = gi.EnumInfo(Precision)
 
 

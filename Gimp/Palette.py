@@ -32,8 +32,8 @@ class Palette(Resource):
         Palette(**properties)
         new(name:str) -> Gimp.Palette
     """
-    def add_entry(self, entry_name, color): # real signature unknown; restored from __doc__
-        """ add_entry(self, entry_name:str, color:Gegl.Color) -> bool, entry_num:int """
+    def add_entry(self, entry_name=None, color): # real signature unknown; restored from __doc__
+        """ add_entry(self, entry_name:str=None, color:Gegl.Color) -> bool, entry_num:int """
         return False
 
     def bind_property(self, *args, **kwargs): # real signature unknown
@@ -411,8 +411,8 @@ class Palette(Resource):
         """ set_entry_color(self, entry_num:int, color:Gegl.Color) -> bool """
         return False
 
-    def set_entry_name(self, entry_num, entry_name): # real signature unknown; restored from __doc__
-        """ set_entry_name(self, entry_num:int, entry_name:str) -> bool """
+    def set_entry_name(self, entry_num, entry_name=None): # real signature unknown; restored from __doc__
+        """ set_entry_name(self, entry_num:int, entry_name:str=None) -> bool """
         return False
 
     def set_properties(self, *args, **kwargs): # real signature unknown
@@ -507,7 +507,11 @@ class Palette(Resource):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -610,12 +614,12 @@ class Palette(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069e050>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9181b40>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Palette), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPalette (1069009792)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'add_entry': gi.FunctionInfo(add_entry, bound=None), 'delete_entry': gi.FunctionInfo(delete_entry, bound=None), 'get_color_count': gi.FunctionInfo(get_color_count, bound=None), 'get_colormap': gi.FunctionInfo(get_colormap, bound=None), 'get_colors': gi.FunctionInfo(get_colors, bound=None), 'get_columns': gi.FunctionInfo(get_columns, bound=None), 'get_entry_color': gi.FunctionInfo(get_entry_color, bound=None), 'get_entry_name': gi.FunctionInfo(get_entry_name, bound=None), 'set_colormap': gi.FunctionInfo(set_colormap, bound=None), 'set_columns': gi.FunctionInfo(set_columns, bound=None), 'set_entry_color': gi.FunctionInfo(set_entry_color, bound=None), 'set_entry_name': gi.FunctionInfo(set_entry_name, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Palette), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPalette (3595412160)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'add_entry': gi.FunctionInfo(add_entry, bound=None), 'delete_entry': gi.FunctionInfo(delete_entry, bound=None), 'get_color_count': gi.FunctionInfo(get_color_count, bound=None), 'get_colormap': gi.FunctionInfo(get_colormap, bound=None), 'get_colors': gi.FunctionInfo(get_colors, bound=None), 'get_columns': gi.FunctionInfo(get_columns, bound=None), 'get_entry_color': gi.FunctionInfo(get_entry_color, bound=None), 'get_entry_name': gi.FunctionInfo(get_entry_name, bound=None), 'set_colormap': gi.FunctionInfo(set_colormap, bound=None), 'set_columns': gi.FunctionInfo(set_columns, bound=None), 'set_entry_color': gi.FunctionInfo(set_entry_color, bound=None), 'set_entry_name': gi.FunctionInfo(set_entry_name, bound=None)})"
     __gdoc__ = 'Object GimpPalette\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPalette (1069009792)>'
+    __gtype__ = None # (!) real value is '<GType GimpPalette (3595412160)>'
     __info__ = ObjectInfo(Palette)
 
 

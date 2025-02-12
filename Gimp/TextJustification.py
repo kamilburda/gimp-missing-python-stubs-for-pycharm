@@ -25,10 +25,9 @@ class TextJustification(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class TextJustification(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class TextJustification(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -387,14 +391,14 @@ class TextJustification(__gobject.GEnum):
     LEFT = 0
     RIGHT = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextJustification' objects>, '__doc__': None, '__gtype__': <GType GimpTextJustification (1065744064)>, '__enum_values__': {0: <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 1: <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 2: <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 3: <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>}, '__info__': gi.EnumInfo(TextJustification), 'LEFT': <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 'RIGHT': <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 'CENTER': <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 'FILL': <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextJustification' objects>, '__doc__': None, '__gtype__': <GType GimpTextJustification (3595419888)>, '__enum_values__': {0: <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 1: <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 2: <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 3: <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>}, '__info__': gi.EnumInfo(TextJustification), 'LEFT': <enum GIMP_TEXT_JUSTIFY_LEFT of type Gimp.TextJustification>, 'RIGHT': <enum GIMP_TEXT_JUSTIFY_RIGHT of type Gimp.TextJustification>, 'CENTER': <enum GIMP_TEXT_JUSTIFY_CENTER of type Gimp.TextJustification>, 'FILL': <enum GIMP_TEXT_JUSTIFY_FILL of type Gimp.TextJustification>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextJustification (1065744064)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextJustification (3595419888)>'
     __info__ = gi.EnumInfo(TextJustification)
 
 

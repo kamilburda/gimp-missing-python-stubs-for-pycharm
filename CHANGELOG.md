@@ -1,3 +1,9 @@
+4.0
+===
+
+* Updated the repository for GIMP 3.0-RC3.
+
+
 3.1
 ===
 
@@ -7,7 +13,7 @@
 3.0
 ===
 
-* Updated the repository for GIMP 3.0.
+* Updated the repository for GIMP 3.0-RC1.
 
 
 2.0

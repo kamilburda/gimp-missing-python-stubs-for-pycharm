@@ -188,12 +188,12 @@ class LoadProcedure(FileProcedure):
         """ add_enum_return_value(self, name:str, nick:str, blurb:str, enum_type:GType, value:int, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_aux_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_aux_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
     def add_file_return_value(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -767,6 +767,10 @@ class LoadProcedure(FileProcedure):
         # no doc
         pass
 
+    def is_core(self): # real signature unknown; restored from __doc__
+        """ is_core(self) -> bool """
+        return False
+
     def is_floating(self): # real signature unknown; restored from __doc__
         """ is_floating(self) -> bool """
         return False
@@ -983,7 +987,11 @@ class LoadProcedure(FileProcedure):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1083,12 +1091,12 @@ class LoadProcedure(FileProcedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d3f0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90d5f90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLoadProcedure (1066680864)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_handles_raw': gi.FunctionInfo(get_handles_raw, bound=None), 'get_thumbnail_loader': gi.FunctionInfo(get_thumbnail_loader, bound=None), 'set_handles_raw': gi.FunctionInfo(set_handles_raw, bound=None), 'set_thumbnail_loader': gi.FunctionInfo(set_thumbnail_loader, bound=None), 'parent_instance': <property object at 0x000001b640cf4220>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LoadProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLoadProcedure (3599937968)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_handles_raw': gi.FunctionInfo(get_handles_raw, bound=None), 'get_thumbnail_loader': gi.FunctionInfo(get_thumbnail_loader, bound=None), 'set_handles_raw': gi.FunctionInfo(set_handles_raw, bound=None), 'set_thumbnail_loader': gi.FunctionInfo(set_thumbnail_loader, bound=None), 'parent_instance': <property object at 0x000001dcd92a48b0>})"
     __gdoc__ = "Object GimpLoadProcedure\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpLoadProcedure (1066680864)>'
+    __gtype__ = None # (!) real value is '<GType GimpLoadProcedure (3599937968)>'
     __info__ = ObjectInfo(LoadProcedure)
 
 

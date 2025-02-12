@@ -114,7 +114,11 @@ class Scanner(__gi.Boxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -205,8 +209,8 @@ class Scanner(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Scanner), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpScanner (1072213344)>, '__dict__': <attribute '__dict__' of 'Scanner' objects>, '__weakref__': <attribute '__weakref__' of 'Scanner' objects>, '__doc__': None, 'new_file': gi.FunctionInfo(new_file, bound=None), 'new_stream': gi.FunctionInfo(new_stream, bound=None), 'new_string': gi.FunctionInfo(new_string, bound=None), 'parse_boolean': gi.FunctionInfo(parse_boolean, bound=None), 'parse_color': gi.FunctionInfo(parse_color, bound=None), 'parse_data': gi.FunctionInfo(parse_data, bound=None), 'parse_double': gi.FunctionInfo(parse_double, bound=None), 'parse_identifier': gi.FunctionInfo(parse_identifier, bound=None), 'parse_int': gi.FunctionInfo(parse_int, bound=None), 'parse_int64': gi.FunctionInfo(parse_int64, bound=None), 'parse_matrix2': gi.FunctionInfo(parse_matrix2, bound=None), 'parse_string': gi.FunctionInfo(parse_string, bound=None), 'parse_string_no_validate': gi.FunctionInfo(parse_string_no_validate, bound=None), 'parse_token': gi.FunctionInfo(parse_token, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpScanner (1072213344)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Scanner), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpScanner (3595414624)>, '__dict__': <attribute '__dict__' of 'Scanner' objects>, '__weakref__': <attribute '__weakref__' of 'Scanner' objects>, '__doc__': None, 'new_file': gi.FunctionInfo(new_file, bound=None), 'new_stream': gi.FunctionInfo(new_stream, bound=None), 'new_string': gi.FunctionInfo(new_string, bound=None), 'parse_boolean': gi.FunctionInfo(parse_boolean, bound=None), 'parse_color': gi.FunctionInfo(parse_color, bound=None), 'parse_data': gi.FunctionInfo(parse_data, bound=None), 'parse_double': gi.FunctionInfo(parse_double, bound=None), 'parse_identifier': gi.FunctionInfo(parse_identifier, bound=None), 'parse_int': gi.FunctionInfo(parse_int, bound=None), 'parse_int64': gi.FunctionInfo(parse_int64, bound=None), 'parse_matrix2': gi.FunctionInfo(parse_matrix2, bound=None), 'parse_string': gi.FunctionInfo(parse_string, bound=None), 'parse_string_no_validate': gi.FunctionInfo(parse_string_no_validate, bound=None), 'parse_token': gi.FunctionInfo(parse_token, bound=None), 'ref': gi.FunctionInfo(ref, bound=None), 'unref': gi.FunctionInfo(unref, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpScanner (3595414624)>'
     __info__ = StructInfo(Scanner)
 
 

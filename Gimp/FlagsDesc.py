@@ -42,7 +42,11 @@ class FlagsDesc(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -140,7 +144,7 @@ class FlagsDesc(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FlagsDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FlagsDesc' objects>, '__weakref__': <attribute '__weakref__' of 'FlagsDesc' objects>, '__doc__': None, 'value': <property object at 0x000001b640cdb2e0>, 'value_desc': <property object at 0x000001b640cdb3d0>, 'value_help': <property object at 0x000001b640cdb4c0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(FlagsDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'FlagsDesc' objects>, '__weakref__': <attribute '__weakref__' of 'FlagsDesc' objects>, '__doc__': None, 'value': <property object at 0x000001dcd90c1850>, 'value_desc': <property object at 0x000001dcd90c1940>, 'value_help': <property object at 0x000001dcd90c1a30>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(FlagsDesc)
 

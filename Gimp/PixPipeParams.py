@@ -42,7 +42,11 @@ class PixPipeParams(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -154,7 +158,7 @@ class PixPipeParams(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000001b640d0bd80>, 'ncells': <property object at 0x000001b640d0be70>, 'dim': <property object at 0x000001b640d0bf60>, 'cols': <property object at 0x000001b640d10090>, 'rows': <property object at 0x000001b640d10180>, 'cellwidth': <property object at 0x000001b640d10270>, 'cellheight': <property object at 0x000001b640d10360>, 'placement': <property object at 0x000001b640d10450>, 'rank': <property object at 0x000001b640d10540>, 'selection': <property object at 0x000001b640d10630>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PixPipeParams), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PixPipeParams' objects>, '__weakref__': <attribute '__weakref__' of 'PixPipeParams' objects>, '__doc__': None, 'step': <property object at 0x000001dcd92debb0>, 'ncells': <property object at 0x000001dcd92deca0>, 'dim': <property object at 0x000001dcd92ded90>, 'cols': <property object at 0x000001dcd92dee80>, 'rows': <property object at 0x000001dcd92def70>, 'cellwidth': <property object at 0x000001dcd92df060>, 'cellheight': <property object at 0x000001dcd92df150>, 'placement': <property object at 0x000001dcd92df240>, 'rank': <property object at 0x000001dcd92df330>, 'selection': <property object at 0x000001dcd92df420>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PixPipeParams)
 

@@ -344,7 +344,11 @@ class PDB(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -442,12 +446,12 @@ class PDB(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069eec0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9184af0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (1069014384)>, '__doc__': None, '__gsignals__': {}, 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPDB (3595411376)>, '__doc__': None, '__gsignals__': {}, 'dump_to_file': gi.FunctionInfo(dump_to_file, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_last_status': gi.FunctionInfo(get_last_status, bound=None), 'lookup_procedure': gi.FunctionInfo(lookup_procedure, bound=None), 'procedure_exists': gi.FunctionInfo(procedure_exists, bound=None), 'query_procedures': gi.FunctionInfo(query_procedures, bound=None), 'temp_procedure_name': gi.FunctionInfo(temp_procedure_name, bound=None)})"
     __gdoc__ = 'Object GimpPDB\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPDB (1069014384)>'
+    __gtype__ = None # (!) real value is '<GType GimpPDB (3595411376)>'
     __info__ = ObjectInfo(PDB)
 
 

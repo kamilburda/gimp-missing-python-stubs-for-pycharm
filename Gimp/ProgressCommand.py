@@ -25,10 +25,9 @@ class ProgressCommand(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ProgressCommand(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ProgressCommand(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -389,7 +393,7 @@ class ProgressCommand(__gobject.GEnum):
     SET_VALUE = 3
     START = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (1072213904)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProgressCommand' objects>, '__doc__': None, '__gtype__': <GType GimpProgressCommand (3595418544)>, '__enum_values__': {0: <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 1: <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 2: <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 3: <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 4: <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 5: <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>}, '__info__': gi.EnumInfo(ProgressCommand), 'START': <enum GIMP_PROGRESS_COMMAND_START of type Gimp.ProgressCommand>, 'END': <enum GIMP_PROGRESS_COMMAND_END of type Gimp.ProgressCommand>, 'SET_TEXT': <enum GIMP_PROGRESS_COMMAND_SET_TEXT of type Gimp.ProgressCommand>, 'SET_VALUE': <enum GIMP_PROGRESS_COMMAND_SET_VALUE of type Gimp.ProgressCommand>, 'PULSE': <enum GIMP_PROGRESS_COMMAND_PULSE of type Gimp.ProgressCommand>, 'GET_WINDOW': <enum GIMP_PROGRESS_COMMAND_GET_WINDOW of type Gimp.ProgressCommand>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +402,7 @@ class ProgressCommand(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (1072213904)>'
+    __gtype__ = None # (!) real value is '<GType GimpProgressCommand (3595418544)>'
     __info__ = gi.EnumInfo(ProgressCommand)
 
 

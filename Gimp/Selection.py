@@ -35,6 +35,10 @@ class Selection(Channel):
         """ all(image:Gimp.Image) -> bool """
         return False
 
+    def append_filter(self, filter): # real signature unknown; restored from __doc__
+        """ append_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def attach_parasite(self, parasite): # real signature unknown; restored from __doc__
         """ attach_parasite(self, parasite:Gimp.Parasite) -> bool """
         return False
@@ -261,6 +265,10 @@ class Selection(Channel):
     def get_expanded(self): # real signature unknown; restored from __doc__
         """ get_expanded(self) -> bool """
         return False
+
+    def get_filters(self): # real signature unknown; restored from __doc__
+        """ get_filters(self) -> list """
+        return []
 
     def get_format(self): # real signature unknown; restored from __doc__
         """ get_format(self) -> Babl.Object """
@@ -562,6 +570,10 @@ class Selection(Channel):
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
         return False
 
+    def merge_filter(self, filter): # real signature unknown; restored from __doc__
+        """ merge_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def merge_filters(self): # real signature unknown; restored from __doc__
         """ merge_filters(self) -> bool """
         return False
@@ -594,8 +606,8 @@ class Selection(Channel):
         # no doc
         pass
 
-    def offset(self, wrap_around, fill_type, offset_x, offset_y): # real signature unknown; restored from __doc__
-        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, offset_x:int, offset_y:int) -> bool """
+    def offset(self, wrap_around, fill_type, color, offset_x, offset_y): # real signature unknown; restored from __doc__
+        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, color:Gegl.Color, offset_x:int, offset_y:int) -> bool """
         return False
 
     def override_property(self, property_id, name): # real signature unknown; restored from __doc__
@@ -838,7 +850,11 @@ class Selection(Channel):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -938,12 +954,12 @@ class Selection(Channel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066e170>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9189c90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (1066925744)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Selection), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpSelection (3644678416)>, '__doc__': None, '__gsignals__': {}, 'all': gi.FunctionInfo(all, bound=None), 'border': gi.FunctionInfo(border, bound=None), 'bounds': gi.FunctionInfo(bounds, bound=None), 'feather': gi.FunctionInfo(feather, bound=None), 'float': gi.FunctionInfo(float, bound=None), 'flood': gi.FunctionInfo(flood, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'grow': gi.FunctionInfo(grow, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_empty': gi.FunctionInfo(is_empty, bound=None), 'none': gi.FunctionInfo(none, bound=None), 'save': gi.FunctionInfo(save, bound=None), 'sharpen': gi.FunctionInfo(sharpen, bound=None), 'shrink': gi.FunctionInfo(shrink, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'value': gi.FunctionInfo(value, bound=None)})"
     __gdoc__ = 'Object GimpSelection\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpSelection (1066925744)>'
+    __gtype__ = None # (!) real value is '<GType GimpSelection (3644678416)>'
     __info__ = ObjectInfo(Selection)
 
 

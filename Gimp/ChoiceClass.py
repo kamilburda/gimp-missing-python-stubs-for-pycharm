@@ -42,7 +42,11 @@ class ChoiceClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -136,7 +140,7 @@ class ChoiceClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChoiceClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChoiceClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChoiceClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640caf6a0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChoiceClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChoiceClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChoiceClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90ad170>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ChoiceClass)
 

@@ -42,7 +42,11 @@ class ModuleInfo(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -146,7 +150,7 @@ class ModuleInfo(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleInfo), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleInfo' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleInfo' objects>, '__doc__': None, 'abi_version': <property object at 0x000001b640cfc360>, 'purpose': <property object at 0x000001b640cfc450>, 'author': <property object at 0x000001b640cfc540>, 'version': <property object at 0x000001b640cfc630>, 'copyright': <property object at 0x000001b640cfc720>, 'date': <property object at 0x000001b640cfc810>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleInfo), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleInfo' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleInfo' objects>, '__doc__': None, 'abi_version': <property object at 0x000001dcd92a7010>, 'purpose': <property object at 0x000001dcd92a7100>, 'author': <property object at 0x000001dcd92a71f0>, 'version': <property object at 0x000001dcd92a72e0>, 'copyright': <property object at 0x000001dcd92a73d0>, 'date': <property object at 0x000001dcd92a74c0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ModuleInfo)
 

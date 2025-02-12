@@ -21,13 +21,13 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class ParamSpecItem(__gi.Struct):
+class DrawableFilterConfigClass(__gi.Struct):
     """
     :Constructors:
     
     ::
     
-        ParamSpecItem()
+        DrawableFilterConfigClass()
     """
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
@@ -42,7 +42,11 @@ class ParamSpecItem(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -132,14 +136,32 @@ class ParamSpecItem(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    none_ok = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    _gimp_reserved0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved2 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved3 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved4 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved5 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved6 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved7 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved8 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    _gimp_reserved9 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecItem), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecItem' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecItem' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d08bd0>, 'none_ok': <property object at 0x000001b640d08cc0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableFilterConfigClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableFilterConfigClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableFilterConfigClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90af970>, '_gimp_reserved0': <property object at 0x000001dcd90afa60>, '_gimp_reserved1': <property object at 0x000001dcd90afb50>, '_gimp_reserved2': <property object at 0x000001dcd90afc40>, '_gimp_reserved3': <property object at 0x000001dcd90afd30>, '_gimp_reserved4': <property object at 0x000001dcd90afe20>, '_gimp_reserved5': <property object at 0x000001dcd90aff10>, '_gimp_reserved6': <property object at 0x000001dcd90c0040>, '_gimp_reserved7': <property object at 0x000001dcd90c0130>, '_gimp_reserved8': <property object at 0x000001dcd90c0220>, '_gimp_reserved9': <property object at 0x000001dcd90c0310>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(ParamSpecItem)
+    __info__ = StructInfo(DrawableFilterConfigClass)
 
 

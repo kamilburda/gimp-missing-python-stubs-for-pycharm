@@ -112,7 +112,11 @@ class Matrix3(__gi.Boxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -206,8 +210,8 @@ class Matrix3(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix3 (1069012704)>, '__dict__': <attribute '__dict__' of 'Matrix3' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix3' objects>, '__doc__': None, 'coeff': <property object at 0x000001b640cf5170>, 'affine': gi.FunctionInfo(affine, bound=None), 'determinant': gi.FunctionInfo(determinant, bound=None), 'equal': gi.FunctionInfo(equal, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_affine': gi.FunctionInfo(is_affine, bound=None), 'is_diagonal': gi.FunctionInfo(is_diagonal, bound=None), 'is_identity': gi.FunctionInfo(is_identity, bound=None), 'is_simple': gi.FunctionInfo(is_simple, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'xshear': gi.FunctionInfo(xshear, bound=None), 'yshear': gi.FunctionInfo(yshear, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpMatrix3 (1069012704)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Matrix3), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMatrix3 (3595410928)>, '__dict__': <attribute '__dict__' of 'Matrix3' objects>, '__weakref__': <attribute '__weakref__' of 'Matrix3' objects>, '__doc__': None, 'coeff': <property object at 0x000001dcd92a5620>, 'affine': gi.FunctionInfo(affine, bound=None), 'determinant': gi.FunctionInfo(determinant, bound=None), 'equal': gi.FunctionInfo(equal, bound=None), 'identity': gi.FunctionInfo(identity, bound=None), 'invert': gi.FunctionInfo(invert, bound=None), 'is_affine': gi.FunctionInfo(is_affine, bound=None), 'is_diagonal': gi.FunctionInfo(is_diagonal, bound=None), 'is_identity': gi.FunctionInfo(is_identity, bound=None), 'is_simple': gi.FunctionInfo(is_simple, bound=None), 'mult': gi.FunctionInfo(mult, bound=None), 'rotate': gi.FunctionInfo(rotate, bound=None), 'scale': gi.FunctionInfo(scale, bound=None), 'transform_point': gi.FunctionInfo(transform_point, bound=None), 'translate': gi.FunctionInfo(translate, bound=None), 'xshear': gi.FunctionInfo(xshear, bound=None), 'yshear': gi.FunctionInfo(yshear, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpMatrix3 (3595410928)>'
     __info__ = StructInfo(Matrix3)
 
 

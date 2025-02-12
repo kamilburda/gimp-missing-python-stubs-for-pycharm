@@ -21,13 +21,13 @@ import gi.repository.GObject as __gi_repository_GObject
 import gobject as __gobject
 
 
-class ParamSpecImage(__gi.Struct):
+class DrawableFilterClass(__gi.Struct):
     """
     :Constructors:
     
     ::
     
-        ParamSpecImage()
+        DrawableFilterClass()
     """
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
@@ -42,7 +42,11 @@ class ParamSpecImage(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -132,14 +136,12 @@ class ParamSpecImage(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    none_ok = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecImage), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecImage' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecImage' objects>, '__doc__': None, 'parent_instance': <property object at 0x000001b640d08900>, 'none_ok': <property object at 0x000001b640d089f0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DrawableFilterClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DrawableFilterClass' objects>, '__weakref__': <attribute '__weakref__' of 'DrawableFilterClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90af6f0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(ParamSpecImage)
+    __info__ = StructInfo(DrawableFilterClass)
 
 

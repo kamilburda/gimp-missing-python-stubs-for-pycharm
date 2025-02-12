@@ -50,7 +50,11 @@ class Int32Array(__gi.Boxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -141,8 +145,8 @@ class Int32Array(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (1069023904)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None, 'get_values': gi.FunctionInfo(get_values, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpInt32Array (1069023904)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Int32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpInt32Array (3595411600)>, '__dict__': <attribute '__dict__' of 'Int32Array' objects>, '__weakref__': <attribute '__weakref__' of 'Int32Array' objects>, '__doc__': None, 'get_values': gi.FunctionInfo(get_values, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpInt32Array (3595411600)>'
     __info__ = StructInfo(Int32Array)
 
 

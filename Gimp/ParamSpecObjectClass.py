@@ -42,7 +42,11 @@ class ParamSpecObjectClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -160,7 +164,7 @@ class ParamSpecObjectClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecObjectClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecObjectClass' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecObjectClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640d09260>, 'duplicate': <property object at 0x000001b640d09350>, 'get_default': <property object at 0x000001b640d09440>, '_gimp_reserved0': <property object at 0x000001b640d09530>, '_gimp_reserved1': <property object at 0x000001b640d09620>, '_gimp_reserved2': <property object at 0x000001b640d09710>, '_gimp_reserved3': <property object at 0x000001b640d09800>, '_gimp_reserved4': <property object at 0x000001b640d098f0>, '_gimp_reserved5': <property object at 0x000001b640d099e0>, '_gimp_reserved6': <property object at 0x000001b640d09ad0>, '_gimp_reserved7': <property object at 0x000001b640d09bc0>, '_gimp_reserved8': <property object at 0x000001b640d09cb0>, '_gimp_reserved9': <property object at 0x000001b640d09da0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ParamSpecObjectClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ParamSpecObjectClass' objects>, '__weakref__': <attribute '__weakref__' of 'ParamSpecObjectClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd92dd5d0>, 'duplicate': <property object at 0x000001dcd92dd6c0>, 'get_default': <property object at 0x000001dcd92dd7b0>, '_gimp_reserved0': <property object at 0x000001dcd92dd8a0>, '_gimp_reserved1': <property object at 0x000001dcd92dd990>, '_gimp_reserved2': <property object at 0x000001dcd92dda80>, '_gimp_reserved3': <property object at 0x000001dcd92ddb70>, '_gimp_reserved4': <property object at 0x000001dcd92ddc60>, '_gimp_reserved5': <property object at 0x000001dcd92ddd50>, '_gimp_reserved6': <property object at 0x000001dcd92dde40>, '_gimp_reserved7': <property object at 0x000001dcd92ddf30>, '_gimp_reserved8': <property object at 0x000001dcd92de020>, '_gimp_reserved9': <property object at 0x000001dcd92de110>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ParamSpecObjectClass)
 

@@ -353,7 +353,11 @@ class Choice(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -451,12 +455,12 @@ class Choice(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d360>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90dab00>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Choice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChoice (1069023232)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'get_documentation': gi.FunctionInfo(get_documentation, bound=None), 'get_help': gi.FunctionInfo(get_help, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'list_nicks': gi.FunctionInfo(list_nicks, bound=None), 'set_sensitive': gi.FunctionInfo(set_sensitive, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Choice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChoice (3596611568)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'add': gi.FunctionInfo(add, bound=None), 'get_documentation': gi.FunctionInfo(get_documentation, bound=None), 'get_help': gi.FunctionInfo(get_help, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_label': gi.FunctionInfo(get_label, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'list_nicks': gi.FunctionInfo(list_nicks, bound=None), 'set_sensitive': gi.FunctionInfo(set_sensitive, bound=None)})"
     __gdoc__ = 'Object GimpChoice\n\nSignals from GimpChoice:\n  sensitivity-changed (gchararray)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpChoice (1069023232)>'
+    __gtype__ = None # (!) real value is '<GType GimpChoice (3596611568)>'
     __info__ = ObjectInfo(Choice)
 
 

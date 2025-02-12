@@ -33,6 +33,10 @@ class Channel(Drawable):
         new(image:Gimp.Image, name:str, width:int, height:int, opacity:float, color:Gegl.Color) -> Gimp.Channel
         new_from_component(image:Gimp.Image, component:Gimp.ChannelType, name:str) -> Gimp.Channel
     """
+    def append_filter(self, filter): # real signature unknown; restored from __doc__
+        """ append_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def attach_parasite(self, parasite): # real signature unknown; restored from __doc__
         """ attach_parasite(self, parasite:Gimp.Parasite) -> bool """
         return False
@@ -239,6 +243,10 @@ class Channel(Drawable):
     def get_expanded(self): # real signature unknown; restored from __doc__
         """ get_expanded(self) -> bool """
         return False
+
+    def get_filters(self): # real signature unknown; restored from __doc__
+        """ get_filters(self) -> list """
+        return []
 
     def get_format(self): # real signature unknown; restored from __doc__
         """ get_format(self) -> Babl.Object """
@@ -532,6 +540,10 @@ class Channel(Drawable):
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
         return False
 
+    def merge_filter(self, filter): # real signature unknown; restored from __doc__
+        """ merge_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def merge_filters(self): # real signature unknown; restored from __doc__
         """ merge_filters(self) -> bool """
         return False
@@ -560,8 +572,8 @@ class Channel(Drawable):
         # no doc
         pass
 
-    def offset(self, wrap_around, fill_type, offset_x, offset_y): # real signature unknown; restored from __doc__
-        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, offset_x:int, offset_y:int) -> bool """
+    def offset(self, wrap_around, fill_type, color, offset_x, offset_y): # real signature unknown; restored from __doc__
+        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, color:Gegl.Color, offset_x:int, offset_y:int) -> bool """
         return False
 
     def override_property(self, property_id, name): # real signature unknown; restored from __doc__
@@ -784,7 +796,11 @@ class Channel(Drawable):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -884,12 +900,12 @@ class Channel(Drawable):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069da80>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd5f5b370>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Channel), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChannel (1066677664)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_component': gi.FunctionInfo(new_from_component, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'combine_masks': gi.FunctionInfo(combine_masks, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_masked': gi.FunctionInfo(get_show_masked, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_masked': gi.FunctionInfo(set_show_masked, bound=None), 'parent_instance': <property object at 0x000001b640cae0c0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Channel), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpChannel (3599942832)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_component': gi.FunctionInfo(new_from_component, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'combine_masks': gi.FunctionInfo(combine_masks, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_color': gi.FunctionInfo(get_color, bound=None), 'get_opacity': gi.FunctionInfo(get_opacity, bound=None), 'get_show_masked': gi.FunctionInfo(get_show_masked, bound=None), 'set_color': gi.FunctionInfo(set_color, bound=None), 'set_opacity': gi.FunctionInfo(set_opacity, bound=None), 'set_show_masked': gi.FunctionInfo(set_show_masked, bound=None), 'parent_instance': <property object at 0x000001dcd90ac400>})"
     __gdoc__ = 'Object GimpChannel\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpChannel (1066677664)>'
+    __gtype__ = None # (!) real value is '<GType GimpChannel (3599942832)>'
     __info__ = ObjectInfo(Channel)
 
 

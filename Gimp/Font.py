@@ -458,7 +458,11 @@ class Font(Resource):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -561,12 +565,12 @@ class Font(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d930>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90ee590>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Font), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFont (1069023120)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_pango_font_description': gi.FunctionInfo(get_pango_font_description, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Font), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpFont (3595402976)>, '__doc__': None, '__gsignals__': {}, 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_pango_font_description': gi.FunctionInfo(get_pango_font_description, bound=None)})"
     __gdoc__ = 'Object GimpFont\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpFont (1069023120)>'
+    __gtype__ = None # (!) real value is '<GType GimpFont (3595402976)>'
     __info__ = ObjectInfo(Font)
 
 

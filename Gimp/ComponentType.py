@@ -25,10 +25,9 @@ class ComponentType(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ComponentType(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ComponentType(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -389,7 +393,7 @@ class ComponentType(__gobject.GEnum):
     U32 = 300
     U8 = 100
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ComponentType' objects>, '__doc__': None, '__gtype__': <GType GimpComponentType (1069019088)>, '__enum_values__': {100: <enum GIMP_COMPONENT_TYPE_U8 of type Gimp.ComponentType>, 200: <enum GIMP_COMPONENT_TYPE_U16 of type Gimp.ComponentType>, 300: <enum GIMP_COMPONENT_TYPE_U32 of type Gimp.ComponentType>, 500: <enum GIMP_COMPONENT_TYPE_HALF of type Gimp.ComponentType>, 600: <enum GIMP_COMPONENT_TYPE_FLOAT of type Gimp.ComponentType>, 700: <enum GIMP_COMPONENT_TYPE_DOUBLE of type Gimp.ComponentType>}, '__info__': gi.EnumInfo(ComponentType), 'U8': <enum GIMP_COMPONENT_TYPE_U8 of type Gimp.ComponentType>, 'U16': <enum GIMP_COMPONENT_TYPE_U16 of type Gimp.ComponentType>, 'U32': <enum GIMP_COMPONENT_TYPE_U32 of type Gimp.ComponentType>, 'HALF': <enum GIMP_COMPONENT_TYPE_HALF of type Gimp.ComponentType>, 'FLOAT': <enum GIMP_COMPONENT_TYPE_FLOAT of type Gimp.ComponentType>, 'DOUBLE': <enum GIMP_COMPONENT_TYPE_DOUBLE of type Gimp.ComponentType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ComponentType' objects>, '__doc__': None, '__gtype__': <GType GimpComponentType (3595400288)>, '__enum_values__': {100: <enum GIMP_COMPONENT_TYPE_U8 of type Gimp.ComponentType>, 200: <enum GIMP_COMPONENT_TYPE_U16 of type Gimp.ComponentType>, 300: <enum GIMP_COMPONENT_TYPE_U32 of type Gimp.ComponentType>, 500: <enum GIMP_COMPONENT_TYPE_HALF of type Gimp.ComponentType>, 600: <enum GIMP_COMPONENT_TYPE_FLOAT of type Gimp.ComponentType>, 700: <enum GIMP_COMPONENT_TYPE_DOUBLE of type Gimp.ComponentType>}, '__info__': gi.EnumInfo(ComponentType), 'U8': <enum GIMP_COMPONENT_TYPE_U8 of type Gimp.ComponentType>, 'U16': <enum GIMP_COMPONENT_TYPE_U16 of type Gimp.ComponentType>, 'U32': <enum GIMP_COMPONENT_TYPE_U32 of type Gimp.ComponentType>, 'HALF': <enum GIMP_COMPONENT_TYPE_HALF of type Gimp.ComponentType>, 'FLOAT': <enum GIMP_COMPONENT_TYPE_FLOAT of type Gimp.ComponentType>, 'DOUBLE': <enum GIMP_COMPONENT_TYPE_DOUBLE of type Gimp.ComponentType>})"
     __enum_values__ = {
         100: 100,
         200: 200,
@@ -398,7 +402,7 @@ class ComponentType(__gobject.GEnum):
         600: 600,
         700: 700,
     }
-    __gtype__ = None # (!) real value is '<GType GimpComponentType (1069019088)>'
+    __gtype__ = None # (!) real value is '<GType GimpComponentType (3595400288)>'
     __info__ = gi.EnumInfo(ComponentType)
 
 

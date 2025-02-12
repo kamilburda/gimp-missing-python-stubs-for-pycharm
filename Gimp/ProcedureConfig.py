@@ -344,7 +344,11 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -444,12 +448,12 @@ class ProcedureConfig(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069eec0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9187fd0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ProcedureConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedureConfig (1072211552)>, '__doc__': None, '__gsignals__': {}, 'get_choice_id': gi.FunctionInfo(get_choice_id, bound=None), 'get_color_array': gi.FunctionInfo(get_color_array, bound=None), 'get_core_object_array': gi.FunctionInfo(get_core_object_array, bound=None), 'get_procedure': gi.FunctionInfo(get_procedure, bound=None), 'save_metadata': gi.FunctionInfo(save_metadata, bound=None), 'set_color_array': gi.FunctionInfo(set_color_array, bound=None), 'set_core_object_array': gi.FunctionInfo(set_core_object_array, bound=None), 'parent_instance': <property object at 0x000001b640d137e0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ProcedureConfig), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpProcedureConfig (3595417200)>, '__doc__': None, '__gsignals__': {}, 'get_choice_id': gi.FunctionInfo(get_choice_id, bound=None), 'get_color_array': gi.FunctionInfo(get_color_array, bound=None), 'get_core_object_array': gi.FunctionInfo(get_core_object_array, bound=None), 'get_procedure': gi.FunctionInfo(get_procedure, bound=None), 'save_metadata': gi.FunctionInfo(save_metadata, bound=None), 'set_color_array': gi.FunctionInfo(set_color_array, bound=None), 'set_core_object_array': gi.FunctionInfo(set_core_object_array, bound=None), 'parent_instance': <property object at 0x000001dcd92e9620>})"
     __gdoc__ = 'Object GimpProcedureConfig\n\nProperties from GimpProcedureConfig:\n  procedure -> GimpProcedure: Procedure\n    The procedure this config object is used for\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpProcedureConfig (1072211552)>'
+    __gtype__ = None # (!) real value is '<GType GimpProcedureConfig (3595417200)>'
     __info__ = ObjectInfo(ProcedureConfig)
 
 

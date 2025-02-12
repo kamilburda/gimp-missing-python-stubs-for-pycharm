@@ -25,10 +25,9 @@ class InterpolationType(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class InterpolationType(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class InterpolationType(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -388,7 +392,7 @@ class InterpolationType(__gobject.GEnum):
     NOHALO = 3
     NONE = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (1069009008)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'InterpolationType' objects>, '__doc__': None, '__gtype__': <GType GimpInterpolationType (3595408240)>, '__enum_values__': {0: <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 1: <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 2: <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 3: <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 4: <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>}, '__info__': gi.EnumInfo(InterpolationType), 'NONE': <enum GIMP_INTERPOLATION_NONE of type Gimp.InterpolationType>, 'LINEAR': <enum GIMP_INTERPOLATION_LINEAR of type Gimp.InterpolationType>, 'CUBIC': <enum GIMP_INTERPOLATION_CUBIC of type Gimp.InterpolationType>, 'NOHALO': <enum GIMP_INTERPOLATION_NOHALO of type Gimp.InterpolationType>, 'LOHALO': <enum GIMP_INTERPOLATION_LOHALO of type Gimp.InterpolationType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +400,7 @@ class InterpolationType(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (1069009008)>'
+    __gtype__ = None # (!) real value is '<GType GimpInterpolationType (3595408240)>'
     __info__ = gi.EnumInfo(InterpolationType)
 
 

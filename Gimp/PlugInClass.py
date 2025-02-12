@@ -42,7 +42,11 @@ class PlugInClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -166,7 +170,7 @@ class PlugInClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PlugInClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PlugInClass' objects>, '__weakref__': <attribute '__weakref__' of 'PlugInClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640d10f90>, 'query_procedures': <property object at 0x000001b640d110d0>, 'init_procedures': <property object at 0x000001b640d11170>, 'create_procedure': <property object at 0x000001b640d112b0>, 'quit': <property object at 0x000001b640d113a0>, 'set_i18n': <property object at 0x000001b640d11490>, '_gimp_reserved0': <property object at 0x000001b640d11580>, '_gimp_reserved1': <property object at 0x000001b640d11670>, '_gimp_reserved2': <property object at 0x000001b640d11760>, '_gimp_reserved3': <property object at 0x000001b640d11850>, '_gimp_reserved4': <property object at 0x000001b640d11940>, '_gimp_reserved5': <property object at 0x000001b640d11a30>, '_gimp_reserved6': <property object at 0x000001b640d11b20>, '_gimp_reserved7': <property object at 0x000001b640d11c10>, '_gimp_reserved8': <property object at 0x000001b640d11d00>, '_gimp_reserved9': <property object at 0x000001b640d11df0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(PlugInClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'PlugInClass' objects>, '__weakref__': <attribute '__weakref__' of 'PlugInClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd92df6f0>, 'query_procedures': <property object at 0x000001dcd92df7e0>, 'init_procedures': <property object at 0x000001dcd92df8d0>, 'create_procedure': <property object at 0x000001dcd92df9c0>, 'quit': <property object at 0x000001dcd92dfab0>, 'set_i18n': <property object at 0x000001dcd92dfba0>, '_gimp_reserved0': <property object at 0x000001dcd92dfc90>, '_gimp_reserved1': <property object at 0x000001dcd92dfd80>, '_gimp_reserved2': <property object at 0x000001dcd92dfe70>, '_gimp_reserved3': <property object at 0x000001dcd92dff60>, '_gimp_reserved4': <property object at 0x000001dcd92e8090>, '_gimp_reserved5': <property object at 0x000001dcd92e8180>, '_gimp_reserved6': <property object at 0x000001dcd92e8270>, '_gimp_reserved7': <property object at 0x000001dcd92e8360>, '_gimp_reserved8': <property object at 0x000001dcd92e8400>, '_gimp_reserved9': <property object at 0x000001dcd92e84f0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(PlugInClass)
 

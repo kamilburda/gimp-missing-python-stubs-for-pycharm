@@ -122,7 +122,11 @@ class ParamChoice(__gi_repository_GObject.ParamSpecString):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -245,10 +249,10 @@ class ParamChoice(__gi_repository_GObject.ParamSpecString):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamChoice (1069010240)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamChoice), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamChoice (3595414064)>, '__doc__': None, '__gsignals__': {}})"
     __gproperties__ = {
         'blurb': (
-            None, # (!) real value is '<GType PyObject (1065322800)>'
+            None, # (!) real value is '<GType PyObject (3594023216)>'
             '',
             '',
             3,
@@ -256,7 +260,7 @@ class ParamChoice(__gi_repository_GObject.ParamSpecString):
         'nick': '<value is a self-reference, replaced by this string>',
     }
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamChoice (1069010240)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamChoice (3595414064)>'
     __info__ = ObjectInfo(ParamChoice)
 
 

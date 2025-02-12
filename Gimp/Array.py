@@ -58,7 +58,11 @@ class Array(__gi.Boxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -156,8 +160,8 @@ class Array(__gi.Boxed):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (1071864880)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x000001b640cbde40>, 'length': <property object at 0x000001b640cbdf30>, 'static_data': <property object at 0x000001b640cbe020>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpArray (1071864880)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpArray (3599986240)>, '__dict__': <attribute '__dict__' of 'Array' objects>, '__weakref__': <attribute '__weakref__' of 'Array' objects>, '__doc__': None, 'data': <property object at 0x000001dcd916ea20>, 'length': <property object at 0x000001dcd916eb10>, 'static_data': <property object at 0x000001dcd916ec00>, 'new': gi.FunctionInfo(new, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'free': gi.FunctionInfo(free, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpArray (3599986240)>'
     __info__ = StructInfo(Array)
 
 

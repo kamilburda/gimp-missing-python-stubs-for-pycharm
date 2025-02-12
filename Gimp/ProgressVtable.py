@@ -42,7 +42,11 @@ class ProgressVtable(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -166,7 +170,7 @@ class ProgressVtable(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProgressVtable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProgressVtable' objects>, '__weakref__': <attribute '__weakref__' of 'ProgressVtable' objects>, '__doc__': None, 'start': <property object at 0x000001b640d14b80>, 'end': <property object at 0x000001b640d14c70>, 'set_text': <property object at 0x000001b640d14d60>, 'set_value': <property object at 0x000001b640d14e50>, 'pulse': <property object at 0x000001b640d14f40>, 'get_window_handle': <property object at 0x000001b640d15080>, '_gimp_reserved0': <property object at 0x000001b640d15120>, '_gimp_reserved1': <property object at 0x000001b640d15210>, '_gimp_reserved2': <property object at 0x000001b640d15300>, '_gimp_reserved3': <property object at 0x000001b640d153f0>, '_gimp_reserved4': <property object at 0x000001b640d154e0>, '_gimp_reserved5': <property object at 0x000001b640d155d0>, '_gimp_reserved6': <property object at 0x000001b640d156c0>, '_gimp_reserved7': <property object at 0x000001b640d157b0>, '_gimp_reserved8': <property object at 0x000001b640d158a0>, '_gimp_reserved9': <property object at 0x000001b640d15990>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ProgressVtable), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ProgressVtable' objects>, '__weakref__': <attribute '__weakref__' of 'ProgressVtable' objects>, '__doc__': None, 'start': <property object at 0x000001dcd92ea3e0>, 'end': <property object at 0x000001dcd92ea4d0>, 'set_text': <property object at 0x000001dcd92ea5c0>, 'set_value': <property object at 0x000001dcd92ea6b0>, 'pulse': <property object at 0x000001dcd92ea7a0>, 'get_window_handle': <property object at 0x000001dcd92ea890>, '_gimp_reserved0': <property object at 0x000001dcd92ea980>, '_gimp_reserved1': <property object at 0x000001dcd92eaa70>, '_gimp_reserved2': <property object at 0x000001dcd92eab60>, '_gimp_reserved3': <property object at 0x000001dcd92eac50>, '_gimp_reserved4': <property object at 0x000001dcd92ead40>, '_gimp_reserved5': <property object at 0x000001dcd92eae30>, '_gimp_reserved6': <property object at 0x000001dcd92eaf20>, '_gimp_reserved7': <property object at 0x000001dcd92eb010>, '_gimp_reserved8': <property object at 0x000001dcd92eb100>, '_gimp_reserved9': <property object at 0x000001dcd92eb1f0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ProgressVtable)
 

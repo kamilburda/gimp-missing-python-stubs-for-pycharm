@@ -644,7 +644,11 @@ class Path(Item):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -744,12 +748,12 @@ class Path(Item):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069ef80>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9186500>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Path), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPath (1072215360)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_text_layer': gi.FunctionInfo(new_from_text_layer, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_user_writable_dir': gi.FunctionInfo(get_user_writable_dir, bound=None), 'parse': gi.FunctionInfo(parse, bound=None), 'to_str': gi.FunctionInfo(to_str, bound=None), 'bezier_stroke_conicto': gi.FunctionInfo(bezier_stroke_conicto, bound=None), 'bezier_stroke_cubicto': gi.FunctionInfo(bezier_stroke_cubicto, bound=None), 'bezier_stroke_lineto': gi.FunctionInfo(bezier_stroke_lineto, bound=None), 'bezier_stroke_new_ellipse': gi.FunctionInfo(bezier_stroke_new_ellipse, bound=None), 'bezier_stroke_new_moveto': gi.FunctionInfo(bezier_stroke_new_moveto, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_strokes': gi.FunctionInfo(get_strokes, bound=None), 'remove_stroke': gi.FunctionInfo(remove_stroke, bound=None), 'stroke_close': gi.FunctionInfo(stroke_close, bound=None), 'stroke_flip': gi.FunctionInfo(stroke_flip, bound=None), 'stroke_flip_free': gi.FunctionInfo(stroke_flip_free, bound=None), 'stroke_get_length': gi.FunctionInfo(stroke_get_length, bound=None), 'stroke_get_point_at_dist': gi.FunctionInfo(stroke_get_point_at_dist, bound=None), 'stroke_get_points': gi.FunctionInfo(stroke_get_points, bound=None), 'stroke_interpolate': gi.FunctionInfo(stroke_interpolate, bound=None), 'stroke_new_from_points': gi.FunctionInfo(stroke_new_from_points, bound=None), 'stroke_reverse': gi.FunctionInfo(stroke_reverse, bound=None), 'stroke_rotate': gi.FunctionInfo(stroke_rotate, bound=None), 'stroke_scale': gi.FunctionInfo(stroke_scale, bound=None), 'stroke_translate': gi.FunctionInfo(stroke_translate, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Path), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPath (3595413728)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_from_text_layer': gi.FunctionInfo(new_from_text_layer, bound=None), 'free': gi.FunctionInfo(free, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_user_writable_dir': gi.FunctionInfo(get_user_writable_dir, bound=None), 'parse': gi.FunctionInfo(parse, bound=None), 'to_str': gi.FunctionInfo(to_str, bound=None), 'bezier_stroke_conicto': gi.FunctionInfo(bezier_stroke_conicto, bound=None), 'bezier_stroke_cubicto': gi.FunctionInfo(bezier_stroke_cubicto, bound=None), 'bezier_stroke_lineto': gi.FunctionInfo(bezier_stroke_lineto, bound=None), 'bezier_stroke_new_ellipse': gi.FunctionInfo(bezier_stroke_new_ellipse, bound=None), 'bezier_stroke_new_moveto': gi.FunctionInfo(bezier_stroke_new_moveto, bound=None), 'copy': gi.FunctionInfo(copy, bound=None), 'get_strokes': gi.FunctionInfo(get_strokes, bound=None), 'remove_stroke': gi.FunctionInfo(remove_stroke, bound=None), 'stroke_close': gi.FunctionInfo(stroke_close, bound=None), 'stroke_flip': gi.FunctionInfo(stroke_flip, bound=None), 'stroke_flip_free': gi.FunctionInfo(stroke_flip_free, bound=None), 'stroke_get_length': gi.FunctionInfo(stroke_get_length, bound=None), 'stroke_get_point_at_dist': gi.FunctionInfo(stroke_get_point_at_dist, bound=None), 'stroke_get_points': gi.FunctionInfo(stroke_get_points, bound=None), 'stroke_interpolate': gi.FunctionInfo(stroke_interpolate, bound=None), 'stroke_new_from_points': gi.FunctionInfo(stroke_new_from_points, bound=None), 'stroke_reverse': gi.FunctionInfo(stroke_reverse, bound=None), 'stroke_rotate': gi.FunctionInfo(stroke_rotate, bound=None), 'stroke_scale': gi.FunctionInfo(stroke_scale, bound=None), 'stroke_translate': gi.FunctionInfo(stroke_translate, bound=None)})"
     __gdoc__ = 'Object GimpPath\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPath (1072215360)>'
+    __gtype__ = None # (!) real value is '<GType GimpPath (3595413728)>'
     __info__ = ObjectInfo(Path)
 
 

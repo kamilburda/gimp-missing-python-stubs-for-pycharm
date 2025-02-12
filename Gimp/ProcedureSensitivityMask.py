@@ -25,10 +25,9 @@ class ProcedureSensitivityMask(__gobject.GFlags):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ProcedureSensitivityMask(__gobject.GFlags):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ProcedureSensitivityMask(__gobject.GFlags):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -393,7 +397,7 @@ class ProcedureSensitivityMask(__gobject.GFlags):
     NO_DRAWABLES = 8
     NO_IMAGE = 16
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProcedureSensitivityMask' objects>, '__doc__': None, '__gtype__': <GType GimpProcedureSensitivityMask (1072213008)>, '__flags_values__': {1: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE of type Gimp.ProcedureSensitivityMask>, 4: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 8: <flags GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 16: <flags GIMP_PROCEDURE_SENSITIVE_NO_IMAGE of type Gimp.ProcedureSensitivityMask>, 2147483647: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE | GIMP_PROCEDURE_SENSITIVE_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_IMAGE | GIMP_PROCEDURE_SENSITIVE_ALWAYS of type Gimp.ProcedureSensitivityMask>}, '__info__': gi.EnumInfo(ProcedureSensitivityMask), 'DRAWABLE': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE of type Gimp.ProcedureSensitivityMask>, 'DRAWABLES': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 'NO_DRAWABLES': <flags GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 'NO_IMAGE': <flags GIMP_PROCEDURE_SENSITIVE_NO_IMAGE of type Gimp.ProcedureSensitivityMask>, 'ALWAYS': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE | GIMP_PROCEDURE_SENSITIVE_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_IMAGE | GIMP_PROCEDURE_SENSITIVE_ALWAYS of type Gimp.ProcedureSensitivityMask>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ProcedureSensitivityMask' objects>, '__doc__': None, '__gtype__': <GType GimpProcedureSensitivityMask (3595413504)>, '__flags_values__': {1: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE of type Gimp.ProcedureSensitivityMask>, 4: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 8: <flags GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 16: <flags GIMP_PROCEDURE_SENSITIVE_NO_IMAGE of type Gimp.ProcedureSensitivityMask>, 2147483647: <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE | GIMP_PROCEDURE_SENSITIVE_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_IMAGE | GIMP_PROCEDURE_SENSITIVE_ALWAYS of type Gimp.ProcedureSensitivityMask>}, '__info__': gi.EnumInfo(ProcedureSensitivityMask), 'DRAWABLE': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE of type Gimp.ProcedureSensitivityMask>, 'DRAWABLES': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 'NO_DRAWABLES': <flags GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES of type Gimp.ProcedureSensitivityMask>, 'NO_IMAGE': <flags GIMP_PROCEDURE_SENSITIVE_NO_IMAGE of type Gimp.ProcedureSensitivityMask>, 'ALWAYS': <flags GIMP_PROCEDURE_SENSITIVE_DRAWABLE | GIMP_PROCEDURE_SENSITIVE_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_DRAWABLES | GIMP_PROCEDURE_SENSITIVE_NO_IMAGE | GIMP_PROCEDURE_SENSITIVE_ALWAYS of type Gimp.ProcedureSensitivityMask>})"
     __flags_values__ = {
         1: 1,
         4: 4,
@@ -401,7 +405,7 @@ class ProcedureSensitivityMask(__gobject.GFlags):
         16: 16,
         2147483647: 2147483647,
     }
-    __gtype__ = None # (!) real value is '<GType GimpProcedureSensitivityMask (1072213008)>'
+    __gtype__ = None # (!) real value is '<GType GimpProcedureSensitivityMask (3595413504)>'
     __info__ = gi.EnumInfo(ProcedureSensitivityMask)
 
 

@@ -353,7 +353,11 @@ class Display(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -451,12 +455,12 @@ class Display(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d630>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd67341c0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (1069022448)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Display), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDisplay (3595399504)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'name': gi.FunctionInfo(name, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_window_handle': gi.FunctionInfo(get_window_handle, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'present': gi.FunctionInfo(present, bound=None)})"
     __gdoc__ = 'Object GimpDisplay\n\nProperties from GimpDisplay:\n  id -> gint: The display id\n    The display id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpDisplay (1069022448)>'
+    __gtype__ = None # (!) real value is '<GType GimpDisplay (3595399504)>'
     __info__ = ObjectInfo(Display)
 
 

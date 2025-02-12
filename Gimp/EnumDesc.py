@@ -42,7 +42,11 @@ class EnumDesc(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -140,7 +144,7 @@ class EnumDesc(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(EnumDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'EnumDesc' objects>, '__weakref__': <attribute '__weakref__' of 'EnumDesc' objects>, '__doc__': None, 'value': <property object at 0x000001b640cd8a90>, 'value_desc': <property object at 0x000001b640cd8b80>, 'value_help': <property object at 0x000001b640cd8c70>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(EnumDesc), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'EnumDesc' objects>, '__weakref__': <attribute '__weakref__' of 'EnumDesc' objects>, '__doc__': None, 'value': <property object at 0x000001dcd90c0450>, 'value_desc': <property object at 0x000001dcd90c0540>, 'value_help': <property object at 0x000001dcd90c0630>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(EnumDesc)
 

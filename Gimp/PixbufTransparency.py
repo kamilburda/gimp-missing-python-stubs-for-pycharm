@@ -25,10 +25,9 @@ class PixbufTransparency(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class PixbufTransparency(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class PixbufTransparency(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -386,13 +390,13 @@ class PixbufTransparency(__gobject.GEnum):
     LARGE_CHECKS = 2
     SMALL_CHECKS = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PixbufTransparency' objects>, '__doc__': None, '__gtype__': <GType PyGimpPixbufTransparency (1072217040)>, '__enum_values__': {0: <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 1: <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 2: <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>}, '__info__': gi.EnumInfo(PixbufTransparency), 'KEEP_ALPHA': <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 'SMALL_CHECKS': <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 'LARGE_CHECKS': <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'PixbufTransparency' objects>, '__doc__': None, '__gtype__': <GType PyGimpPixbufTransparency (3595419328)>, '__enum_values__': {0: <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 1: <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 2: <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>}, '__info__': gi.EnumInfo(PixbufTransparency), 'KEEP_ALPHA': <enum GIMP_PIXBUF_KEEP_ALPHA of type Gimp.PixbufTransparency>, 'SMALL_CHECKS': <enum GIMP_PIXBUF_SMALL_CHECKS of type Gimp.PixbufTransparency>, 'LARGE_CHECKS': <enum GIMP_PIXBUF_LARGE_CHECKS of type Gimp.PixbufTransparency>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpPixbufTransparency (1072217040)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpPixbufTransparency (3595419328)>'
     __info__ = gi.EnumInfo(PixbufTransparency)
 
 

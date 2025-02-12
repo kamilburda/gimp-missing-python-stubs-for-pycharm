@@ -25,10 +25,9 @@ class StrokeMethod(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class StrokeMethod(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class StrokeMethod(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -385,12 +389,12 @@ class StrokeMethod(__gobject.GEnum):
     LINE = 0
     PAINT_METHOD = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StrokeMethod' objects>, '__doc__': None, '__gtype__': <GType GimpStrokeMethod (1065744176)>, '__enum_values__': {0: <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 1: <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>}, '__info__': gi.EnumInfo(StrokeMethod), 'LINE': <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 'PAINT_METHOD': <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'StrokeMethod' objects>, '__doc__': None, '__gtype__': <GType GimpStrokeMethod (3595425824)>, '__enum_values__': {0: <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 1: <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>}, '__info__': gi.EnumInfo(StrokeMethod), 'LINE': <enum GIMP_STROKE_LINE of type Gimp.StrokeMethod>, 'PAINT_METHOD': <enum GIMP_STROKE_PAINT_METHOD of type Gimp.StrokeMethod>})"
     __enum_values__ = {
         0: 0,
         1: 1,
     }
-    __gtype__ = None # (!) real value is '<GType GimpStrokeMethod (1065744176)>'
+    __gtype__ = None # (!) real value is '<GType GimpStrokeMethod (3595425824)>'
     __info__ = gi.EnumInfo(StrokeMethod)
 
 

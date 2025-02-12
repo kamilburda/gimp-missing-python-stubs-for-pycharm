@@ -188,12 +188,12 @@ class ExportProcedure(FileProcedure):
         """ add_enum_return_value(self, name:str, nick:str, blurb:str, enum_type:GType, value:int, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
-    def add_file_aux_argument(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
-        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, flags:GObject.ParamFlags) """
+    def add_file_aux_argument(self, name, nick, blurb, action, none_ok, default_file=None, flags): # real signature unknown; restored from __doc__
+        """ add_file_aux_argument(self, name:str, nick:str, blurb:str, action:Gimp.FileChooserAction, none_ok:bool, default_file:Gio.File=None, flags:GObject.ParamFlags) """
         pass
 
     def add_file_return_value(self, name, nick, blurb, flags): # real signature unknown; restored from __doc__
@@ -783,6 +783,10 @@ class ExportProcedure(FileProcedure):
         # no doc
         pass
 
+    def is_core(self): # real signature unknown; restored from __doc__
+        """ is_core(self) -> bool """
+        return False
+
     def is_floating(self): # real signature unknown; restored from __doc__
         """ is_floating(self) -> bool """
         return False
@@ -1019,7 +1023,11 @@ class ExportProcedure(FileProcedure):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1119,12 +1127,12 @@ class ExportProcedure(FileProcedure):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069dd50>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90ef460>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ExportProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpExportProcedure (1066677920)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_support_comment': gi.FunctionInfo(get_support_comment, bound=None), 'get_support_exif': gi.FunctionInfo(get_support_exif, bound=None), 'get_support_iptc': gi.FunctionInfo(get_support_iptc, bound=None), 'get_support_profile': gi.FunctionInfo(get_support_profile, bound=None), 'get_support_thumbnail': gi.FunctionInfo(get_support_thumbnail, bound=None), 'get_support_xmp': gi.FunctionInfo(get_support_xmp, bound=None), 'set_capabilities': gi.FunctionInfo(set_capabilities, bound=None), 'set_support_comment': gi.FunctionInfo(set_support_comment, bound=None), 'set_support_exif': gi.FunctionInfo(set_support_exif, bound=None), 'set_support_iptc': gi.FunctionInfo(set_support_iptc, bound=None), 'set_support_profile': gi.FunctionInfo(set_support_profile, bound=None), 'set_support_thumbnail': gi.FunctionInfo(set_support_thumbnail, bound=None), 'set_support_xmp': gi.FunctionInfo(set_support_xmp, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ExportProcedure), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpExportProcedure (3599943344)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_support_comment': gi.FunctionInfo(get_support_comment, bound=None), 'get_support_exif': gi.FunctionInfo(get_support_exif, bound=None), 'get_support_iptc': gi.FunctionInfo(get_support_iptc, bound=None), 'get_support_profile': gi.FunctionInfo(get_support_profile, bound=None), 'get_support_thumbnail': gi.FunctionInfo(get_support_thumbnail, bound=None), 'get_support_xmp': gi.FunctionInfo(get_support_xmp, bound=None), 'set_capabilities': gi.FunctionInfo(set_capabilities, bound=None), 'set_support_comment': gi.FunctionInfo(set_support_comment, bound=None), 'set_support_exif': gi.FunctionInfo(set_support_exif, bound=None), 'set_support_iptc': gi.FunctionInfo(set_support_iptc, bound=None), 'set_support_profile': gi.FunctionInfo(set_support_profile, bound=None), 'set_support_thumbnail': gi.FunctionInfo(set_support_thumbnail, bound=None), 'set_support_xmp': gi.FunctionInfo(set_support_xmp, bound=None)})"
     __gdoc__ = "Object GimpExportProcedure\n\nProperties from GimpExportProcedure:\n  capabilities -> GimpExportCapabilities: Supported image capabilities\n  supports-exif -> gboolean: Supports EXIF metadata storage\n  supports-iptc -> gboolean: Supports IPTC metadata storage\n  supports-xmp -> gboolean: Supports XMP metadata storage\n  supports-profile -> gboolean: Supports color profile storage\n  supports-thumbnail -> gboolean: Supports thumbnail storage\n  supports-comment -> gboolean: Supports comment storage\n\nProperties from GimpProcedure:\n  plug-in -> GimpPlugIn: Plug-In\n    The GimpPlugIn of this plug-in process\n  name -> gchararray: Name\n    The procedure's name\n  procedure-type -> GimpPDBProcType: Procedure type\n    The procedure's type\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpExportProcedure (1066677920)>'
+    __gtype__ = None # (!) real value is '<GType GimpExportProcedure (3599943344)>'
     __info__ = ObjectInfo(ExportProcedure)
 
 

@@ -25,10 +25,9 @@ class TextDirection(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class TextDirection(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class TextDirection(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -389,7 +393,7 @@ class TextDirection(__gobject.GEnum):
     TTB_RTL = 2
     TTB_RTL_UPRIGHT = 3
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (1065743616)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'TextDirection' objects>, '__doc__': None, '__gtype__': <GType GimpTextDirection (3595419664)>, '__enum_values__': {0: <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 1: <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 2: <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 3: <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 4: <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 5: <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>}, '__info__': gi.EnumInfo(TextDirection), 'LTR': <enum GIMP_TEXT_DIRECTION_LTR of type Gimp.TextDirection>, 'RTL': <enum GIMP_TEXT_DIRECTION_RTL of type Gimp.TextDirection>, 'TTB_RTL': <enum GIMP_TEXT_DIRECTION_TTB_RTL of type Gimp.TextDirection>, 'TTB_RTL_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_RTL_UPRIGHT of type Gimp.TextDirection>, 'TTB_LTR': <enum GIMP_TEXT_DIRECTION_TTB_LTR of type Gimp.TextDirection>, 'TTB_LTR_UPRIGHT': <enum GIMP_TEXT_DIRECTION_TTB_LTR_UPRIGHT of type Gimp.TextDirection>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -398,7 +402,7 @@ class TextDirection(__gobject.GEnum):
         4: 4,
         5: 5,
     }
-    __gtype__ = None # (!) real value is '<GType GimpTextDirection (1065743616)>'
+    __gtype__ = None # (!) real value is '<GType GimpTextDirection (3595419664)>'
     __info__ = gi.EnumInfo(TextDirection)
 
 

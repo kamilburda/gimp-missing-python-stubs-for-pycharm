@@ -25,10 +25,9 @@ class LayerCompositeMode(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class LayerCompositeMode(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class LayerCompositeMode(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -388,7 +392,7 @@ class LayerCompositeMode(__gobject.GEnum):
     INTERSECTION = 4
     UNION = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerCompositeMode' objects>, '__doc__': None, '__gtype__': <GType GimpLayerCompositeMode (1069011136)>, '__enum_values__': {0: <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 1: <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 2: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 3: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 4: <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>}, '__info__': gi.EnumInfo(LayerCompositeMode), 'AUTO': <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 'UNION': <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 'CLIP_TO_BACKDROP': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 'CLIP_TO_LAYER': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 'INTERSECTION': <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'LayerCompositeMode' objects>, '__doc__': None, '__gtype__': <GType GimpLayerCompositeMode (3595405328)>, '__enum_values__': {0: <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 1: <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 2: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 3: <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 4: <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>}, '__info__': gi.EnumInfo(LayerCompositeMode), 'AUTO': <enum GIMP_LAYER_COMPOSITE_AUTO of type Gimp.LayerCompositeMode>, 'UNION': <enum GIMP_LAYER_COMPOSITE_UNION of type Gimp.LayerCompositeMode>, 'CLIP_TO_BACKDROP': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_BACKDROP of type Gimp.LayerCompositeMode>, 'CLIP_TO_LAYER': <enum GIMP_LAYER_COMPOSITE_CLIP_TO_LAYER of type Gimp.LayerCompositeMode>, 'INTERSECTION': <enum GIMP_LAYER_COMPOSITE_INTERSECTION of type Gimp.LayerCompositeMode>})"
     __enum_values__ = {
         0: 0,
         1: 1,
@@ -396,7 +400,7 @@ class LayerCompositeMode(__gobject.GEnum):
         3: 3,
         4: 4,
     }
-    __gtype__ = None # (!) real value is '<GType GimpLayerCompositeMode (1069011136)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayerCompositeMode (3595405328)>'
     __info__ = gi.EnumInfo(LayerCompositeMode)
 
 

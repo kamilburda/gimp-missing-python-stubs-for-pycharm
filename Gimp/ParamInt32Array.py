@@ -124,7 +124,11 @@ class ParamInt32Array(ParamArray):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -235,10 +239,10 @@ class ParamInt32Array(ParamArray):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamInt32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamInt32Array (1066932528)>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ParamInt32Array), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpParamInt32Array (3596628688)>, '__doc__': None, '__gsignals__': {}})"
     __gproperties__ = {
         'blurb': (
-            None, # (!) real value is '<GType PyObject (1065322800)>'
+            None, # (!) real value is '<GType PyObject (3594023216)>'
             '',
             '',
             3,
@@ -246,7 +250,7 @@ class ParamInt32Array(ParamArray):
         'nick': '<value is a self-reference, replaced by this string>',
     }
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpParamInt32Array (1066932528)>'
+    __gtype__ = None # (!) real value is '<GType GimpParamInt32Array (3596628688)>'
     __info__ = ObjectInfo(ParamInt32Array)
 
 

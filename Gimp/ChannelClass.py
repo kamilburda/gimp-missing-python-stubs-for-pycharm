@@ -42,7 +42,11 @@ class ChannelClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -156,7 +160,7 @@ class ChannelClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChannelClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChannelClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChannelClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cae250>, '_gimp_reserved0': <property object at 0x000001b640cae340>, '_gimp_reserved1': <property object at 0x000001b640cae430>, '_gimp_reserved2': <property object at 0x000001b640cae520>, '_gimp_reserved3': <property object at 0x000001b640cae610>, '_gimp_reserved4': <property object at 0x000001b640cae700>, '_gimp_reserved5': <property object at 0x000001b640cae7f0>, '_gimp_reserved6': <property object at 0x000001b640cae8e0>, '_gimp_reserved7': <property object at 0x000001b640cae9d0>, '_gimp_reserved8': <property object at 0x000001b640caeac0>, '_gimp_reserved9': <property object at 0x000001b640caeb60>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ChannelClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ChannelClass' objects>, '__weakref__': <attribute '__weakref__' of 'ChannelClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90ac540>, '_gimp_reserved0': <property object at 0x000001dcd90ac630>, '_gimp_reserved1': <property object at 0x000001dcd90ac720>, '_gimp_reserved2': <property object at 0x000001dcd90ac810>, '_gimp_reserved3': <property object at 0x000001dcd90ac900>, '_gimp_reserved4': <property object at 0x000001dcd90ac9f0>, '_gimp_reserved5': <property object at 0x000001dcd90acae0>, '_gimp_reserved6': <property object at 0x000001dcd90acbd0>, '_gimp_reserved7': <property object at 0x000001dcd90accc0>, '_gimp_reserved8': <property object at 0x000001dcd90acdb0>, '_gimp_reserved9': <property object at 0x000001dcd90acea0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ChannelClass)
 

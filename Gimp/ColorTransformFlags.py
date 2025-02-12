@@ -25,10 +25,9 @@ class ColorTransformFlags(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ColorTransformFlags(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ColorTransformFlags(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -386,13 +390,13 @@ class ColorTransformFlags(__gobject.GEnum):
     GAMUT_CHECK = 4096
     NOOPTIMIZE = 256
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (1069016736)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ColorTransformFlags' objects>, '__doc__': None, '__gtype__': <GType PyGimpColorTransformFlags (3595403872)>, '__enum_values__': {256: <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 4096: <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 8192: <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>}, '__info__': gi.EnumInfo(ColorTransformFlags), 'NOOPTIMIZE': <enum GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE of type Gimp.ColorTransformFlags>, 'GAMUT_CHECK': <enum GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK of type Gimp.ColorTransformFlags>, 'BLACK_POINT_COMPENSATION': <enum GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION of type Gimp.ColorTransformFlags>})"
     __enum_values__ = {
         256: 256,
         4096: 4096,
         8192: 8192,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (1069016736)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpColorTransformFlags (3595403872)>'
     __info__ = gi.EnumInfo(ColorTransformFlags)
 
 

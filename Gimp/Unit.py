@@ -397,7 +397,11 @@ class Unit(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -495,12 +499,12 @@ class Unit(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066dfc0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd91903a0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Unit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpUnit (1072256752)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'format_string': gi.FunctionInfo(format_string, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'inch': gi.FunctionInfo(inch, bound=None), 'mm': gi.FunctionInfo(mm, bound=None), 'percent': gi.FunctionInfo(percent, bound=None), 'pica': gi.FunctionInfo(pica, bound=None), 'pixel': gi.FunctionInfo(pixel, bound=None), 'point': gi.FunctionInfo(point, bound=None), 'get_abbreviation': gi.FunctionInfo(get_abbreviation, bound=None), 'get_deletion_flag': gi.FunctionInfo(get_deletion_flag, bound=None), 'get_digits': gi.FunctionInfo(get_digits, bound=None), 'get_factor': gi.FunctionInfo(get_factor, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_scaled_digits': gi.FunctionInfo(get_scaled_digits, bound=None), 'get_symbol': gi.FunctionInfo(get_symbol, bound=None), 'is_built_in': gi.FunctionInfo(is_built_in, bound=None), 'is_metric': gi.FunctionInfo(is_metric, bound=None), 'set_deletion_flag': gi.FunctionInfo(set_deletion_flag, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Unit), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpUnit (3595420336)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'format_string': gi.FunctionInfo(format_string, bound=None), 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'inch': gi.FunctionInfo(inch, bound=None), 'mm': gi.FunctionInfo(mm, bound=None), 'percent': gi.FunctionInfo(percent, bound=None), 'pica': gi.FunctionInfo(pica, bound=None), 'pixel': gi.FunctionInfo(pixel, bound=None), 'point': gi.FunctionInfo(point, bound=None), 'get_abbreviation': gi.FunctionInfo(get_abbreviation, bound=None), 'get_deletion_flag': gi.FunctionInfo(get_deletion_flag, bound=None), 'get_digits': gi.FunctionInfo(get_digits, bound=None), 'get_factor': gi.FunctionInfo(get_factor, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'get_scaled_digits': gi.FunctionInfo(get_scaled_digits, bound=None), 'get_symbol': gi.FunctionInfo(get_symbol, bound=None), 'is_built_in': gi.FunctionInfo(is_built_in, bound=None), 'is_metric': gi.FunctionInfo(is_metric, bound=None), 'set_deletion_flag': gi.FunctionInfo(set_deletion_flag, bound=None)})"
     __gdoc__ = 'Object GimpUnit\n\nProperties from GimpUnit:\n  id -> gint: id\n  name -> gchararray: name\n  factor -> gdouble: factor\n  digits -> gint: digits\n  symbol -> gchararray: symbol\n  abbreviation -> gchararray: abbreviation\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpUnit (1072256752)>'
+    __gtype__ = None # (!) real value is '<GType GimpUnit (3595420336)>'
     __info__ = ObjectInfo(Unit)
 
 

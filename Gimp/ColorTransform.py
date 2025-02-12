@@ -338,7 +338,11 @@ class ColorTransform(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -436,12 +440,12 @@ class ColorTransform(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d240>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd5bd70a0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorTransform), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorTransform (1069022336)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_proofing': gi.FunctionInfo(new_proofing, bound=None), 'can_gegl_copy': gi.FunctionInfo(can_gegl_copy, bound=None), 'process_buffer': gi.FunctionInfo(process_buffer, bound=None), 'process_pixels': gi.FunctionInfo(process_pixels, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ColorTransform), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpColorTransform (3595405104)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'new_proofing': gi.FunctionInfo(new_proofing, bound=None), 'can_gegl_copy': gi.FunctionInfo(can_gegl_copy, bound=None), 'process_buffer': gi.FunctionInfo(process_buffer, bound=None), 'process_pixels': gi.FunctionInfo(process_pixels, bound=None)})"
     __gdoc__ = 'Object GimpColorTransform\n\nSignals from GimpColorTransform:\n  progress (gdouble)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpColorTransform (1069022336)>'
+    __gtype__ = None # (!) real value is '<GType GimpColorTransform (3595405104)>'
     __info__ = ObjectInfo(ColorTransform)
 
 

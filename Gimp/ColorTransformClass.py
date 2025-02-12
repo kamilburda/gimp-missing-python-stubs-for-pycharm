@@ -42,7 +42,11 @@ class ColorTransformClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -136,7 +140,7 @@ class ColorTransformClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorTransformClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorTransformClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorTransformClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cc9a30>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ColorTransformClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ColorTransformClass' objects>, '__weakref__': <attribute '__weakref__' of 'ColorTransformClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd90ae3e0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ColorTransformClass)
 

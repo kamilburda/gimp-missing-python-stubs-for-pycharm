@@ -52,7 +52,11 @@ class Memsize(object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -143,9 +147,9 @@ class Memsize(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (1069015280)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Memsize), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpMemsize (3595405664)>, '__dict__': <attribute '__dict__' of 'Memsize' objects>, '__weakref__': <attribute '__weakref__' of 'Memsize' objects>, '__doc__': None, '__gsignals__': {}, 'deserialize': gi.FunctionInfo(deserialize, bound=None), 'serialize': gi.FunctionInfo(serialize, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpMemsize (1069015280)>'
+    __gtype__ = None # (!) real value is '<GType GimpMemsize (3595405664)>'
     __info__ = ObjectInfo(Memsize)
 
 

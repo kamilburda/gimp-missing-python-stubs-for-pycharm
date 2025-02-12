@@ -25,10 +25,9 @@ class ConfigPathType(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ConfigPathType(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ConfigPathType(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -387,14 +391,14 @@ class ConfigPathType(__gobject.GEnum):
     FILE = 0
     FILE_LIST = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigPathType' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigPathType (1069017408)>, '__enum_values__': {0: <enum GIMP_CONFIG_PATH_FILE of type Gimp.ConfigPathType>, 1: <enum GIMP_CONFIG_PATH_FILE_LIST of type Gimp.ConfigPathType>, 2: <enum GIMP_CONFIG_PATH_DIR of type Gimp.ConfigPathType>, 3: <enum GIMP_CONFIG_PATH_DIR_LIST of type Gimp.ConfigPathType>}, '__info__': gi.EnumInfo(ConfigPathType), 'FILE': <enum GIMP_CONFIG_PATH_FILE of type Gimp.ConfigPathType>, 'FILE_LIST': <enum GIMP_CONFIG_PATH_FILE_LIST of type Gimp.ConfigPathType>, 'DIR': <enum GIMP_CONFIG_PATH_DIR of type Gimp.ConfigPathType>, 'DIR_LIST': <enum GIMP_CONFIG_PATH_DIR_LIST of type Gimp.ConfigPathType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ConfigPathType' objects>, '__doc__': None, '__gtype__': <GType PyGimpConfigPathType (3595404992)>, '__enum_values__': {0: <enum GIMP_CONFIG_PATH_FILE of type Gimp.ConfigPathType>, 1: <enum GIMP_CONFIG_PATH_FILE_LIST of type Gimp.ConfigPathType>, 2: <enum GIMP_CONFIG_PATH_DIR of type Gimp.ConfigPathType>, 3: <enum GIMP_CONFIG_PATH_DIR_LIST of type Gimp.ConfigPathType>}, '__info__': gi.EnumInfo(ConfigPathType), 'FILE': <enum GIMP_CONFIG_PATH_FILE of type Gimp.ConfigPathType>, 'FILE_LIST': <enum GIMP_CONFIG_PATH_FILE_LIST of type Gimp.ConfigPathType>, 'DIR': <enum GIMP_CONFIG_PATH_DIR of type Gimp.ConfigPathType>, 'DIR_LIST': <enum GIMP_CONFIG_PATH_DIR_LIST of type Gimp.ConfigPathType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
         3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType PyGimpConfigPathType (1069017408)>'
+    __gtype__ = None # (!) real value is '<GType PyGimpConfigPathType (3595404992)>'
     __info__ = gi.EnumInfo(ConfigPathType)
 
 

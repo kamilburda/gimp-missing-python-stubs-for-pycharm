@@ -365,7 +365,11 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -478,12 +482,12 @@ class ModuleDB(__gi_overrides_GObject.Object, __gi_overrides_Gio.ListModel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069f550>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd6734340>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (1069016064)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ModuleDB), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModuleDB (3595411936)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_load_inhibit': gi.FunctionInfo(get_load_inhibit, bound=None), 'get_verbose': gi.FunctionInfo(get_verbose, bound=None), 'load': gi.FunctionInfo(load, bound=None), 'refresh': gi.FunctionInfo(refresh, bound=None), 'set_load_inhibit': gi.FunctionInfo(set_load_inhibit, bound=None), 'set_verbose': gi.FunctionInfo(set_verbose, bound=None)})"
     __gdoc__ = 'Object GimpModuleDB\n\nSignals from GListModel:\n  items-changed (guint, guint, guint)\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpModuleDB (1069016064)>'
+    __gtype__ = None # (!) real value is '<GType GimpModuleDB (3595411936)>'
     __info__ = ObjectInfo(ModuleDB)
 
 

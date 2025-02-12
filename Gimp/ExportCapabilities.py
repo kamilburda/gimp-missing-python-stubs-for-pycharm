@@ -25,10 +25,9 @@ class ExportCapabilities(__gobject.GFlags):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class ExportCapabilities(__gobject.GFlags):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class ExportCapabilities(__gobject.GFlags):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -399,7 +403,7 @@ class ExportCapabilities(__gobject.GFlags):
     NEEDS_ALPHA = 512
     NEEDS_CROP = 1024
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ExportCapabilities' objects>, '__doc__': None, '__gtype__': <GType GimpExportCapabilities (1069021216)>, '__flags_values__': {1: <flags GIMP_EXPORT_CAN_HANDLE_RGB of type Gimp.ExportCapabilities>, 2: <flags GIMP_EXPORT_CAN_HANDLE_GRAY of type Gimp.ExportCapabilities>, 4: <flags GIMP_EXPORT_CAN_HANDLE_INDEXED of type Gimp.ExportCapabilities>, 8: <flags GIMP_EXPORT_CAN_HANDLE_BITMAP of type Gimp.ExportCapabilities>, 16: <flags GIMP_EXPORT_CAN_HANDLE_ALPHA of type Gimp.ExportCapabilities>, 32: <flags GIMP_EXPORT_CAN_HANDLE_LAYERS of type Gimp.ExportCapabilities>, 64: <flags GIMP_EXPORT_CAN_HANDLE_LAYERS_AS_ANIMATION of type Gimp.ExportCapabilities>, 128: <flags GIMP_EXPORT_CAN_HANDLE_LAYER_MASKS of type Gimp.ExportCapabilities>, 256: <flags GIMP_EXPORT_CAN_HANDLE_LAYER_EFFECTS of type Gimp.ExportCapabilities>, 512: <flags GIMP_EXPORT_NEEDS_ALPHA of type Gimp.ExportCapabilities>, 1024: <flags GIMP_EXPORT_NEEDS_CROP of type Gimp.ExportCapabilities>}, '__info__': gi.EnumInfo(ExportCapabilities), 'CAN_HANDLE_RGB': <flags GIMP_EXPORT_CAN_HANDLE_RGB of type Gimp.ExportCapabilities>, 'CAN_HANDLE_GRAY': <flags GIMP_EXPORT_CAN_HANDLE_GRAY of type Gimp.ExportCapabilities>, 'CAN_HANDLE_INDEXED': <flags GIMP_EXPORT_CAN_HANDLE_INDEXED of type Gimp.ExportCapabilities>, 'CAN_HANDLE_BITMAP': <flags GIMP_EXPORT_CAN_HANDLE_BITMAP of type Gimp.ExportCapabilities>, 'CAN_HANDLE_ALPHA': <flags GIMP_EXPORT_CAN_HANDLE_ALPHA of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYERS': <flags GIMP_EXPORT_CAN_HANDLE_LAYERS of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYERS_AS_ANIMATION': <flags GIMP_EXPORT_CAN_HANDLE_LAYERS_AS_ANIMATION of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYER_MASKS': <flags GIMP_EXPORT_CAN_HANDLE_LAYER_MASKS of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYER_EFFECTS': <flags GIMP_EXPORT_CAN_HANDLE_LAYER_EFFECTS of type Gimp.ExportCapabilities>, 'NEEDS_ALPHA': <flags GIMP_EXPORT_NEEDS_ALPHA of type Gimp.ExportCapabilities>, 'NEEDS_CROP': <flags GIMP_EXPORT_NEEDS_CROP of type Gimp.ExportCapabilities>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'ExportCapabilities' objects>, '__doc__': None, '__gtype__': <GType GimpExportCapabilities (3595401856)>, '__flags_values__': {1: <flags GIMP_EXPORT_CAN_HANDLE_RGB of type Gimp.ExportCapabilities>, 2: <flags GIMP_EXPORT_CAN_HANDLE_GRAY of type Gimp.ExportCapabilities>, 4: <flags GIMP_EXPORT_CAN_HANDLE_INDEXED of type Gimp.ExportCapabilities>, 8: <flags GIMP_EXPORT_CAN_HANDLE_BITMAP of type Gimp.ExportCapabilities>, 16: <flags GIMP_EXPORT_CAN_HANDLE_ALPHA of type Gimp.ExportCapabilities>, 32: <flags GIMP_EXPORT_CAN_HANDLE_LAYERS of type Gimp.ExportCapabilities>, 64: <flags GIMP_EXPORT_CAN_HANDLE_LAYERS_AS_ANIMATION of type Gimp.ExportCapabilities>, 128: <flags GIMP_EXPORT_CAN_HANDLE_LAYER_MASKS of type Gimp.ExportCapabilities>, 256: <flags GIMP_EXPORT_CAN_HANDLE_LAYER_EFFECTS of type Gimp.ExportCapabilities>, 512: <flags GIMP_EXPORT_NEEDS_ALPHA of type Gimp.ExportCapabilities>, 1024: <flags GIMP_EXPORT_NEEDS_CROP of type Gimp.ExportCapabilities>}, '__info__': gi.EnumInfo(ExportCapabilities), 'CAN_HANDLE_RGB': <flags GIMP_EXPORT_CAN_HANDLE_RGB of type Gimp.ExportCapabilities>, 'CAN_HANDLE_GRAY': <flags GIMP_EXPORT_CAN_HANDLE_GRAY of type Gimp.ExportCapabilities>, 'CAN_HANDLE_INDEXED': <flags GIMP_EXPORT_CAN_HANDLE_INDEXED of type Gimp.ExportCapabilities>, 'CAN_HANDLE_BITMAP': <flags GIMP_EXPORT_CAN_HANDLE_BITMAP of type Gimp.ExportCapabilities>, 'CAN_HANDLE_ALPHA': <flags GIMP_EXPORT_CAN_HANDLE_ALPHA of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYERS': <flags GIMP_EXPORT_CAN_HANDLE_LAYERS of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYERS_AS_ANIMATION': <flags GIMP_EXPORT_CAN_HANDLE_LAYERS_AS_ANIMATION of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYER_MASKS': <flags GIMP_EXPORT_CAN_HANDLE_LAYER_MASKS of type Gimp.ExportCapabilities>, 'CAN_HANDLE_LAYER_EFFECTS': <flags GIMP_EXPORT_CAN_HANDLE_LAYER_EFFECTS of type Gimp.ExportCapabilities>, 'NEEDS_ALPHA': <flags GIMP_EXPORT_NEEDS_ALPHA of type Gimp.ExportCapabilities>, 'NEEDS_CROP': <flags GIMP_EXPORT_NEEDS_CROP of type Gimp.ExportCapabilities>})"
     __flags_values__ = {
         1: 1,
         2: 2,
@@ -413,7 +417,7 @@ class ExportCapabilities(__gobject.GFlags):
         512: 512,
         1024: 1024,
     }
-    __gtype__ = None # (!) real value is '<GType GimpExportCapabilities (1069021216)>'
+    __gtype__ = None # (!) real value is '<GType GimpExportCapabilities (3595401856)>'
     __info__ = gi.EnumInfo(ExportCapabilities)
 
 

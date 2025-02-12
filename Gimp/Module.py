@@ -417,7 +417,11 @@ class Module(__gi_repository_GObject.TypeModule):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -528,12 +532,12 @@ class Module(__gi_repository_GObject.TypeModule):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069dbd0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd9181b10>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Module), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModule (1069011584)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'query': gi.FunctionInfo(query, bound=None), 'register': gi.FunctionInfo(register, bound=None), 'get_auto_load': gi.FunctionInfo(get_auto_load, bound=None), 'get_file': gi.FunctionInfo(get_file, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_state': gi.FunctionInfo(get_state, bound=None), 'is_loaded': gi.FunctionInfo(is_loaded, bound=None), 'is_on_disk': gi.FunctionInfo(is_on_disk, bound=None), 'query_module': gi.FunctionInfo(query_module, bound=None), 'set_auto_load': gi.FunctionInfo(set_auto_load, bound=None), 'do_modified': gi.VFuncInfo(modified, bound=None), 'parent_instance': <property object at 0x000001b640cf7150>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Module), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpModule (3595406560)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'query': gi.FunctionInfo(query, bound=None), 'register': gi.FunctionInfo(register, bound=None), 'get_auto_load': gi.FunctionInfo(get_auto_load, bound=None), 'get_file': gi.FunctionInfo(get_file, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_last_error': gi.FunctionInfo(get_last_error, bound=None), 'get_state': gi.FunctionInfo(get_state, bound=None), 'is_loaded': gi.FunctionInfo(is_loaded, bound=None), 'is_on_disk': gi.FunctionInfo(is_on_disk, bound=None), 'query_module': gi.FunctionInfo(query_module, bound=None), 'set_auto_load': gi.FunctionInfo(set_auto_load, bound=None), 'do_modified': gi.VFuncInfo(modified, bound=None), 'parent_instance': <property object at 0x000001dcd92a6160>})"
     __gdoc__ = 'Object GimpModule\n\nProperties from GimpModule:\n  auto-load -> gboolean: auto-load\n    auto-load\n  on-disk -> gboolean: on-disk\n    on-disk\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpModule (1069011584)>'
+    __gtype__ = None # (!) real value is '<GType GimpModule (3595406560)>'
     __info__ = ObjectInfo(Module)
 
 

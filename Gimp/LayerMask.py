@@ -31,6 +31,10 @@ class LayerMask(Channel):
     
         LayerMask(**properties)
     """
+    def append_filter(self, filter): # real signature unknown; restored from __doc__
+        """ append_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def attach_parasite(self, parasite): # real signature unknown; restored from __doc__
         """ attach_parasite(self, parasite:Gimp.Parasite) -> bool """
         return False
@@ -237,6 +241,10 @@ class LayerMask(Channel):
     def get_expanded(self): # real signature unknown; restored from __doc__
         """ get_expanded(self) -> bool """
         return False
+
+    def get_filters(self): # real signature unknown; restored from __doc__
+        """ get_filters(self) -> list """
+        return []
 
     def get_format(self): # real signature unknown; restored from __doc__
         """ get_format(self) -> Babl.Object """
@@ -530,6 +538,10 @@ class LayerMask(Channel):
         """ mask_intersect(self) -> bool, x:int, y:int, width:int, height:int """
         return False
 
+    def merge_filter(self, filter): # real signature unknown; restored from __doc__
+        """ merge_filter(self, filter:Gimp.DrawableFilter) """
+        pass
+
     def merge_filters(self): # real signature unknown; restored from __doc__
         """ merge_filters(self) -> bool """
         return False
@@ -558,8 +570,8 @@ class LayerMask(Channel):
         # no doc
         pass
 
-    def offset(self, wrap_around, fill_type, offset_x, offset_y): # real signature unknown; restored from __doc__
-        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, offset_x:int, offset_y:int) -> bool """
+    def offset(self, wrap_around, fill_type, color, offset_x, offset_y): # real signature unknown; restored from __doc__
+        """ offset(self, wrap_around:bool, fill_type:Gimp.OffsetType, color:Gegl.Color, offset_x:int, offset_y:int) -> bool """
         return False
 
     def override_property(self, property_id, name): # real signature unknown; restored from __doc__
@@ -782,7 +794,11 @@ class LayerMask(Channel):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -882,12 +898,12 @@ class LayerMask(Channel):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069fa00>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd90f50f0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LayerMask), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLayerMask (1066678560)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(LayerMask), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpLayerMask (3599937456)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None)})"
     __gdoc__ = 'Object GimpLayerMask\n\nProperties from GimpItem:\n  id -> gint: The item id\n    The item id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpLayerMask (1066678560)>'
+    __gtype__ = None # (!) real value is '<GType GimpLayerMask (3599937456)>'
     __info__ = ObjectInfo(LayerMask)
 
 

@@ -56,7 +56,11 @@ class ConfigPath(object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -147,9 +151,9 @@ class ConfigPath(object):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (1069016512)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ConfigPath), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpConfigPath (3595398608)>, '__dict__': <attribute '__dict__' of 'ConfigPath' objects>, '__weakref__': <attribute '__weakref__' of 'ConfigPath' objects>, '__doc__': None, '__gsignals__': {}, 'expand': gi.FunctionInfo(expand, bound=None), 'expand_to_files': gi.FunctionInfo(expand_to_files, bound=None), 'unexpand': gi.FunctionInfo(unexpand, bound=None)})"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpConfigPath (1069016512)>'
+    __gtype__ = None # (!) real value is '<GType GimpConfigPath (3595398608)>'
     __info__ = ObjectInfo(ConfigPath)
 
 

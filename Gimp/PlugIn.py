@@ -384,7 +384,11 @@ class PlugIn(__gi_overrides_GObject.Object):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -484,12 +488,12 @@ class PlugIn(__gi_overrides_GObject.Object):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64066df90>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd91843a0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PlugIn), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPlugIn (1072210208)>, '__doc__': None, '__gsignals__': {}, 'directory': gi.FunctionInfo(directory, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'add_menu_branch': gi.FunctionInfo(add_menu_branch, bound=None), 'add_temp_procedure': gi.FunctionInfo(add_temp_procedure, bound=None), 'get_pdb_error_handler': gi.FunctionInfo(get_pdb_error_handler, bound=None), 'get_temp_procedure': gi.FunctionInfo(get_temp_procedure, bound=None), 'get_temp_procedures': gi.FunctionInfo(get_temp_procedures, bound=None), 'persistent_enable': gi.FunctionInfo(persistent_enable, bound=None), 'persistent_process': gi.FunctionInfo(persistent_process, bound=None), 'remove_temp_procedure': gi.FunctionInfo(remove_temp_procedure, bound=None), 'set_help_domain': gi.FunctionInfo(set_help_domain, bound=None), 'set_pdb_error_handler': gi.FunctionInfo(set_pdb_error_handler, bound=None), 'do_create_procedure': gi.VFuncInfo(create_procedure, bound=None), 'do_init_procedures': gi.VFuncInfo(init_procedures, bound=None), 'do_query_procedures': gi.VFuncInfo(query_procedures, bound=None), 'do_quit': gi.VFuncInfo(quit, bound=None), 'do_set_i18n': gi.VFuncInfo(set_i18n, bound=None), 'parent_instance': <property object at 0x000001b640d10e00>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(PlugIn), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpPlugIn (3595418656)>, '__doc__': None, '__gsignals__': {}, 'directory': gi.FunctionInfo(directory, bound=None), 'error_quark': gi.FunctionInfo(error_quark, bound=None), 'add_menu_branch': gi.FunctionInfo(add_menu_branch, bound=None), 'add_temp_procedure': gi.FunctionInfo(add_temp_procedure, bound=None), 'get_pdb_error_handler': gi.FunctionInfo(get_pdb_error_handler, bound=None), 'get_temp_procedure': gi.FunctionInfo(get_temp_procedure, bound=None), 'get_temp_procedures': gi.FunctionInfo(get_temp_procedures, bound=None), 'persistent_enable': gi.FunctionInfo(persistent_enable, bound=None), 'persistent_process': gi.FunctionInfo(persistent_process, bound=None), 'remove_temp_procedure': gi.FunctionInfo(remove_temp_procedure, bound=None), 'set_help_domain': gi.FunctionInfo(set_help_domain, bound=None), 'set_pdb_error_handler': gi.FunctionInfo(set_pdb_error_handler, bound=None), 'do_create_procedure': gi.VFuncInfo(create_procedure, bound=None), 'do_init_procedures': gi.VFuncInfo(init_procedures, bound=None), 'do_query_procedures': gi.VFuncInfo(query_procedures, bound=None), 'do_quit': gi.VFuncInfo(quit, bound=None), 'do_set_i18n': gi.VFuncInfo(set_i18n, bound=None), 'parent_instance': <property object at 0x000001dcd92df5b0>})"
     __gdoc__ = 'Object GimpPlugIn\n\nProperties from GimpPlugIn:\n  program-name -> gchararray: The plug-in executable\n    The executable name as usually found on argv[0]\n  read-channel -> GIOChannel: Read channel\n    The GIOChanel to read from GIMP\n  write-channel -> GIOChannel: Write channel\n    The GIOChanel to write to GIMP\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpPlugIn (1072210208)>'
+    __gtype__ = None # (!) real value is '<GType GimpPlugIn (3595418656)>'
     __info__ = ObjectInfo(PlugIn)
 
 

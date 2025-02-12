@@ -50,7 +50,11 @@ class DoubleArray(__gi.Boxed):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -141,8 +145,8 @@ class DoubleArray(__gi.Boxed):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DoubleArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDoubleArray (1069017072)>, '__dict__': <attribute '__dict__' of 'DoubleArray' objects>, '__weakref__': <attribute '__weakref__' of 'DoubleArray' objects>, '__doc__': None, 'get_values': gi.FunctionInfo(get_values, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None)})"
-    __gtype__ = None # (!) real value is '<GType GimpDoubleArray (1069017072)>'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DoubleArray), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpDoubleArray (3595404544)>, '__dict__': <attribute '__dict__' of 'DoubleArray' objects>, '__weakref__': <attribute '__weakref__' of 'DoubleArray' objects>, '__doc__': None, 'get_values': gi.FunctionInfo(get_values, bound=None), 'set_values': gi.FunctionInfo(set_values, bound=None)})"
+    __gtype__ = None # (!) real value is '<GType GimpDoubleArray (3595404544)>'
     __info__ = StructInfo(DoubleArray)
 
 

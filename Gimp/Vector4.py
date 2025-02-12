@@ -42,7 +42,11 @@ class Vector4(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -142,7 +146,7 @@ class Vector4(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector4), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Vector4' objects>, '__weakref__': <attribute '__weakref__' of 'Vector4' objects>, '__doc__': None, 'x': <property object at 0x000001b640d21da0>, 'y': <property object at 0x000001b640d21e90>, 'z': <property object at 0x000001b640d21f80>, 'w': <property object at 0x000001b640d22070>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(Vector4), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'Vector4' objects>, '__weakref__': <attribute '__weakref__' of 'Vector4' objects>, '__doc__': None, 'x': <property object at 0x000001dcd92f16c0>, 'y': <property object at 0x000001dcd92f17b0>, 'z': <property object at 0x000001dcd92f18a0>, 'w': <property object at 0x000001dcd92f1990>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(Vector4)
 

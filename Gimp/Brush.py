@@ -531,7 +531,11 @@ class Brush(Resource):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -634,12 +638,12 @@ class Brush(Resource):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069d810>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd8cddc90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Brush), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBrush (1071866672)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_angle': gi.FunctionInfo(get_angle, bound=None), 'get_aspect_ratio': gi.FunctionInfo(get_aspect_ratio, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_hardness': gi.FunctionInfo(get_hardness, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_radius': gi.FunctionInfo(get_radius, bound=None), 'get_shape': gi.FunctionInfo(get_shape, bound=None), 'get_spacing': gi.FunctionInfo(get_spacing, bound=None), 'get_spikes': gi.FunctionInfo(get_spikes, bound=None), 'is_generated': gi.FunctionInfo(is_generated, bound=None), 'set_angle': gi.FunctionInfo(set_angle, bound=None), 'set_aspect_ratio': gi.FunctionInfo(set_aspect_ratio, bound=None), 'set_hardness': gi.FunctionInfo(set_hardness, bound=None), 'set_radius': gi.FunctionInfo(set_radius, bound=None), 'set_shape': gi.FunctionInfo(set_shape, bound=None), 'set_spacing': gi.FunctionInfo(set_spacing, bound=None), 'set_spikes': gi.FunctionInfo(set_spikes, bound=None)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Brush), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpBrush (3599982992)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'get_angle': gi.FunctionInfo(get_angle, bound=None), 'get_aspect_ratio': gi.FunctionInfo(get_aspect_ratio, bound=None), 'get_buffer': gi.FunctionInfo(get_buffer, bound=None), 'get_hardness': gi.FunctionInfo(get_hardness, bound=None), 'get_info': gi.FunctionInfo(get_info, bound=None), 'get_mask': gi.FunctionInfo(get_mask, bound=None), 'get_radius': gi.FunctionInfo(get_radius, bound=None), 'get_shape': gi.FunctionInfo(get_shape, bound=None), 'get_spacing': gi.FunctionInfo(get_spacing, bound=None), 'get_spikes': gi.FunctionInfo(get_spikes, bound=None), 'is_generated': gi.FunctionInfo(is_generated, bound=None), 'set_angle': gi.FunctionInfo(set_angle, bound=None), 'set_aspect_ratio': gi.FunctionInfo(set_aspect_ratio, bound=None), 'set_hardness': gi.FunctionInfo(set_hardness, bound=None), 'set_radius': gi.FunctionInfo(set_radius, bound=None), 'set_shape': gi.FunctionInfo(set_shape, bound=None), 'set_spacing': gi.FunctionInfo(set_spacing, bound=None), 'set_spikes': gi.FunctionInfo(set_spikes, bound=None)})"
     __gdoc__ = 'Object GimpBrush\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpBrush (1071866672)>'
+    __gtype__ = None # (!) real value is '<GType GimpBrush (3599982992)>'
     __info__ = ObjectInfo(Brush)
 
 

@@ -42,7 +42,11 @@ class ModuleClass(__gi.Struct):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -158,7 +162,7 @@ class ModuleClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleClass' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001b640cf72e0>, 'modified': <property object at 0x000001b640cf73d0>, '_gimp_reserved0': <property object at 0x000001b640cf74c0>, '_gimp_reserved1': <property object at 0x000001b640cf75b0>, '_gimp_reserved2': <property object at 0x000001b640cf76a0>, '_gimp_reserved3': <property object at 0x000001b640cf7790>, '_gimp_reserved4': <property object at 0x000001b640cf7880>, '_gimp_reserved5': <property object at 0x000001b640cf7970>, '_gimp_reserved6': <property object at 0x000001b640cf7a60>, '_gimp_reserved7': <property object at 0x000001b640cf7b50>, '_gimp_reserved8': <property object at 0x000001b640cf7c40>, '_gimp_reserved9': <property object at 0x000001b640cf7d30>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(ModuleClass), '__module__': 'gi.repository.Gimp', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'ModuleClass' objects>, '__weakref__': <attribute '__weakref__' of 'ModuleClass' objects>, '__doc__': None, 'parent_class': <property object at 0x000001dcd92a62a0>, 'modified': <property object at 0x000001dcd92a6390>, '_gimp_reserved0': <property object at 0x000001dcd92a6480>, '_gimp_reserved1': <property object at 0x000001dcd92a6570>, '_gimp_reserved2': <property object at 0x000001dcd92a6660>, '_gimp_reserved3': <property object at 0x000001dcd92a6750>, '_gimp_reserved4': <property object at 0x000001dcd92a6840>, '_gimp_reserved5': <property object at 0x000001dcd92a6930>, '_gimp_reserved6': <property object at 0x000001dcd92a6a20>, '_gimp_reserved7': <property object at 0x000001dcd92a6b10>, '_gimp_reserved8': <property object at 0x000001dcd92a6c00>, '_gimp_reserved9': <property object at 0x000001dcd92a6cf0>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(ModuleClass)
 

@@ -25,10 +25,9 @@ class GradientBlendColorSpace(__gobject.GEnum):
     # no doc
     def as_integer_ratio(self): # real signature unknown; restored from __doc__
         """
-        Return integer ratio.
+        Return a pair of integers, whose ratio is equal to the original int.
         
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
+        The ratio is in lowest terms and has a positive denominator.
         
         >>> (10).as_integer_ratio()
         (10, 1)
@@ -85,6 +84,10 @@ class GradientBlendColorSpace(__gobject.GEnum):
           signed
             Indicates whether two's complement is used to represent the integer.
         """
+        pass
+
+    def is_integer(self, *args, **kwargs): # real signature unknown
+        """ Returns True. Exists for duck type compatibility with float.is_integer. """
         pass
 
     def to_bytes(self, *args, **kwargs): # real signature unknown
@@ -157,6 +160,7 @@ class GradientBlendColorSpace(__gobject.GEnum):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
+        """ Convert to a string according to format_spec. """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -386,13 +390,13 @@ class GradientBlendColorSpace(__gobject.GEnum):
     RGB_LINEAR = 1
     RGB_PERCEPTUAL = 0
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientBlendColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpGradientBlendColorSpace (1069021552)>, '__enum_values__': {0: <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 1: <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 2: <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>}, '__info__': gi.EnumInfo(GradientBlendColorSpace), 'RGB_PERCEPTUAL': <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 'RGB_LINEAR': <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 'CIE_LAB': <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Gimp', '__dict__': <attribute '__dict__' of 'GradientBlendColorSpace' objects>, '__doc__': None, '__gtype__': <GType GimpGradientBlendColorSpace (3595404096)>, '__enum_values__': {0: <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 1: <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 2: <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>}, '__info__': gi.EnumInfo(GradientBlendColorSpace), 'RGB_PERCEPTUAL': <enum GIMP_GRADIENT_BLEND_RGB_PERCEPTUAL of type Gimp.GradientBlendColorSpace>, 'RGB_LINEAR': <enum GIMP_GRADIENT_BLEND_RGB_LINEAR of type Gimp.GradientBlendColorSpace>, 'CIE_LAB': <enum GIMP_GRADIENT_BLEND_CIE_LAB of type Gimp.GradientBlendColorSpace>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
     }
-    __gtype__ = None # (!) real value is '<GType GimpGradientBlendColorSpace (1069021552)>'
+    __gtype__ = None # (!) real value is '<GType GimpGradientBlendColorSpace (3595404096)>'
     __info__ = gi.EnumInfo(GradientBlendColorSpace)
 
 

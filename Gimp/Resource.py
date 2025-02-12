@@ -454,7 +454,11 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """
+        Default object formatter.
+        
+        Return str(self) if format_spec is empty. Raise TypeError otherwise.
+        """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -557,12 +561,12 @@ class Resource(__gi_overrides_GObject.Object, ConfigInterface):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x000001b64069ce50>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x000001dcd5c2ba00>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (1071868240)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x000001b640cacc20>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Resource), '__module__': 'gi.repository.Gimp', '__gtype__': <GType GimpResource (3599982768)>, '__doc__': None, '__gsignals__': {}, 'get_by_id': gi.FunctionInfo(get_by_id, bound=None), 'get_by_name': gi.FunctionInfo(get_by_name, bound=None), 'id_is_brush': gi.FunctionInfo(id_is_brush, bound=None), 'id_is_font': gi.FunctionInfo(id_is_font, bound=None), 'id_is_gradient': gi.FunctionInfo(id_is_gradient, bound=None), 'id_is_palette': gi.FunctionInfo(id_is_palette, bound=None), 'id_is_pattern': gi.FunctionInfo(id_is_pattern, bound=None), 'id_is_valid': gi.FunctionInfo(id_is_valid, bound=None), 'delete': gi.FunctionInfo(delete, bound=None), 'duplicate': gi.FunctionInfo(duplicate, bound=None), 'get_id': gi.FunctionInfo(get_id, bound=None), 'get_name': gi.FunctionInfo(get_name, bound=None), 'is_brush': gi.FunctionInfo(is_brush, bound=None), 'is_editable': gi.FunctionInfo(is_editable, bound=None), 'is_font': gi.FunctionInfo(is_font, bound=None), 'is_gradient': gi.FunctionInfo(is_gradient, bound=None), 'is_palette': gi.FunctionInfo(is_palette, bound=None), 'is_pattern': gi.FunctionInfo(is_pattern, bound=None), 'is_valid': gi.FunctionInfo(is_valid, bound=None), 'rename': gi.FunctionInfo(rename, bound=None), 'parent_instance': <property object at 0x000001dcd916fd80>})"
     __gdoc__ = 'Object GimpResource\n\nProperties from GimpResource:\n  id -> gint: The id\n    The id for internal use\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType GimpResource (1071868240)>'
+    __gtype__ = None # (!) real value is '<GType GimpResource (3599982768)>'
     __info__ = ObjectInfo(Resource)
 
 
