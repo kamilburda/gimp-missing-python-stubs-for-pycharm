@@ -14,3 +14,14 @@ Assuming you added GIMP Python modules to your Python interpreter in PyCharm, yo
 
 1. Go to your PyCharm project and display the Project view.
 2. Find `External Libraries `, expand it to find `Binary Skeletons`, right-click on the `gi/repository` directory, select `Copy Path/Reference...` and select `Absolute Path`.
+
+It may happen that PyCharm automatically deletes the directories that you just copied when you restart PyCharm. To prevent the directories from being deleted:
+
+* On Linux, run `chattr +i [directory]` for each directory.
+* On Windows:
+     1. Right-click on a directory, then go to `Properties -> Security -> Advanced`.
+     2. Click on your user account (not SYSTEM or Administrators), then click `Disable inheritance`, then `Convert inherited permissions into explicit permissions for this object.`.
+     3. Still having your user account selected, click `Edit`.
+     4. In the displayed dialog, click `Show advanced permissions`, and then uncheck `Delete` and `Delete subfolders and files`.
+     5. Save the changes.
+     6. Repeat the above steps for all other directories you wish to keep.
