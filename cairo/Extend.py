@@ -1,6 +1,5 @@
 # encoding: utf-8
 # module gi.repository.cairo
-# from C:\Program Files\GIMP 3\lib\girepository-1.0\cairo-1.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.

@@ -1,6 +1,5 @@
 # encoding: utf-8
 # module gi.repository.Gimp
-# from C:\Program Files\GIMP 3\lib\girepository-1.0\Gimp-3.0.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -2102,10 +2101,6 @@ from .__class__ import __class__
 # variables with complex values
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001dcd66d06b0>'
-
-__path__ = [
-    'C:\\Program Files\\GIMP 3\\lib\\girepository-1.0\\Gimp-3.0.typelib',
-]
 
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gimp', loader=<gi.importer.DynamicImporter object at 0x000001dcd66d06b0>)"
 
