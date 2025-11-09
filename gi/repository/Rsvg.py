@@ -2641,5 +2641,7 @@ class __class__(object):
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000015b40e89350>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Rsvg', loader=<gi.importer.DynamicImporter object at 0x0000015b40e89350>)"
 

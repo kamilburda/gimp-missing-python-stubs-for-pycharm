@@ -186,5 +186,7 @@ _PyGObject_API = None # (!) real value is '<capsule object "gobject._PyGObject_A
 
 __loader__ = None # (!) real value is '<_frozen_importlib_external.ExtensionFileLoader object at 0x0000015b65d446e0>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi._gi', loader=<_frozen_importlib_external.ExtensionFileLoader object at 0x0000015b65d446e0>, origin='C:\\\\Program Files\\\\GIMP 3\\\\lib\\\\python3.12\\\\site-packages\\\\gi\\\\_gi.cp312-mingw_x86_64_ucrt_llvm.pyd')"
 

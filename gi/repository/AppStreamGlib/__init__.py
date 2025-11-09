@@ -531,5 +531,7 @@ from .__class__ import __class__
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001afbdff2090>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.AppStreamGlib', loader=<gi.importer.DynamicImporter object at 0x000001afbdff2090>)"
 

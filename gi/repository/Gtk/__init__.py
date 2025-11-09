@@ -2231,5 +2231,7 @@ __annotations__ = {}
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000002ece62f0290>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Gtk', loader=<gi.importer.DynamicImporter object at 0x000002ece62f0290>)"
 

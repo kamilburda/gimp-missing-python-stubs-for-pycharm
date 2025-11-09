@@ -83,5 +83,7 @@ from .ValueBindings import ValueBindings
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001543230f7d0>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Xmlb', loader=<gi.importer.DynamicImporter object at 0x000001543230f7d0>)"
 

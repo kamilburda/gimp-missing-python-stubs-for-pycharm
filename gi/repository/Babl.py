@@ -1729,5 +1729,7 @@ class __class__(object):
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000017318aa9350>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Babl', loader=<gi.importer.DynamicImporter object at 0x0000017318aa9350>)"
 

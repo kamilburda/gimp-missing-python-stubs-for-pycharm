@@ -1704,5 +1704,7 @@ class __class__(object):
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000022b06f19350>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.GL', loader=<gi.importer.DynamicImporter object at 0x0000022b06f19350>)"
 

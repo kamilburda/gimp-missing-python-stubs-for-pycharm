@@ -4667,5 +4667,7 @@ __annotations__ = {}
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001f7c0bf2090>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.GExiv2', loader=<gi.importer.DynamicImporter object at 0x000001f7c0bf2090>)"
 

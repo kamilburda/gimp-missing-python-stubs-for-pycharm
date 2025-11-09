@@ -366,5 +366,7 @@ from .__class__ import __class__
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x0000017335b87890>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Atk', loader=<gi.importer.DynamicImporter object at 0x0000017335b87890>)"
 

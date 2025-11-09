@@ -659,5 +659,7 @@ from .VideoContainerKind import VideoContainerKind
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001ece9c1fe00>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.AppStream', loader=<gi.importer.DynamicImporter object at 0x000001ece9c1fe00>)"
 

@@ -368,5 +368,7 @@ class __class__(object):
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x00000239a3b29350>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.win32', loader=<gi.importer.DynamicImporter object at 0x00000239a3b29350>)"
 

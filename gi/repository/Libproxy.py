@@ -401,5 +401,7 @@ class __class__(object):
 
 __loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x000001a02df62090>'
 
+__path__ = []
+
 __spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Libproxy', loader=<gi.importer.DynamicImporter object at 0x000001a02df62090>)"
 
